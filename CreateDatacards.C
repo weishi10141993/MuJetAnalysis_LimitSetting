@@ -1,0 +1,160 @@
+#include <stdio.h>
+#include <TH1F.h>
+#include <TFile.h>
+#include <TMath.h>
+#include <TCanvas.h>
+#include <TH2F.h>
+#include <TH1D.h>
+#include <THStack.h>
+#include <TRandom3.h>
+#include <TFormula.h>
+#include <TPad.h>
+#include <TLegend.h>
+#include <TStyle.h>
+#include <TROOT.h>
+#include <TMarker.h>
+#include <TChain.h>
+#include <memory>
+#include <string>
+#include <map>
+#include <vector>
+#include "TTree.h"
+#include "TLatex.h"
+#include "TMath.h"
+#include "TBranch.h"
+#include "TFile.h"
+#include "TStyle.h"
+#include "TString.h"
+#include "TEventList.h"
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <iomanip> 
+#define N_Signals 43
+
+void CreateDatacards( bool makeRoot=false ){
+
+  //Parameters
+  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/CMSSW_7_6_3_patch2/src/LIMITS";
+  float masses[N_Signals]={0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,2.0000,3.0000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
+  float signal_rate = 1, BBbar_2D_rate = 0.59, DJpsiS_2D_rate = 0.061, DJpsiD_2D_rate = 0.003;
+  float lumi_8TeV=1.027, mu_hlt=1.015, mu_id=1.040, mu_trk=1.008, ovlp_trk=1.024, ovlp_mu=1.026, dimu_M=1.015;
+  float BBbar_norm=8, BBbar_norm2=0.22, DJpsi_extr=1.2, DJpsiS_norm=3, DJpsiS_norm2=0.017, DJpsiD_norm=1, DJpsiD_norm2=0.008;
+
+  TString makeFold="mkdir -p macros/sh";
+  system( makeFold.Data() );
+  makeFold="mkdir -p workSpaces";
+  system( makeFold.Data() );
+  makeFold="mkdir -p Datacards";
+  system( makeFold.Data() );
+  makeFold="mkdir -p plots/PDF";
+  system( makeFold.Data() );
+  makeFold="mkdir -p plots/PNG";
+  system( makeFold.Data() );
+  makeFold="mkdir -p plots/C";
+  system( makeFold.Data() );
+
+  //Create ROOT file
+  if(makeRoot){
+    FILE *file_sh=fopen( "macros/CreateROOTfiles.sh","w");
+    for(int i=0; i<N_Signals; i++){
+	fprintf(file_sh,"root -q -b .x makeWorkSpace_H2A4Mu.C+(%.4f)\n",masses[i]);
+    }
+    fclose(file_sh);
+  }
+
+  //Make datacards
+  FILE *file_sh1=fopen("macros/RunOnDataCard_std.sh","w");
+  for(int i=0; i<N_Signals; i++){
+    char command[100];
+    sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f.sh", masses[i], pwd.c_str(), masses[i]);
+    fprintf(file_sh1,"%s \n",command);
+  }
+  fclose(file_sh1);
+  FILE *file_sh2=fopen("macros/RunOnDataCard_T50000.sh","w");
+  for(int i=0; i<N_Signals; i++){
+    char command[100];
+    sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T50000.sh", masses[i], pwd.c_str(), masses[i]);
+    fprintf(file_sh2,"%s \n",command);
+  }
+  fclose(file_sh2);
+  FILE *file_sh3=fopen("macros/RunOnDataCard_T500000.sh","w");
+  for(int i=0; i<N_Signals; i++){
+    //File.sh to run on all datacard
+    char command_T500000[100];
+    sprintf(command_T500000, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T500000.sh", masses[i], pwd.c_str(), masses[i]);
+    fprintf(file_sh3,"%s \n",command_T500000);
+    char name[100];
+    char name_T50000[100];
+    char name_T500000[100];
+    sprintf(name, "macros/sh/send%.4f.sh",masses[i]);
+    sprintf(name_T50000, "macros/sh/send%.4f_T50000.sh",masses[i]);
+    sprintf(name_T500000, "macros/sh/send%.4f_T500000.sh",masses[i]);
+    FILE *file_sh4=fopen(name,"w");
+    fprintf(file_sh4,"#!/bin/bash\n");
+    fprintf(file_sh4,"cd %s \n",pwd.c_str());
+    fprintf(file_sh4,"eval `scramv1 runtime -sh`\n");
+    fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV -m 125 -M HybridNew --rule CLs --testStat LHC -s 777 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f.txt \n",masses[i],masses[i],masses[i]);
+    fclose(file_sh4);
+    FILE *file_sh5=fopen(name_T50000,"w");
+    fprintf(file_sh5,"#!/bin/bash\n");
+    fprintf(file_sh5,"cd %s \n",pwd.c_str());
+    fprintf(file_sh5,"eval `scramv1 runtime -sh`\n");
+    fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 50000 -s 777 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000.txt \n",masses[i],masses[i],masses[i]);
+    fclose(file_sh5);
+    FILE *file_sh6=fopen(name_T500000,"w");
+    fprintf(file_sh6,"#!/bin/bash\n");
+    fprintf(file_sh6,"cd %s \n",pwd.c_str());
+    fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
+    fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 500000 -s 777 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000.txt \n",masses[i],masses[i],masses[i]);
+    fclose(file_sh6);
+    //Datacard
+    stringstream massesS;
+    massesS << fixed << setprecision(4) << masses[i];
+    TString Thisname_txt = "datacard_H2A4Mu_mA_" + massesS.str() + "_GeV.txt";
+    FILE *file_txt=fopen( ("Datacards/" + Thisname_txt).Data(),"w");
+    fprintf(file_txt,"# Simple Bayesian, no systematics included: \n");
+    fprintf(file_txt,"#    combine -S 0 -n .H2A4Mu_mA_%.4f_GeV_noSyst     -m 125 -M BayesianSimple                          datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"# Bayesian: \n");
+    fprintf(file_txt,"#    combine      -n .H2A4Mu_mA_%.4f_GeV            -m 125 -M BayesianToyMC                           datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"# Asymptotic CLs: \n");
+    fprintf(file_txt,"#    combine      -n .H2A4Mu_mA_%.4f_GeV            -m 125 -M Asymptotic                              datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"# HybridNew CLs: \n");
+    fprintf(file_txt,"#    combine      -n .H2A4Mu_mA_%.4f_GeV            -m 125 -M HybridNew --rule CLs --testStat LHC     datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"# Maximum likelihood fits and diagnostics \n");
+    fprintf(file_txt,"#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal0 -m 125 -M MaxLikelihoodFit --expectSignal=0 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal1 -m 125 -M MaxLikelihoodFit --expectSignal=1 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt,"imax 1  number of channels \n");
+    fprintf(file_txt,"jmax 3  number of backgrounds \n");
+    fprintf(file_txt,"kmax *  number of nuisance parameters (sources of systematical uncertainties) \n");
+    fprintf(file_txt,"------------------------------- \n");
+    fprintf(file_txt,"shapes * * ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:$PROCESS \n",masses[i]);
+    fprintf(file_txt,"#shapes signal    A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:signal \n",masses[i]);
+    fprintf(file_txt,"#shapes BBbar_2D  A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:BBbar_2D \n",masses[i]);
+    fprintf(file_txt,"shapes DJpsiS_2D A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:DJpsi_2D \n",masses[i]);
+    fprintf(file_txt,"shapes DJpsiD_2D A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:DJpsi_2D \n",masses[i]);
+    fprintf(file_txt,"------------------------------- \n");
+    fprintf(file_txt,"bin               A \n");
+    fprintf(file_txt,"observation      -1 \n");
+    fprintf(file_txt,"------------------------------- \n");
+    fprintf(file_txt,"bin               A          A         A         A \n");
+    fprintf(file_txt,"process           0          1         2         3 \n");
+    fprintf(file_txt,"process           signal     BBbar_2D  DJpsiS_2D DJpsiD_2D \n");
+    fprintf(file_txt,"rate              %.3f          %.3f       %.3f      %.3f \n",signal_rate,BBbar_2D_rate,BBbar_2D_rate,DJpsiD_2D_rate);
+    fprintf(file_txt,"------------------------------- \n");
+    fprintf(file_txt,"lumi_8TeV   lnN   %.3f      -         -         -           Lumi (signal only; BBbar and DJpsi backgrounds are data-driven) \n", lumi_8TeV);
+    fprintf(file_txt,"mu_hlt      lnN   %.3f      -         -         -           Muon trigger \n", mu_hlt);
+    fprintf(file_txt,"mu_id       lnN   %.3f      -         -         -           Muon identification \n", mu_id);
+    fprintf(file_txt,"mu_trk      lnN   %.3f      -         -         -           Muon tracking \n", mu_trk);
+    fprintf(file_txt,"ovlp_trk    lnN   %.3f      -         -         -           Reconstruction of close muons in the tracker \n", ovlp_trk);
+    fprintf(file_txt,"ovlp_mu     lnN   %.3f      -         -         -           Reconstruction of close muons in the muon system \n", ovlp_mu);
+    fprintf(file_txt,"#pdf_as      lnN   1.030      -         -         -           Theoretical uncertainties (not included in model independent limit) \n");
+    fprintf(file_txt,"dimu_M      lnN   %.3f      -         -         -           Dimuons mass consistency m1~m2 \n", dimu_M);
+    fprintf(file_txt,"##BBbar_norm  gmN %.0f -          %.3f      -         -           BBbar estimate of 1.8 comes from 8 data events in sidebands \n", BBbar_norm, BBbar_norm2);
+    fprintf(file_txt,"DJpsi_extr  lnN   -          -         %.3f       %.3f         Double J/psi MC-to-data extrapolation \n", DJpsi_extr, DJpsi_extr);
+    fprintf(file_txt,"##DJpsiS_norm gmN %.0f -          -         %.3f     -           Double J/psi single parton scattering (SPS) estimate of 0.05 comes from 3 MC events \n", DJpsiS_norm, DJpsiS_norm2);
+    fprintf(file_txt,"DJpsiD_norm gmN %.0f -          -         -         %.3f       Double J/psi double parton scattering (DPS) estimate of 0.008 comes from 1 MC events \n", DJpsiD_norm, DJpsiD_norm2);
+    fclose(file_txt);
+  }
+  fclose(file_sh3);
+}
