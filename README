@@ -1,4 +1,4 @@
-1. Copy here "ws.root" from bbBar estimation 
+1. Copy here "ws_FINAL.root" from bbBar estimation 
    -> RooStat file which has background model inside it.
 
 2. root -b -q .x CreateDatacards.C+

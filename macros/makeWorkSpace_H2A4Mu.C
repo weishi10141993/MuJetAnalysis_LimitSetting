@@ -65,7 +65,7 @@ class RooUserPdf : public RooAbsPdf {
     Double_t evaluate() const ;
 
   private:
-    ClassDef(RooUserPdf,0) //
+    ClassDef(RooUserPdf,0)
 };
 
 RooUserPdf::RooUserPdf(const char *name, const char *title, RooAbsReal& _x1, RooAbsReal& _x2) :
@@ -100,7 +100,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   const double       m_min  = 0.2113;
   const double       m_max  = 9.;
-  const unsigned int m_bins = 60;
+  const unsigned int m_bins = 220;
 
   RooRealVar m1("m1","m_{#mu#mu_{1}}",m_min,m_max,"GeV/#it{c}^{2}");
   RooRealVar m2("m2","m_{#mu#mu_{2}}",m_min,m_max,"GeV/#it{c}^{2}");
@@ -115,9 +115,9 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   tree_dimudimu_signal_2D->Branch("massC",&massC,"massC/D");
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
   //SIGNAL EVENTS HERE
-  massC = 20.; //Random high mass for unblinding
-  massF = 20.;
-  tree_dimudimu_signal_2D->Fill(); //BLINDED
+  massC = 0.4049646;
+  massF = 0.5604345;
+  tree_dimudimu_signal_2D->Fill();
   tree_dimudimu_signal_2D->Print();
 
   tree_dimudimu_signal_2D->GetBranch("massC")->SetName("m1");
@@ -140,21 +140,13 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   RooUserPdf diagPdf("diagPdf", "diagPdf", m1, m2);
   //  w_H2A4Mu->import(diagPdf);
 
-  TFile* file = new TFile("../ws.root");
+  TFile* file = new TFile("../ws_FINAL.root");
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
-  //	w_H2A4Mu->import( *w->pdf("template2D") );
-  //	w->factory("PROD::BBbar_2D(template1D_m1,template1D_m2)");
-  //	w_H2A4Mu->import( *w->pdf("BBbar_2D") );
-  //	w->factory("PROD::DJpsi_2D(Jpsi_m1,Jpsi_m2)");
-  //  w_H2A4Mu->import( *w->pdf("DJpsi_2D") );
 
   w_H2A4Mu->import( *w->pdf("template1D_m1") );
   w_H2A4Mu->import( *w->pdf("template1D_m2") );
   w_H2A4Mu->factory("PROD::template_2D( template1D_m1, template1D_m2 )");
-  //  w_H2A4Mu->factory("PROD::BBbar_2D( diagPdf, template_2D )");
   w_H2A4Mu->factory("PROD::BBbar_2D( template1D_m1, template1D_m2 )");
-  //  RooRealVar BBbar_norm("BBbar_norm", "BBbar_norm", 1.76);
-  //  w_H2A4Mu->factory("SUM::BBbar_2D( BBbar_norm*template_2D )");
 
   w_H2A4Mu->import( *w->pdf("Jpsi_m1") );
   w_H2A4Mu->import( *w->pdf("Jpsi_m2") );
@@ -169,6 +161,8 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("JpsiF_mean")->setConstant(true);
   w_H2A4Mu->var("JpsiF_n")->setConstant(true);
   w_H2A4Mu->var("JpsiF_sigma")->setConstant(true);
+  w_H2A4Mu->var("norm_JpsiC")->setConstant(true);
+  w_H2A4Mu->var("norm_JpsiF")->setConstant(true);
   w_H2A4Mu->var("Jpsi_m1_alpha")->setConstant(true);
   w_H2A4Mu->var("Jpsi_m1_mean")->setConstant(true);
   w_H2A4Mu->var("Jpsi_m1_n")->setConstant(true);
@@ -177,10 +171,14 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("Jpsi_m2_mean")->setConstant(true);
   w_H2A4Mu->var("Jpsi_m2_n")->setConstant(true);
   w_H2A4Mu->var("Jpsi_m2_sigma")->setConstant(true);
+
   w_H2A4Mu->var("MmumuC_c")->setConstant(true);
   w_H2A4Mu->var("MmumuC_p")->setConstant(true);
   w_H2A4Mu->var("MmumuF_c")->setConstant(true);
   w_H2A4Mu->var("MmumuF_p")->setConstant(true);
+  w_H2A4Mu->var("norm_MmumuC")->setConstant(true);
+  w_H2A4Mu->var("norm_MmumuF")->setConstant(true);
+
   w_H2A4Mu->var("bC06")->setConstant(true);
   w_H2A4Mu->var("bC16")->setConstant(true);
   w_H2A4Mu->var("bC26")->setConstant(true);
@@ -195,25 +193,34 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("bF46")->setConstant(true);
   w_H2A4Mu->var("bF56")->setConstant(true);
   w_H2A4Mu->var("bF66")->setConstant(true);
-  w_H2A4Mu->var("norm_JpsiC")->setConstant(true);
-  w_H2A4Mu->var("norm_JpsiF")->setConstant(true);
-  w_H2A4Mu->var("norm_MmumuC")->setConstant(true);
-  w_H2A4Mu->var("norm_MmumuF")->setConstant(true);
   w_H2A4Mu->var("norm_bgC")->setConstant(true);
   w_H2A4Mu->var("norm_bgF")->setConstant(true);
+
+
   w_H2A4Mu->var("norm_etaC")->setConstant(true);
   w_H2A4Mu->var("norm_etaF")->setConstant(true);
   w_H2A4Mu->var("norm_phiC")->setConstant(true);
   w_H2A4Mu->var("norm_phiF")->setConstant(true);
   w_H2A4Mu->var("norm_rhoC")->setConstant(true);
   w_H2A4Mu->var("norm_rhoF")->setConstant(true);
-  w_H2A4Mu->var("signal_alpha")->setConstant(true);
+
+  w_H2A4Mu->var("psiC_sigma")->setConstant(true);
+  w_H2A4Mu->var("psiF_sigma")->setConstant(true);
+  w_H2A4Mu->var("norm_psiC")->setConstant(true);
+  w_H2A4Mu->var("norm_psiF")->setConstant(true);
+
+  w_H2A4Mu->var("norm_adHocC")->setConstant(true);
+  w_H2A4Mu->var("norm_adHocF")->setConstant(true);
+  w_H2A4Mu->var("adHocC_mass")->setConstant(true);
+  w_H2A4Mu->var("adHocF_mass")->setConstant(true);
+  w_H2A4Mu->var("adHocC_sigma")->setConstant(true);
+  w_H2A4Mu->var("adHocF_sigma")->setConstant(true);
+
   w_H2A4Mu->var("signal_mA")->setConstant(true);
   w_H2A4Mu->var("signal_n")->setConstant(true);
   w_H2A4Mu->var("signal_sigma")->setConstant(true);
 
   w_H2A4Mu->Print("v");
-
   TString ws_fileName = Form("../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root", mA_GeV);
   cout << "save work space to file: " << ws_fileName << endl;
   w_H2A4Mu->writeToFile(ws_fileName);
