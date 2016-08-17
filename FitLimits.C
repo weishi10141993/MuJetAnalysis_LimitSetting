@@ -35,6 +35,7 @@
 
 void FitLimits(){
 
+  TCanvas *c1 = new TCanvas("c1","");
   //Parameters
   TString LimitFile = "plots/C/limit_Events_vs_mGammaD_2015.root";
   TFile *f = new TFile(LimitFile.Data());
@@ -49,10 +50,11 @@ void FitLimits(){
   //func->SetParLimits(1, 0.55, 0.55);
   //func->SetParLimits(2, 0.1, 0.1);
   //func->SetParLimits(3, 3, 3.1);
-  TF1 *func = new TF1("func","0.35*exp(-0.5*((x-0.55)/0.1)**2)+3.023",0.223,8.5);
+  TF1 *func = new TF1("func","0.23*exp(-0.5*((x-0.45)/0.15)**2) + 0.2*exp(-0.5*((x-0.85)/0.15)**2) + 0.1*exp(-0.5*((x-1.1)/0.5)**2) + 3.05 + 1.5*exp(-0.5*((x-3.1)/0.05)**2)",0.223,8.5);
   //graph->Fit("func");
   graph->SetMinimum(0);
-  graph->SetMaximum(4);
+  graph->SetMaximum(6);
   graph->Draw();
   func->Draw("same");
+  c1->SaveAs("plots/fit.pdf");
 }

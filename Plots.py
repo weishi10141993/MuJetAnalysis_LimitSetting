@@ -81,24 +81,9 @@ def limit_vs_mGammaD_2015():
   padTop.Draw()
   padTop.cd()
   array_mGammaD_limit = []
-  array_mGammaD_limit_T500 = []
-  array_mGammaD_limit_T500_error = []
   array_mGammaD_limit_T5000 = []
   array_mGammaD_limit_T5000_error = []
-  array_mGammaD_limit_T50000 = []
-  array_mGammaD_limit_T50000_error = []
-  array_mGammaD_limit_T500000 = []
-  array_mGammaD_limit_T500000_error = []
-  array_mGammaD_limit_T2000 = []
-  array_mGammaD_limit_T2000_error = []
-  array_mGammaD_limit_T2000_s777 = []
-  array_mGammaD_limit_T2000_s777_error = []
-  array_mGammaD_limit_average = []
-  array_mGammaD_limit_average_error = []
-  mGammaD_limit_T500_average = 0.0
   mGammaD_limit_T5000_average = 0.0
-  mGammaD_limit_T50000_average = 0.0
-  mGammaD_limit_T500000_average = 0.0
   rnd = ROOT.TRandom()
   rnd.SetSeed(2015)
   
@@ -106,26 +91,11 @@ def limit_vs_mGammaD_2015():
     # FIT
     array_mGammaD_limit.append(( m, fCmsLimitVsM(m) ))
     # Point
-    array_mGammaD_limit_T500.append(( m, fCmsLimitVsM_HybridNew(m, "default") ))
-    array_mGammaD_limit_T500_error.append(( m, (fCmsLimitVsM_HybridNew(m, "default") - fCmsLimitVsM_explicit(m) ) / fCmsLimitVsM_explicit(m) ))
-    mGammaD_limit_T500_average = mGammaD_limit_T500_average + abs( (fCmsLimitVsM_HybridNew(m, "default") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
-
-    #array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m, "T5000") ))
-    #array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
-    #mGammaD_limit_T5000_average = mGammaD_limit_T5000_average + abs( (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
-
-    array_mGammaD_limit_T50000.append(( m, fCmsLimitVsM_HybridNew(m, "T50000") ))
-    array_mGammaD_limit_T50000_error.append(( m, (fCmsLimitVsM_HybridNew(m, "T50000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
-    mGammaD_limit_T50000_average = mGammaD_limit_T50000_average + abs( (fCmsLimitVsM_HybridNew(m, "T50000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
-
-    #array_mGammaD_limit_T500000.append(( m, fCmsLimitVsM_HybridNew(m, "T500000") ))
-    #array_mGammaD_limit_T500000_error.append(( m, 100.0 * ( fCmsLimitVsM_HybridNew(m, "T500000") - fCmsLimitVsM_explicit(m) ) / fCmsLimitVsM_explicit(m) ))
-    #mGammaD_limit_T500000_average = mGammaD_limit_T500000_average + abs( (fCmsLimitVsM_HybridNew(m, "T500000") - fCmsLimitVsM_explicit(m) ) / fCmsLimitVsM_explicit(m) )
+    array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m, "T5000") ))
+    array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
+    mGammaD_limit_T5000_average = mGammaD_limit_T5000_average + abs( (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
   # Average quantities
-  mGammaD_limit_T500_average = mGammaD_limit_T500_average / len(MGammaD_array)
-  #mGammaD_limit_T5000_average = mGammaD_limit_T5000_average / len(MGammaD_array)
-  mGammaD_limit_T50000_average = mGammaD_limit_T50000_average / len(MGammaD_array)
-  #mGammaD_limit_T500000_average = mGammaD_limit_T500000_average / len(MGammaD_array)
+  mGammaD_limit_T5000_average = mGammaD_limit_T5000_average / len(MGammaD_array)
 
   h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 6.0)
   h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
@@ -136,30 +106,12 @@ def limit_vs_mGammaD_2015():
   h_limit_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
   h_limit_vs_mGammaD_dummy.Draw()
   
-  gr_limit_vs_mGammaD_T500 = ROOT.TGraph( len(array_mGammaD_limit_T500), array.array("d", zip(*array_mGammaD_limit_T500)[0]), array.array("d", zip(*array_mGammaD_limit_T500)[1]) )
-  gr_limit_vs_mGammaD_T500.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T500.SetLineColor(ROOT.kBlue)
-  gr_limit_vs_mGammaD_T500.SetLineStyle(1)
-  #gr_limit_vs_mGammaD_T500.Draw("P")
-
-#  gr_limit_vs_mGammaD_T5000 = ROOT.TGraph( len(array_mGammaD_limit_T5000), array.array("d", zip(*array_mGammaD_limit_T5000)[0]), array.array("d", zip(*array_mGammaD_limit_T5000)[1]) )
-#  gr_limit_vs_mGammaD_T5000.SetLineWidth(1)
-#  gr_limit_vs_mGammaD_T5000.SetLineColor(ROOT.kGreen)
-#  gr_limit_vs_mGammaD_T5000.SetLineStyle(1)
-  
-  gr_limit_vs_mGammaD_T50000 = ROOT.TGraph( len(array_mGammaD_limit_T50000), array.array("d", zip(*array_mGammaD_limit_T50000)[0]), array.array("d", zip(*array_mGammaD_limit_T50000)[1]) )
-  gr_limit_vs_mGammaD_T50000.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T50000.SetLineColor(ROOT.kBlue)
-  gr_limit_vs_mGammaD_T50000.SetLineStyle(1)
-  gr_limit_vs_mGammaD_T50000.Draw("P")
-
-#  gr_limit_vs_mGammaD_T500000 = ROOT.TGraph( len(array_mGammaD_limit_T500000), array.array("d", zip(*array_mGammaD_limit_T500000)[0]), array.array("d", zip(*array_mGammaD_limit_T500000)[1]) )
-#  gr_limit_vs_mGammaD_T500000.SetLineWidth(1)
-#  gr_limit_vs_mGammaD_T500000.SetLineColor(ROOT.kRed)
-#  gr_limit_vs_mGammaD_T500000.SetLineStyle(1)
-#  gr_limit_vs_mGammaD_T500000.SetMarkerColor(ROOT.kBlue)
-#  gr_limit_vs_mGammaD_T500000.Draw("P")
-  
+  gr_limit_vs_mGammaD_T5000 = ROOT.TGraph( len(array_mGammaD_limit_T5000), array.array("d", zip(*array_mGammaD_limit_T5000)[0]), array.array("d", zip(*array_mGammaD_limit_T5000)[1]) )
+  gr_limit_vs_mGammaD_T5000.SetLineWidth(1)
+  gr_limit_vs_mGammaD_T5000.SetLineColor(ROOT.kGreen)
+  gr_limit_vs_mGammaD_T5000.SetLineStyle(1)
+  gr_limit_vs_mGammaD_T5000.Draw("P")
+ 
   gr_limit_vs_mGammaD = ROOT.TGraph( len(array_mGammaD_limit), array.array("d", zip(*array_mGammaD_limit)[0]), array.array("d", zip(*array_mGammaD_limit)[1]) )
   gr_limit_vs_mGammaD.SetLineWidth(1)
   gr_limit_vs_mGammaD.SetLineColor(ROOT.kRed)
@@ -173,12 +125,7 @@ def limit_vs_mGammaD_2015():
   l_limit_vs_mGammaD.SetBorderSize(0)
   l_limit_vs_mGammaD.SetTextFont(42)
   l_limit_vs_mGammaD.SetTextSize(0.035)
-  #l_limit_vs_mGammaD.SetHeader("95% CL Limits:")
-  #l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T500,"Toys=500 (default)","L")
-  #l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T5000,"Toys=5000","L")
-  l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T50000,"Toys=50000","L")
-  #l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T500000,"Limit points","P")
-
+  l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T5000,"Toys","L")
   l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD,"Fit","L")
   l_limit_vs_mGammaD.Draw()
   l_CMS.Draw()
@@ -197,28 +144,13 @@ def limit_vs_mGammaD_2015():
   h_limit_vs_mGammaD_error_dummy.GetYaxis().CenterTitle(1)
   h_limit_vs_mGammaD_error_dummy.GetYaxis().SetTitleSize(0.06)
   h_limit_vs_mGammaD_error_dummy.Draw()
-
-  gr_limit_vs_mGammaD_T500_error = ROOT.TGraph( len(array_mGammaD_limit_T500_error), array.array("d", zip(*array_mGammaD_limit_T500_error)[0]), array.array("d", zip(*array_mGammaD_limit_T500_error)[1]) )
-  gr_limit_vs_mGammaD_T500_error.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T500_error.SetLineColor(ROOT.kBlue)
-  gr_limit_vs_mGammaD_T500_error.SetLineStyle(1)
   
-#  gr_limit_vs_mGammaD_T5000_error = ROOT.TGraph( len(array_mGammaD_limit_T5000_error), array.array("d", zip(*array_mGammaD_limit_T5000_error)[0]), array.array("d", zip(*array_mGammaD_limit_T5000_error)[1]) )
-#  gr_limit_vs_mGammaD_T5000_error.SetLineWidth(1)
-#  gr_limit_vs_mGammaD_T5000_error.SetLineColor(ROOT.kGreen)
-#  gr_limit_vs_mGammaD_T5000_error.SetLineStyle(1)
-  
-  gr_limit_vs_mGammaD_T50000_error = ROOT.TGraph( len(array_mGammaD_limit_T50000_error), array.array("d", zip(*array_mGammaD_limit_T50000_error)[0]), array.array("d", zip(*array_mGammaD_limit_T50000_error)[1]) )
-  gr_limit_vs_mGammaD_T50000_error.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T50000_error.SetLineColor(ROOT.kBlue)
-  gr_limit_vs_mGammaD_T50000_error.SetLineStyle(1)
-  gr_limit_vs_mGammaD_T50000_error.Draw("L")
+  gr_limit_vs_mGammaD_T5000_error = ROOT.TGraph( len(array_mGammaD_limit_T5000_error), array.array("d", zip(*array_mGammaD_limit_T5000_error)[0]), array.array("d", zip(*array_mGammaD_limit_T5000_error)[1]) )
+  gr_limit_vs_mGammaD_T5000_error.SetLineWidth(1)
+  gr_limit_vs_mGammaD_T5000_error.SetLineColor(ROOT.kGreen)
+  gr_limit_vs_mGammaD_T5000_error.SetLineStyle(1)
+  gr_limit_vs_mGammaD_T5000_error.Draw("L") 
 
-#  gr_limit_vs_mGammaD_T500000_error = ROOT.TGraph( len(array_mGammaD_limit_T500000_error), array.array("d", zip(*array_mGammaD_limit_T500000_error)[0]), array.array("d", zip(*array_mGammaD_limit_T500000_error)[1]) )
-#  gr_limit_vs_mGammaD_T500000_error.SetLineWidth(1)
-#  gr_limit_vs_mGammaD_T500000_error.SetLineColor(ROOT.kBlue)
-#  gr_limit_vs_mGammaD_T500000_error.SetLineStyle(1)
-#  gr_limit_vs_mGammaD_T500000_error.Draw("L")
   cnv.cd()
   cnv.Update()
   cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2015_FitUncert.pdf")
@@ -227,14 +159,14 @@ def limit_vs_mGammaD_2015():
   # Now same plots with no errors
   cnv.cd()
   h_limit_vs_mGammaD_dummy.Draw()
-  gr_limit_vs_mGammaD_T50000.Draw("P")
+  gr_limit_vs_mGammaD_T5000.Draw("P")
   gr_limit_vs_mGammaD.Draw("L")
   l_CMS.Draw()
   l_CMSLumi.Draw()
   
   cnv.Update()
   cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2015.pdf")
-  gr_limit_vs_mGammaD_T50000.SaveAs("plots/C/limit_Events_vs_mGammaD_2015.root")
+  gr_limit_vs_mGammaD_T5000.SaveAs("plots/C/limit_Events_vs_mGammaD_2015.root")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_Events_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_Events_vs_mGammaD_2015.png")
   
 

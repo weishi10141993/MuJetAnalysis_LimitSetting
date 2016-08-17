@@ -97,11 +97,9 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   using namespace RooFit;
   RooRandom::randomGenerator()->SetSeed(seed); 
   RooWorkspace *w_H2A4Mu = new RooWorkspace("w_H2A4Mu");
-
   const double       m_min  = 0.2113;
   const double       m_max  = 9.;
   const unsigned int m_bins = 220;
-
   RooRealVar m1("m1","m_{#mu#mu_{1}}",m_min,m_max,"GeV/#it{c}^{2}");
   RooRealVar m2("m2","m_{#mu#mu_{2}}",m_min,m_max,"GeV/#it{c}^{2}");
   m1.setBins(m_bins);
@@ -109,48 +107,49 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->import(m1);
   w_H2A4Mu->import(m2);
 
+  //Signal Diagonal Area 
+  RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+
+  //Observed data in signal region
   Double_t massC;
   Double_t massF;
   TTree* tree_dimudimu_signal_2D = new TTree("tree_dimudimu_signal_2D","tree_dimudimu_signal_2D");
   tree_dimudimu_signal_2D->Branch("massC",&massC,"massC/D");
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
-  //SIGNAL EVENTS HERE
   massC = 0.4049646;
   massF = 0.5604345;
   tree_dimudimu_signal_2D->Fill();
   tree_dimudimu_signal_2D->Print();
-
   tree_dimudimu_signal_2D->GetBranch("massC")->SetName("m1");
   tree_dimudimu_signal_2D->GetBranch("massF")->SetName("m2");
-
   RooDataSet* ds_dimudimu_signal_2D = new RooDataSet( "ds_dimudimu_signal_2D","ds_dimudimu_signal_2D", tree_dimudimu_signal_2D, RooArgSet(m1,m2) );
   ds_dimudimu_signal_2D->Print("v");
   w_H2A4Mu->import(*ds_dimudimu_signal_2D, Rename("data_obs"));
 
+  //Signal
   RooRealVar signal_mA("signal_mA", "signal_mA", mA_GeV);
   RooRealVar signal_sigma("signal_sigma", "signal_sigma", (0.13 + 0.065*mA_GeV)/5.0 );
   RooRealVar signal_alpha("signal_alpha", "signal_alpha", 1.75);
   RooRealVar signal_n("signal_n", "signal_n", 2.0);
+  // Diagonal signal
   RooCBShape signal_m1("signal_m1", "signal_m1", m1,signal_mA,signal_sigma,signal_alpha,signal_n);
-  w_H2A4Mu->import(signal_m1);
   RooCBShape signal_m2("signal_m2", "signal_m2", m2,signal_mA,signal_sigma,signal_alpha,signal_n);
-  w_H2A4Mu->import(signal_m2);
-  w_H2A4Mu->factory("PROD::signal(signal_m1, signal_m2)");
-
-  RooUserPdf diagPdf("diagPdf", "diagPdf", m1, m2);
-  //  w_H2A4Mu->import(diagPdf);
+  RooProdPdf signalAll("signalAll","signal_m1*signal_m2",RooArgList(signal_m1,signal_m2));
+  RooGenericPdf signal("signal","Signal in diagonal","signalAll*dia1",RooArgList(signalAll,dia1));
+  w_H2A4Mu->import(signal);
 
   TFile* file = new TFile("../ws_FINAL.root");
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
-
-  w_H2A4Mu->import( *w->pdf("template1D_m1") );
-  w_H2A4Mu->import( *w->pdf("template1D_m2") );
-  w_H2A4Mu->factory("PROD::template_2D( template1D_m1, template1D_m2 )");
-  w_H2A4Mu->factory("PROD::BBbar_2D( template1D_m1, template1D_m2 )");
-
-  w_H2A4Mu->import( *w->pdf("Jpsi_m1") );
-  w_H2A4Mu->import( *w->pdf("Jpsi_m2") );
-  w_H2A4Mu->factory("PROD::DJpsi_2D(Jpsi_m1,Jpsi_m2)");
+  //BB
+  RooProdPdf template1D_m1m2All("template1D_m1m2All","template1D_m1*template1D_m2",RooArgList(*w->pdf("template1D_m1"),*w->pdf("template1D_m2")));
+  RooGenericPdf BBbar_2D("BBbar_2D","BB in diagonal","template1D_m1m2All*dia2",RooArgList(template1D_m1m2All,dia2));
+  w_H2A4Mu->import(BBbar_2D);
+  //2J/Psi
+  RooProdPdf dia_Jpsi_m1m2All("dia_Jpsi_m1m2All","dia_Jpsi_m1*dia_Jpsi_m2",RooArgList(*w->pdf("Jpsi_m1"),*w->pdf("Jpsi_m2")));
+  RooGenericPdf DJpsi_2D("DJpsi_2D","2J/Psi in diagonal","dia_Jpsi_m1m2All*dia3",RooArgList(dia_Jpsi_m1m2All,dia3));
+  w_H2A4Mu->import(DJpsi_2D);
 
   // Set all fit variables to constants
   w_H2A4Mu->var("JpsiC_alpha")->setConstant(true);
@@ -195,7 +194,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("bF66")->setConstant(true);
   w_H2A4Mu->var("norm_bgC")->setConstant(true);
   w_H2A4Mu->var("norm_bgF")->setConstant(true);
-
 
   w_H2A4Mu->var("norm_etaC")->setConstant(true);
   w_H2A4Mu->var("norm_etaF")->setConstant(true);
