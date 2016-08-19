@@ -38,7 +38,7 @@ void CreateDatacards( bool makeRoot=false ){
   bool isLxplus=true;
   string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/CMSSW_7_6_3_patch2/src/LIMITS";
   bool DiffSeed=true;
-  int Ninit=0, Nend=20;
+  int Ninit=20, Nend=40;
   //Parameters
   float masses[N_Signals]={0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,1.1000,1.2000,1.5000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
   int Seeds[N_Signals]={0};
@@ -148,8 +148,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh4,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh4);   
 	FILE *file_sh4b=fopen(name_T10000,"w");
 	fprintf(file_sh4b,"#!/bin/bash\n");
@@ -165,8 +165,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh4b,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4b,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh4b);
 	FILE *file_sh5=fopen(name_T50000,"w");
 	fprintf(file_sh5,"#!/bin/bash\n");
@@ -182,8 +182,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh5,"cd %s \n",pwd.c_str());
 	fprintf(file_sh5,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh5);
 	FILE *file_sh6=fopen(name_T500000,"w");
 	fprintf(file_sh6,"#!/bin/bash\n");
@@ -199,8 +199,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh6,"cd %s \n",pwd.c_str());
 	fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000 -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh6);
     }
   }

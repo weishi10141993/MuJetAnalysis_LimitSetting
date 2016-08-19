@@ -109,8 +109,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   //Signal Diagonal Area 
   RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
-  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
-  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
 
   //Observed data in signal region
   Double_t massC;
@@ -135,21 +133,29 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   RooRealVar signal_n("signal_n", "signal_n", 2.0);
   // Diagonal signal
   RooCBShape signal_m1("signal_m1", "signal_m1", m1,signal_mA,signal_sigma,signal_alpha,signal_n);
+  w_H2A4Mu->import(signal_m1);
   RooCBShape signal_m2("signal_m2", "signal_m2", m2,signal_mA,signal_sigma,signal_alpha,signal_n);
-  RooProdPdf signalAll("signalAll","signal_m1*signal_m2",RooArgList(signal_m1,signal_m2));
-  RooGenericPdf signal("signal","Signal in diagonal","signalAll*dia1",RooArgList(signalAll,dia1));
-  w_H2A4Mu->import(signal);
+  w_H2A4Mu->import(signal_m2);
+  w_H2A4Mu->factory("PROD::signal(signal_m1,signal_m2)");
+  //w_H2A4Mu->factory("EXPR::signal( 'signalAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))',signalAll,m1,m2)");
+
 
   TFile* file = new TFile("../ws_FINAL.root");
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
   //BB
-  RooProdPdf template1D_m1m2All("template1D_m1m2All","template1D_m1*template1D_m2",RooArgList(*w->pdf("template1D_m1"),*w->pdf("template1D_m2")));
-  RooGenericPdf BBbar_2D("BBbar_2D","BB in diagonal","template1D_m1m2All*dia2",RooArgList(template1D_m1m2All,dia2));
-  w_H2A4Mu->import(BBbar_2D);
+  w_H2A4Mu->import( *w->pdf("template1D_m1") );
+  w_H2A4Mu->import( *w->pdf("template1D_m2") );
+  
+  w_H2A4Mu->factory("PROD::template_2DAll( template1D_m1, template1D_m2 )");
+  w_H2A4Mu->factory("EXPR::template_2D( 'template_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',template_2DAll,m1,m2)");
+  w_H2A4Mu->factory("PROD::BBbar_2DAll( template1D_m1, template1D_m2 )");
+  w_H2A4Mu->factory("EXPR::BBbar_2D( 'BBbar_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',BBbar_2DAll,m1,m2)");
+
   //2J/Psi
-  RooProdPdf dia_Jpsi_m1m2All("dia_Jpsi_m1m2All","dia_Jpsi_m1*dia_Jpsi_m2",RooArgList(*w->pdf("Jpsi_m1"),*w->pdf("Jpsi_m2")));
-  RooGenericPdf DJpsi_2D("DJpsi_2D","2J/Psi in diagonal","dia_Jpsi_m1m2All*dia3",RooArgList(dia_Jpsi_m1m2All,dia3));
-  w_H2A4Mu->import(DJpsi_2D);
+  w_H2A4Mu->import( *w->pdf("Jpsi_m1") );
+  w_H2A4Mu->import( *w->pdf("Jpsi_m2") );
+  w_H2A4Mu->factory("PROD::DJpsi_2D(Jpsi_m1,Jpsi_m2)");
+  //w_H2A4Mu->factory("EXPR::DJpsi_2D( 'DJpsi_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',DJpsi_2DAll,m1,m2)");
 
   // Set all fit variables to constants
   w_H2A4Mu->var("JpsiC_alpha")->setConstant(true);

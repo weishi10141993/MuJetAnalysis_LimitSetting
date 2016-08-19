@@ -50,10 +50,11 @@ void FitLimits(){
   //func->SetParLimits(1, 0.55, 0.55);
   //func->SetParLimits(2, 0.1, 0.1);
   //func->SetParLimits(3, 3, 3.1);
-  TF1 *func = new TF1("func","0.23*exp(-0.5*((x-0.45)/0.15)**2) + 0.2*exp(-0.5*((x-0.85)/0.15)**2) + 0.1*exp(-0.5*((x-1.1)/0.5)**2) + 3.05 + 1.5*exp(-0.5*((x-3.1)/0.05)**2)",0.223,8.5);
+  //TF1 *func = new TF1("func","0.23*exp(-0.5*((x-0.45)/0.15)**2) + 0.2*exp(-0.5*((x-0.85)/0.15)**2) + 0.1*exp(-0.5*((x-1.1)/0.5)**2) + 3.05 + 1.5*exp(-0.5*((x-3.1)/0.05)**2)",0.223,8.5);
+  TF1 *func = new TF1("func","0.13*exp(-0.5*((x-0.4)/0.13)**2)+ 3.03",0.223,8.5);
   //graph->Fit("func");
-  graph->SetMinimum(0);
-  graph->SetMaximum(6);
+  graph->SetMinimum(2);
+  graph->SetMaximum(4);
   graph->Draw();
   func->Draw("same");
   c1->SaveAs("plots/fit.pdf");

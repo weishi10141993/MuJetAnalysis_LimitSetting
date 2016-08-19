@@ -1,3 +1,11 @@
+0. cmsrel CMSSW_7_6_3_patch2;
+   cd CMSSW_7_6_3_patch2/src/;
+   cmsenv; 
+   git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
+   git clone https://github.com/lpernie/limits_2a4mu.git
+   scram b -j 12;
+   cd limits_2a4mu;
+
 1. Copy here "ws_FINAL.root" from bbBar estimation 
    -> RooStat file which has background model inside it.
 

@@ -91,9 +91,9 @@ def limit_vs_mGammaD_2015():
     # FIT
     array_mGammaD_limit.append(( m, fCmsLimitVsM(m) ))
     # Point
-    array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m, "T5000") ))
-    array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
-    mGammaD_limit_T5000_average = mGammaD_limit_T5000_average + abs( (fCmsLimitVsM_HybridNew(m, "T5000") - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
+    array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m) ))
+    array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
+    mGammaD_limit_T5000_average = mGammaD_limit_T5000_average + abs( (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
   # Average quantities
   mGammaD_limit_T5000_average = mGammaD_limit_T5000_average / len(MGammaD_array)
 
@@ -657,10 +657,9 @@ def limit_CSxBR2_fb_vs_mGammaD_2015():
 
   cnv.SetLogy(1)
   
-  array_mGammaD_prediction_CSxBR2_fb     = []
+  array_mGammaD_prediction_CSxBR2_fb = []
   BR_h_to_2n1 = 0.0025
   BR_n1_to_gammaD_nD = 0.5
-  
   print BR_h_to_2n1*BR_n1_to_gammaD_nD*BR_n1_to_gammaD_nD*BR_GammaD_to_2mu( 0.4 )*BR_GammaD_to_2mu( 0.4 )
   
   array_mGammaD_limit_CSxBR2_fb_ctau0mm  = []
@@ -1792,8 +1791,8 @@ def limit_CSxBR2_fb_vs_ma_2015():
   gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/CSxBR_vs_ma_2015.pdf")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_vs_ma_2015.pdf -resize 900x900 plots/CSxBR_vs_ma_2015.png")
+  cnv.SaveAs("plots/PDF/CSxBR_vs_ma_2015.pdf")
+  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_vs_ma_2015.pdf -resize 900x900 plots/PNG/CSxBR_vs_ma_2015.png")
 
 
 
@@ -1952,6 +1951,6 @@ def limit_CSxBR2_fb_vs_mh_2015():
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/CSxBR_NMSSM_vs_mh_2015.pdf")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_NMSSM_vs_mh_2015.pdf -resize 900x900 plots/CSxBR_NMSSM_vs_mh_2015.png")
+  cnv.SaveAs("plots/PDF/CSxBR_NMSSM_vs_mh_2015.pdf")
+  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_NMSSM_vs_mh_2015.pdf -resize 900x900 plots/PNG/CSxBR_NMSSM_vs_mh_2015.png")
 
