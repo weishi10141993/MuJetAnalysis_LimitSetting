@@ -36,21 +36,21 @@ void CreateDatacards( bool makeRoot=false ){
 
   //Parameters
   bool isLxplus=true;
-  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/CMSSW_7_6_3_patch2/src/LIMITS";
+  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu";
   bool DiffSeed=true;
   int Ninit=20, Nend=40;
   //Parameters
-  float masses[N_Signals]={0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,1.1000,1.2000,1.5000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
+  float masses[N_Signals] = {0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,1.1000,1.2000,1.5000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
   int Seeds[N_Signals]={0};
   for( int i=0; i<N_Signals; i++){ Seeds[i]=-1; }
   //N events
   int obs = -1;
-  float signal_rate = 1, BBbar_2D_rate = 0.68, DJpsiS_2D_rate = 0.06, DJpsiD_2D_rate = 0.003;
+  float signal_rate = 1, BBbar_2D_rate = 6.77, DJpsiS_2D_rate = 0.12, DJpsiD_2D_rate = 0.006;
   //Signal Uncertainties
-  float lumi_8TeV=1.027, mu_hlt=1.03, mu_id=1.04, mu_iso=1.02, mu_pu=1.016;
-  float mu_trk=1.008, ovlp_trk=1.024, ovlp_mu=1.026, dimu_M=1.015, nnlo_pt=1.02 , pdf_as=1.08;
+  float lumi_8TeV = 1.027, mu_hlt   = 1.03,  mu_id   = 1.04,  mu_iso = 1.02,  mu_pu   = 1.016;
+  float mu_trk    = 1.008, ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08;
   //Background Uncertainties
-  float BBbar_norm=4, BBbar_norm2=0.17, BBbar_syst=1.2, DJpsi_extr=1.1, DJpsiS_norm=3, DJpsiS_norm2=0.02, DJpsiD_norm=8, DJpsiD_norm2=0.000375;
+  float BBbar_norm=38, BBbar_norm2=0.178, BBbar_syst=1.2, DJpsi_extr=1.1, DJpsiS_norm=6, DJpsiS_norm2=0.02, DJpsiD_norm=16, DJpsiD_norm2=0.000375;
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
   system( makeFold.Data() );
@@ -249,7 +249,7 @@ void CreateDatacards( bool makeRoot=false ){
     fprintf(file_txt,"nnlo_pt         lnN   %.3f      -         -         -           Reconstruction of close muons in the muon system \n", nnlo_pt);
     fprintf(file_txt,"pdf_scales      lnN   %.3f      -         -         -           Theoretical uncertainties (not included in model independent limit) \n", pdf_as);
     fprintf(file_txt,"dimu_mass       lnN   %.3f      -         -         -           Dimuons mass consistency m1~m2 \n", dimu_M);
-    fprintf(file_txt,"BBbar_norm      gmN %.0f   -       %.3f      -         -           BBbar estimate of 0.597 comes from 4 data events in sidebands (here put totoal number of events and scale factor in signal region) \n", BBbar_norm, BBbar_norm2);
+    fprintf(file_txt,"BBbar_norm      gmN %.0f   -       %.3f      -         -           BBbar estimate of 6.77 comes from 38 data events in sidebands (here put the total number of events and scale factor in signal region) \n", BBbar_norm, BBbar_norm2);
     fprintf(file_txt,"BBbar_syst      lnN     -       %.3f      -         -           Syst on BBar normalization from the difference of the estimation done inverting ISO cut \n", BBbar_syst);
     fprintf(file_txt,"DJpsi_extr      lnN     -         -       %.3f     %.3f        Double J/psi MC-to-data extrapolation \n", DJpsi_extr, DJpsi_extr);
     fprintf(file_txt,"DJpsiS_norm     gmN %.0f   -         -       %.4f     -           Double J/psi single parton scattering (SPS) estimate of 0.061 comes from 3 MC events \n", DJpsiS_norm, DJpsiS_norm2);

@@ -116,8 +116,8 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   TTree* tree_dimudimu_signal_2D = new TTree("tree_dimudimu_signal_2D","tree_dimudimu_signal_2D");
   tree_dimudimu_signal_2D->Branch("massC",&massC,"massC/D");
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
-  massC = 0.4049646;
-  massF = 0.5604345;
+  massC = 100.; //BLINDED
+  massF = 100.;
   tree_dimudimu_signal_2D->Fill();
   tree_dimudimu_signal_2D->Print();
   tree_dimudimu_signal_2D->GetBranch("massC")->SetName("m1");

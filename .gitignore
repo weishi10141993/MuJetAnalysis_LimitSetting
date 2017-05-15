@@ -1,0 +1,14 @@
+roostats*.root
+higgsCombine*root
+.__*
+LSFJOB*
+roostats*
+macros/*.so
+macros/*_dict_rdict.pcm
+macros/*_C.d
+*.so
+*_dict_rdict.pcm
+*_C.d
+Datacards/
+macros/sh/
+workSpaces/

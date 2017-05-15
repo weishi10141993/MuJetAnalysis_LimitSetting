@@ -1,10 +1,13 @@
-0. cmsrel CMSSW_7_6_3_patch2;
-   cd CMSSW_7_6_3_patch2/src/;
-   cmsenv; 
+## Installing the framework
+0. cmsrel CMSSW_7_6_3_patch2 #(Release needed for the Hggs combine tool)
+   cd CMSSW_7_6_3_patch2/src/
+   cmsenv
    git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
    git clone https://github.com/lpernie/limits_2a4mu.git
-   scram b -j 12;
+   scram b -j 6;
    cd limits_2a4mu;
+
+# Running the model independent limits
 
 1. Copy here "ws_FINAL.root" from bbBar estimation 
    -> RooStat file which has background model inside it.
@@ -28,5 +31,5 @@
 6. python Plots_RunMe.py 
    -> To make final limit plots. Here you can specify which function of Plots.py do you want to use.
 
-Some notes on Plots.py:
-1) It takes the cutflow from NMSSM mass points.
+# Some notes
+Plots.py takes the cutflow from NMSSM mass points.

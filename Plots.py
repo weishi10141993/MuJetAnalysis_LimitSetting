@@ -83,19 +83,15 @@ def limit_vs_mGammaD_2015():
   array_mGammaD_limit = []
   array_mGammaD_limit_T5000 = []
   array_mGammaD_limit_T5000_error = []
-  mGammaD_limit_T5000_average = 0.0
   rnd = ROOT.TRandom()
   rnd.SetSeed(2015)
   
-  for m in MGammaD_array:
+  for m in MGammaD_array: # MGammaD_array = Array with all masses consdered
     # FIT
-    array_mGammaD_limit.append(( m, fCmsLimitVsM(m) ))
+    array_mGammaD_limit.append(( m, fCmsLimitVsM(m) )) # fCmsLimitVsM(m) retrieve the limit as a function of m. In the simplest case is a constant and retireve 3.08 always.
     # Point
-    array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m) ))
-    array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))  
-    mGammaD_limit_T5000_average = mGammaD_limit_T5000_average + abs( (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )
-  # Average quantities
-  mGammaD_limit_T5000_average = mGammaD_limit_T5000_average / len(MGammaD_array)
+    array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m) )) # fCmsLimitVsM_HybridNew(m) retireve the limit from toys experiments.
+    array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Error is the difference between fit and toy limit
 
   h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 6.0)
   h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
@@ -169,16 +165,14 @@ def limit_vs_mGammaD_2015():
   gr_limit_vs_mGammaD_T5000.SaveAs("plots/C/limit_Events_vs_mGammaD_2015.root")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_Events_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_Events_vs_mGammaD_2015.png")
   
-
 ################################################################################
 #       Plot Upper 95% CL Limit on CSxBR2xAlpha = "Limit on number of events"/Luminosity/"Scale factor"
 ################################################################################
-
 def limit_CSxBR2xAlpha_fb_vs_mGammaD_2015():
   cnv.SetLogy(0)
   array_mGammaD_limit_CSxBR2xAlpha_fb = []
   for m in fRange(0.25, 8.5, 201):
-    array_mGammaD_limit_CSxBR2xAlpha_fb.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+    array_mGammaD_limit_CSxBR2xAlpha_fb.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen )) # Transforming the Limit on N_event to Xsec limit
 
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 6.0/lumi_fbinv/SF/eFullMc_over_aGen)
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
@@ -1700,7 +1694,6 @@ def plot_ctauConst_vs_logEpsilon2_mGammaD():
 ################################################################################
 
 def limit_CSxBR2_fb_vs_ma_2015():
-
   BR_h_aa = 0.03
 
   cnv.SetLogy(1)
@@ -1719,7 +1712,7 @@ def limit_CSxBR2_fb_vs_ma_2015():
   array_ma_mh_150 = []
   array_ma = [0.25, 0.5, 0.75, 1.0, 2.0, 3.55]
   for ma_i in array_ma:
-    array_ma_mh_86.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 86. ) ))
+    array_ma_mh_86.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 86. ) )) # Transform Limits on N_ev to xsection
     array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 125.) ))
     array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 150.) ))
   
@@ -1755,7 +1748,6 @@ def limit_CSxBR2_fb_vs_ma_2015():
     CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
     Br_a_mumu = fNMSSM_Br_a(ma_i, 20., 'mumu')
     CSxBR = CS_h125_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
-  #  print  ma_i, Br_a_mumu, CSxBR
     array_ma_mh_125_SM.append(( ma_i, CSxBR ))
   gr_CSxBR_vs_ma_mh_125_SM = ROOT.TGraph(len(array_ma_mh_125_SM), array.array("d", zip(*array_ma_mh_125_SM)[0]), array.array("d", zip(*array_ma_mh_125_SM)[1]))
   gr_CSxBR_vs_ma_mh_125_SM.SetLineWidth(3)
@@ -1795,17 +1787,13 @@ def limit_CSxBR2_fb_vs_ma_2015():
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_vs_ma_2015.pdf -resize 900x900 plots/PNG/CSxBR_vs_ma_2015.png")
 
 
-
-
-
 ################################################################################
 #                 Plot limit on CSxBr2 vs mh for 2015 data                      
 ################################################################################
 
-def limit_CSxBR2_fb_vs_mh_2015():
-  
+def limit_CSxBR2_fb_vs_mh_2015():  
   BR_h_aa = 0.03
-  
+ 
   cnv.SetLogy(0)
   h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 30.)
   h_CSxBR_NMSSM_vs_mh_dummy.SetXTitle("mass of h_{i} [GeV]")
@@ -1816,7 +1804,6 @@ def limit_CSxBR2_fb_vs_mh_2015():
   h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.1, "X")
   h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().CenterTitle(1)
   h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().SetTitleSize(0.05)
-  #h_CSxBR_NMSSM_vs_mh_dummy.SetNdivisions(20220, "Y")
   h_CSxBR_NMSSM_vs_mh_dummy.Draw()
 
   array_mh_CSxBR_NMSSM_ma_025 = []
@@ -1824,7 +1811,7 @@ def limit_CSxBR2_fb_vs_mh_2015():
   array_mh_CSxBR_NMSSM_ma_355 = []
   array_mh = [86., 90., 100., 110., 125., 150.]
   for mh_i in array_mh:
-    array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(0.25, mh_i ) ))
+    array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(0.25, mh_i ) )) # Model Independent limits transformed to Xsec
     array_mh_CSxBR_NMSSM_ma_2.append((   mh_i, fCmsLimitVsM(2.00)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(2.00, mh_i ) ))
     array_mh_CSxBR_NMSSM_ma_355.append(( mh_i, fCmsLimitVsM(3.55)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(3.55, mh_i ) ))
 
