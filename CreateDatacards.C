@@ -38,7 +38,7 @@ void CreateDatacards( bool makeRoot=false ){
   bool isLxplus=true;
   string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu";
   bool DiffSeed=true;
-  int Ninit=20, Nend=40;
+  int Ninit=0, Nend=100;
   //Parameters
   float masses[N_Signals] = {0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,1.1000,1.2000,1.5000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
   int Seeds[N_Signals]={0};
@@ -47,10 +47,10 @@ void CreateDatacards( bool makeRoot=false ){
   int obs = -1;
   float signal_rate = 1, BBbar_2D_rate = 6.77, DJpsiS_2D_rate = 0.12, DJpsiD_2D_rate = 0.006;
   //Signal Uncertainties
-  float lumi_8TeV = 1.027, mu_hlt   = 1.03,  mu_id   = 1.04,  mu_iso = 1.02,  mu_pu   = 1.016;
+  float lumi_13TeV = 1.026, mu_hlt   = 1.03,  mu_id   = 1.04,  mu_iso = 1.02,  mu_pu   = 1.016;
   float mu_trk    = 1.008, ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08;
   //Background Uncertainties
-  float BBbar_norm=38, BBbar_norm2=0.178, BBbar_syst=1.2, DJpsi_extr=1.1, DJpsiS_norm=6, DJpsiS_norm2=0.02, DJpsiD_norm=16, DJpsiD_norm2=0.000375;
+  float BBbar_norm=49, BBbar_norm2=0.165, BBbar_syst=1.2, DJpsi_extr=1.1, DJpsiS_norm=6, DJpsiS_norm2=0.02, DJpsiD_norm=16, DJpsiD_norm2=0.000375;
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
   system( makeFold.Data() );
@@ -82,7 +82,7 @@ void CreateDatacards( bool makeRoot=false ){
     string pedex = std::to_string(Nit);
     for(int i=0; i<N_Signals; i++){
 	char command[100];
-	if(isLxplus) sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
+	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	else sprintf(command, "sbatch %s/macros/sh/send%.4f.%s", pwd.c_str(), masses[i], endCom.c_str());
 	fprintf(file_sh1,"%s \n",command);
     }
@@ -93,7 +93,7 @@ void CreateDatacards( bool makeRoot=false ){
     string pedex = std::to_string(Nit);
     for(int i=0; i<N_Signals; i++){
 	char command[100];
-	if(isLxplus) sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T10000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
+	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T10000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T10000.%s", pwd.c_str(), masses[i], endCom.c_str());
 	fprintf(file_sh1b,"%s \n",command);
     }
@@ -104,19 +104,19 @@ void CreateDatacards( bool makeRoot=false ){
     string pedex = std::to_string(Nit);
     for(int i=0; i<N_Signals; i++){
 	char command[100];
-	if(isLxplus) sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T50000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
+	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T50000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T50000.%s", pwd.c_str(), masses[i], endCom.c_str());
 	fprintf(file_sh2,"%s \n",command);
     }
   }
   fclose(file_sh2);
-  FILE *file_sh3=fopen("macros/RunOnDataCard_T500000.sh","w");
+  FILE *file_sh3=fopen("macros/RunOnDataCard_T30000.sh","w");
   for(int Nit=Ninit; Nit<Nend; Nit++ ){
     string pedex = std::to_string(Nit);
     for(int i=0; i<N_Signals; i++){
 	char command[100];
-	if(isLxplus) sprintf(command, "bsub -q 1nd -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T500000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T500000.%s", pwd.c_str(), masses[i], endCom.c_str());
+	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T30000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
+	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T30000.%s", pwd.c_str(), masses[i], endCom.c_str());
 	fprintf(file_sh2,"%s \n",command);
     }
   }
@@ -129,11 +129,11 @@ void CreateDatacards( bool makeRoot=false ){
 	char name[100];
 	char name_T10000[100];
 	char name_T50000[100];
-	char name_T500000[100];
+	char name_T30000[100];
 	sprintf(name, "macros/sh/send%.4f_%s.%s",masses[i],pedex.c_str(),endCom.c_str());
 	sprintf(name_T10000, "macros/sh/send%.4f_T10000_%s.%s",masses[i],pedex.c_str(),endCom.c_str());
 	sprintf(name_T50000, "macros/sh/send%.4f_T50000_%s.%s",masses[i],pedex.c_str(),endCom.c_str());
-	sprintf(name_T500000, "macros/sh/send%.4f_T500000_%s.%s",masses[i],pedex.c_str(),endCom.c_str());
+	sprintf(name_T30000, "macros/sh/send%.4f_T30000_%s.%s",masses[i],pedex.c_str(),endCom.c_str());
 	FILE *file_sh4=fopen(name,"w");
 	fprintf(file_sh4,"#!/bin/bash\n");
 	if(!isLxplus){
@@ -185,7 +185,7 @@ void CreateDatacards( bool makeRoot=false ){
 	if(DiffSeed) fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
 	else         fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh5);
-	FILE *file_sh6=fopen(name_T500000,"w");
+	FILE *file_sh6=fopen(name_T30000,"w");
 	fprintf(file_sh6,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh6,"#SBATCH -J runsplit\n");
@@ -199,8 +199,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh6,"cd %s \n",pwd.c_str());
 	fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T500000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T500000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 500000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh6);
     }
   }
@@ -238,7 +238,7 @@ void CreateDatacards( bool makeRoot=false ){
     fprintf(file_txt,"process           signal     BBbar_2D  DJpsiS_2D DJpsiD_2D \n");
     fprintf(file_txt,"rate              %.3f          %.3f       %.3f      %.3f \n", signal_rate,BBbar_2D_rate,DJpsiS_2D_rate,DJpsiD_2D_rate);
     fprintf(file_txt,"------------------------------- \n");
-    fprintf(file_txt,"lumi_13TeV      lnN   %.3f      -         -         -           Lumi (signal only; BBbar and DJpsi backgrounds are data-driven) \n", lumi_8TeV);
+    fprintf(file_txt,"lumi_13TeV      lnN   %.3f      -         -         -           Lumi (signal only; BBbar and DJpsi backgrounds are data-driven) \n", lumi_13TeV);
     fprintf(file_txt,"CMS_eff_mu_hlt  lnN   %.3f      -         -         -           Muon trigger \n", mu_hlt);
     fprintf(file_txt,"CMS_eff_mu_id   lnN   %.3f      -         -         -           Muon identification \n", mu_id);
     fprintf(file_txt,"CMS_eff_mu_iso  lnN   %.3f      -         -         -           Muon isolation \n", mu_iso);
