@@ -1,6 +1,6 @@
 ## Installing the framework
-0. cmsrel CMSSW_7_6_3_patch2 #(Release needed for the Hggs combine tool)   
-1. cd CMSSW_7_6_3_patch2/src/   
+0. cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
+1. cd CMSSW_7_4_7/src/   
 2. cmsenv    
 3. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
 4. git clone https://github.com/lpernie/limits_2a4mu.git    
