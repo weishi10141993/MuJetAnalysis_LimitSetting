@@ -1,2750 +1,2750 @@
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_0.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_1.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_2.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_3.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_4.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_5.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_6.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_7.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_8.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_9.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_10.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_11.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_12.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_13.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_14.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_15.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_16.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_17.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_18.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_19.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_20.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_21.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_22.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_23.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_24.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_25.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_26.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_27.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_28.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_29.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_30.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_31.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_32.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_33.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_34.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_35.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_36.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_37.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_38.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_39.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_40.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_41.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_42.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_43.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_44.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_45.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_46.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_47.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_48.sh 
-bsub -q 1nd -u youremail -J "comb0.2113" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.2900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.3900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4100" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4200" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4300" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4400" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4500" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4600" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4700" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4800" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.4900" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb0.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb1.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb1.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb1.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb1.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb2.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb2.6000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb2.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb2.8000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb2.9000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.1000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.2000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.3000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.4000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb3.7000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb4.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb5.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb6.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb7.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb8.0000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_49.sh 
-bsub -q 1nd -u youremail -J "comb8.5000" bash /afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_49.sh 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_0.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_1.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_2.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_3.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_4.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_5.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_6.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_7.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_8.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_9.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_10.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_11.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_12.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_13.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_14.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_15.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_16.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_17.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_18.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_19.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_20.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_21.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_22.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_23.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_24.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_25.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_26.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_27.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_28.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_29.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_30.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_31.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_32.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_33.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_34.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_35.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_36.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_37.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_38.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_39.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_40.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_41.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_42.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_43.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_44.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_45.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_46.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_47.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_48.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2113_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2200_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2300_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2400_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2500_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2600_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2700_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2800_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.2900_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3100_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3200_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3300_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3400_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3500_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3600_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3700_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3800_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.3900_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4100_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4200_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4300_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4400_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4500_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4600_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4700_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4800_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.4900_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.5000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.6000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.7000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.8000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send0.9000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.1000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.2000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send1.5000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.6000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.7000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.8000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send2.9000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.1000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.2000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.3000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.4000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send3.7000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send4.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send5.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send6.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send7.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.0000_T30000_49.slrm 
+sbatch /home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu/macros/sh/send8.5000_T30000_49.slrm 
