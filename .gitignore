@@ -11,3 +11,9 @@ macros/*_C.d
 *_C.d
 Datacards/
 workSpaces/
+macros/sh/*slrm
+macros/sh/*sh
+macros/sh/*txt
+macros/batchjobs*.out
+macros/batchjobs*.err
+.nfs*
