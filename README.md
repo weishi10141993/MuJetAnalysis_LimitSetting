@@ -1,11 +1,12 @@
 ## Installing the framework
-0. cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
-1. cd CMSSW_7_4_7/src/   
-2. cmsenv    
-3. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
-4. git clone https://github.com/lpernie/limits_2a4mu.git    
-5. scram b -j 6   
-6. cd limits_2a4mu    
+0. SCRAM_ARCH=slc6_amd64_gcc491; export SCRAM_ARCH;   
+1. cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
+2. cd CMSSW_7_4_7/src/   
+3. cmsenv    
+4. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
+5. git clone https://github.com/lpernie/limits_2a4mu.git    
+6. scram b -j 6   
+7. cd limits_2a4mu    
 
 # Running the model independent limits
 1. Copy here "ws_FINAL.root" from bbBar estimation    
