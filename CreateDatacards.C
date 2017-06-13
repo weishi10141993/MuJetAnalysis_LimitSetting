@@ -35,8 +35,8 @@
 void CreateDatacards( bool makeRoot=false ){
 
   //Parameters
-  bool isLxplus=true;
-  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu";
+  bool isLxplus=false;
+  string pwd="/home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu";
   bool DiffSeed=true;
   int Ninit=0, Nend=50;
   //Parameters
@@ -83,7 +83,7 @@ void CreateDatacards( bool makeRoot=false ){
     for(int i=0; i<N_Signals; i++){
 	char command[100];
 	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	else sprintf(command, "sbatch %s/macros/sh/send%.4f.%s", pwd.c_str(), masses[i], endCom.c_str());
+	else sprintf(command, "sbatch %s/macros/sh/send%.4f_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	fprintf(file_sh1,"%s \n",command);
     }
   }
@@ -94,7 +94,7 @@ void CreateDatacards( bool makeRoot=false ){
     for(int i=0; i<N_Signals; i++){
 	char command[100];
 	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T10000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T10000.%s", pwd.c_str(), masses[i], endCom.c_str());
+	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T10000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	fprintf(file_sh1b,"%s \n",command);
     }
   }
@@ -105,7 +105,7 @@ void CreateDatacards( bool makeRoot=false ){
     for(int i=0; i<N_Signals; i++){
 	char command[100];
 	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T50000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T50000.%s", pwd.c_str(), masses[i], endCom.c_str());
+	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T50000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	fprintf(file_sh2,"%s \n",command);
     }
   }
@@ -116,7 +116,7 @@ void CreateDatacards( bool makeRoot=false ){
     for(int i=0; i<N_Signals; i++){
 	char command[100];
 	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T30000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T30000.%s", pwd.c_str(), masses[i], endCom.c_str());
+	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T30000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	fprintf(file_sh2,"%s \n",command);
     }
   }
