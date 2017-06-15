@@ -2,7 +2,7 @@ import ROOT, array, os, sys, re, math, random
 from math import *
 
 # Insert here the txt with the limits as they are printed from ../macros/PrintOutLimits.py (only the lines with teh limits, the first set)
-TxtToMerge=["file1.txt","file1.txt","file1.txt"]
+TxtToMerge=["fileJamal.txt","fileLuca.txt"]
 
 SUM_nJobs = []; SUM_Mass = []; SUM_Limit = [];
 First=True
