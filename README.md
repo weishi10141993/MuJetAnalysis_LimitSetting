@@ -38,4 +38,4 @@
    -> To make final limit plots. Here you can specify which function of Plots.py do you want to use.    
 
 # Some notes   
-Plots.py takes the cutflow from NMSSM mass points.    
+1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis
