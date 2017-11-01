@@ -35,8 +35,8 @@
 void CreateDatacards( bool makeRoot=false ){
 
   //Parameters
-  bool isLxplus=false;
-  string pwd="/home/lpernie/H2a4mu_limits/CMSSW_7_4_7/src/limits_2a4mu";
+  bool isLxplus=true;
+  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu"
   bool DiffSeed=true;
   int Ninit=0, Nend=50;
   //Parameters

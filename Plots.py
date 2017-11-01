@@ -1842,11 +1842,11 @@ def limit_CSxBR2_fb_vs_mh_2015():
   gr_CSxBR_NMSSM_vs_mh_ma_355.SetMarkerSize(1.5)
   #gr_CSxBR_NMSSM_vs_mh_ma_355.Draw("CP")
 
-  execfile("scripts/NMSSM_Br_a_Function.py")
+  execfile("scripts/NMSSM_Br_a_Function.py") # contains fNMSSM_Br_a def (the BR given m(a), tan(beta), final state)
   array_mh_ma_2_SM = []
   for mh_i in fRange(86., 149., 100):
-      CS_fb = 1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0]
-      Br_a_mumu = fNMSSM_Br_a(2.0, 20., 'mumu')
+      CS_fb = 1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0] # Xsec of ggH production
+      Br_a_mumu = fNMSSM_Br_a(2.0, 20., 'mumu')   # the BR(H->aa) given m(a), tan(beta), final state
       CSxBR = CS_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
   #    print mh_i, CS_fb, CSxBR
       array_mh_ma_2_SM.append(( mh_i, CSxBR ))
