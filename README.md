@@ -23,13 +23,19 @@
    -> Send jobs to run on all datacards and save outputs in outPut.txt. RunOnDataCard_T50000 runs more toys and it is better, but take more time. Choose the one you want.    
 
 4. cd macros; python PrintOutLimits.py; cd ..;   
-   -> Print a out few lines to copy inside scripts/CmsLimitVsM.py, that will be used by Plots.py.    
+   -> This macro will print the lines you have to copy inside scripts/CmsLimitVsM.py (that will be used by Plots.py). 
+   -> You have to copy the lined from "That contain N limits: \n XXX" until teh line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit   
 
-5. vim scripts/CmsLimitVsM.py + copy the lines you just produced after "Limits_HybridNew = ["    
+5. In case you run combine several times (or more poeple followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
+   -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
+   -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
+   -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
+
+6. vim scripts/CmsLimitVsM.py + copy the lines you just produced after "Limits_HybridNew = ["    
    -> If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
-6. python Plots_RunMe.py    
+7. python Plots_RunMe.py    
    -> To make final limit plots. Here you can specify which function of Plots.py do you want to use.    
 
 # Some notes   
-Plots.py takes the cutflow from NMSSM mass points.    
+1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis

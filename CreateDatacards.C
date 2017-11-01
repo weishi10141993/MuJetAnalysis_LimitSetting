@@ -138,13 +138,12 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh4,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh4,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh4,"#SBATCH -p hepx\n");
+	  fprintf(file_sh4,"#SBATCH -p background-4g\n");
 	  fprintf(file_sh4,"#SBATCH -n1\n");
 	  fprintf(file_sh4,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh4,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
 	  fprintf(file_sh4,"#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
 	  fprintf(file_sh4,"#SBATCH --ntasks-per-core=1\n");
-	  fprintf(file_sh4,"#SBATCH --time=120:00:00\n");
 	}
 	fprintf(file_sh4,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4,"eval `scramv1 runtime -sh`\n");
@@ -155,13 +154,12 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh4b,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh4b,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh4b,"#SBATCH -p hepx\n");
+	  fprintf(file_sh4b,"#SBATCH -p background-4g\n");
 	  fprintf(file_sh4b,"#SBATCH -n1\n");
 	  fprintf(file_sh4b,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh4b,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
 	  fprintf(file_sh4b,"#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
 	  fprintf(file_sh4b,"#SBATCH --ntasks-per-core=1\n");
-	  fprintf(file_sh4b,"#SBATCH --time=120:00:00\n");
 	}
 	fprintf(file_sh4b,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4b,"eval `scramv1 runtime -sh`\n");
@@ -172,13 +170,12 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh5,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh5,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh5,"#SBATCH -p hepx\n");
+	  fprintf(file_sh5,"#SBATCH -p background-4g\n");
 	  fprintf(file_sh5,"#SBATCH -n1\n");
 	  fprintf(file_sh5,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh5,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
 	  fprintf(file_sh5,"#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
 	  fprintf(file_sh5,"#SBATCH --ntasks-per-core=1\n");
-	  fprintf(file_sh5,"#SBATCH --time=120:00:00\n");
 	}
 	fprintf(file_sh5,"cd %s \n",pwd.c_str());
 	fprintf(file_sh5,"eval `scramv1 runtime -sh`\n");
@@ -189,13 +186,12 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh6,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh6,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh6,"#SBATCH -p hepx\n");
+	  fprintf(file_sh6,"#SBATCH -p background-4g\n");
 	  fprintf(file_sh6,"#SBATCH -n1\n");
 	  fprintf(file_sh6,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh6,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
 	  fprintf(file_sh6,"#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
 	  fprintf(file_sh6,"#SBATCH --ntasks-per-core=1\n");
-	  fprintf(file_sh6,"#SBATCH --time=120:00:00\n");
 	}
 	fprintf(file_sh6,"cd %s \n",pwd.c_str());
 	fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
