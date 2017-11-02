@@ -36,7 +36,7 @@ void CreateDatacards( bool makeRoot=false ){
 
   //Parameters
   bool isLxplus=true;
-  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_7_4_7/src/limits_2a4mu"
+  string pwd="/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_8_1_0/src/limits_2a4mu/";
   bool DiffSeed=true;
   int Ninit=0, Nend=50;
   //Parameters
@@ -45,12 +45,13 @@ void CreateDatacards( bool makeRoot=false ){
   for( int i=0; i<N_Signals; i++){ Seeds[i]=-1; }
   //N events
   int obs = -1;
-  float signal_rate = 1, BBbar_2D_rate = 8.085, DJpsiS_2D_rate = 0.12, DJpsiD_2D_rate = 0.006;
+  float signal_rate = 1, BBbar_2D_rate = 7.97671, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
   //Signal Uncertainties
-  float lumi_13TeV = 1.026, mu_hlt   = 1.03,  mu_id   = 1.04,  mu_iso = 1.02,  mu_pu   = 1.016;
-  float mu_trk    = 1.008, ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08;
+  float lumi_13TeV = 1.026, mu_hlt   = 1.03,  mu_id   = 1.024,  mu_iso = 1.02,  mu_pu   = 1.032;
+  float mu_trk    = 1.008, ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.03;
   //Background Uncertainties
-  float BBbar_norm=49, BBbar_norm2=0.165, BBbar_syst=1.2, DJpsi_extr=1.1, DJpsiS_norm=6, DJpsiS_norm2=0.02, DJpsiD_norm=16, DJpsiD_norm2=0.000375;
+  float BBbar_norm=49, BBbar_norm2=0.16279, BBbar_syst=1.2;
+  float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.1;
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
   system( makeFold.Data() );
@@ -117,7 +118,7 @@ void CreateDatacards( bool makeRoot=false ){
 	char command[100];
 	if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T30000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
 	else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T30000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-	fprintf(file_sh2,"%s \n",command);
+	fprintf(file_sh3,"%s \n",command);
     }
   }
   fclose(file_sh3);
@@ -147,8 +148,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh4,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh4,"combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --rule CLs --testStat LHC Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh4);   
 	FILE *file_sh4b=fopen(name_T10000,"w");
 	fprintf(file_sh4b,"#!/bin/bash\n");
@@ -163,8 +164,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh4b,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4b,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -s %d -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -T 10000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh4b);
 	FILE *file_sh5=fopen(name_T50000,"w");
 	fprintf(file_sh5,"#!/bin/bash\n");
@@ -179,8 +180,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh5,"cd %s \n",pwd.c_str());
 	fprintf(file_sh5,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -s %d -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh5,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -T 50000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh5);
 	FILE *file_sh6=fopen(name_T30000,"w");
 	fprintf(file_sh6,"#!/bin/bash\n");
@@ -195,8 +196,8 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh6,"cd %s \n",pwd.c_str());
 	fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -s %d -T 30000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -H ProfileLikelihood -330000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -s %d -T 30000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --rule CLs --testStat LHC -330000 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh6);
     }
   }
@@ -245,7 +246,7 @@ void CreateDatacards( bool makeRoot=false ){
     fprintf(file_txt,"nnlo_pt         lnN   %.3f      -         -         -           Reconstruction of close muons in the muon system \n", nnlo_pt);
     fprintf(file_txt,"pdf_scales      lnN   %.3f      -         -         -           Theoretical uncertainties (not included in model independent limit) \n", pdf_as);
     fprintf(file_txt,"dimu_mass       lnN   %.3f      -         -         -           Dimuons mass consistency m1~m2 \n", dimu_M);
-    fprintf(file_txt,"BBbar_norm      gmN %.0f   -       %.3f      -         -           BBbar estimate of 8.085 comes from 49 data events in sidebands (here put the total number of events and scale factor in signal region) \n", BBbar_norm, BBbar_norm2);
+    fprintf(file_txt,"BBbar_norm      gmN %.0f   -       %.3f      -         -           BBbar estimate of 7.97 comes from 49 data events in sidebands (here put the total number of events and scale factor in signal region). BBbar_norm*BBbar_norm2 should give number in signare region.  \n", BBbar_norm, BBbar_norm2);
     fprintf(file_txt,"BBbar_syst      lnN     -       %.3f      -         -           Syst on BBar normalization from the difference of the estimation done inverting ISO cut \n", BBbar_syst);
     fprintf(file_txt,"DJpsi_extr      lnN     -         -       %.3f     %.3f        Double J/psi MC-to-data extrapolation \n", DJpsi_extr, DJpsi_extr);
     fprintf(file_txt,"DJpsiS_norm     gmN %.0f   -         -       %.4f     -           Double J/psi single parton scattering (SPS) estimate of 0.061 comes from 3 MC events \n", DJpsiS_norm, DJpsiS_norm2);
