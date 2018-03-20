@@ -9,8 +9,6 @@ macros/*_C.d
 *.so
 *_dict_rdict.pcm
 *_C.d
-Datacards/*
-workSpaces/*
 macros/sh/*slrm
 macros/sh/*sh
 macros/sh/*txt
