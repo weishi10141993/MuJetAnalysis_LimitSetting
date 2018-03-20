@@ -1,7 +1,13 @@
+# Notes:
+. -m HybridNew :  Searching for a signal where a small number of events are expected (<10)
+                  Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation.
+                  but can be very CPU / time intensive 
+. STD command  -> combine -m 125 -M HybridNew --rule CLs --testStat LHC datacard_H2A4Mu_mA_0.2200_GeV.txt -t 100000 -s -1 (--fork 10)
+
 ## Installing the framework
-0. SCRAM_ARCH=slc6_amd64_gcc491; export SCRAM_ARCH;   
-1. cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
-2. cd CMSSW_7_4_7/src/   
+0. SCRAM_ARCH=slc6_amd64_gcc530; export SCRAM_ARCH;   
+1. cmsrel CMSSW_8_1_0 #(Release needed for the Hggs combine tool)   
+2. cd CMSSW_8_1_0/src/   
 3. cmsenv    
 4. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
 5. git clone https://github.com/lpernie/limits_2a4mu.git    

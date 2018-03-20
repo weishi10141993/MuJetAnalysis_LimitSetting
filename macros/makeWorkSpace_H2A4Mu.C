@@ -107,55 +107,64 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->import(m1);
   w_H2A4Mu->import(m2);
 
-  //Signal Diagonal Area 
-  RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1 - m2) < 5.*(0.026 + 0.013*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  //Signal Diagonal Area
+  RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1-m2) < (0.13 + 0.065*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  w_H2A4Mu->import(dia1);
 
   //Observed data in signal region
-  Double_t massC;
-  Double_t massF;
+  Double_t massC, massF;
   TTree* tree_dimudimu_signal_2D = new TTree("tree_dimudimu_signal_2D","tree_dimudimu_signal_2D");
   tree_dimudimu_signal_2D->Branch("massC",&massC,"massC/D");
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
-  massC = 100.; //BLINDED
-  massF = 100.;
+//  massC = 100.; //BLINDED
+//  massF = 100.;
+  massC = 0.4258973;   massF = 0.5848349; tree_dimudimu_signal_2D->Fill();
+  massC = 3.0722196;   massF = 3.2662851; tree_dimudimu_signal_2D->Fill();
+  massC = 3.0728187;   massF = 3.0538983; tree_dimudimu_signal_2D->Fill();
+  massC = 3.1553862;   massF = 2.8489651; tree_dimudimu_signal_2D->Fill();
+  massC = 2.8252353;   massF = 2.6458165; tree_dimudimu_signal_2D->Fill();
+  massC = 1.2550838;   massF = 1.1479498; tree_dimudimu_signal_2D->Fill();
+  massC = 1.8218700;   massF = 1.8939131; tree_dimudimu_signal_2D->Fill();
+  massC = 1.3538074;   massF = 1.4859896; tree_dimudimu_signal_2D->Fill();
+  massC = 1.9404293;   massF = 1.8155703; tree_dimudimu_signal_2D->Fill();
+  massC = 2.3835377;   massF = 2.3580303; tree_dimudimu_signal_2D->Fill();
+  massC = 0.9244344;   massF = 0.9522788; tree_dimudimu_signal_2D->Fill();
+  massC = 3.0625894;   massF = 3.0958375;
   tree_dimudimu_signal_2D->Fill();
+  cout<<"--- PRINT tree_dimudimu_signal_2D ---"<<endl;
   tree_dimudimu_signal_2D->Print();
+  cout<<"-------------------------------------"<<endl;
   tree_dimudimu_signal_2D->GetBranch("massC")->SetName("m1");
   tree_dimudimu_signal_2D->GetBranch("massF")->SetName("m2");
   RooDataSet* ds_dimudimu_signal_2D = new RooDataSet( "ds_dimudimu_signal_2D","ds_dimudimu_signal_2D", tree_dimudimu_signal_2D, RooArgSet(m1,m2) );
+  cout<<"--- PRINT ds_dimudimu_signal_2D ---"<<endl;
   ds_dimudimu_signal_2D->Print("v");
+  cout<<"-------------------------------------"<<endl;
   w_H2A4Mu->import(*ds_dimudimu_signal_2D, Rename("data_obs"));
 
-  //Signal
+  //Signal parameteres
   RooRealVar signal_mA("signal_mA", "signal_mA", mA_GeV);
   RooRealVar signal_sigma("signal_sigma", "signal_sigma", (0.13 + 0.065*mA_GeV)/5.0 );
   RooRealVar signal_alpha("signal_alpha", "signal_alpha", 1.75);
   RooRealVar signal_n("signal_n", "signal_n", 2.0);
-  // Diagonal signal
+  //Signal 2D template
   RooCBShape signal_m1("signal_m1", "signal_m1", m1,signal_mA,signal_sigma,signal_alpha,signal_n);
   w_H2A4Mu->import(signal_m1);
   RooCBShape signal_m2("signal_m2", "signal_m2", m2,signal_mA,signal_sigma,signal_alpha,signal_n);
   w_H2A4Mu->import(signal_m2);
   w_H2A4Mu->factory("PROD::signal(signal_m1,signal_m2)");
-  //w_H2A4Mu->factory("EXPR::signal( 'signalAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))',signalAll,m1,m2)");
-
 
   TFile* file = new TFile("../ws_FINAL.root");
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
   //BB
   w_H2A4Mu->import( *w->pdf("template1D_m1") );
   w_H2A4Mu->import( *w->pdf("template1D_m2") );
-  
-  w_H2A4Mu->factory("PROD::template_2DAll( template1D_m1, template1D_m2 )");
-  w_H2A4Mu->factory("EXPR::template_2D( 'template_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',template_2DAll,m1,m2)");
-  w_H2A4Mu->factory("PROD::BBbar_2DAll( template1D_m1, template1D_m2 )");
-  w_H2A4Mu->factory("EXPR::BBbar_2D( 'BBbar_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',BBbar_2DAll,m1,m2)");
+  w_H2A4Mu->factory("PROD::BBbar_2D( template1D_m1, template1D_m2 )*dia1");
 
   //2J/Psi
   w_H2A4Mu->import( *w->pdf("Jpsi_m1") );
   w_H2A4Mu->import( *w->pdf("Jpsi_m2") );
   w_H2A4Mu->factory("PROD::DJpsi_2D(Jpsi_m1,Jpsi_m2)");
-  //w_H2A4Mu->factory("EXPR::DJpsi_2D( 'DJpsi_2DAll*( fabs(m1-m2)<5.*(0.026+0.013*(m1+m2)/2.))+0.00000001',DJpsi_2DAll,m1,m2)");
 
   // Set all fit variables to constants
   w_H2A4Mu->var("JpsiC_alpha")->setConstant(true);
@@ -224,6 +233,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("signal_n")->setConstant(true);
   w_H2A4Mu->var("signal_sigma")->setConstant(true);
 
+  cout<<"---------------WORKING-SPACE----------------"<<endl;
   w_H2A4Mu->Print("v");
   TString ws_fileName = Form("../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root", mA_GeV);
   cout << "save work space to file: " << ws_fileName << endl;

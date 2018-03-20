@@ -110,3 +110,96 @@ def fCS_SM_ggH_13TeV_pb(mh):
     CS_errP = kh * (high[2] - low[2]) + low[2]
     CS_errM = kh * (high[3] - low[3]) + low[3]
     return CS, CS_errP, CS_errM
+
+#VBF xSec from https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt14TeV2010#VBF_Process
+CS_SM_VBGH_13TeV_pb = [
+  [	85	,	5.769	,	2.9	,	3.0	],
+  [	90	,	5.569	,	2.9	,	3.0	],
+  [	95	,	5.338	,	3.0	,	3.1	],
+  [	100	,	5.114	,	2.8	,	3.1	],
+  [	105	,	4.900	,	3.2	,	2.9	],
+  [	110	,	4.750	,	2.2	,	3.9	],
+  [	115	,	4.520	,	2.9	,	3.0	],
+  [	120	,	4.361	,	2.5	,	3.5	],
+  [	125	,	4.180	,	2.8	,	3.0	],
+  [	130	,	4.029	,	2.5	,	3.1	],
+  [	135	,	3.862	,	3.1	,	2.8	],
+  [	140	,	3.732	,	2.6	,	3.3	],
+  [	145	,	3.590	,	3.0	,	3.0	],
+  [	150	,	3.460	,	2.8	,	3.0	],
+]
+
+def fCS_SM_VBFH_13TeV_pb(mh):
+    mh_min = CS_SM_VBGH_13TeV_pb[0][0]
+    mh_max = CS_SM_VBGH_13TeV_pb[len(CS_SM_VBGH_13TeV_pb)-1][0]
+    if mh < mh_min or mh > mh_max: raise Exception
+    # get the bin number
+    i = int(floor( (mh - mh_min)/(mh_max - mh_min) * ( len(CS_SM_VBGH_13TeV_pb)-1 ) ))
+    low, high = CS_SM_VBGH_13TeV_pb[i], CS_SM_VBGH_13TeV_pb[i+1]
+    kh = (mh - low[0])/(high[0] - low[0])
+    CS = kh * (high[1] - low[1]) + low[1]
+    CS_errP = kh * (high[2] - low[2]) + low[2]
+    CS_errM = kh * (high[3] - low[3]) + low[3]
+    return CS, CS_errP, CS_errM
+
+#HW XSec from https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt14TeV2010#HW_Process
+CS_SM_HW_13TeV_pb = [
+  [	85	,	4.681	,	4.3	,	4.6	],
+  [	90	,	4.090	,	4.3	,	4.6	],
+  [	95	,	3.499	,	4.4	,	4.5	],
+  [	100	,	3.002	,	4.5	,	4.3	],
+  [	105	,	2.596	,	4.1	,	4.0	],
+  [	110	,	2.246	,	4.1	,	4.6	],
+  [	115	,	1.952	,	4.5	,	4.0	],
+  [	120	,	1.710	,	4.4	,	4.1	],
+  [	125	,	1.504	,	4.1	,	4.4	],
+  [	130	,	1.324	,	3.7	,	3.7	],
+  [	135	,	1.167	,	3.4	,	3.4	],
+  [	140	,	1.034	,	3.8	,	3.8	],
+  [	145	,	0.920	,	3.7	,	3.7	],
+  [	150	,	0.8156,	3.3	,	3.3	],
+]
+
+def fCS_SM_HW_13TeV_pb(mh):
+    mh_min = CS_SM_HW_13TeV_pb[0][0]
+    mh_max = CS_SM_HW_13TeV_pb[len(CS_SM_HW_13TeV_pb)-1][0]
+    if mh < mh_min or mh > mh_max: raise Exception
+    # get the bin number
+    i = int(floor( (mh - mh_min)/(mh_max - mh_min) * ( len(CS_SM_HW_13TeV_pb)-1 ) ))
+    low, high = CS_SM_HW_13TeV_pb[i], CS_SM_HW_13TeV_pb[i+1]
+    kh = (mh - low[0])/(high[0] - low[0])
+    CS = kh * (high[1] - low[1]) + low[1]
+    CS_errP = kh * (high[2] - low[2]) + low[2]
+    CS_errM = kh * (high[3] - low[3]) + low[3]
+    return CS, CS_errP, CS_errM
+
+#HZ XSec from https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt14TeV2010#HZ_Process
+CS_SM_HZ_13TeV_pb = [
+  [	85	,	2.549	,	5.3	,	5.7	],
+  [	90	,	2.245	,	5.2	,	5.7	],
+  [	95	,	1.941	,	5.7	,	5.2	],
+  [	100	,	1.683	,	5.4	,	5.3	],
+  [	105	,	1.468	,	6.1	,	5.4	],
+  [	110	,	1.283	,	6.0	,	5.6	],
+  [	115	,	1.130	,	6.4	,	5.2	],
+  [	120	,	0.9967,	6.3	,	5.5	],
+  [	125	,	0.8830,	5.9	,	5.7	],
+  [	130	,	0.7846,	5.8	,	5.2	],
+  [	135	,	0.6981,	6.7	,	5.2	],
+  [	140	,	0.6256,	6.0	,	5.5	],
+  [	145	,	0.5601,	6.5	,	4.7	],
+  [	150	,	0.5016,	6.0	,	5.5	],
+]
+
+def fCS_SM_HZ_13TeV_pb(mh):
+    mh_min = CS_SM_HZ_13TeV_pb[0][0]
+    mh_max = CS_SM_HZ_13TeV_pb[len(CS_SM_HZ_13TeV_pb)-1][0]
+    if mh < mh_min or mh > mh_max: raise Exception
+    # get the bin number
+    i = int(floor( (mh - mh_min)/(mh_max - mh_min) * ( len(CS_SM_HZ_13TeV_pb)-1 ) ))
+    low, high = CS_SM_HZ_13TeV_pb[i], CS_SM_HZ_13TeV_pb[i+1]
+    kh = (mh - low[0])/(high[0] - low[0])
+    CS = kh * (high[1] - low[1]) + low[1]
+    CS_errP = kh * (high[2] - low[2]) + low[2]
+    CS_errM = kh * (high[3] - low[3]) + low[3]
+    return CS, CS_errP, CS_errM

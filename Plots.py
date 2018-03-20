@@ -23,7 +23,7 @@ txtHeader.SetBorderSize(0)
 txtHeader.SetTextFont(42)
 txtHeader.SetTextSize(0.045)
 txtHeader.SetTextAlign(22)
-txtHeader.SetHeader("#bf{CMS Prelim. 2015}          2.83 fb^{-1} (13 TeV)")
+txtHeader.SetHeader("#bf{CMS Prelim. 2016}          35.9 fb^{-1} (13 TeV)")
 #txtHeader.Draw()
 
 l_CMS = ROOT.TLegend(0.6,0.8,0.9,0.95)
@@ -44,12 +44,12 @@ l_CMSLumi.SetTextFont(42)
 l_CMSLumi.SetTextSize(0.042)
 l_CMSLumi.SetTextAlign(22)
 l_CMSLumi.SetTextColor(ROOT.kBlack)
-l_CMSLumi.SetHeader("2.83 fb^{-1} (13 TeV)")
+l_CMSLumi.SetHeader("35.9 fb^{-1} (13 TeV)")
 
-lumi_fbinv = 2.83 # fb-1
+lumi_fbinv = 35.9 # fb-1
 lumi_pbinv = 1000.*lumi_fbinv # pb-1
 SF = 0.92 # eFullData / eFullMc
-eFullMc_over_aGen = 0.68
+eFullMc_over_aGen = 0.611
 
 mGammaD_GeV = [0.25, 0.40, 0.55, 0.70, 0.85, 1.00]
 mGammaD_GeV_bot = 0.00 # low boundary where histograms start in m
@@ -74,8 +74,8 @@ logEpsilon2_max =  -7.9
 #       Plot Upper 95% CL Limit on number of events: 0.25 < mGammaD < 1.0       
 ################################################################################
 
-def limit_vs_mGammaD_2015():
-  print "------------limit_vs_mGammaD_2015------------"
+def limit_vs_mGammaD_2016():
+  print "------------limit_vs_mGammaD_2016------------"
   cnv.SetLogy(0)
   padTop = ROOT.TPad( "padTop", "padTop", 0.0, 0.3, 1.0, 1.0 )
   padTop.Draw()
@@ -84,7 +84,7 @@ def limit_vs_mGammaD_2015():
   array_mGammaD_limit_T5000 = []
   array_mGammaD_limit_T5000_error = []
   rnd = ROOT.TRandom()
-  rnd.SetSeed(2015)
+  rnd.SetSeed(2016)
   
   for m in MGammaD_array: # MGammaD_array = Array with all masses consdered
     # FIT
@@ -93,7 +93,8 @@ def limit_vs_mGammaD_2015():
     array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m) )) # fCmsLimitVsM_HybridNew(m) retireve the limit from toys experiments.
     array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Error is the difference between fit and toy limit
 
-  h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 6.0)
+  h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 10.0)
+  #h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 108, 0.0455, 8.9973, 1000, 0.0, 10.0)
   h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
   h_limit_vs_mGammaD_dummy.SetYTitle("95% CL upper limit on N_{evt}")
   h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
@@ -132,7 +133,8 @@ def limit_vs_mGammaD_2015():
   padBot.Draw()
   padBot.cd()
   padBot.SetGrid()
-  h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 1000, 0.0, 9.0, 1000, -1.0, 1.0)
+  h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 1000, 0.0, 9.0, 1000, -0.2, 0.2)
+  #h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 108, 0.0455, 8.9973, 1000, -0.2, 0.2)
   h_limit_vs_mGammaD_error_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
   h_limit_vs_mGammaD_error_dummy.SetYTitle("Fit Uncertainty [%]")
   h_limit_vs_mGammaD_error_dummy.SetTitleOffset(1.1, "Y")
@@ -149,8 +151,8 @@ def limit_vs_mGammaD_2015():
 
   cnv.cd()
   cnv.Update()
-  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2015_FitUncert.pdf")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_Events_vs_mGammaD_2015_FitUncert.pdf -resize 900x900 plots/PNG/limit_Events_vs_mGammaD_2015_FitUncert.png")
+  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2016_FitUncert.pdf")
+  cnv.SaveAs("plots/PNG/limit_Events_vs_mGammaD_2016_FitUncert.png")
 
   # Now same plots with no errors
   cnv.cd()
@@ -161,20 +163,21 @@ def limit_vs_mGammaD_2015():
   l_CMSLumi.Draw()
   
   cnv.Update()
-  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2015.pdf")
-  gr_limit_vs_mGammaD_T5000.SaveAs("plots/C/limit_Events_vs_mGammaD_2015.root")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_Events_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_Events_vs_mGammaD_2015.png")
+  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2016.pdf")
+  cnv.SaveAs("plots/PNG/limit_Events_vs_mGammaD_2016.png")
+  gr_limit_vs_mGammaD_T5000.SaveAs("plots/C/limit_Events_vs_mGammaD_2016.root")
   
 ################################################################################
 #       Plot Upper 95% CL Limit on CSxBR2xAlpha = "Limit on number of events"/Luminosity/"Scale factor"
 ################################################################################
-def limit_CSxBR2xAlpha_fb_vs_mGammaD_2015():
+def limit_CSxBR2xAlpha_fb_vs_mGammaD_2016():
   cnv.SetLogy(0)
   array_mGammaD_limit_CSxBR2xAlpha_fb = []
   for m in fRange(0.25, 8.5, 201):
     array_mGammaD_limit_CSxBR2xAlpha_fb.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen )) # Transforming the Limit on N_event to Xsec limit
 
-  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 6.0/lumi_fbinv/SF/eFullMc_over_aGen)
+  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 10.0/lumi_fbinv/SF/eFullMc_over_aGen)
+  #h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 108, 0.0455, 8.9973, 1000, 0.0, 10.0/lumi_fbinv/SF/eFullMc_over_aGen)
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetTitleOffset(1.35, "Y")
@@ -200,9 +203,9 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD_2015():
   l_CMS.Draw()
   l_CMSLumi.Draw()
 
-  cnv.SaveAs("plots/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2015.pdf")
-  cnv.SaveAs("plots/C/limit_CSxBR2xAlpha_fb_vs_mGammaD_2015.C")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_CSxBR2xAlpha_fb_vs_mGammaD_2015.png")
+  cnv.SaveAs("plots/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.pdf")
+  cnv.SaveAs("plots/PNG/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.png")
+  cnv.SaveAs("plots/C/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.C")
 
 ################################################################################
 #           Plot acceptance Alpha vs mGammaD: 0.25 < mGammaD < 1.0              
@@ -1693,12 +1696,10 @@ def plot_ctauConst_vs_logEpsilon2_mGammaD():
 #                 Plot limit on CSxBr2 vs ma for 2015 data                      
 ################################################################################
 
-def limit_CSxBR2_fb_vs_ma_2015():
-  BR_h_aa = 0.03
-
+def limit_CSxBR2_fb_vs_ma_2016():
+  BR_h_aa = 0.003
   cnv.SetLogy(1)
-
-  h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0., 4., 1000, 0.8, 1000.)
+  h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0., 4., 1000, 0.08, 100.)
   h_CSxBR_vs_ma_dummy.SetXTitle("mass of a_{1} [GeV]")
   h_CSxBR_vs_ma_dummy.SetYTitle("#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) B^{2}(a_{1} #rightarrow 2 #mu) [fb]")
   h_CSxBR_vs_ma_dummy.SetTitleOffset(1.1, "Y")
@@ -1746,6 +1747,9 @@ def limit_CSxBR2_fb_vs_ma_2015():
   array_ma_mh_125_SM = []
   for ma_i in fRange(0.3, 3.55, 100):
     CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
+    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
+    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
+    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HZ_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding ZH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
     Br_a_mumu = fNMSSM_Br_a(ma_i, 20., 'mumu')
     CSxBR = CS_h125_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
     array_ma_mh_125_SM.append(( ma_i, CSxBR ))
@@ -1754,8 +1758,6 @@ def limit_CSxBR2_fb_vs_ma_2015():
   gr_CSxBR_vs_ma_mh_125_SM.SetLineColor(ROOT.kGreen+3)
   gr_CSxBR_vs_ma_mh_125_SM.SetLineStyle(1)
   gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
-  
-  print "Branching fraction h->aa for which limit and prediction  are the same at ma=2GeV and mh=125GeV :", fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i,125.)/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]*fNMSSM_Br_a(2.0, 20., 'mumu')*fNMSSM_Br_a(2.0, 20., 'mumu'))
   
   l_CSxBR_vs_ma = ROOT.TLegend(0.35,0.72,0.9,0.92)
   l_CSxBR_vs_ma.SetFillColor(ROOT.kWhite)
@@ -1776,26 +1778,26 @@ def limit_CSxBR2_fb_vs_ma_2015():
   l_CSxBR_vs_ma_2.SetTextFont(42)
   l_CSxBR_vs_ma_2.SetTextSize(0.035)
   l_CSxBR_vs_ma_2.SetHeader("Reference model:")
-  l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.03 #times #sigma_{SM}","L")
+  l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.003 #times #sigma_{SM}","L")
   l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{j}) #times B(h_{j} #rightarrow 2a_{1}) = 0 for j #neq i","")
   l_CSxBR_vs_ma_2.Draw()
 
   gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/CSxBR_vs_ma_2015.pdf")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_vs_ma_2015.pdf -resize 900x900 plots/PNG/CSxBR_vs_ma_2015.png")
+  cnv.SaveAs("plots/PDF/CSxBR_vs_ma_2016.pdf")
+  cnv.SaveAs("plots/PNG/CSxBR_vs_ma_2016.png")
 
 
 ################################################################################
 #                 Plot limit on CSxBr2 vs mh for 2015 data                      
 ################################################################################
 
-def limit_CSxBR2_fb_vs_mh_2015():  
-  BR_h_aa = 0.03
+def limit_CSxBR2_fb_vs_mh_2016():  
+  BR_h_aa = 0.003
  
   cnv.SetLogy(0)
-  h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 30.)
+  h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 4.5)
   h_CSxBR_NMSSM_vs_mh_dummy.SetXTitle("mass of h_{i} [GeV]")
   h_CSxBR_NMSSM_vs_mh_dummy.SetYTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]")
   h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.2, "Y")
@@ -1807,12 +1809,12 @@ def limit_CSxBR2_fb_vs_mh_2015():
   h_CSxBR_NMSSM_vs_mh_dummy.Draw()
 
   array_mh_CSxBR_NMSSM_ma_025 = []
-  array_mh_CSxBR_NMSSM_ma_2   = []
+  #array_mh_CSxBR_NMSSM_ma_2   = []
   array_mh_CSxBR_NMSSM_ma_355 = []
   array_mh = [86., 90., 100., 110., 125., 150.]
   for mh_i in array_mh:
     array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(0.25, mh_i ) )) # Model Independent limits transformed to Xsec
-    array_mh_CSxBR_NMSSM_ma_2.append((   mh_i, fCmsLimitVsM(2.00)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(2.00, mh_i ) ))
+    #array_mh_CSxBR_NMSSM_ma_2.append((   mh_i, fCmsLimitVsM(2.00)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(2.00, mh_i ) ))
     array_mh_CSxBR_NMSSM_ma_355.append(( mh_i, fCmsLimitVsM(3.55)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(3.55, mh_i ) ))
 
   gr_CSxBR_NMSSM_vs_mh_ma_025 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_025), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[1]))
@@ -1822,16 +1824,14 @@ def limit_CSxBR2_fb_vs_mh_2015():
   gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerColor(ROOT.kMagenta+2)
   gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerStyle(22)
   gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerSize(1.5)
-  #gr_CSxBR_NMSSM_vs_mh_ma_025.Draw("CP")
 
-  gr_CSxBR_NMSSM_vs_mh_ma_2 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_2), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_2)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_2)[1]))
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineWidth(2)
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineColor(2)
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineStyle(10)
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerColor(2)
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerStyle(20)
-  gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerSize(1.5)
-  #gr_CSxBR_NMSSM_vs_mh_ma_2.Draw("CP")
+  #gr_CSxBR_NMSSM_vs_mh_ma_2 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_2), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_2)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_2)[1]))
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineWidth(2)
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineColor(2)
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetLineStyle(10)
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerColor(2)
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerStyle(20)
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.SetMarkerSize(1.5)
 
   gr_CSxBR_NMSSM_vs_mh_ma_355 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_355), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_355)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_355)[1]))
   gr_CSxBR_NMSSM_vs_mh_ma_355.SetLineWidth(2)
@@ -1840,12 +1840,14 @@ def limit_CSxBR2_fb_vs_mh_2015():
   gr_CSxBR_NMSSM_vs_mh_ma_355.SetMarkerColor(ROOT.kBlue)
   gr_CSxBR_NMSSM_vs_mh_ma_355.SetMarkerStyle(23)
   gr_CSxBR_NMSSM_vs_mh_ma_355.SetMarkerSize(1.5)
-  #gr_CSxBR_NMSSM_vs_mh_ma_355.Draw("CP")
 
   execfile("scripts/NMSSM_Br_a_Function.py") # contains fNMSSM_Br_a def (the BR given m(a), tan(beta), final state)
   array_mh_ma_2_SM = []
   for mh_i in fRange(86., 149., 100):
       CS_fb = 1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0] # Xsec of ggH production
+      CS_fb = CS_fb + CS_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(mh_i)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0])                # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
+      CS_fb = CS_fb + CS_fb * (1000.0*fCS_SM_HW_13TeV_pb(mh_i)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0]) + CS_fb * (0.02) # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
+      CS_fb = CS_fb + CS_fb * (1000.0*fCS_SM_HZ_13TeV_pb(mh_i)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0]) + CS_fb * (0.02) # Adding ZH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
       Br_a_mumu = fNMSSM_Br_a(2.0, 20., 'mumu')   # the BR(H->aa) given m(a), tan(beta), final state
       CSxBR = CS_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
   #    print mh_i, CS_fb, CSxBR
@@ -1856,12 +1858,12 @@ def limit_CSxBR2_fb_vs_mh_2015():
   gr_CSxBR_SM.SetLineStyle(1)
   #gr_CSxBR_SM.Draw("C")
 
-  box1 = ROOT.TBox(125.0, 0.0, 153.0, 30.0)
+  box1 = ROOT.TBox(125.0, 0.0, 153.0, 4.5)
   box1.SetFillStyle(3001)
   box1.SetFillColor(ROOT.kRed - 10)
   box1.Draw()
   
-  a_mh_125 = ROOT.TArrow(125.0, 0.0, 125.0, 30.0, 0.02, "--")
+  a_mh_125 = ROOT.TArrow(125.0, 0, 125.0, 4.5, 0.02, "--")
   a_mh_125.SetLineColor(ROOT.kBlack)
   a_mh_125.SetLineWidth(1)
   a_mh_125.SetLineStyle(7)
@@ -1878,7 +1880,7 @@ def limit_CSxBR2_fb_vs_mh_2015():
   l_CSxBR_NMSSM_vs_mh.SetMargin(0.13)
   l_CSxBR_NMSSM_vs_mh.SetHeader("NMSSM 95% CL upper limits:")
   l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_355,"m_{a_{1}} = 3.55 GeV/#it{c}^{2}","LP")
-  l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_2,  "m_{a_{1}} = 2 GeV/#it{c}^{2}",   "LP")
+  #l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_2,  "m_{a_{1}} = 2 GeV/#it{c}^{2}",   "LP")
   l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_025,"m_{a_{1}} = 0.25 GeV/#it{c}^{2}","LP")
   l_CSxBR_NMSSM_vs_mh.Draw()
   
@@ -1890,7 +1892,7 @@ def limit_CSxBR2_fb_vs_mh_2015():
   l_CSxBR_NMSSM_vs_mh_2.SetTextSize(0.035)
   l_CSxBR_NMSSM_vs_mh_2.SetMargin(0.13)
   l_CSxBR_NMSSM_vs_mh_2.SetHeader("Reference model:")
-  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.03 #times #sigma_{SM}","L")
+  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.003 #times #sigma_{SM}","L")
   l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"B(a_{1}#rightarrow 2#mu)=7.7%","")
   l_CSxBR_NMSSM_vs_mh_2.Draw()
   
@@ -1932,12 +1934,12 @@ def limit_CSxBR2_fb_vs_mh_2015():
 #  l_CMS.Draw()
 
   gr_CSxBR_NMSSM_vs_mh_ma_355.Draw("CP")
-  gr_CSxBR_NMSSM_vs_mh_ma_2.Draw("CP")
+  #gr_CSxBR_NMSSM_vs_mh_ma_2.Draw("CP")
   gr_CSxBR_NMSSM_vs_mh_ma_025.Draw("CP")
   gr_CSxBR_SM.Draw("C")
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/CSxBR_NMSSM_vs_mh_2015.pdf")
-  os.system("convert -define pdf:use-cropbox=true -density 300 plots/CSxBR_NMSSM_vs_mh_2015.pdf -resize 900x900 plots/PNG/CSxBR_NMSSM_vs_mh_2015.png")
+  cnv.SaveAs("plots/PDF/CSxBR_NMSSM_vs_mh_2016.pdf")
+  cnv.SaveAs("plots/PNG/CSxBR_NMSSM_vs_mh_2016.png")
 

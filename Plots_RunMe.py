@@ -3,9 +3,9 @@ execfile("Plots.py")
 
 ###-------Model Independent Limits-------###
 #--Limits on N_ext vs m(a) #fix MGammaD_array is for GammaD or NMSSM
-limit_vs_mGammaD_2015()
+limit_vs_mGammaD_2016()
 #--Limits on xsecBr*alpha vs m(a) #fix MGammaD_array is for GammaD or NMSSM
-limit_CSxBR2xAlpha_fb_vs_mGammaD_2015()
+limit_CSxBR2xAlpha_fb_vs_mGammaD_2016()
 
 ###-------       Dark SUSY       -------###
 #--BR(a->mumu) vs m(a)
@@ -17,8 +17,8 @@ limit_CSxBR2xAlpha_fb_vs_mGammaD_2015()
 #Plot_Eff_vs_R()          # Step function
 
 ###-------       NMSSM       -------###
-limit_CSxBR2_fb_vs_mh_2015()
-limit_CSxBR2_fb_vs_ma_2015()
+limit_CSxBR2_fb_vs_mh_2016()
+limit_CSxBR2_fb_vs_ma_2016()
 
 #print f1(0.4,40.0,5.0,1.0,1.0)
 #print f2(0.4,40,5,1.0)
