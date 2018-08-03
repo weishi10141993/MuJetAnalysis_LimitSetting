@@ -178,3 +178,59 @@ def fCmsNmssmAcceptance_2015_13TeV(ma, mh):
     hinc = (mh - hlow)/(hhigh - hlow)
 
     return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2015_13TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2015_13TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2015_13TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2015_13TeV[alow, hhigh]
+
+################################################################################
+#                    13 TeV - 2016 year                                         
+################################################################################
+# (m_a, m_h) : (acceptance)
+CmsNmssmAcceptance_2016_13TeV = {
+(0.25,90): (0.226),
+(0.50,90): (0.109),
+(0.75,90): (0.097),
+(1.00,90): (0.093),
+(2.00,90): (0.088),
+(3.00,90): (0.087),
+(3.55, 90 ): ( 0.08645 ),
+(0.25,100): (0.249),
+(0.50,100): (0.132),
+(0.75,100): (0.116),
+(1.00,100): (0.111),
+(2.00,100): (0.106),
+(3.00,100): (0.105),
+(3.55, 100 ): ( 0.10445 ),
+(0.25,110): (0.266),
+(0.50,110): (0.206),
+(0.75,110): (0.132),
+(1.00,110): (0.127),
+(2.00,110): (0.122),
+(3.00,110): (0.120),
+(3.55, 110 ): ( 0.1189 ),
+(0.25,125): (0.280),
+(0.50,125): (0.171),
+(0.75,125): (0.154),
+(1.00,125): (0.147),
+(2.00,125): (0.141),
+(3.00,125): (0.138),
+(3.55, 125 ): ( 0.13635 ),
+(0.25,150): (0.291),
+(0.50,150): (0.206),
+(0.75,150): (0.185),
+(1.00,150): (0.176),
+(2.00,150): (0.168),
+(3.00,150): (0.165),
+(3.55, 150 ): ( 0.16335 ),
+}
+
+def fCmsNmssmAcceptance_2016_13TeV(ma, mh):
+    if ma < 0.25 or ma > 3.55: raise Exception, "ma = %g" % ma
+    if mh < 90. or mh > 150.: raise Exception, "mh = %g" % mh
+    for alow, ahigh in [(0.25,0.5),(0.5,0.75),(0.75,1.0),(1.0,2.0),(2.0,3.0),(3.0,3.55)]:
+        for hlow, hhigh in [(90.,100.),(100.,110.),(110.,125.),(125.,150.)]:
+            if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+                break
+        if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+            break
+    ainc = (ma - alow)/(ahigh - alow)
+    hinc = (mh - hlow)/(hhigh - hlow)
+
+    return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2016_13TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2016_13TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2016_13TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2016_13TeV[alow, hhigh]

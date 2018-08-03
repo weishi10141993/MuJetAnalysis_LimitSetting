@@ -1,5 +1,6 @@
 import ROOT, array, os, re, math, random
 from math import *
+import numpy as np
 
 execfile("scripts/tdrStyle.py")
 execfile("scripts/fSetPalette.py")
@@ -16,15 +17,16 @@ execfile("scripts/NMSSM_Br_a_Function.py")
 cnv = ROOT.TCanvas("cnv", "cnv")
 cnv.SetCanvasSize(900,900)
 
-txtHeader = ROOT.TLegend(.15,.935,0.97,1.)
+txtHeader = ROOT.TLegend(.05,.933,0.99,1.)
+#txtHeader = ROOT.TLegend(.15,.935,0.97,1.)
 txtHeader.SetFillColor(ROOT.kWhite)
 txtHeader.SetFillStyle(0)
 txtHeader.SetBorderSize(0)
 txtHeader.SetTextFont(42)
 txtHeader.SetTextSize(0.045)
 txtHeader.SetTextAlign(22)
-txtHeader.SetHeader("#bf{CMS Prelim. 2016}          35.9 fb^{-1} (13 TeV)")
-#txtHeader.Draw()
+txtHeader.SetHeader("    #bf{CMS}                                35.9 fb^{-1} (13 TeV)")
+#txtHeader.SetHeader("    #bf{CMS Preliminary}           35.9 fb^{-1} (13 TeV)")
 
 l_CMS = ROOT.TLegend(0.6,0.8,0.9,0.95)
 l_CMS.SetFillColor(ROOT.kWhite)
@@ -34,9 +36,10 @@ l_CMS.SetTextFont(61)
 l_CMS.SetTextSize(0.055)
 l_CMS.SetTextAlign(22)
 l_CMS.SetTextColor(ROOT.kBlack)
-l_CMS.SetHeader("CMS Preliminary")
+l_CMS.SetHeader("CMS")
 
-l_CMSLumi = ROOT.TLegend(0.6,0.68,0.9,0.95)
+#l_CMSLumi = ROOT.TLegend(0.6,0.68,0.9,0.95)
+l_CMSLumi = ROOT.TLegend(0.6,0.9,0.9,0.98)
 l_CMSLumi.SetFillColor(ROOT.kWhite)
 l_CMSLumi.SetFillStyle(4050)
 l_CMSLumi.SetBorderSize(0)
@@ -48,7 +51,7 @@ l_CMSLumi.SetHeader("35.9 fb^{-1} (13 TeV)")
 
 lumi_fbinv = 35.9 # fb-1
 lumi_pbinv = 1000.*lumi_fbinv # pb-1
-SF = 0.92 # eFullData / eFullMc
+SF = 0.9265 # eFullData / eFullMc
 eFullMc_over_aGen = 0.611
 
 mGammaD_GeV = [0.25, 0.40, 0.55, 0.70, 0.85, 1.00]
@@ -85,32 +88,34 @@ def limit_vs_mGammaD_2016():
   array_mGammaD_limit_T5000_error = []
   rnd = ROOT.TRandom()
   rnd.SetSeed(2016)
-  
+
+#  MyMGammaD_array = [0.2113,0.2400,0.2600,0.3000,0.3300,0.3600,0.4000,0.4300,0.4600,0.5000,0.5300,0.5600,0.6000,0.7000,0.8000,0.8800,0.9000,0.9100,0.9200,0.9300,0.9400,1.0000,1.1000,1.15,1.2000,1.25,1.3000,1.4000,1.5000,1.6000,1.7000,1.8000,1.9000,2.0000,2.1000,2.2000,2.3000,2.4000,2.5000,2.6000,2.7000,2.8000,2.9000,3.0000,3.0200,3.0500,3.0800,3.0900,3.1000,3.1200,3.1500,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000]
+  for m in np.arange(0.22, 8.5, 0.005):
+    array_mGammaD_limit.append(( m, fCmsLimitVsM(m) ))  # Fit
+
   for m in MGammaD_array: # MGammaD_array = Array with all masses consdered
-    # FIT
-    array_mGammaD_limit.append(( m, fCmsLimitVsM(m) )) # fCmsLimitVsM(m) retrieve the limit as a function of m. In the simplest case is a constant and retireve 3.08 always.
     # Point
     array_mGammaD_limit_T5000.append(( m, fCmsLimitVsM_HybridNew(m) )) # fCmsLimitVsM_HybridNew(m) retireve the limit from toys experiments.
     array_mGammaD_limit_T5000_error.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Error is the difference between fit and toy limit
 
   h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 10.0)
   #h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 108, 0.0455, 8.9973, 1000, 0.0, 10.0)
-  h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
+  h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
   h_limit_vs_mGammaD_dummy.SetYTitle("95% CL upper limit on N_{evt}")
   h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_limit_vs_mGammaD_dummy.GetXaxis().SetNdivisions(505)
-  h_limit_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_limit_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_limit_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
+  h_limit_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_vs_mGammaD_dummy.Draw()
   
   gr_limit_vs_mGammaD_T5000 = ROOT.TGraph( len(array_mGammaD_limit_T5000), array.array("d", zip(*array_mGammaD_limit_T5000)[0]), array.array("d", zip(*array_mGammaD_limit_T5000)[1]) )
   gr_limit_vs_mGammaD_T5000.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T5000.SetLineColor(ROOT.kGreen)
+  gr_limit_vs_mGammaD_T5000.SetLineColor(ROOT.kBlue)
   gr_limit_vs_mGammaD_T5000.SetLineStyle(1)
   gr_limit_vs_mGammaD_T5000.Draw("P")
  
   gr_limit_vs_mGammaD = ROOT.TGraph( len(array_mGammaD_limit), array.array("d", zip(*array_mGammaD_limit)[0]), array.array("d", zip(*array_mGammaD_limit)[1]) )
-  gr_limit_vs_mGammaD.SetLineWidth(1)
+  gr_limit_vs_mGammaD.SetLineWidth(2)
   gr_limit_vs_mGammaD.SetLineColor(ROOT.kRed)
   gr_limit_vs_mGammaD.SetLineStyle(1)
   gr_limit_vs_mGammaD.SetMarkerColor(ROOT.kRed)
@@ -125,8 +130,10 @@ def limit_vs_mGammaD_2016():
   l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_T5000,"Toys","L")
   l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD,"Fit","L")
   l_limit_vs_mGammaD.Draw()
-  l_CMS.Draw()
-  l_CMSLumi.Draw()
+
+  #l_CMS.Draw()
+  #l_CMSLumi.Draw()
+  txtHeader.Draw()
   cnv.cd()
   # Now Draw Errors
   padBot = ROOT.TPad( "padBot", "padBot", 0.0, 0.0, 1.0, 0.3 )
@@ -135,17 +142,17 @@ def limit_vs_mGammaD_2016():
   padBot.SetGrid()
   h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 1000, 0.0, 9.0, 1000, -0.2, 0.2)
   #h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 108, 0.0455, 8.9973, 1000, -0.2, 0.2)
-  h_limit_vs_mGammaD_error_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
+  h_limit_vs_mGammaD_error_dummy.SetXTitle("m_{a} [GeV]")
   h_limit_vs_mGammaD_error_dummy.SetYTitle("Fit Uncertainty [%]")
   h_limit_vs_mGammaD_error_dummy.SetTitleOffset(1.1, "Y")
   h_limit_vs_mGammaD_error_dummy.GetXaxis().SetNdivisions(505)
-  h_limit_vs_mGammaD_error_dummy.GetYaxis().CenterTitle(1)
-  h_limit_vs_mGammaD_error_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_limit_vs_mGammaD_error_dummy.GetYaxis().CenterTitle(1)
+  h_limit_vs_mGammaD_error_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_vs_mGammaD_error_dummy.Draw()
   
   gr_limit_vs_mGammaD_T5000_error = ROOT.TGraph( len(array_mGammaD_limit_T5000_error), array.array("d", zip(*array_mGammaD_limit_T5000_error)[0]), array.array("d", zip(*array_mGammaD_limit_T5000_error)[1]) )
   gr_limit_vs_mGammaD_T5000_error.SetLineWidth(1)
-  gr_limit_vs_mGammaD_T5000_error.SetLineColor(ROOT.kGreen)
+  gr_limit_vs_mGammaD_T5000_error.SetLineColor(ROOT.kBlue)
   gr_limit_vs_mGammaD_T5000_error.SetLineStyle(1)
   gr_limit_vs_mGammaD_T5000_error.Draw("L") 
 
@@ -159,9 +166,10 @@ def limit_vs_mGammaD_2016():
   h_limit_vs_mGammaD_dummy.Draw()
   gr_limit_vs_mGammaD_T5000.Draw("P")
   gr_limit_vs_mGammaD.Draw("L")
-  l_CMS.Draw()
-  l_CMSLumi.Draw()
-  
+  #l_CMS.Draw()
+  #l_CMSLumi.Draw()
+  txtHeader.Draw()
+
   cnv.Update()
   cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2016.pdf")
   cnv.SaveAs("plots/PNG/limit_Events_vs_mGammaD_2016.png")
@@ -178,12 +186,12 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD_2016():
 
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 10.0/lumi_fbinv/SF/eFullMc_over_aGen)
   #h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 108, 0.0455, 8.9973, 1000, 0.0, 10.0/lumi_fbinv/SF/eFullMc_over_aGen)
-  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV/#it{c}^{2}]")
+  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
-  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetTitleOffset(1.35, "Y")
+  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetTitleOffset(1.47, "Y")
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetXaxis().SetNdivisions(505);
-  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
+  h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.Draw()
 
   gr_limit_CSxBR2xAlpha_fb_vs_mGammaD = ROOT.TGraph( len(array_mGammaD_limit_CSxBR2xAlpha_fb), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb)[0]), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb)[1]) )
@@ -200,9 +208,9 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD_2016():
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextSize(0.035)
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD,"95% CL upper limit","L")
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.Draw()
-  l_CMS.Draw()
-  l_CMSLumi.Draw()
-
+  #l_CMS.Draw()
+  #l_CMSLumi.Draw()
+  txtHeader.Draw()
   cnv.SaveAs("plots/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.pdf")
   cnv.SaveAs("plots/PNG/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.png")
   cnv.SaveAs("plots/C/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.C")
@@ -239,11 +247,11 @@ def Alpha_vs_mGammaD_2015():
     array_Alpha_vs_mGammaD_ctau5mm_Marker.append((  m_GeV, 100.0*fCmsDarkSusyAcceptance_LinearFit_2015_13TeV( 5.0, m_GeV ) ))
   
   h_Alpha_vs_mGammaD_dummy = ROOT.TH2F("h_Alpha_vs_mGammaD_dummy", "h_Alpha_vs_mGammaD_dummy", 1000, mGammaD_GeV_bot, mGammaD_GeV_top, 1000, 0.0, 25.0)
-  h_Alpha_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_Alpha_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_Alpha_vs_mGammaD_dummy.SetYTitle("#alpha (c#tau_{#gamma_{D}}, m_{#gamma_{D}}) [%]")
   h_Alpha_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
-  h_Alpha_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_Alpha_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_Alpha_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
+  h_Alpha_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_Alpha_vs_mGammaD_dummy.Draw()
   
   gr_Alpha_vs_mGammaD_ctau0mm = ROOT.TGraph( len(array_Alpha_vs_mGammaD_ctau0mm_LinearFit), array.array("d", zip(*array_Alpha_vs_mGammaD_ctau0mm_LinearFit)[0]), array.array("d", zip(*array_Alpha_vs_mGammaD_ctau0mm_LinearFit)[1]) )
@@ -355,8 +363,8 @@ def Alpha_vs_ctau_2015():
   h_Alpha_vs_ctau_dummy.SetXTitle("c#tau_{#gamma_{D}} [mm]")
   h_Alpha_vs_ctau_dummy.SetYTitle("#alpha (c#tau_{#gamma_{D}}, m_{#gamma_{D}}) [%]")
   h_Alpha_vs_ctau_dummy.SetTitleOffset(1.1, "Y")
-  h_Alpha_vs_ctau_dummy.GetYaxis().CenterTitle(1)
-  h_Alpha_vs_ctau_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_Alpha_vs_ctau_dummy.GetYaxis().CenterTitle(1)
+  h_Alpha_vs_ctau_dummy.GetYaxis().SetTitleSize(0.05)
   h_Alpha_vs_ctau_dummy.Draw()
 
   gr_Alpha_vs_ctau_m025GeV = ROOT.TGraph( len(array_Alpha_vs_ctau_m025GeV), array.array("d", zip(*array_Alpha_vs_ctau_m025GeV)[0]), array.array("d", zip(*array_Alpha_vs_ctau_m025GeV)[1]) )
@@ -443,7 +451,7 @@ array.array("d", zip(*array_Alpha_vs_ctau_m04GeV_Marker)[3]) )
   l_Alpha_vs_ctau.SetTextSize(0.035)
   l_Alpha_vs_ctau.SetHeader("Acceptance for samples with #gamma_{D} mass:")
 #  l_Alpha_vs_ctau.AddEntry(gr_Alpha_vs_ctau_m025GeV,"m_{#gamma_{D}} = 0.25 GeV/#it{c}^{2}","L")
-  l_Alpha_vs_ctau.AddEntry(gr_Alpha_vs_ctau_m04GeV, "m_{#gamma_{D}} =  0.4 GeV/#it{c}^{2}","LP")
+  l_Alpha_vs_ctau.AddEntry(gr_Alpha_vs_ctau_m04GeV, "m_{#gamma_{D}} =  0.4 GeV","LP")
 #  l_Alpha_vs_ctau.AddEntry(gr_Alpha_vs_ctau_m1GeV,  "m_{#gamma_{D}} =  1.0 GeV/#it{c}^{2}","L")
   l_Alpha_vs_ctau.Draw()
 
@@ -556,7 +564,7 @@ def Plot_Eff_vs_R():
   h_Eff_vs_R_dummy = ROOT.TH2F("h_Eff_vs_R_dummy", "h_Eff_vs_R_dummy", 650, R_mm_bot, R_mm_top, 1000, 0.0, 1.1)
   h_Eff_vs_R_dummy.SetXTitle("Radius from beamline [mm]")
   h_Eff_vs_R_dummy.SetYTitle("#epsilon")
-  h_Eff_vs_R_dummy.GetYaxis().CenterTitle(1)
+  #h_Eff_vs_R_dummy.GetYaxis().CenterTitle(1)
   h_Eff_vs_R_dummy.Draw()
   gr_Eff_vs_R = ROOT.TGraph( len(array_Eff_vs_R), array.array("d", zip(*array_Eff_vs_R)[0]), array.array("d", zip(*array_Eff_vs_R)[1]) )
   gr_Eff_vs_R.SetLineWidth(2)
@@ -606,7 +614,7 @@ def Alpha_vs_mGammaD_ctau_3D():
   cnv.SetPhi(-130.0);
   nBins = 100
   h_Alpha_vs_mGammaD_ctau_3D = ROOT.TH2F("h_Alpha_vs_mGammaD_ctau_3D", "h_Alpha_vs_mGammaD_ctau_3D", nBins, mGammaD_GeV_min, mGammaD_GeV_max, nBins, ctau_mm_min, ctau_mm_max)
-  h_Alpha_vs_mGammaD_ctau_3D.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_Alpha_vs_mGammaD_ctau_3D.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_Alpha_vs_mGammaD_ctau_3D.GetXaxis().CenterTitle(1)
   h_Alpha_vs_mGammaD_ctau_3D.GetXaxis().SetNdivisions(506)
   h_Alpha_vs_mGammaD_ctau_3D.GetXaxis().SetTitleOffset(1.44)
@@ -674,11 +682,11 @@ def limit_CSxBR2_fb_vs_mGammaD_2015():
     array_mGammaD_limit_CSxBR2_fb_ctau5mm.append((  m, fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsDarkSusyAcceptance_LinearFit_2015_13TeV( 5.0, m ) ))
 
   h_limit_CSxBR2_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2_fb_vs_mGammaD_dummy", "h_limit_CSxBR2_fb_vs_mGammaD_dummy", 1000, mGammaD_GeV_bot, mGammaD_GeV_top, 1000, 0.01, 1000000.0)
-  h_limit_CSxBR2_fb_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_limit_CSxBR2_fb_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_limit_CSxBR2_fb_vs_mGammaD_dummy.SetYTitle("#sigma(pp #rightarrow 2#gamma_{D} + X) B^{2}(#gamma_{D} #rightarrow 2 #mu) [fb]")
   h_limit_CSxBR2_fb_vs_mGammaD_dummy.SetTitleOffset(1.35, "Y")
   h_limit_CSxBR2_fb_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_limit_CSxBR2_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_limit_CSxBR2_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_CSxBR2_fb_vs_mGammaD_dummy.Draw()
   
   gr_prediction_CSxBR2_fb_vs_mGammaD = ROOT.TGraph( len(array_mGammaD_prediction_CSxBR2_fb), array.array("d", zip(*array_mGammaD_prediction_CSxBR2_fb)[0]), array.array("d", zip(*array_mGammaD_prediction_CSxBR2_fb)[1]) )
@@ -762,11 +770,11 @@ def limit_CS_fb_vs_mGammaD_2015():
     array_mGammaD_limit_CS_fb_ctau2mm.append((  m, fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsDarkSusyAcceptance_LinearFit_2015_13TeV( 2.0, m )/BR_GammaD_to_2mu( m )/BR_GammaD_to_2mu( m ) ))
 
   h_limit_CS_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CS_fb_vs_mGammaD_dummy", "h_limit_CS_fb_vs_mGammaD_dummy", 1000, mGammaD_GeV_bot, mGammaD_GeV_top, 1000, 0.0, 120.0)
-  h_limit_CS_fb_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_limit_CS_fb_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_limit_CS_fb_vs_mGammaD_dummy.SetYTitle("#sigma(pp #rightarrow h) #times Br(h #rightarrow 2#gamma_{D} + X) [fb]")
   h_limit_CS_fb_vs_mGammaD_dummy.SetTitleOffset(1.35, "Y")
   h_limit_CS_fb_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_limit_CS_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_limit_CS_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_CS_fb_vs_mGammaD_dummy.Draw()
   
   gr_prediction_CS_fb_vs_mGammaD = ROOT.TGraph( len(array_mGammaD_prediction_CS_fb), array.array("d", zip(*array_mGammaD_prediction_CS_fb)[0]), array.array("d", zip(*array_mGammaD_prediction_CS_fb)[1]) )
@@ -839,7 +847,7 @@ def limit_CSxBR2_fb_vs_ctau_2015():
   h_limit_CSxBR2_fb_vs_ctau_dummy.SetYTitle("#sigma(pp #rightarrow 2#gamma_{D} + X) B^{2}(#gamma_{D} #rightarrow 2 #mu) [fb]")
   h_limit_CSxBR2_fb_vs_ctau_dummy.SetTitleOffset(1.35, "Y")
   h_limit_CSxBR2_fb_vs_ctau_dummy.GetYaxis().CenterTitle(1)
-  h_limit_CSxBR2_fb_vs_ctau_dummy.GetYaxis().SetTitleSize(0.06)
+  h_limit_CSxBR2_fb_vs_ctau_dummy.GetYaxis().SetTitleSize(0.05)
   h_limit_CSxBR2_fb_vs_ctau_dummy.Draw()
 
   gr_limit_CSxBR2_fb_vs_ctau_m025GeV = ROOT.TGraph( len(array_ctau_limit_CSxBR2_fb_m025GeV), array.array("d", zip(*array_ctau_limit_CSxBR2_fb_m025GeV)[0]), array.array("d", zip(*array_ctau_limit_CSxBR2_fb_m025GeV)[1]) )
@@ -868,9 +876,9 @@ def limit_CSxBR2_fb_vs_ctau_2015():
   l_limit_CSxBR2_fb_vs_ctau.SetTextSize(0.035)
   l_limit_CSxBR2_fb_vs_ctau.SetHeader("95% CL limits for samples")
   l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"with #gamma_{D} mass:","")
-  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"m_{#gamma_{D}} = 0.25 GeV/#it{c}^{2}","L")
-  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m04GeV, "m_{#gamma_{D}} =  0.4 GeV/#it{c}^{2}","L")
-  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m1GeV,  "m_{#gamma_{D}} =  1.0 GeV/#it{c}^{2}","L")
+  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"m_{#gamma_{D}} = 0.25 GeV","L")
+  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m04GeV, "m_{#gamma_{D}} =  0.4 GeV","L")
+  l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m1GeV,  "m_{#gamma_{D}} =  1.0 GeV","L")
   l_limit_CSxBR2_fb_vs_ctau.Draw()
 
   txtHeader.Draw()
@@ -917,16 +925,16 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   line_logEpsilon2_m_1.SetLineColor(ROOT.kBlack)
   
   h_ctau_vs_mGammaD_dummy = ROOT.TH2F("h_ctau_vs_mGammaD_dummy", "h_ctau_vs_mGammaD_dummy", 100, mGammaD_GeV_bot, mGammaD_GeV_top, 100, ctau_mm_bot, ctau_mm_top)
-  h_ctau_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_ctau_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_ctau_vs_mGammaD_dummy.SetYTitle("c#tau_{#gamma_{D}} [mm]")
   h_ctau_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_ctau_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_ctau_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_ctau_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   
   nBins = 100
   
   h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D = ROOT.TH2F("h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D", "h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D", nBins, mGammaD_GeV_min, mGammaD_GeV_max, nBins, ctau_mm_min, ctau_mm_max)
-  h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.GetXaxis().CenterTitle(1)
   h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.GetXaxis().SetNdivisions(506)
   h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.GetXaxis().SetTitleOffset(1.4)
@@ -969,7 +977,7 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   h_logEpsilon2_vs_mGammaD_dummy.SetYTitle("log_{10}(#epsilon^{2})")
   h_logEpsilon2_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   
   h_limit_CS_over_CSsm_vs_mGammaD_logEpsilon2_3D = ROOT.TH2F("h_limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D", "h_limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D", nBins, mGammaD_GeV_min, mGammaD_GeV_max, nBins, logEpsilon2_min, logEpsilon2_max)
   h_limit_CS_over_CSsm_vs_mGammaD_logEpsilon2_3D.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
@@ -1177,7 +1185,7 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
   h_ctau_vs_mGammaD_dummy.SetYTitle("c#tau_{#gamma_{D}} [mm]")
   h_ctau_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_ctau_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_ctau_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_ctau_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
 
   h_ctau_vs_mGammaD_excl = ROOT.TH2F("h_ctau_vs_mGammaD_excl", "h_ctau_vs_mGammaD_excl", 2000, mGammaD_GeV_bot, mGammaD_GeV_top, 1000, 0.0, 3.0)
   h_ctau_vs_mGammaD_excl.SetLineColor(ROOT.kRed);
@@ -1196,7 +1204,7 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
   h_epsilon2_vs_mGammaD_dummy.SetYTitle("#epsilon^{2}")
   h_epsilon2_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_epsilon2_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_epsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_epsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   
   array_ctau_vs_mGammaD     = []
   array_epsilon2_vs_mGammaD = []
@@ -1421,7 +1429,7 @@ def plot_width_over_e2_GeV():
   h_width_over_e2_GeV_dummy.SetTitleOffset(1.35, "Y")
   h_width_over_e2_GeV_dummy.GetXaxis().SetNdivisions(505)
   h_width_over_e2_GeV_dummy.GetYaxis().CenterTitle(1)
-  h_width_over_e2_GeV_dummy.GetYaxis().SetTitleSize(0.06)
+  h_width_over_e2_GeV_dummy.GetYaxis().SetTitleSize(0.05)
   h_width_over_e2_GeV_dummy.SetMinimum(0.00001)
   h_width_over_e2_GeV_dummy.Draw()
 
@@ -1497,7 +1505,7 @@ def plot_width_over_e2_GeV():
   h_width_over_e2_GeV_inverted_dummy.SetYTitle("f(m_{#gamma_{D}}) = (#Gamma_{#gamma_{D}} / #epsilon^{2})^{-1} [GeV^{-1}]")
   h_width_over_e2_GeV_inverted_dummy.SetTitleOffset(1.33, "Y")
   h_width_over_e2_GeV_inverted_dummy.GetYaxis().CenterTitle(1)
-  h_width_over_e2_GeV_inverted_dummy.GetYaxis().SetTitleSize(0.06)
+  h_width_over_e2_GeV_inverted_dummy.GetYaxis().SetTitleSize(0.05)
   h_width_over_e2_GeV_inverted_dummy.SetMinimum(0.00001)
   h_width_over_e2_GeV_inverted_dummy.Draw()
   
@@ -1529,7 +1537,7 @@ def plot_BR_GammaD_to_2mu():
   h_width_over_e2_GeV_dummy.SetTitleOffset(1.35, "Y")
   h_width_over_e2_GeV_dummy.GetXaxis().SetNdivisions(505)
   h_width_over_e2_GeV_dummy.GetYaxis().CenterTitle(1)
-  h_width_over_e2_GeV_dummy.GetYaxis().SetTitleSize(0.06)
+  h_width_over_e2_GeV_dummy.GetYaxis().SetTitleSize(0.05)
   h_width_over_e2_GeV_dummy.SetMinimum(0.00001)
   h_width_over_e2_GeV_dummy.Draw()
 
@@ -1559,11 +1567,11 @@ def plot_BR_GammaD_to_2mu():
 def plot_ctauConst_vs_logEpsilon2_mGammaD():
   
   h_logEpsilon2_vs_mGammaD_dummy = ROOT.TH2F("h_logEpsilon2_vs_mGammaD_dummy", "h_logEpsilon2_vs_mGammaD_dummy", 100, mGammaD_GeV_bot, mGammaD_GeV_top, 100, logEpsilon2_min, logEpsilon2_max)
-  h_logEpsilon2_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV/#it{c}^{2}]")
+  h_logEpsilon2_vs_mGammaD_dummy.SetXTitle("m_{#gamma_{D}} [GeV]")
   h_logEpsilon2_vs_mGammaD_dummy.SetYTitle("log_{10}(#epsilon^{2})")
   h_logEpsilon2_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
-  h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.06)
+  h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
   h_logEpsilon2_vs_mGammaD_dummy.GetYaxis().SetNdivisions(506)
   
   
@@ -1699,25 +1707,25 @@ def plot_ctauConst_vs_logEpsilon2_mGammaD():
 def limit_CSxBR2_fb_vs_ma_2016():
   BR_h_aa = 0.003
   cnv.SetLogy(1)
-  h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0., 4., 1000, 0.08, 100.)
-  h_CSxBR_vs_ma_dummy.SetXTitle("mass of a_{1} [GeV]")
+  h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0., 4., 1000, 0.08, 150.)
+  h_CSxBR_vs_ma_dummy.SetXTitle("m_{a_{1}} [GeV]")
   h_CSxBR_vs_ma_dummy.SetYTitle("#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) B^{2}(a_{1} #rightarrow 2 #mu) [fb]")
   h_CSxBR_vs_ma_dummy.SetTitleOffset(1.1, "Y")
-  h_CSxBR_vs_ma_dummy.GetYaxis().CenterTitle(1)
-  h_CSxBR_vs_ma_dummy.GetYaxis().SetTitleSize(0.06)
+  #h_CSxBR_vs_ma_dummy.GetYaxis().CenterTitle(1)
+  h_CSxBR_vs_ma_dummy.GetYaxis().SetTitleSize(0.05)
   h_CSxBR_vs_ma_dummy.SetNdivisions(20210, "Y")
   h_CSxBR_vs_ma_dummy.Draw()
 
-  array_ma_mh_86  = []
+  array_ma_mh_90  = []
   array_ma_mh_125 = []
   array_ma_mh_150 = []
-  array_ma = [0.25, 0.5, 0.75, 1.0, 2.0, 3.55]
+  array_ma = [0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 2.6, 2.75, 2.85, 3., 3.2, 3.55]
   for ma_i in array_ma:
-    array_ma_mh_86.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 86. ) )) # Transform Limits on N_ev to xsection
-    array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 125.) ))
-    array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(ma_i, 150.) ))
-  
-  gr_CSxBR_vs_ma_mh_86 = ROOT.TGraph(len(array_ma_mh_86), array.array("d", zip(*array_ma_mh_86)[0]), array.array("d", zip(*array_ma_mh_86)[1]))
+    array_ma_mh_90.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 90. ) )) # Transform Limits on N_ev to xsection
+    array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 125.) ))
+    array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 150.) ))
+ 
+  gr_CSxBR_vs_ma_mh_86 = ROOT.TGraph(len(array_ma_mh_90), array.array("d", zip(*array_ma_mh_90)[0]), array.array("d", zip(*array_ma_mh_90)[1]))
   gr_CSxBR_vs_ma_mh_86.SetLineWidth(2)
   gr_CSxBR_vs_ma_mh_86.SetLineColor(ROOT.kMagenta+2)
   gr_CSxBR_vs_ma_mh_86.SetLineStyle(9)
@@ -1745,7 +1753,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   gr_CSxBR_vs_ma_mh_150.Draw("CP")
   
   array_ma_mh_125_SM = []
-  for ma_i in fRange(0.3, 3.55, 100):
+  for ma_i in fRange(0.25, 3., 100):
     CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
     CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
     CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
@@ -1766,9 +1774,9 @@ def limit_CSxBR2_fb_vs_ma_2016():
   l_CSxBR_vs_ma.SetTextFont(42)
   l_CSxBR_vs_ma.SetTextSize(0.035)
   l_CSxBR_vs_ma.SetHeader("NMSSM 95% CL upper limits:")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_86,"m_{h_{1}} =   86 GeV/#it{c}^{2}","LP")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{1}} = 125 GeV/#it{c}^{2}","LP")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{1}} = 150 GeV/#it{c}^{2}","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_86,"m_{h_{1}} =   90 GeV","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{1}} = 125 GeV","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{1}} = 150 GeV","LP")
   l_CSxBR_vs_ma.Draw()
   
   l_CSxBR_vs_ma_2 = ROOT.TLegend(0.35,0.57,0.9,0.72)
@@ -1778,7 +1786,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   l_CSxBR_vs_ma_2.SetTextFont(42)
   l_CSxBR_vs_ma_2.SetTextSize(0.035)
   l_CSxBR_vs_ma_2.SetHeader("Reference model:")
-  l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.003 #times #sigma_{SM}","L")
+  l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) = 0.003 #times #sigma_{SM}","L")
   l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{j}) #times B(h_{j} #rightarrow 2a_{1}) = 0 for j #neq i","")
   l_CSxBR_vs_ma_2.Draw()
 
@@ -1797,25 +1805,25 @@ def limit_CSxBR2_fb_vs_mh_2016():
   BR_h_aa = 0.003
  
   cnv.SetLogy(0)
-  h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 4.5)
-  h_CSxBR_NMSSM_vs_mh_dummy.SetXTitle("mass of h_{i} [GeV]")
+  h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 3.2)
+  h_CSxBR_NMSSM_vs_mh_dummy.SetXTitle("m_{h_{i}} [GeV]")
   h_CSxBR_NMSSM_vs_mh_dummy.SetYTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]")
   h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.2, "Y")
-  h_CSxBR_NMSSM_vs_mh_dummy.GetYaxis().CenterTitle(1)
+  #h_CSxBR_NMSSM_vs_mh_dummy.GetYaxis().CenterTitle(1)
   h_CSxBR_NMSSM_vs_mh_dummy.GetYaxis().SetTitleSize(0.05)
-  h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.1, "X")
-  h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().CenterTitle(1)
-  h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().SetTitleSize(0.05)
+  #h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.1, "X")
+  #h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().CenterTitle(1)
+  #h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().SetTitleSize(0.05)
   h_CSxBR_NMSSM_vs_mh_dummy.Draw()
 
   array_mh_CSxBR_NMSSM_ma_025 = []
   #array_mh_CSxBR_NMSSM_ma_2   = []
   array_mh_CSxBR_NMSSM_ma_355 = []
-  array_mh = [86., 90., 100., 110., 125., 150.]
+  array_mh = [90., 100., 110., 125., 150.]
   for mh_i in array_mh:
-    array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(0.25, mh_i ) )) # Model Independent limits transformed to Xsec
-    #array_mh_CSxBR_NMSSM_ma_2.append((   mh_i, fCmsLimitVsM(2.00)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(2.00, mh_i ) ))
-    array_mh_CSxBR_NMSSM_ma_355.append(( mh_i, fCmsLimitVsM(3.55)/lumi_fbinv/SF/fCmsNmssmAcceptance_2015_13TeV(3.55, mh_i ) ))
+    array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(0.25, mh_i ) )) # Model Independent limits transformed to Xsec
+    #array_mh_CSxBR_NMSSM_ma_2.append((   mh_i, fCmsLimitVsM(2.00)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(2.00, mh_i ) ))
+    array_mh_CSxBR_NMSSM_ma_355.append(( mh_i, fCmsLimitVsM(3.55)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(3.55, mh_i ) ))
 
   gr_CSxBR_NMSSM_vs_mh_ma_025 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_025), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[1]))
   gr_CSxBR_NMSSM_vs_mh_ma_025.SetLineWidth(2)
@@ -1843,7 +1851,7 @@ def limit_CSxBR2_fb_vs_mh_2016():
 
   execfile("scripts/NMSSM_Br_a_Function.py") # contains fNMSSM_Br_a def (the BR given m(a), tan(beta), final state)
   array_mh_ma_2_SM = []
-  for mh_i in fRange(86., 149., 100):
+  for mh_i in fRange(90., 149., 100):
       CS_fb = 1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0] # Xsec of ggH production
       CS_fb = CS_fb + CS_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(mh_i)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0])                # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
       CS_fb = CS_fb + CS_fb * (1000.0*fCS_SM_HW_13TeV_pb(mh_i)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(mh_i)[0]) + CS_fb * (0.02) # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
@@ -1858,12 +1866,12 @@ def limit_CSxBR2_fb_vs_mh_2016():
   gr_CSxBR_SM.SetLineStyle(1)
   #gr_CSxBR_SM.Draw("C")
 
-  box1 = ROOT.TBox(125.0, 0.0, 153.0, 4.5)
+  box1 = ROOT.TBox(125.0, 0.0, 153.0, 3.2)
   box1.SetFillStyle(3001)
   box1.SetFillColor(ROOT.kRed - 10)
   box1.Draw()
   
-  a_mh_125 = ROOT.TArrow(125.0, 0, 125.0, 4.5, 0.02, "--")
+  a_mh_125 = ROOT.TArrow(125.0, 0, 125.0, 3.2, 0.02, "--")
   a_mh_125.SetLineColor(ROOT.kBlack)
   a_mh_125.SetLineWidth(1)
   a_mh_125.SetLineStyle(7)
@@ -1879,9 +1887,9 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_CSxBR_NMSSM_vs_mh.SetTextSize(0.035)
   l_CSxBR_NMSSM_vs_mh.SetMargin(0.13)
   l_CSxBR_NMSSM_vs_mh.SetHeader("NMSSM 95% CL upper limits:")
-  l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_355,"m_{a_{1}} = 3.55 GeV/#it{c}^{2}","LP")
+  l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_355,"m_{a_{1}} = 3.55 GeV","LP")
   #l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_2,  "m_{a_{1}} = 2 GeV/#it{c}^{2}",   "LP")
-  l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_025,"m_{a_{1}} = 0.25 GeV/#it{c}^{2}","LP")
+  l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_025,"m_{a_{1}} = 0.25 GeV","LP")
   l_CSxBR_NMSSM_vs_mh.Draw()
   
   l_CSxBR_NMSSM_vs_mh_2 = ROOT.TLegend(0.20,0.56,0.93,0.71)
@@ -1892,16 +1900,16 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_CSxBR_NMSSM_vs_mh_2.SetTextSize(0.035)
   l_CSxBR_NMSSM_vs_mh_2.SetMargin(0.13)
   l_CSxBR_NMSSM_vs_mh_2.SetHeader("Reference model:")
-  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1} ) = 0.003 #times #sigma_{SM}","L")
-  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"B(a_{1}#rightarrow 2#mu)=7.7%","")
+  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) = 0.003 #times #sigma_{SM}","L")
+  l_CSxBR_NMSSM_vs_mh_2.AddEntry(gr_CSxBR_SM,"B(a_{1}#rightarrow 2#mu) = 7.7%","")
   l_CSxBR_NMSSM_vs_mh_2.Draw()
   
-  l_mh1 = ROOT.TLegend(0.22,0.15,0.6,0.3)
+  l_mh1 = ROOT.TLegend(0.22,0.15,0.6,0.23)
   l_mh1.SetFillColor(ROOT.kWhite)
   l_mh1.SetFillStyle(4050)
   l_mh1.SetBorderSize(0)
   l_mh1.SetTextFont(42)
-  l_mh1.SetTextSize(0.035)
+  l_mh1.SetTextSize(0.025)
   l_mh1.SetTextColor(ROOT.kBlack)
   l_mh1.SetMargin(0.13)
   l_mh1.SetHeader("")
@@ -1909,12 +1917,12 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_mh1.AddEntry(gr_CSxBR_SM,"m_{h_{1}} < m_{h_{2}}=125 GeV","")
   l_mh1.Draw()
 
-  l_mh2 = ROOT.TLegend(0.63,0.15,0.9,0.3)
+  l_mh2 = ROOT.TLegend(0.63,0.15,0.9,0.23)
   l_mh2.SetFillColor(ROOT.kWhite)
   l_mh2.SetFillStyle(4050)
   l_mh2.SetBorderSize(0)
   l_mh2.SetTextFont(42)
-  l_mh2.SetTextSize(0.035)
+  l_mh2.SetTextSize(0.025)
   l_mh2.SetTextColor(ROOT.kBlack)
   l_mh2.SetMargin(0.13)
   l_mh2.SetHeader("")

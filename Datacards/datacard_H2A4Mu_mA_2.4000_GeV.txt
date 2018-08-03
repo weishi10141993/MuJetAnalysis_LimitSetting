@@ -17,7 +17,7 @@ observation      -1
 bin                           A          A         A         A 
 process                       0          1         2         3 
 process                       signal     BBbar_2D  DJpsiS_2D DJpsiD_2D 
-rate                          1.000          9.200       0.318      0.019 
+rate                          1.000          9.214       0.318      0.019 
 ------------------------------- 
 lumi_13TeV              lnN   1.025      -         -         -           Lumi (signal only; BBbar and DJpsi backgrounds are data-driven) 
 CMS_eff_mu_hlt          lnN   1.050      -         -         -           Muon trigger 
@@ -30,7 +30,7 @@ CMS_H2A4Mu_eff_ovlp_trk lnN   1.024      -         -         -           Reconst
 CMS_H2A4Mu_eff_ovlp_mu  lnN   1.026      -         -         -           Reconstruction of close muons in the muon system 
 CMS_H2A4Mu_effdimu_mass lnN   1.015      -         -         -           Dimuons mass consistency m1~m2 
 CMS_H2A4Mu_nnlo_pt      lnN   1.020      -         -         -           Reconstruction of close muons in the muon system 
-CMS_H2A4Mu_BBbar_norm   lnN     -       1.135      -         -           BBbar estimate
+CMS_H2A4Mu_BBbar_norm   lnN     -       1.123      -         -           BBbar estimate
 CMS_H2A4Mu_BBbar_syst   lnN     -       1.200      -         -           Syst on BBar normalization from the difference of the estimation done inverting ISO cut 
 CMS_H2A4Mu_DJpsi_extr   lnN     -         -       1.100     1.100        Double J/psi MC-to-data extrapolation 
 CMS_H2A4Mu_DJpsiS_norm  gmN 27  -         -       0.0118     -           Double J/psi single parton scattering (SPS) estimate of 0.061 comes from 3 MC events 

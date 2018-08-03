@@ -38,6 +38,7 @@ void CreateDatacards( bool makeRoot=false ){
   bool isLxplus=true;
   //TString Myrule = "--rule CLs --LHCmode LHC-limits --toysFrequentist"; //OLD command "--rule CLs --testStat LHC"
   TString Myrule = "--rule CLs --testStat LHC";
+  Myrule = Myrule + " --cl 0.95";
   string pwd = "/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_8_1_0/src/limits_2a4mu/";
   bool DiffSeed=true;
   int Ninit=0, Nend=30; //Each mass is submitted (Nend-Ninit) times. If you need to accumulate statistic you can resubmit from 41 to X. 
@@ -49,12 +50,12 @@ void CreateDatacards( bool makeRoot=false ){
   for( int i=0; i<N_Signals; i++){ Seeds[i]=-1; }
   //N events
   int obs = -1;
-  float signal_rate = 1, BBbar_2D_rate = 9.2, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
+  float signal_rate = 1, BBbar_2D_rate = 9.214, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
   //Signal Uncertainties
   float lumi_13TeV = 1.025, mu_hlt   = 1.05,  mu_id   = 1.024,  mu_iso = 1.02,  mu_pu   = 1.0017;
   float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08, HxecBr = 1.038;
   //Background Uncertainties
-  float BBbar_norm=56, BBbar_norm2=0.164286, BBbar_norm3=1.1355, BBbar_syst=1.2;
+  float BBbar_norm=56, BBbar_norm2=0.16454, BBbar_norm3=1.123, BBbar_syst=1.2;
   float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.1;
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";

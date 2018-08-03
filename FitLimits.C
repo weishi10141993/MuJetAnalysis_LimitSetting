@@ -55,6 +55,7 @@ void FitLimits(){
   // Get limit Tgraph
   TString LimitFile = "plots/C/limit_Events_vs_mGammaD_2016.root";
   float NoevIs = 3.205;//2.8;
+  //float NoevIs = 2.4; //90% cl
   //TString LimitFile = "Real_Limits.root";
   TFile *f = new TFile(LimitFile.Data());
   TGraph *graph = (TGraph*) f->Get("Graph");
@@ -89,23 +90,23 @@ void FitLimits(){
   RooRealVar mean1("mean1", "mean",    0.55,  0.5,  0.6,"GeV/c^{2}");
   RooRealVar sigma1("sigma1", "sigma", 0.07, 0.04, 0.1,"GeV/c^{2}");
   RooGaussian gaus1("gaus1","Gaussian",x, mean1,sigma1);
-  RooRealVar mean2("mean2", "mean",    0.95,  0.9,   1.,"GeV/c^{2}");
-  RooRealVar sigma2("sigma2", "sigma", 0.04, 0.032, 0.1,"GeV/c^{2}");
+  RooRealVar mean2("mean2", "mean",    0.95,  0.7,   1.,"GeV/c^{2}");
+  RooRealVar sigma2("sigma2", "sigma", 0.04, 0.035, 0.1,"GeV/c^{2}");
   RooGaussian gaus2("gaus2","Gaussian",x, mean2,sigma2);
   RooRealVar mean3("mean3", "mean",    1.18,  1.15,   1.2,"GeV/c^{2}");
-  RooRealVar sigma3("sigma3", "sigma", 0.035, 0.02, 0.1,"GeV/c^{2}");
+  RooRealVar sigma3("sigma3", "sigma", 0.035, 0.033, 0.1,"GeV/c^{2}");
   RooGaussian gaus3("gaus3","Gaussian",x, mean3,sigma3);
   RooRealVar mean4("mean4", "mean",    1.5,  1.4,   1.6,"GeV/c^{2}");
-  RooRealVar sigma4("sigma4", "sigma", 0.04, 0.035, 0.1,"GeV/c^{2}");
+  RooRealVar sigma4("sigma4", "sigma", 0.04, 0.03, 0.1,"GeV/c^{2}");
   RooGaussian gaus4("gaus4","Gaussian",x, mean4,sigma4);
   RooRealVar mean5("mean5", "mean",    1.8,  1.75,   2.1,"GeV/c^{2}");
   RooRealVar sigma5("sigma5", "sigma", 0.08, 0.05, 0.1,"GeV/c^{2}");
   RooGaussian gaus5("gaus5","Gaussian",x, mean5,sigma5);
-  RooRealVar mean6("mean6", "mean",    2.4,  2.35,   2.45,"GeV/c^{2}");
-  RooRealVar sigma6("sigma6", "sigma", 0.07, 0.03, 0.1,"GeV/c^{2}");
+  RooRealVar mean6("mean6", "mean",    2.4,  2.3,   2.5,"GeV/c^{2}");
+  RooRealVar sigma6("sigma6", "sigma", 0.07, 0.038, 0.1,"GeV/c^{2}");
   RooGaussian gaus6("gaus6","Gaussian",x, mean6,sigma6);
-  RooRealVar mean7("mean7", "mean",    2.7,  2.65,   2.8,"GeV/c^{2}");
-  RooRealVar sigma7("sigma7", "sigma", 0.05, 0.04, 0.1,"GeV/c^{2}");
+  RooRealVar mean7("mean7", "mean",    2.9,  2.8,   2.999,"GeV/c^{2}");
+  RooRealVar sigma7("sigma7", "sigma", 0.05, 0.004, 0.2,"GeV/c^{2}");
   RooGaussian gaus7("gaus7","Gaussian",x, mean7,sigma7);
   RooRealVar mean8("mean8", "mean",    3.1,  3.,   3.2,"GeV/c^{2}");
   RooRealVar sigma8("sigma8", "sigma", 0.12, 0.07, 0.2,"GeV/c^{2}");
@@ -113,12 +114,12 @@ void FitLimits(){
   RooRealVar N0("N0","yield",291,100.,400.);
   RooRealVar N1("N1","yield",0.1,0.01,6.0);
   RooRealVar N2("N2","yield",2.0,0.5,6.0);
-  RooRealVar N3("N3","yield",1.0,0.5,1.);
-  RooRealVar N4("N4","yield",2.0,1.0,7.0);
-  RooRealVar N5("N5","yield",6.0,3.0,9.0);
+  RooRealVar N3("N3","yield",1.0,0.1,3.);
+  RooRealVar N4("N4","yield",1.0,0.1,1.8);
+  RooRealVar N5("N5","yield",6.0,0.1,9.0);
   RooRealVar N6("N6","yield",1.9,1.5,2.5);
-  RooRealVar N7("N7","yield",0.4,0.2,2.0);
-  RooRealVar N8("N8","yield",10.,7.0,15.);
+  RooRealVar N7("N7","yield",0.4,0.2,10.0);
+  RooRealVar N8("N8","yield",10.,7.0,18.);
   RooAddPdf model("model","model",RooArgList(p0,gaus1,gaus2,gaus3,gaus4,gaus5,gaus6,gaus7,gaus8),RooArgList(N0,N1,N2,N3,N4,N5,N6,N7,N8));
   RooAbsPdf* MyModel = &model;
   RooNLLVar nll("nll","log likelihood var",*MyModel,dh, RooFit::Extended(true));
