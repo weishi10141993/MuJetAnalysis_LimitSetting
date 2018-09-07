@@ -56,7 +56,7 @@ void CreateDatacards( bool makeRoot=false ){
   float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08, HxecBr = 1.038;
   //Background Uncertainties
   float BBbar_norm=56, BBbar_norm2=0.16454, BBbar_norm3=1.123, BBbar_syst=1.2;
-  float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.1;
+  float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.15;
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
   system( makeFold.Data() );
