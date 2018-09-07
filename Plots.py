@@ -1753,7 +1753,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   gr_CSxBR_vs_ma_mh_150.Draw("CP")
   
   array_ma_mh_125_SM = []
-  for ma_i in fRange(0.25, 3., 100):
+  for ma_i in fRange(0.25, 3.55, 100):
     CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
     CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
     CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
@@ -1775,11 +1775,11 @@ def limit_CSxBR2_fb_vs_ma_2016():
   l_CSxBR_vs_ma.SetTextSize(0.035)
   l_CSxBR_vs_ma.SetHeader("NMSSM 95% CL upper limits:")
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_86,"m_{h_{1}} =   90 GeV","LP")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{1}} = 125 GeV","LP")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{1}} = 150 GeV","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{2}} = 125 GeV","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{2}} = 150 GeV","LP")
   l_CSxBR_vs_ma.Draw()
   
-  l_CSxBR_vs_ma_2 = ROOT.TLegend(0.35,0.57,0.9,0.72)
+  l_CSxBR_vs_ma_2 = ROOT.TLegend(0.35,0.56,0.9,0.71)
   l_CSxBR_vs_ma_2.SetFillColor(ROOT.kWhite)
   l_CSxBR_vs_ma_2.SetMargin(0.13)
   l_CSxBR_vs_ma_2.SetBorderSize(0)

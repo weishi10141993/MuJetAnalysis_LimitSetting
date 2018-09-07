@@ -14,6 +14,8 @@ CL='95%'
 #2018 granularity
 masses=[0.2113,0.2400,0.2600,0.3000,0.3300,0.3600,0.4000,0.4300,0.4600,0.5000,0.5300,0.5600,0.6000,0.7000,0.8000,0.8800,0.9000,0.9100,0.9200,0.9300,0.9400,1.0000,1.1000,1.2000,1.3000,1.4000,1.5000,1.6000,1.7000,1.8000,1.9000,2.0000,2.1000,2.2000,2.3000,2.4000,2.5000,2.6000,2.7000,2.8000,2.9000,3.0000,3.0200,3.0500,3.0800,3.0900,3.1000,3.1200,3.1500,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000]
 basetxt="sh/OutPut_"
+#pwd='/afs/cern.ch/work/l/lpernie/H2a4Mu/DisplacedMuonJetAnalysis_2015/LIMITS/CMSSW_8_1_0/src/limits_2a4mu/macros/'
+pwd='/afs/cern.ch/work/d/dildick/public/GEM/HLLHCProjection/CMSSW_8_1_0/src/limits_2a4mu/macros/'
 
 endtxt="_T50000_";
 #endtxt="_T30000_";
@@ -24,14 +26,14 @@ if   "T30000" in endtxt: gr="grep T30000 | grep -v T50000 | grep -v T10000"
 elif "T50000" in endtxt: gr="grep T50000 | grep -v T30000 | grep -v T10000"
 elif "T10000" in endtxt: gr="grep T10000 | grep -v T30000 | grep -v T50000"
 else: gr="grep -v T50000 | grep -v 10000 | grep -v 30000" 
-bashCommand="ls sh/  | grep OutPut | " + gr + " | sort | grep -c '" + endtxt + "'"
+bashCommand="ls " + pwd + "sh/  | grep OutPut | " + gr + " | sort | grep -c '" + endtxt + "'"
 print str(bashCommand)
 subprocess.call(bashCommand,shell=True)
 print "That contain N limits:"
-bashCommand="grep 'Limit: r <' " + basetxt + "*" + endtxt + "* | grep -c txt"
+bashCommand="grep 'Limit: r <' " + pwd + basetxt + "*" + endtxt + "* | grep -c txt"
 print str(bashCommand)
 subprocess.call(bashCommand,shell=True)
-cmd1 = "grep 'Hybrid New' sh/OutPut_*" + endtxt + "* "
+cmd1 = "grep 'Hybrid New' " + pwd + "sh/OutPut_*" + endtxt + "* "
 cmd2 = " | awk  '{print $1}' | sed 's/.$//'"
 i=0; oldline=""; average=0; average_n=0; average_m=0; average_m_n=0;
 Resulter_TOT=[]
