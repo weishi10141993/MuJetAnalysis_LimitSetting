@@ -52,7 +52,7 @@ void CreateDatacards( bool makeRoot=false ){
   int obs = -1;
   float signal_rate = 1, BBbar_2D_rate = 9.214, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
   //Signal Uncertainties
-  float lumi_13TeV = 1.025, mu_hlt   = 1.05,  mu_id   = 1.024,  mu_iso = 1.02,  mu_pu   = 1.0017;
+  float lumi_13TeV = 1.025, mu_hlt   = 1.06,  mu_id   = 1.024,  mu_iso = 1.02,  mu_pu   = 1.0017;
   float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08, HxecBr = 1.038;
   //Background Uncertainties
   float BBbar_norm=56, BBbar_norm2=0.16454, BBbar_norm3=1.123, BBbar_syst=1.2;
