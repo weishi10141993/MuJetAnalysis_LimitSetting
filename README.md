@@ -5,15 +5,18 @@
 . STD command  -> combine -m 125 -M HybridNew --rule CLs --testStat LHC datacard_H2A4Mu_mA_0.2200_GeV.txt -t 100000 -s -1 (--fork 10)
 
 ## Installing the framework
-0. SCRAM_ARCH=slc6_amd64_gcc491; export SCRAM_ARCH;   
-1. cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
-2. cd CMSSW_7_4_7/src/   
-3. cmsenv    
-4. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
-5. git clone https://github.com/cms-tamu/MuJetAnalysis_LimitSetting.git    
-6. scram b -j 6   
-7. cd limits_2a4mu    
-
+```
+cmsrel CMSSW_7_4_7 #(Release needed for the Hggs combine tool)   
+cd CMSSW_7_4_7/src/   
+cmsenv    
+git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
+cd HiggsAnalysis/CombinedLimit
+source env_standalone.sh 
+make -j 8; make # second make fixes compilation error of first
+git clone https://github.com/cms-tamu/MuJetAnalysis_LimitSetting.git    
+scram b -j 6   
+cd limits_2a4mu    
+```
 # Running the model independent limits
 1. Copy here "ws_FINAL.root" from bbBar estimation    
    -> RooStat file which has background model inside it.   
