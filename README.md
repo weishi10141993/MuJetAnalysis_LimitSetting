@@ -10,7 +10,7 @@
 2. cd CMSSW_7_4_7/src/   
 3. cmsenv    
 4. git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit    
-5. git clone https://github.com/lpernie/limits_2a4mu.git    
+5. git clone https://github.com/cms-tamu/MuJetAnalysis_LimitSetting.git    
 6. scram b -j 6   
 7. cd limits_2a4mu    
 
