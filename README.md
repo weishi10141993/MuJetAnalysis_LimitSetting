@@ -13,6 +13,7 @@ git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsA
 cd HiggsAnalysis/CombinedLimit
 source env_standalone.sh 
 make -j 8; make # second make fixes compilation error of first
+cd ../../
 git clone https://github.com/cms-tamu/MuJetAnalysis_LimitSetting.git    
 scram b -j 6   
 cd limits_2a4mu    
