@@ -16,7 +16,7 @@ make -j 8; make # second make fixes compilation error of first
 cd ../../
 git clone https://github.com/cms-tamu/MuJetAnalysis_LimitSetting.git    
 scram b -j 6   
-cd limits_2a4mu    
+cd MuJetAnalysis_LimitSetting    
 ```
 # Running the model independent limits
 1. Copy here "ws_FINAL.root" from bbBar estimation    
