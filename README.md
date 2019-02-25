@@ -35,9 +35,9 @@ source macros/RunOnDataCard_std.sh
 ```
 If you want more toys, please use one of the following below
 ```
-source macros/RunOnDataCard_T10000_std.sh #10000 toys per job
-source macros/RunOnDataCard_T30000_std.sh #30000 toys per job
-source macros/RunOnDataCard_T50000_std.sh #50000 toys per job
+source macros/RunOnDataCard_T10000.sh #10000 toys per job
+source macros/RunOnDataCard_T30000.sh #30000 toys per job
+source macros/RunOnDataCard_T50000.sh #50000 toys per job
 
 ```
 -> RunOnDataCard_T50000 runs more toys and it is better, but take more time. Choose the one you want.    
