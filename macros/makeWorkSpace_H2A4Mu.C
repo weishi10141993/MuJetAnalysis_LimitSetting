@@ -100,8 +100,8 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   const double       m_min  = 0.2113;
   const double       m_max  = 9.;
   const unsigned int m_bins = 220;
-  RooRealVar m1("m1","m_{#mu#mu_{1}}",m_min,m_max,"GeV/#it{c}^{2}");
-  RooRealVar m2("m2","m_{#mu#mu_{2}}",m_min,m_max,"GeV/#it{c}^{2}");
+  RooRealVar m1("m1","m_{(#mu#mu)_{1}}",m_min,m_max,"GeV");
+  RooRealVar m2("m2","m_{(#mu#mu)_{2}}",m_min,m_max,"GeV");
   m1.setBins(m_bins);
   m2.setBins(m_bins);
   w_H2A4Mu->import(m1);
@@ -118,33 +118,21 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
 //  massC = 100.; //BLINDED
 //  massF = 100.;
-//  massC = 0.4258973;   massF = 0.5848349; tree_dimudimu_signal_2D->Fill();
-//  massC = 3.0722196;   massF = 3.2662851; tree_dimudimu_signal_2D->Fill();
-//  massC = 3.0728187;   massF = 3.0538983; tree_dimudimu_signal_2D->Fill();
-//  massC = 3.1553862;   massF = 2.8489651; tree_dimudimu_signal_2D->Fill();
-//  massC = 2.8252353;   massF = 2.6458165; tree_dimudimu_signal_2D->Fill();
-//  massC = 1.2550838;   massF = 1.1479498; tree_dimudimu_signal_2D->Fill();
-//  massC = 1.8218700;   massF = 1.8939131; tree_dimudimu_signal_2D->Fill();
-//  massC = 1.3538074;   massF = 1.4859896; tree_dimudimu_signal_2D->Fill();
-//  massC = 1.9404293;   massF = 1.8155703; tree_dimudimu_signal_2D->Fill();
-//  massC = 2.3835377;   massF = 2.3580303; tree_dimudimu_signal_2D->Fill();
-//  massC = 0.9244344;   massF = 0.9522788; tree_dimudimu_signal_2D->Fill();
-//  massC = 3.0625894;   massF = 3.0958375;
-  massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal_2D->Fill(); 
+
+  // massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal_2D->Fill(); 
   massC =2.8599584;   massF = 3.0017674; tree_dimudimu_signal_2D->Fill();
-  massC =0.4258973;   massF = 0.5848349; tree_dimudimu_signal_2D->Fill();
-  massC =3.0722196;   massF = 3.2662851; tree_dimudimu_signal_2D->Fill();
+  // massC =0.4258973;   massF = 0.5848349; tree_dimudimu_signal_2D->Fill();
+  // massC =3.0722196;   massF = 3.2662851; tree_dimudimu_signal_2D->Fill();
   massC =3.0728187;   massF = 3.0538983; tree_dimudimu_signal_2D->Fill();
-  massC =3.0950253;   massF = 3.3617882; tree_dimudimu_signal_2D->Fill();
+  // massC =3.0950253;   massF = 3.3617882; tree_dimudimu_signal_2D->Fill();
   massC =3.1521356;   massF = 2.8546791; tree_dimudimu_signal_2D->Fill();
   massC =2.8254406;   massF = 2.6496100; tree_dimudimu_signal_2D->Fill();
   massC =1.2541753;   massF = 1.1524148; tree_dimudimu_signal_2D->Fill();
   massC =2.3863873;   massF = 2.3582603; tree_dimudimu_signal_2D->Fill();
   massC =3.0641751;   massF = 3.0972354; tree_dimudimu_signal_2D->Fill();
   massC =1.9403913;   massF = 1.8196427; tree_dimudimu_signal_2D->Fill();
-  massC =1.3540757;   massF = 1.4834892; 
+  massC =1.3540757;   massF = 1.4834892; tree_dimudimu_signal_2D->Fill();
 
-  tree_dimudimu_signal_2D->Fill();
   cout<<"--- PRINT tree_dimudimu_signal_2D ---"<<endl;
   tree_dimudimu_signal_2D->Print();
   cout<<"-------------------------------------"<<endl;
