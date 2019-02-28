@@ -33,30 +33,41 @@
 //#define N_Signals 55
 #define N_Signals 59
 
-void CreateDatacards( bool makeRoot=false ){
+void CreateDatacards( bool makeRoot=true ){
   //Parameters
   bool isLxplus=false;
   //TString Myrule = "--rule CLs --LHCmode LHC-limits --toysFrequentist"; //OLD command "--rule CLs --testStat LHC"
   TString Myrule = "--rule CLs --testStat LHC";
-  Myrule = Myrule + " --cl 0.95";
+  Myrule = Myrule + " --cl 0.90";
   string pwd = "/home/dildick/DisplacedMuonJetAnalysis_2016/CMSSW_8_1_0/src/MuJetAnalysis_LimitSetting/";
   bool DiffSeed=true;
-  int Ninit=0, Nend=30; //Each mass is submitted (Nend-Ninit) times. If you need to accumulate statistic you can resubmit from 41 to X. 
+
+  // need to do this 10 times because can only run -T 1000 at a time!!!!
+  int nBatch =6;
+  int Ninit=0+nBatch*30, Nend=30+nBatch*30; 
+  //Each mass is submitted (Nend-Ninit) times. If you need to accumulate statistic you can resubmit from 41 to X. 
   //Parameters
   //float masses[N_Signals] = {0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,1.1000,1.2000,1.5000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
+
   //After looking at data we need to change the mass granularity
   float masses[N_Signals] = {0.2113,0.2400,0.2600,0.3000,0.3300,0.3600,0.4000,0.4300,0.4600,0.5000,0.5300,0.5600,0.6000,0.7000,0.8000,0.8800,0.9000,0.9100,0.9200,0.9300,0.9400,1.0000,1.1000,1.2000,1.3000,1.4000,1.5000,1.6000,1.7000,1.8000,1.9000,2.0000,2.1000,2.2000,2.3000,2.4000,2.5000,2.6000,2.7000,2.8000,2.9000,3.0000,3.0200,3.0500,3.0800,3.0900,3.1000,3.1200,3.1500,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000};
+
   int Seeds[N_Signals]={0};
+
   for( int i=0; i<N_Signals; i++){ Seeds[i]=-1; }
+
   //N events
   int obs = -1;
-  float signal_rate = 1, BBbar_2D_rate = 7.26, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
+  float signal_rate = 1, BBbar_2D_rate = 7.2584, DJpsiS_2D_rate = 0.31806, DJpsiD_2D_rate = 0.019;
+
   //Signal Uncertainties0
   float lumi_13TeV = 1.025, mu_hlt   = 1.06,  mu_id   = 1.024,  mu_iso = 1.02,  mu_pu   = 1.0017;
   float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02 , pdf_as = 1.08, HxecBr = 1.038;
+
   //Background Uncertainties
   float BBbar_norm=43, BBbar_norm2=0.1688, BBbar_norm3=1.123, BBbar_syst=1.2;
   float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.15;
+
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
   system( makeFold.Data() );
@@ -144,7 +155,7 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh4,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh4,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh4,"#SBATCH -p background-4g\n");
+	  fprintf(file_sh4,"#SBATCH -p stakeholder-4g\n");
 	  fprintf(file_sh4,"#SBATCH -n1\n");
 	  fprintf(file_sh4,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh4,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
@@ -160,7 +171,7 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh4b,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh4b,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh4b,"#SBATCH -p background-4g\n");
+	  fprintf(file_sh4b,"#SBATCH -p stakeholder-4g\n");
 	  fprintf(file_sh4b,"#SBATCH -n1\n");
 	  fprintf(file_sh4b,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh4b,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
@@ -169,14 +180,14 @@ void CreateDatacards( bool makeRoot=false ){
 	}
 	fprintf(file_sh4b,"cd %s \n",pwd.c_str());
 	fprintf(file_sh4b,"eval `scramv1 runtime -sh`\n");
-	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	if(DiffSeed) fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 1000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh4b,"combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -T 1000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh4b);
 	FILE *file_sh5=fopen(name_T50000,"w");
 	fprintf(file_sh5,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh5,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh5,"#SBATCH -p background-4g\n");
+	  fprintf(file_sh5,"#SBATCH -p stakeholder-4g\n");
 	  fprintf(file_sh5,"#SBATCH -n1\n");
 	  fprintf(file_sh5,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh5,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
@@ -192,7 +203,7 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh6,"#!/bin/bash\n");
 	if(!isLxplus){
 	  fprintf(file_sh6,"#SBATCH -J runsplit\n");
-	  fprintf(file_sh6,"#SBATCH -p background-4g\n");
+	  fprintf(file_sh6,"#SBATCH -p stakeholder-4g\n");
 	  fprintf(file_sh6,"#SBATCH -n1\n");
 	  fprintf(file_sh6,"#SBATCH --mem-per-cpu=4000\n");
 	  fprintf(file_sh6,"#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
@@ -202,7 +213,7 @@ void CreateDatacards( bool makeRoot=false ){
 	fprintf(file_sh6,"cd %s \n",pwd.c_str());
 	fprintf(file_sh6,"eval `scramv1 runtime -sh`\n");
 	if(DiffSeed) fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),Seeds[i],masses[i],masses[i],pedex.c_str());
-	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew " + Myrule + " -330000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
+	else         fprintf(file_sh6,"combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew " + Myrule + " -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n",masses[i],pedex.c_str(),masses[i],masses[i],pedex.c_str());
 	fclose(file_sh6);
     }
   }

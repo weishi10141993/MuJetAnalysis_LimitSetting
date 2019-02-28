@@ -49,17 +49,26 @@
 #include "RooGenericPdf.h"
 using namespace RooFit;
 
+double getNormalizedValue(double norm, double sigma) 
+{
+  // multiply with sqrt(2*pi)*sigma so that the final
+  // formulation of the PDF only contains terms 
+  // like N*Gauss(...)
+  return norm; // / sqrt(2*M_PI * sigma * sigma)
+}
+
 void FitLimits(){
   TCanvas *c1 = new TCanvas("c1","");
   gStyle->SetOptStat(111111);
   // Get limit Tgraph
   TString LimitFile = "plots/C/limit_Events_vs_mGammaD_2016.root";
-  float NoevIs = 3.205;//2.8;
+  float NoevIs = 3;//2.8;
   //float NoevIs = 2.4; //90% cl
   //TString LimitFile = "Real_Limits.root";
   TFile *f = new TFile(LimitFile.Data());
   TGraph *graph = (TGraph*) f->Get("Graph");
   auto nPoints = graph->GetN();
+
   // Convert in Th1F
   double xMin, ytmp, bin=100;
   graph->GetPoint(0, xMin, ytmp);
@@ -81,70 +90,103 @@ void FitLimits(){
   }
   h->Draw();
   c1->SaveAs("plots/h.pdf");
+
   // Create RooDataHist
-  RooRealVar x("x", "m(a)", 0.2113, 9., "GeV/c^2");
+  RooRealVar x("x", "m_a", 0.2113, 9., "GeV");
   RooDataHist dh("dh", "", RooArgList(x), h);
+  //cout << dh.printMultiline() << endl;
+
   // Parameters
-  RooRealVar co("co", "co", NoevIs, NoevIs-0.03, NoevIs+0.03,"");
-  RooGenericPdf p0("p0","","x*0.0000001 + co",RooArgSet(x,co));
-  RooRealVar mean1("mean1", "mean",    0.55,  0.5,  0.6,"GeV/c^{2}");
-  RooRealVar sigma1("sigma1", "sigma", 0.07, 0.04, 0.1,"GeV/c^{2}");
+
+  // x here is added to stablize the fit somehow 
+  RooRealVar co("co", "co", NoevIs, NoevIs-0.1, NoevIs+0.1,"");
+  RooGenericPdf p0("p0","","x*0.00000001 + co",RooArgSet(x,co));
+
+  RooRealVar mean1("mean1", "mean",    0.55,  0.5,  0.6,"GeV");
+  RooRealVar sigma1("sigma1", "sigma", 0.07, 0.04, 0.1,"GeV");
   RooGaussian gaus1("gaus1","Gaussian",x, mean1,sigma1);
-  RooRealVar mean2("mean2", "mean",    0.95,  0.7,   1.,"GeV/c^{2}");
-  RooRealVar sigma2("sigma2", "sigma", 0.04, 0.035, 0.1,"GeV/c^{2}");
+
+  RooRealVar mean2("mean2", "mean",    0.95,  0.7,   1.,"GeV");
+  RooRealVar sigma2("sigma2", "sigma", 0.04, 0.035, 0.1,"GeV");
   RooGaussian gaus2("gaus2","Gaussian",x, mean2,sigma2);
-  RooRealVar mean3("mean3", "mean",    1.18,  1.15,   1.2,"GeV/c^{2}");
-  RooRealVar sigma3("sigma3", "sigma", 0.035, 0.033, 0.1,"GeV/c^{2}");
+
+  RooRealVar mean3("mean3", "mean",    1.18,  1.15,   1.2,"GeV");
+  RooRealVar sigma3("sigma3", "sigma", 0.035, 0.033, 0.1,"GeV");
   RooGaussian gaus3("gaus3","Gaussian",x, mean3,sigma3);
-  RooRealVar mean4("mean4", "mean",    1.5,  1.4,   1.6,"GeV/c^{2}");
-  RooRealVar sigma4("sigma4", "sigma", 0.04, 0.03, 0.1,"GeV/c^{2}");
+
+  RooRealVar mean4("mean4", "mean",    1.5,  1.4,   1.6,"GeV");
+  RooRealVar sigma4("sigma4", "sigma", 0.04, 0.03, 0.1,"GeV");
   RooGaussian gaus4("gaus4","Gaussian",x, mean4,sigma4);
-  RooRealVar mean5("mean5", "mean",    1.8,  1.75,   2.1,"GeV/c^{2}");
-  RooRealVar sigma5("sigma5", "sigma", 0.08, 0.05, 0.1,"GeV/c^{2}");
+
+  RooRealVar mean5("mean5", "mean",    1.8,  1.75,   2.1,"GeV");
+  RooRealVar sigma5("sigma5", "sigma", 0.08, 0.05, 0.1,"GeV");
   RooGaussian gaus5("gaus5","Gaussian",x, mean5,sigma5);
-  RooRealVar mean6("mean6", "mean",    2.4,  2.3,   2.5,"GeV/c^{2}");
-  RooRealVar sigma6("sigma6", "sigma", 0.07, 0.038, 0.1,"GeV/c^{2}");
+
+  RooRealVar mean6("mean6", "mean",    2.4,  2.3,   2.5,"GeV");
+  RooRealVar sigma6("sigma6", "sigma", 0.07, 0.038, 0.1,"GeV");
   RooGaussian gaus6("gaus6","Gaussian",x, mean6,sigma6);
-  RooRealVar mean7("mean7", "mean",    2.9,  2.8,   2.999,"GeV/c^{2}");
-  RooRealVar sigma7("sigma7", "sigma", 0.05, 0.004, 0.2,"GeV/c^{2}");
+
+  RooRealVar mean7("mean7", "mean",    2.9,  2.8,   2.999,"GeV");
+  RooRealVar sigma7("sigma7", "sigma", 0.05, 0.004, 0.2,"GeV");
   RooGaussian gaus7("gaus7","Gaussian",x, mean7,sigma7);
-  RooRealVar mean8("mean8", "mean",    3.1,  3.,   3.2,"GeV/c^{2}");
-  RooRealVar sigma8("sigma8", "sigma", 0.12, 0.07, 0.2,"GeV/c^{2}");
+
+  RooRealVar mean8("mean8", "mean",    3.1,  3.,   3.2,"GeV");
+  RooRealVar sigma8("sigma8", "sigma", 0.12, 0.0, 0.2,"GeV");
   RooGaussian gaus8("gaus8","Gaussian",x, mean8,sigma8);
-  RooRealVar N0("N0","yield",291,100.,400.);
-  RooRealVar N1("N1","yield",0.1,0.01,6.0);
-  RooRealVar N2("N2","yield",2.0,0.5,6.0);
-  RooRealVar N3("N3","yield",1.0,0.1,3.);
-  RooRealVar N4("N4","yield",1.0,0.1,1.8);
-  RooRealVar N5("N5","yield",6.0,0.1,9.0);
-  RooRealVar N6("N6","yield",1.9,1.5,2.5);
-  RooRealVar N7("N7","yield",0.4,0.2,10.0);
-  RooRealVar N8("N8","yield",10.,7.0,18.);
-  RooAddPdf model("model","model",RooArgList(p0,gaus1,gaus2,gaus3,gaus4,gaus5,gaus6,gaus7,gaus8),RooArgList(N0,N1,N2,N3,N4,N5,N6,N7,N8));
-  RooAbsPdf* MyModel = &model;
-  RooNLLVar nll("nll","log likelihood var",*MyModel,dh, RooFit::Extended(true));
+
+  RooRealVar N0("N0","norm",291,100.,400.);
+  RooRealVar N1("N1","norm",0.1,0.01,6.0);
+  RooRealVar N2("N2","norm",2.0,0.5,6.0);
+  RooRealVar N3("N3","norm",1.0,0.5,1.5);
+  RooRealVar N4("N4","norm",1.75,1.5,1.9);
+  RooRealVar N5("N5","norm",0.5,0.1,1.0);
+  RooRealVar N6("N6","norm",1.5,1,2);
+  RooRealVar N7("N7","norm",0.4,0.2,2.0);
+  RooRealVar N8("N8","norm",7.5,0,20);
+
+  // make the combined fit with 5 gaussians
+  RooAddPdf model("model","model",
+		  RooArgList(p0,/*gaus1,gaus2,*/gaus3,gaus4,gaus5,gaus6,/*gaus7,*/gaus8),
+		  RooArgList(N0,/*N1,N2,*/N3,N4,N5,N6,/*N7,*/N8));
+  // RooAbsPdf* MyModel = &model;
+  RooNLLVar nll("nll","log likelihood var",model,dh, RooFit::Extended(true));
   RooMinuit m(nll);
-  m.setVerbose(kFALSE);
+  m.setVerbose(false);
   m.migrad();
 
   //x.setRange("sobRange1",mean1.getVal()-3.*sigma1.getVal(), mean1.getVal()+3.*sigma1.getVal());
   //RooAbsReal* integral1 = gaus1.createIntegral(x,NormSet(x),Range("sobRange"));
   //float norm1 = integral1->getVal();
   //cout<<integral1->getVal()<<"  ->  "<<N1.getVal()*norm1<<"*exp(-0.5*((m-"<<mean1.getVal()<<")/"<<sigma1.getVal()<<")**2) + "<<endl;
+
+  // get the fit results
   cout<<"RESULTS:"<<endl;
-  cout<<N1.getVal()<<"*exp(-0.5*((m-"<<mean1.getVal()<<")/"<<sigma1.getVal()<<")**2) + \\"<<endl;
-  cout<<N2.getVal()<<"*exp(-0.5*((m-"<<mean2.getVal()<<")/"<<sigma2.getVal()<<")**2) + \\"<<endl;
-  cout<<N3.getVal()<<"*exp(-0.5*((m-"<<mean3.getVal()<<")/"<<sigma3.getVal()<<")**2) + \\"<<endl;
-  cout<<N4.getVal()<<"*exp(-0.5*((m-"<<mean4.getVal()<<")/"<<sigma4.getVal()<<")**2) + \\"<<endl;
-  cout<<N5.getVal()<<"*exp(-0.5*((m-"<<mean5.getVal()<<")/"<<sigma5.getVal()<<")**2) + \\"<<endl;
-  cout<<N6.getVal()<<"*exp(-0.5*((m-"<<mean6.getVal()<<")/"<<sigma6.getVal()<<")**2) + \\"<<endl;
-  cout<<N7.getVal()<<"*exp(-0.5*((m-"<<mean7.getVal()<<")/"<<sigma7.getVal()<<")**2) + \\"<<endl;
-  cout<<N8.getVal()<<"*exp(-0.5*((m-"<<mean8.getVal()<<")/"<<sigma8.getVal()<<")**2)"<<endl;
+  cout<<co.getVal()<<endl;
+
+  cout<<N3.getVal()<<endl;
+  cout<<N4.getVal()<<endl;
+  cout<<N5.getVal()<<endl;
+  cout<<N6.getVal()<<endl;
+  cout<<N8.getVal()<<endl;
+
+  // cout<<N1.getVal()<<"*exp(-0.5*((m-"<<mean1.getVal()<<")/"<<sigma1.getVal()<<")**2) + \\"<<endl;
+  // cout<<N2.getVal()<<"*exp(-0.5*((m-"<<mean2.getVal()<<")/"<<sigma2.getVal()<<")**2) + \\"<<endl;
+  // cout<<N7.getVal()<<"*exp(-0.5*((m-"<<mean7.getVal()<<")/"<<sigma7.getVal()<<")**2) + \\"<<endl;
+  cout<<getNormalizedValue(N3.getVal(), sigma3.getVal())<<"*exp(-0.5*((m-"<<mean3.getVal()<<")/"<<sigma3.getVal()<<")**2) + \\"<<endl;
+  cout<<getNormalizedValue(N4.getVal(), sigma4.getVal())<<"*exp(-0.5*((m-"<<mean4.getVal()<<")/"<<sigma4.getVal()<<")**2) + \\"<<endl;
+  cout<<getNormalizedValue(N5.getVal(), sigma5.getVal())<<"*exp(-0.5*((m-"<<mean5.getVal()<<")/"<<sigma5.getVal()<<")**2) + \\"<<endl;
+  cout<<getNormalizedValue(N6.getVal(), sigma6.getVal())<<"*exp(-0.5*((m-"<<mean6.getVal()<<")/"<<sigma6.getVal()<<")**2) + \\"<<endl;
+  cout<<getNormalizedValue(N8.getVal(), sigma8.getVal())<<"*exp(-0.5*((m-"<<mean8.getVal()<<")/"<<sigma8.getVal()<<")**2)"<<endl;
+
   RooPlot* xframe = x.frame(h->GetNbinsX());
   xframe->SetTitle(h->GetTitle());
   dh.plotOn(xframe);
-  MyModel->plotOn(xframe,Components(p0),LineStyle(kDashed), LineColor(kRed));
-  MyModel->plotOn(xframe);
+
+  model.plotOn(xframe,Normalization(1.0,RooAbsReal::RelativeExpected)) ;
+
+  model.plotOn(xframe,Components(p0),LineStyle(kDashed), LineColor(kRed));
+  //  model.plotOn(xframe);
   xframe->Draw();
+
   c1->SaveAs("plots/h_fit.pdf");
 }
