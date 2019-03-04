@@ -29,8 +29,18 @@ cd MuJetAnalysis_LimitSetting
 3. (1st time only) cd macros; source CreateROOTfiles.sh; cd ..;    
    -> Make RooStat files that should be supplied to CMS official limit calculator.    
 
-3. source macros/RunOnDataCard_std.sh (or macros/RunOnDataCard_T50000)    
-   -> Send jobs to run on all datacards and save outputs in outPut.txt. RunOnDataCard_T50000 runs more toys and it is better, but take more time. Choose the one you want.    
+3. Send jobs to run on all datacards and save outputs in outPut.txt. The options with the least toys is
+```
+source macros/RunOnDataCard_std.sh
+```
+If you want more toys, please use one of the following below
+```
+source macros/RunOnDataCard_T10000.sh #10000 toys per job
+source macros/RunOnDataCard_T30000.sh #30000 toys per job
+source macros/RunOnDataCard_T50000.sh #50000 toys per job
+
+```
+-> RunOnDataCard_T50000 runs more toys and it is better, but take more time. Choose the one you want.    
 
 4. cd macros; python PrintOutLimits.py; cd ..;   
    -> This macro will print the lines you have to copy inside scripts/CmsLimitVsM.py (that will be used by Plots.py). 
