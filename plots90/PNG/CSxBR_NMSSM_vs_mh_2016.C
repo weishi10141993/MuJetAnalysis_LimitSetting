@@ -1,7 +1,7 @@
 void CSxBR_NMSSM_vs_mh_2016()
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Mon Mar  4 16:39:53 2019) by ROOT version6.06/09
+//=========  (Fri Mar  1 23:31:53 2019) by ROOT version6.06/09
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -80,7 +80,7 @@ void CSxBR_NMSSM_vs_mh_2016()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(4050);
-   TLegendEntry *entry=leg->AddEntry("NULL","NMSSM 95% CL upper limits:","h");
+   TLegendEntry *entry=leg->AddEntry("NULL","NMSSM 90% CL upper limits:","h");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -159,11 +159,11 @@ void CSxBR_NMSSM_vs_mh_2016()
    125,
    150};
    Double_t Graph0_fy2[5] = {
-   1.043924,
-   0.8640231,
-   0.7590178,
-   0.6618791,
-   0.5524776};
+   0.8123671,
+   0.6723708,
+   0.5906571,
+   0.5150651,
+   0.4299304};
    TGraph *graph = new TGraph(5,Graph0_fx2,Graph0_fy2);
    graph->SetName("Graph0");
    graph->SetTitle("Graph");
@@ -180,8 +180,8 @@ void CSxBR_NMSSM_vs_mh_2016()
    graph->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Graph",100,84,156);
-   Graph_Graph2->SetMinimum(0.503333);
-   Graph_Graph2->SetMaximum(1.093068);
+   Graph_Graph2->SetMinimum(0.3916867);
+   Graph_Graph2->SetMaximum(0.8506107);
    Graph_Graph2->SetDirectory(0);
    Graph_Graph2->SetStats(0);
    Graph_Graph2->SetLineStyle(0);
@@ -214,11 +214,11 @@ void CSxBR_NMSSM_vs_mh_2016()
    125,
    150};
    Double_t Graph1_fy3[5] = {
-   0.3993238,
-   0.3624385,
-   0.3392751,
-   0.3223114,
-   0.3101278};
+   0.3107484,
+   0.2820447,
+   0.2640193,
+   0.2508183,
+   0.2413372};
    graph = new TGraph(5,Graph1_fx3,Graph1_fy3);
    graph->SetName("Graph1");
    graph->SetTitle("Graph");
@@ -235,8 +235,8 @@ void CSxBR_NMSSM_vs_mh_2016()
    graph->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","Graph",100,84,156);
-   Graph_Graph3->SetMinimum(0.3012082);
-   Graph_Graph3->SetMaximum(0.4082434);
+   Graph_Graph3->SetMinimum(0.2343961);
+   Graph_Graph3->SetMaximum(0.3176895);
    Graph_Graph3->SetDirectory(0);
    Graph_Graph3->SetStats(0);
    Graph_Graph3->SetLineStyle(0);

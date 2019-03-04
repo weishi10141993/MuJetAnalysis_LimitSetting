@@ -73,6 +73,10 @@ epsilon2_bins = 1000
 logEpsilon2_min = -12.1
 logEpsilon2_max =  -7.9
 
+## 
+CL = 95
+topDirectory = "plots95"
+
 ################################################################################
 #       Plot Upper 95% CL Limit on number of events: 0.25 < mGammaD < 1.0       
 ################################################################################
@@ -101,7 +105,7 @@ def limit_vs_mGammaD_2016():
   h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, 0.0, 9.0, 1000, 0.0, 10.0)
   #h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 108, 0.0455, 8.9973, 1000, 0.0, 10.0)
   h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
-  h_limit_vs_mGammaD_dummy.SetYTitle("95% CL upper limit on N_{evt}")
+  h_limit_vs_mGammaD_dummy.SetYTitle("%d%% CL upper limit on N_{evt}"%CL)
   h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
   h_limit_vs_mGammaD_dummy.GetXaxis().SetNdivisions(505)
   #h_limit_vs_mGammaD_dummy.GetYaxis().CenterTitle(1)
@@ -158,8 +162,8 @@ def limit_vs_mGammaD_2016():
 
   cnv.cd()
   cnv.Update()
-  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2016_FitUncert.pdf")
-  cnv.SaveAs("plots/PNG/limit_Events_vs_mGammaD_2016_FitUncert.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_Events_vs_mGammaD_2016_FitUncert.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_Events_vs_mGammaD_2016_FitUncert.png")
 
   # Now same plots with no errors
   cnv.cd()
@@ -171,9 +175,9 @@ def limit_vs_mGammaD_2016():
   txtHeader.Draw()
 
   cnv.Update()
-  cnv.SaveAs("plots/PDF/limit_Events_vs_mGammaD_2016.pdf")
-  cnv.SaveAs("plots/PNG/limit_Events_vs_mGammaD_2016.png")
-  gr_limit_vs_mGammaD_T5000.SaveAs("plots/C/limit_Events_vs_mGammaD_2016.root")
+  cnv.SaveAs(topDirectory + "/PDF/limit_Events_vs_mGammaD_2016.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_Events_vs_mGammaD_2016.png")
+  gr_limit_vs_mGammaD_T5000.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_2016.root")
   
 ################################################################################
 #       Plot Upper 95% CL Limit on CSxBR2xAlpha = "Limit on number of events"/Luminosity/"Scale factor"
@@ -206,14 +210,14 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD_2016():
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetBorderSize(0)
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextFont(42)
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextSize(0.035)
-  l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD,"95% CL upper limit","L")
+  l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD,"%d%% CL upper limit"%CL,"L")
   l_limit_CSxBR2xAlpha_fb_vs_mGammaD.Draw()
   #l_CMS.Draw()
   #l_CMSLumi.Draw()
   txtHeader.Draw()
-  cnv.SaveAs("plots/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.pdf")
-  cnv.SaveAs("plots/PNG/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.png")
-  cnv.SaveAs("plots/C/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.C")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.png")
+  cnv.SaveAs(topDirectory + "/C/limit_CSxBR2xAlpha_fb_vs_mGammaD_2016.C")
 
 ################################################################################
 #           Plot acceptance Alpha vs mGammaD: 0.25 < mGammaD < 1.0              
@@ -329,8 +333,8 @@ def Alpha_vs_mGammaD_2015():
   l_Alpha_vs_mGammaD.Draw()
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/Alpha_vs_mGammaD_2015.pdf")
-  cnv.SaveAs("plots/C/Alpha_vs_mGammaD_2015.C")
+  cnv.SaveAs(topDirectory + "/PDF/Alpha_vs_mGammaD_2015.pdf")
+  cnv.SaveAs(topDirectory + "/C/Alpha_vs_mGammaD_2015.C")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/Alpha_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/Alpha_vs_mGammaD_2015.png")
 
 ################################################################################
@@ -456,7 +460,7 @@ array.array("d", zip(*array_Alpha_vs_ctau_m04GeV_Marker)[3]) )
   l_Alpha_vs_ctau.Draw()
 
   txtHeader.Draw()
-  cnv.SaveAs("plots/PDF/Alpha_vs_ctau_2015.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/Alpha_vs_ctau_2015.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/Alpha_vs_ctau_2015.pdf -resize 900x900 plots/PNG/Alpha_vs_ctau_2015.png")
 
 def get_Alpha_vs_ctau_FCN():
@@ -572,7 +576,7 @@ def Plot_Eff_vs_R():
   gr_Eff_vs_R.SetLineStyle(1)
   gr_Eff_vs_R.Draw("L")
   txtHeader.Draw()
-  cnv.SaveAs("plots/PDF/Eff_vs_R.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/Eff_vs_R.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/Eff_vs_R.pdf -resize 900x900 plots/PNG/Eff_vs_R.png")
 
 def f3(m,E,ctau_mm):
@@ -651,8 +655,8 @@ zip(*array_Alpha_vs_mGammaD_ctau_3D_Marker)[2]) )
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/Alpha_vs_mGammaD_ctau_3D.pdf")
-  cnv.SaveAs("plots/PNG/Alpha_vs_mGammaD_ctau_3D.png")
+  cnv.SaveAs(topDirectory + "/PDF/Alpha_vs_mGammaD_ctau_3D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/Alpha_vs_mGammaD_ctau_3D.png")
 
 ################################################################################
 #       Plot Upper 95% CL Limit on CSxBR2 vs mGammaD: 0.25 < mGammaD < 1.0       
@@ -731,7 +735,7 @@ def limit_CSxBR2_fb_vs_mGammaD_2015():
   l_limit_CSxBR2_fb_vs_mGammaD.SetBorderSize(0)
   l_limit_CSxBR2_fb_vs_mGammaD.SetTextFont(42)
   l_limit_CSxBR2_fb_vs_mGammaD.SetTextSize(0.035)
-  l_limit_CSxBR2_fb_vs_mGammaD.SetHeader("95% CL limits for samples with #gamma_{D} life-time:")
+  l_limit_CSxBR2_fb_vs_mGammaD.SetHeader("%d%% CL limits for samples with #gamma_{D} life-time:"%CL)
   l_limit_CSxBR2_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2_fb_vs_mGammaD_ctau0mm, "c#tau_{#gamma_{D}} =   0 mm (prompt)","L")
   l_limit_CSxBR2_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2_fb_vs_mGammaD_ctau02mm,"c#tau_{#gamma_{D}} = 0.2 mm","L")
   l_limit_CSxBR2_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2_fb_vs_mGammaD_ctau05mm,"c#tau_{#gamma_{D}} = 0.5 mm","L")
@@ -743,7 +747,7 @@ def limit_CSxBR2_fb_vs_mGammaD_2015():
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/limit_CSxBR2_fb_vs_mGammaD_2015.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CSxBR2_fb_vs_mGammaD_2015.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CSxBR2_fb_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_CSxBR2_fb_vs_mGammaD_2015.png")
 
 ################################################################################
@@ -813,7 +817,7 @@ def limit_CS_fb_vs_mGammaD_2015():
   l_limit_CS_fb_vs_mGammaD.SetBorderSize(0)
   l_limit_CS_fb_vs_mGammaD.SetTextFont(42)
   l_limit_CS_fb_vs_mGammaD.SetTextSize(0.035)
-  l_limit_CS_fb_vs_mGammaD.SetHeader("95% CL limits for samples")
+  l_limit_CS_fb_vs_mGammaD.SetHeader("%d%% CL limits for samples"%CL)
   l_limit_CS_fb_vs_mGammaD.AddEntry(gr_limit_CS_fb_vs_mGammaD_ctau0mm, "with #gamma_{D} life-time:","")
   l_limit_CS_fb_vs_mGammaD.AddEntry(gr_limit_CS_fb_vs_mGammaD_ctau0mm, "c#tau_{#gamma_{D}} =   0 mm (prompt)","L")
   l_limit_CS_fb_vs_mGammaD.AddEntry(gr_limit_CS_fb_vs_mGammaD_ctau02mm,"c#tau_{#gamma_{D}} = 0.2 mm","L")
@@ -823,7 +827,7 @@ def limit_CS_fb_vs_mGammaD_2015():
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/limit_CS_fb_vs_mGammaD_2015.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_fb_vs_mGammaD_2015.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CS_fb_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_CS_fb_vs_mGammaD_2015.png")
 
 ################################################################################
@@ -874,7 +878,7 @@ def limit_CSxBR2_fb_vs_ctau_2015():
   l_limit_CSxBR2_fb_vs_ctau.SetBorderSize(0)
   l_limit_CSxBR2_fb_vs_ctau.SetTextFont(42)
   l_limit_CSxBR2_fb_vs_ctau.SetTextSize(0.035)
-  l_limit_CSxBR2_fb_vs_ctau.SetHeader("95% CL limits for samples")
+  l_limit_CSxBR2_fb_vs_ctau.SetHeader("%d%% CL limits for samples"%CL)
   l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"with #gamma_{D} mass:","")
   l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"m_{#gamma_{D}} = 0.25 GeV","L")
   l_limit_CSxBR2_fb_vs_ctau.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m04GeV, "m_{#gamma_{D}} =  0.4 GeV","L")
@@ -883,7 +887,7 @@ def limit_CSxBR2_fb_vs_ctau_2015():
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/limit_CSxBR2_fb_vs_ctau_2015.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CSxBR2_fb_vs_ctau_2015.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CSxBR2_fb_vs_ctau_2015.pdf -resize 900x900 plots/PNG/limit_CSxBR2_fb_vs_ctau_2015.png")
 
 ################################################################################
@@ -1060,8 +1064,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CSxBR2_fb_vs_mGammaD_ctau_3D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CSxBR2_fb_vs_mGammaD_ctau_3D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CSxBR2_fb_vs_mGammaD_ctau_3D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CSxBR2_fb_vs_mGammaD_ctau_3D.png")
   
   h_ctau_vs_mGammaD_dummy.Draw()
   h_limit_CSxBR2_fb_vs_mGammaD_ctau_3D.Draw("sameCONT3COLZ")
@@ -1072,8 +1076,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CSxBR2_fb_vs_mGammaD_ctau_2D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CSxBR2_fb_vs_mGammaD_ctau_2D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CSxBR2_fb_vs_mGammaD_ctau_2D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CSxBR2_fb_vs_mGammaD_ctau_2D.png")
   
   ##############################################################################
   
@@ -1083,8 +1087,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_fb_vs_mGammaD_ctau_3D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_fb_vs_mGammaD_ctau_3D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_fb_vs_mGammaD_ctau_3D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_fb_vs_mGammaD_ctau_3D.png")
   
   h_ctau_vs_mGammaD_dummy.Draw()
   h_limit_CS_fb_vs_mGammaD_ctau_3D.Draw("sameCONT3COLZ")
@@ -1095,8 +1099,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_fb_vs_mGammaD_ctau_2D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_fb_vs_mGammaD_ctau_2D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_fb_vs_mGammaD_ctau_2D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_fb_vs_mGammaD_ctau_2D.png")
 
   ##############################################################################
   
@@ -1106,8 +1110,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_over_CSsm_vs_mGammaD_ctau_3D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_over_CSsm_vs_mGammaD_ctau_3D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_over_CSsm_vs_mGammaD_ctau_3D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_over_CSsm_vs_mGammaD_ctau_3D.png")
   
   h_ctau_vs_mGammaD_dummy.Draw()
   h_limit_CS_over_CSsm_vs_mGammaD_ctau_3D.Draw("sameCONT3COLZ")
@@ -1118,8 +1122,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_over_CSsm_vs_mGammaD_ctau_2D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_over_CSsm_vs_mGammaD_ctau_2D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_over_CSsm_vs_mGammaD_ctau_2D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_over_CSsm_vs_mGammaD_ctau_2D.png")
 
   ##############################################################################
   
@@ -1129,8 +1133,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_over_CSsm_vs_mGammaD_epsilon2_3D.png")
   
   h_logEpsilon2_vs_mGammaD_dummy.Draw()
 #  h_limit_CS_over_CSsm_vs_mGammaD_logEpsilon2_3D.Draw("sameCONT3COLZ")
@@ -1146,8 +1150,8 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_CS_over_CSsm_vs_mGammaD_epsilon2_2D.pdf")
-  cnv.SaveAs("plots/PNG/limit_CS_over_CSsm_vs_mGammaD_epsilon2_2D.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_CS_over_CSsm_vs_mGammaD_epsilon2_2D.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_CS_over_CSsm_vs_mGammaD_epsilon2_2D.png")
 
 ################################################################################
 #  Plot 95% CL Limit lines on CSxBR2 vs (mGammaD, ctau) and (mGammaD, epsilon^2) 
@@ -1265,15 +1269,15 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
     l_ctau_vs_mGammaD_K.SetBorderSize(0)
     l_ctau_vs_mGammaD_K.SetTextFont(42)
     l_ctau_vs_mGammaD_K.SetTextSize(0.035)
-    l_ctau_vs_mGammaD_K.SetHeader("95% CL "+"limits for K = %s"%K)
+    l_ctau_vs_mGammaD_K.SetHeader("%d%% CL "%CL+"limits for K = %s"%K)
     l_ctau_vs_mGammaD_K.AddEntry(h_ctau_vs_mGammaD_excl, "excluded region","F")
     l_ctau_vs_mGammaD_K.AddEntry(h_ctau_vs_mGammaD_incl, "not excluded region","F")
     l_ctau_vs_mGammaD_K.Draw()
     
     txtHeader.Draw()
 
-    cnv.SaveAs("plots/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau_K%s.pdf"%K)
-    cnv.SaveAs("plots/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau_K%s.png"%K)
+    cnv.SaveAs(topDirectory + "/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau_K%s.pdf"%K)
+    cnv.SaveAs(topDirectory + "/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau_K%s.png"%K)
     
     cnv.SetLogy(1)
     
@@ -1308,15 +1312,15 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
     l_epsilon2_vs_mGammaD_K.SetBorderSize(0)
     l_epsilon2_vs_mGammaD_K.SetTextFont(42)
     l_epsilon2_vs_mGammaD_K.SetTextSize(0.035)
-    l_epsilon2_vs_mGammaD_K.SetHeader("95% CL "+"limits for K = %s"%K)
+    l_epsilon2_vs_mGammaD_K.SetHeader("%d%% CL "%CL+"limits for K = %s"%K)
     l_epsilon2_vs_mGammaD_K.AddEntry(gr_epsilon2_vs_mGammaD_excl_K, "excluded region","F")
     l_epsilon2_vs_mGammaD_K.AddEntry(gr_epsilon2_vs_mGammaD_incl_K, "not excluded region","F")
     l_epsilon2_vs_mGammaD_K.Draw()
     
     txtHeader.Draw()
 
-    cnv.SaveAs("plots/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2_K%s.pdf"%K)
-    cnv.SaveAs("plots/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2_K%s.png"%K)
+    cnv.SaveAs(topDirectory + "/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2_K%s.pdf"%K)
+    cnv.SaveAs(topDirectory + "/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2_K%s.png"%K)
   
   cnv.SetLogy(0)
   
@@ -1343,7 +1347,7 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
   l_ctau_vs_mGammaD.SetBorderSize(0)
   l_ctau_vs_mGammaD.SetTextFont(42)
   l_ctau_vs_mGammaD.SetTextSize(0.035)
-  l_ctau_vs_mGammaD.SetHeader("95% CL limits for different K")
+  l_ctau_vs_mGammaD.SetHeader("%d%% CL limits for different K"%d)
 #  l_ctau_vs_mGammaD.AddEntry(gr_limit_CSxBR2_fb_vs_ctau_m025GeV,"m_{#gamma_{D}} = 0.25 GeV/#it{c}^{2}","L")
   l_ctau_vs_mGammaD.Draw()
   
@@ -1351,8 +1355,8 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau.pdf")
-  cnv.SaveAs("plots/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_ctau.png")
   
   cnv.SetLogy(1)
   
@@ -1378,14 +1382,14 @@ def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
   l_epsilon2_vs_mGammaD.SetBorderSize(0)
   l_epsilon2_vs_mGammaD.SetTextFont(42)
   l_epsilon2_vs_mGammaD.SetTextSize(0.035)
-  l_epsilon2_vs_mGammaD.SetHeader("95% CL limits for different K")
+  l_epsilon2_vs_mGammaD.SetHeader("%d%% CL limits for different K"%CL)
 #  l_epsilon2_vs_mGammaD.AddEntry(gr_limit_CSxBR2_fb_vs_epsilon2_m025GeV,"m_{#gamma_{D}} = 0.25 GeV/#it{c}^{2}","L")
   l_epsilon2_vs_mGammaD.Draw()
   
   txtHeader.Draw()
   
-  cnv.SaveAs("plots/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2.pdf")
-  cnv.SaveAs("plots/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2.png")
+  cnv.SaveAs(topDirectory + "/PDF/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/limit_Lines_CSxBR2_fb_vs_mGammaD_epsilon2.png")
 
 ################################################################################
 #                Plot Decay Width / epsilon^2 in GeV                            
@@ -1497,7 +1501,7 @@ def plot_width_over_e2_GeV():
   gr_width_to_2pi_over_e2_GeV.Draw("C")
   gr_width_total_over_e2_GeV.Draw("C")
   
-  cnv.SaveAs("plots/PDF/GammaD_Width_over_e2_GeV.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/GammaD_Width_over_e2_GeV.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/GammaD_Width_over_e2_GeV.pdf -resize 900x900 plots/PNG/GammaD_Width_over_e2_GeV.png")
   
   h_width_over_e2_GeV_inverted_dummy = ROOT.TH2F("h_width_over_e2_GeV_inverted_dummy", "h_width_over_e2_GeV_inverted_dummy", 1000, mGammaD_GeV_bot, mGammaD_GeV_top, 1000, 1.0/5.0, 1.0/0.000005)
@@ -1515,7 +1519,7 @@ def plot_width_over_e2_GeV():
   gr_width_total_over_e2_GeV_inverted.SetLineStyle(1)
   gr_width_total_over_e2_GeV_inverted.Draw("C")
 
-  cnv.SaveAs("plots/PDF/GammaD_Width_over_e2_GeV_inverted.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/GammaD_Width_over_e2_GeV_inverted.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/GammaD_Width_over_e2_GeV_inverted.pdf -resize 900x900 plots/PNG/GammaD_Width_over_e2_GeV_inverted.png")
   
 ################################################################################
@@ -1557,7 +1561,7 @@ def plot_BR_GammaD_to_2mu():
   l_BR_GammaD_to_2mu.AddEntry(gr_BR_GammaD_to_2mu, "#gamma_{D} #rightarrow #mu #mu",            "L")
   l_BR_GammaD_to_2mu.Draw()
 
-  cnv.SaveAs("plots/PDF/GammaD_BR_to_2mu.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/GammaD_BR_to_2mu.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/GammaD_BR_to_2mu.pdf -resize 900x900 plots/PNG/GammaD_BR_to_2mu.png")
 
 ################################################################################
@@ -1693,7 +1697,7 @@ def plot_ctauConst_vs_logEpsilon2_mGammaD():
   text_ctau_5.SetTextFont(42)
   text_ctau_5.Draw()
   
-  cnv.SaveAs("plots/PDF/ctauConst_vs_logEpsilon2_mGammaD.pdf")
+  cnv.SaveAs(topDirectory + "/PDF/ctauConst_vs_logEpsilon2_mGammaD.pdf")
   os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/ctauConst_vs_logEpsilon2_mGammaD.pdf -resize 900x900 plots/PNG/ctauConst_vs_logEpsilon2_mGammaD.png")
 
 ################################################################################
@@ -1719,7 +1723,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   array_ma_mh_90  = []
   array_ma_mh_125 = []
   array_ma_mh_150 = []
-  array_ma = [0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 2.6, 2.75, 2.85, 3., 3.2, 3.55]
+  array_ma = [0.25, 0.5, 0.75, 1.0, 1.15, 1.2, 1.3, 1.4, 1.5, 1.75, 1.8, 1.9, 2.1, 2.25, 2.4, 2.5, 2.6, 2.75, 2.85, 3., 3.2, 3.55]
   for ma_i in array_ma:
     array_ma_mh_90.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 90. ) )) # Transform Limits on N_ev to xsection
     array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 125.) ))
@@ -1773,7 +1777,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   l_CSxBR_vs_ma.SetBorderSize(0)
   l_CSxBR_vs_ma.SetTextFont(42)
   l_CSxBR_vs_ma.SetTextSize(0.035)
-  l_CSxBR_vs_ma.SetHeader("NMSSM 95% CL upper limits:")
+  l_CSxBR_vs_ma.SetHeader("NMSSM %d%% CL upper limits:"%CL)
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_86,"m_{h_{1}} =   90 GeV","LP")
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{2}} = 125 GeV","LP")
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{2}} = 150 GeV","LP")
@@ -1793,8 +1797,9 @@ def limit_CSxBR2_fb_vs_ma_2016():
   gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/CSxBR_vs_ma_2016.pdf")
-  cnv.SaveAs("plots/PNG/CSxBR_vs_ma_2016.png")
+  cnv.SaveAs(topDirectory + "/PDF/CSxBR_vs_ma_2016.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/CSxBR_vs_ma_2016.png")
+  cnv.SaveAs(topDirectory + "/PNG/CSxBR_vs_ma_2016.C")
 
 
 ################################################################################
@@ -1869,13 +1874,13 @@ def limit_CSxBR2_fb_vs_mh_2016():
   box1 = ROOT.TBox(125.0, 0.0, 153.0, 3.2)
   box1.SetFillStyle(3001)
   box1.SetFillColor(ROOT.kRed - 10)
-  box1.Draw()
+  #box1.Draw()
   
   a_mh_125 = ROOT.TArrow(125.0, 0, 125.0, 3.2, 0.02, "--")
   a_mh_125.SetLineColor(ROOT.kBlack)
   a_mh_125.SetLineWidth(1)
   a_mh_125.SetLineStyle(7)
-  a_mh_125.Draw()
+  #a_mh_125.Draw()
   
   ROOT.gPad.RedrawAxis()
 
@@ -1886,7 +1891,7 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_CSxBR_NMSSM_vs_mh.SetTextFont(42)
   l_CSxBR_NMSSM_vs_mh.SetTextSize(0.035)
   l_CSxBR_NMSSM_vs_mh.SetMargin(0.13)
-  l_CSxBR_NMSSM_vs_mh.SetHeader("NMSSM 95% CL upper limits:")
+  l_CSxBR_NMSSM_vs_mh.SetHeader("NMSSM %d%% CL upper limits:"%CL)
   l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_355,"m_{a_{1}} = 3.55 GeV","LP")
   #l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_2,  "m_{a_{1}} = 2 GeV/#it{c}^{2}",   "LP")
   l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_025,"m_{a_{1}} = 0.25 GeV","LP")
@@ -1915,7 +1920,7 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_mh1.SetHeader("")
   l_mh1.AddEntry(gr_CSxBR_SM,"h_{i} = h_{1}:","")
   l_mh1.AddEntry(gr_CSxBR_SM,"m_{h_{1}} < m_{h_{2}}=125 GeV","")
-  l_mh1.Draw()
+  #l_mh1.Draw()
 
   l_mh2 = ROOT.TLegend(0.63,0.15,0.9,0.23)
   l_mh2.SetFillColor(ROOT.kWhite)
@@ -1928,7 +1933,7 @@ def limit_CSxBR2_fb_vs_mh_2016():
   l_mh2.SetHeader("")
   l_mh2.AddEntry(gr_CSxBR_SM,"h_{i} = h_{2}:","")
   l_mh2.AddEntry(gr_CSxBR_SM,"125 GeV = m_{h_{1}} #leq m_{h_{2}}","")
-  l_mh2.Draw()
+  #l_mh2.Draw()
 
 #  l_CMS = ROOT.TLegend(0.7,0.9,0.9,0.95)
 #  l_CMS.SetFillColor(ROOT.kWhite)
@@ -1948,6 +1953,7 @@ def limit_CSxBR2_fb_vs_mh_2016():
 
   txtHeader.Draw()
 
-  cnv.SaveAs("plots/PDF/CSxBR_NMSSM_vs_mh_2016.pdf")
-  cnv.SaveAs("plots/PNG/CSxBR_NMSSM_vs_mh_2016.png")
+  cnv.SaveAs(topDirectory + "/PDF/CSxBR_NMSSM_vs_mh_2016.pdf")
+  cnv.SaveAs(topDirectory + "/PNG/CSxBR_NMSSM_vs_mh_2016.png")
+  cnv.SaveAs(topDirectory + "/PNG/CSxBR_NMSSM_vs_mh_2016.C")
 

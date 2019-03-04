@@ -1,3 +1,6 @@
+import ROOT
+ROOT.gROOT.SetBatch(True)
+
 #from Plots import *
 execfile("Plots.py")
 

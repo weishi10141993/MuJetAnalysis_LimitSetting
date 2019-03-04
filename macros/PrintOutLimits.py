@@ -8,7 +8,7 @@ import commands
 debug=False
 debug1=False
 
-CL='95%'
+CL='90%'
 #CL='90%'
 #masses=[0.2113,0.2200,0.2300,0.2400,0.2500,0.2600,0.2700,0.2800,0.2900,0.3000,0.3100,0.3200,0.3300,0.3400,0.3500,0.3600,0.3700,0.3800,0.3900,0.4000,0.4100,0.4200,0.4300,0.4400,0.4500,0.4600,0.4700,0.4800,0.4900,0.5000,0.6000,0.7000,0.8000,0.9000,1.0000,2.0000,2.6000,2.7000,2.8000,2.9000,3.0000,3.1000,3.2000,3.3000,3.4000,3.7000,4.0000,5.0000,6.0000,7.0000,8.0000,8.5000]
 #2018 granularity
@@ -103,9 +103,9 @@ lim_file.write("\n"); lim_file.write("NOW SKIMMED VERSION\n")
 i=0; average=0; average_n=0
 for mass in Resulter_TOT:
   mass_Sorted = sorted(mass)
-  print mass_Sorted
+  #print mass_Sorted
   mass_Sorted = mass_Sorted[1:-6]
-  print mass_Sorted
+  #print mass_Sorted
   Value=0; Value_n=0;
   for m in mass_Sorted:
     Value=Value+float(m)
