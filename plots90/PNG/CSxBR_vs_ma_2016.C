@@ -1,7 +1,7 @@
 void CSxBR_vs_ma_2016()
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Fri Mar  1 23:31:54 2019) by ROOT version6.06/09
+//=========  (Fri Mar  8 12:09:51 2019) by ROOT version6.06/09
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -48,15 +48,20 @@ void CSxBR_vs_ma_2016()
    h_CSxBR_vs_ma_dummy__4->GetZaxis()->SetTitleFont(42);
    h_CSxBR_vs_ma_dummy__4->Draw("");
    
-   Double_t Graph0_fx5[17] = {
+   Double_t Graph0_fx5[22] = {
    0.25,
    0.5,
    0.75,
    1,
-   1.25,
+   1.15,
+   1.2,
+   1.3,
+   1.4,
    1.5,
    1.75,
-   2,
+   1.8,
+   1.9,
+   2.1,
    2.25,
    2.4,
    2.5,
@@ -66,15 +71,20 @@ void CSxBR_vs_ma_2016()
    3,
    3.2,
    3.55};
-   Double_t Graph0_fy5[17] = {
+   Double_t Graph0_fy5[22] = {
    0.3107484,
    0.644304,
    0.7240117,
    0.755152,
-   0.7678177,
+   0.7622032,
+   0.9232914,
+   0.8193545,
+   1.267385,
    0.7784903,
    0.7974839,
-   0.8348075,
+   0.8392186,
+   0.9518006,
+   0.7995918,
    0.828685,
    1.15587,
    0.8227595,
@@ -84,7 +94,7 @@ void CSxBR_vs_ma_2016()
    1.942872,
    1.011052,
    0.8123671};
-   TGraph *graph = new TGraph(17,Graph0_fx5,Graph0_fy5);
+   TGraph *graph = new TGraph(22,Graph0_fx5,Graph0_fy5);
    graph->SetName("Graph0");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -129,15 +139,20 @@ void CSxBR_vs_ma_2016()
    
    graph->Draw("cp");
    
-   Double_t Graph1_fx6[17] = {
+   Double_t Graph1_fx6[22] = {
    0.25,
    0.5,
    0.75,
    1,
-   1.25,
+   1.15,
+   1.2,
+   1.3,
+   1.4,
    1.5,
    1.75,
-   2,
+   1.8,
+   1.9,
+   2.1,
    2.25,
    2.4,
    2.5,
@@ -147,15 +162,20 @@ void CSxBR_vs_ma_2016()
    3,
    3.2,
    3.55};
-   Double_t Graph1_fy6[17] = {
+   Double_t Graph1_fy6[22] = {
    0.2508183,
    0.4106967,
    0.4560333,
    0.4777492,
-   0.4841737,
+   0.4812679,
+   0.5825982,
+   0.5163288,
+   0.7975936,
    0.4892595,
    0.4994767,
-   0.5210146,
+   0.5252493,
+   0.5948754,
+   0.4995317,
    0.5184821,
    0.7242792,
    0.5160678,
@@ -165,7 +185,7 @@ void CSxBR_vs_ma_2016()
    1.224854,
    0.6387142,
    0.5150651};
-   graph = new TGraph(17,Graph1_fx6,Graph1_fy6);
+   graph = new TGraph(22,Graph1_fx6,Graph1_fy6);
    graph->SetName("Graph1");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -204,15 +224,20 @@ void CSxBR_vs_ma_2016()
    
    graph->Draw("cp");
    
-   Double_t Graph2_fx7[17] = {
+   Double_t Graph2_fx7[22] = {
    0.25,
    0.5,
    0.75,
    1,
-   1.25,
+   1.15,
+   1.2,
+   1.3,
+   1.4,
    1.5,
    1.75,
-   2,
+   1.8,
+   1.9,
+   2.1,
    2.25,
    2.4,
    2.5,
@@ -222,15 +247,20 @@ void CSxBR_vs_ma_2016()
    3,
    3.2,
    3.55};
-   Double_t Graph2_fy7[17] = {
+   Double_t Graph2_fy7[22] = {
    0.2413372,
    0.3409181,
    0.3796169,
    0.3990292,
-   0.4048694,
+   0.4022497,
+   0.4870574,
+   0.4318603,
+   0.6674308,
    0.4096126,
    0.418679,
-   0.4372801,
+   0.4403918,
+   0.4990187,
+   0.4191062,
    0.4347809,
    0.6070398,
    0.4323811,
@@ -240,7 +270,7 @@ void CSxBR_vs_ma_2016()
    1.024423,
    0.5338159,
    0.4299304};
-   graph = new TGraph(17,Graph2_fx7,Graph2_fy7);
+   graph = new TGraph(22,Graph2_fx7,Graph2_fy7);
    graph->SetName("Graph2");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);

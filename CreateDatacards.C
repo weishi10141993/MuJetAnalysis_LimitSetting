@@ -38,12 +38,12 @@ void CreateDatacards( bool makeRoot=true ){
   bool isLxplus=false;
   //TString Myrule = "--rule CLs --LHCmode LHC-limits --toysFrequentist"; //OLD command "--rule CLs --testStat LHC"
   TString Myrule = "--rule CLs --testStat LHC";
-  Myrule = Myrule + " --cl 0.90";
+  Myrule = Myrule + " --cl 0.95";
   string pwd = "/home/dildick/DisplacedMuonJetAnalysis_2016/CMSSW_8_1_0/src/MuJetAnalysis_LimitSetting/";
   bool DiffSeed=true;
 
   // need to do this 10 times because can only run -T 1000 at a time!!!!
-  int nBatch =6;
+  int nBatch = 12;
   int Ninit=0+nBatch*30, Nend=30+nBatch*30; 
   //Each mass is submitted (Nend-Ninit) times. If you need to accumulate statistic you can resubmit from 41 to X. 
   //Parameters
