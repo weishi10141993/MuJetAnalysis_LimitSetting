@@ -11,28 +11,17 @@ def myGaus(x, mu, sigma):
 def myGaus2(x, mu, sigma):
   return exp( - (x - mu)*(x - mu) / 2.0/sigma/sigma )
 
-def fCmsLimitVsM(m):
-  #M = 0.315
-  #LimitMin = 3.08
-  #LimitMax = 8.55
-  #if False:
-  #  print "M = ", M
-  #  print "LimitMin = ", LimitMin
-  #  print "LimitMax = ", LimitMax
-  #  print "sigma = ", fCmsResolution(M)
-  #  print "myGaus(M, M, fCmsResolution(M) ) = ", myGaus(M, M, fCmsResolution(M) )
-  #  print "LimitMax-LimitMin/myGaus[M,M,sigma(M)]/sigma(M)sqrt(2pi) = ", (LimitMax - LimitMin)/myGaus(M, M, fCmsResolution(M) )/fCmsResolution(M)/sqrt(2.0*pi)
-  #  print "1/2/sigma(M)^2 = ", 1.0/2.0/fCmsResolution(M)/fCmsResolution(M)
-  #  print "Err: " + str(LimitMin + (LimitMax - LimitMin)*myGaus(m, M, fCmsResolution(M) )/myGaus(M, M, fCmsResolution(M) ))
-  #return LimitMin + (LimitMax - LimitMin)*myGaus(m, M, fCmsResolution(M) )/myGaus(M, M, fCmsResolution(M) )
-#****************************************
-# old method 95 CL v2
+CL = 95
 
+def fCmsLimitVsM(m):
+  
   ## 90% CL
-  return 2.33591576728+0.490467147856* myGaus2(m,1.20105406966, 0.0158823287785) + 1.75* myGaus2(m,1.37980913362, 0.0363780607304) + 0.468148031032* myGaus2(m,1.89383556463, 0.0619017859509) + 1.2* myGaus2(m,2.37120887758, 0.0524109033795) + 2.04831493617* myGaus2(m,2.84399373813, 0.07) + 4.482483411* myGaus2(m,3.05938898807, 0.0696193158778)
+  if CL == 90:  
+    return 2.33591576728+0.490467147856* myGaus2(m,1.20105406966, 0.0158823287785) + 1.75* myGaus2(m,1.37980913362, 0.0363780607304) + 0.468148031032* myGaus2(m,1.89383556463, 0.0619017859509) + 1.2* myGaus2(m,2.37120887758, 0.0524109033795) + 2.04831493617* myGaus2(m,2.84399373813, 0.07) + 4.482483411* myGaus2(m,3.05938898807, 0.0696193158778)
 
   ## 95% CL
-  #return 3.00174326806+0.758400444753* myGaus2(m,1.21537045458, 0.0402388548379) + 1.81322228899* myGaus2(m,1.4117157352, 0.05) + 0.581002295405* myGaus2(m,1.90264292745, 0.0648260169513) + 1.46155733387* myGaus2(m,2.37797756173, 0.0585759605432) + 1.84612408697* myGaus2(m,2.80000000002, 0.07) + 4.89437383246* myGaus2(m,3.04849077039, 0.09)
+  if CL == 95:
+    return 3.00174326806+0.758400444753* myGaus2(m,1.21537045458, 0.0402388548379) + 1.81322228899* myGaus2(m,1.4117157352, 0.05) + 0.581002295405* myGaus2(m,1.90264292745, 0.0648260169513) + 1.46155733387* myGaus2(m,2.37797756173, 0.0585759605432) + 1.84612408697* myGaus2(m,2.80000000002, 0.07) + 4.89437383246* myGaus2(m,3.04849077039, 0.09)
 
 def fCmsLimitVsM_explicit(m):
   A = 3.082
@@ -44,7 +33,7 @@ def fCmsLimitVsM_explicit(m):
 def fCmsResolution ( m ):
   return (0.13 + m*0.065)/5.0
 
-Limits_HybridNew = [
+Limits_HybridNew_90 = [
 [0.2113,2.32519152091], #(263)
 [0.24,2.31384589354], #(263)
 [0.26,2.31599923954], #(263)
@@ -106,7 +95,7 @@ Limits_HybridNew = [
 [8.5,2.34432361789], #(246)
 ]
 
-Limits_HybridNew = [
+Limits_HybridNew_95 = [
 [0.2113,3.02228435], #(200)
 [0.24,2.97580845771], #(201)
 [0.26,2.98139915], #(200)
@@ -168,6 +157,12 @@ Limits_HybridNew = [
 [8.5,3.04041461929], #(197)
 ]
 
+## assign the limits
+if CL == 90:
+  Limits_HybridNew = Limits_HybridNew_90
+
+if CL == 95:
+  Limits_HybridNew = Limits_HybridNew_95
 
 
 

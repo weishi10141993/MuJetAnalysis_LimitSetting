@@ -1,0 +1,4833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="HTMLFiles/pmathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/limit_CMS_run2_2018_90CL.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="font-size: Floor[120. Inherited]%;">
+
+<p class='Title' style='font-size: 36px;background-color: #F0E8E0;'>
+ Model to describe the efficiency as a function of mass and ctau
+</p>
+
+
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>f1</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>m_</mi>
+    <mo>,</mo>
+    <mi>E_</mi>
+    <mo>,</mo>
+    <mi>ct_</mi>
+    <mo>,</mo>
+    <mi>R_</mi>
+    <mo>,</mo>
+    <mi>z_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mfrac>
+    <mi>R</mi>
+    <mrow>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>E</mi>
+       <mo>/</mo>
+       <mi>m</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mi>ct</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msup>
+        <mi>R</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>+</mo>
+       <msup>
+        <mi>z</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Exp</mi>
+     <mo>[</mo>
+     <mfrac>
+      <mrow>
+       <mo>-</mo>
+       <msqrt>
+        <mrow>
+         <msup>
+          <mi>R</mi>
+          <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+          <mi>z</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+       </msqrt>
+      </mrow>
+      <mrow>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>E</mi>
+         <mo>/</mo>
+         <mi>m</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo>&InvisibleTimes;</mo>
+       <mi>ct</mi>
+      </mrow>
+     </mfrac>
+     <mo>]</mo>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mtext>  </mtext>
+   <mrow>
+    <mtext>(*</mtext>
+    <mtext> </mtext>
+    <mrow>
+     <mi>Exponencial</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>decay</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>of</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>GammaD</mi>
+    </mrow>
+    <mtext> </mtext>
+    <mtext>*)</mtext>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Zmax</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>m_</mi>
+    <mo>,</mo>
+    <mi>E_</mi>
+    <mo>,</mo>
+    <mi>ct_</mi>
+    <mo>,</mo>
+    <mi>R_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>If</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mn>10.</mn>
+      <mtext> </mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>E</mi>
+        <mo>/</mo>
+        <mi>m</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&InvisibleTimes;</mo>
+      <mi>ct</mi>
+     </mrow>
+     <mo>&lt;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>10</mn>
+       <mo>&InvisibleTimes;</mo>
+       <mi>R</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mn>10</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>E</mi>
+       <mo>/</mo>
+       <mi>m</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mi>ct</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mn>10</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>R</mi>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>effR</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>R0_</mi>
+    <mo>,</mo>
+    <mi>R_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Which</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mi>R</mi>
+      <mo>&gt;</mo>
+      <mn>0</mn>
+     </mrow>
+     <mo>&amp;&amp;</mo>
+     <mrow>
+      <mi>R</mi>
+      <mo>&lt;</mo>
+      <mi>R0</mi>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mn>1.</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>R</mi>
+     <mo>&gt;</mo>
+     <mi>R0</mi>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>&InvisibleTimes;</mo>
+  <mrow>
+   <mtext>(*</mtext>
+   <mtext> </mtext>
+   <mrow>
+    <mrow>
+     <mi>efficiency</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mn>1</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>before</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>R0</mi>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+     <mn>9.8</mn>
+     <mi>cm</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>3</mn>
+       <mo>&InvisibleTimes;</mo>
+       <mi>rd</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>pixel</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>layer</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mi>and</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>zero</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>above</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>this</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>value</mi>
+    </mrow>
+   </mrow>
+   <mtext> </mtext>
+   <mtext>*)</mtext>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Rmax</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>m_</mi>
+    <mo>,</mo>
+    <mi>E_</mi>
+    <mo>,</mo>
+    <mi>ct_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Which</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mn>10</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>E</mi>
+        <mo>/</mo>
+        <mi>m</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&InvisibleTimes;</mo>
+      <mi>ct</mi>
+     </mrow>
+     <mo>&lt;</mo>
+     <mn>600</mn>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mn>10</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>E</mi>
+       <mo>/</mo>
+       <mi>m</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mi>ct</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mrow>
+      <mn>10</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>E</mi>
+        <mo>/</mo>
+        <mi>m</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&InvisibleTimes;</mo>
+      <mi>ct</mi>
+     </mrow>
+     <mo>&GreaterEqual;</mo>
+     <mn>600</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>600.</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>alpha0</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Which</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>0.25</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.0911856</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>0.4</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.0645557</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>0.7</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.0604557</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>1.</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.0587443</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>5.</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.0657431</mn>
+    <mo>,</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>&Equal;</mo>
+     <mn>8.5</mn>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.127751</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>&InvisibleTimes;</mo>
+  <mrow>
+   <mtext>(*</mtext>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mi>Efficiencies</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>for</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>ctau</mi>
+     </mrow>
+     <mo>=</mo>
+     <mn>0</mn>
+    </mrow>
+    <mo>,</mo>
+    <mtext> </mtext>
+    <mrow>
+     <mi>this</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>obtained</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>from</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>cutflow</mi>
+    </mrow>
+   </mrow>
+   <mtext>*)</mtext>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>datapoints</mi>
+   <mo>=</mo>
+   <mtext> </mtext>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.25</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>0.25</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.4</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>0.4</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.7</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>0.7</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>1.</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>1.</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>5.</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>5.</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>8.5</mn>
+       <mo>,</mo>
+       <mrow>
+        <mi>alpha0</mi>
+        <mo>[</mo>
+        <mn>8.5</mn>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>feffR</mi>
+   <mo>=</mo>
+   <mrow>
+    <mi>Interpolation</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>datapoints</mi>
+     <mo>,</mo>
+     <mrow>
+      <mi>InterpolationOrder</mi>
+      <mo>&rightarrow;</mo>
+      <mn>1</mn>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>f3</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>m_</mi>
+    <mo>,</mo>
+    <mi>E_</mi>
+    <mo>,</mo>
+    <mi>ct_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>NIntegrate</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mi>effR</mi>
+      <mo>[</mo>
+      <mrow>
+       <mn>98.</mn>
+       <mo>,</mo>
+       <mi>R</mi>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>f1</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>m</mi>
+       <mo>,</mo>
+       <mi>E</mi>
+       <mo>,</mo>
+       <mi>ct</mi>
+       <mo>,</mo>
+       <mi>R</mi>
+       <mo>,</mo>
+       <mi>z</mi>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>R</mi>
+      <mo>,</mo>
+      <mn>0.</mn>
+      <mo>,</mo>
+      <mrow>
+       <mi>Rmax</mi>
+       <mo>[</mo>
+       <mrow>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>E</mi>
+        <mo>,</mo>
+        <mi>ct</mi>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>z</mi>
+      <mo>,</mo>
+      <mn>0.</mn>
+      <mo>,</mo>
+      <mrow>
+       <mi>Zmax</mi>
+       <mo>[</mo>
+       <mrow>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>E</mi>
+        <mo>,</mo>
+        <mi>ct</mi>
+        <mo>,</mo>
+        <mi>R</mi>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>alphavsctau</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>m_</mi>
+    <mo>,</mo>
+    <mi>E_</mi>
+    <mo>,</mo>
+    <mi>ct_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mrow>
+    <mi>feffR</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>f3</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mi>E</mi>
+     <mo>,</mo>
+     <mi>ct</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>f3</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mi>E</mi>
+     <mo>,</mo>
+     <mi>ct</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mtext>  </mtext>
+   <mrow>
+    <mtext>(*</mtext>
+    <mtext> </mtext>
+    <mrow>
+     <mrow>
+      <mi>Final</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>expression</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>of</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>the</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>model</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>with</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>to</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>variables</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>m</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>and</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>ctau</mi>
+     </mrow>
+     <mo>,</mo>
+     <mtext> </mtext>
+     <mrow>
+      <mrow>
+       <mi>the</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>Energy</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>for</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>the</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>GamamD</mi>
+      </mrow>
+      <mtext> </mtext>
+      <mo>=</mo>
+      <mtext> </mtext>
+      <mrow>
+       <mn>50</mn>
+       <mo>&InvisibleTimes;</mo>
+       <mi>GeV</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>which</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>is</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>mean</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>value</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>of</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>distribution</mi>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mtext> </mtext>
+    <mtext>*)</mtext>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class='Subsection' style='font-size: 36px;background-color: #DEF0FF;'>
+ Calling external data for limit setting (Br, limit on N, f(m), etc...)
+</p>
+
+
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>xsec</mi>
+   <mtext> </mtext>
+   <mo>=</mo>
+   <mtext> </mtext>
+   <mrow>
+    <mi>ReadList</mi>
+    <mo>[</mo>
+    <mrow>
+     <mtext>/Users/Alfredo/Desktop/limite_DarkSUSY_2017/R_2016.dat</mtext>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>Real</mi>
+       <mo>,</mo>
+       <mi>Real</mi>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>R</mi>
+  <mo>=</mo>
+  <mrow>
+   <mi>Interpolation</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>xsec</mi>
+    <mo>,</mo>
+    <mrow>
+     <mi>InterpolationOrder</mi>
+     <mo>&rightarrow;</mo>
+     <mn>1</mn>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_1.gif" alt="limit_CMS_run2_2018_90CL_1.gif" width="430" height="63" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>R</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mn>0.25</mn>
+     <mo>,</mo>
+     <mn>9.</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotRange</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0.</mn>
+        <mo>,</mo>
+        <mn>9.</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0.</mn>
+        <mo>,</mo>
+        <mn>30.</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_2.gif" alt="limit_CMS_run2_2018_90CL_2.gif" width="789" height="18" style="vertical-align:middle;" usemap="#map_2" />
+<map name="map_2">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_3.gif" alt="limit_CMS_run2_2018_90CL_3.gif" width="432" height="282" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mtext>(*</mtext>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Model</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>Independent</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>Limit</mi>
+  </mrow>
+  <mtext> </mtext>
+  <mtext>*)</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mtext>(*</mtext>
+   <mrow>
+    <mrow>
+     <mi>Nlimitf</mi>
+     <mo>[</mo>
+     <mi>x_</mi>
+     <mo>]</mo>
+    </mrow>
+    <mo>:=</mo>
+    <mrow>
+     <mn>2.</mn>
+     <mo>+</mo>
+     <mrow>
+      <mn>0.196258</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>0.585342</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.0400199</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>1.32241</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>0.833146</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.0350001</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>0.893637</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>1.16449</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.033</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>1.79953</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>1.41323</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.03</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>0.59907</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>1.90641</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.05</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>1.1</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>2.40133</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.042</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>2.20401</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>2.999</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.169458</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>+</mo>
+     <mrow>
+      <mn>3.57</mn>
+      <mo>*</mo>
+      <mrow>
+       <mi>Exp</mi>
+       <mo>[</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>0.5</mn>
+        </mrow>
+        <mo>*</mo>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mi>x</mi>
+             <mo>-</mo>
+             <mn>3.1005</mn>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>/</mo>
+           <mn>0.134076</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>2</mn>
+        </mrow>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mtext>*)</mtext>
+  </mrow>
+  <mo>&InvisibleTimes;</mo>
+  <mtext>&NewLine;</mtext>
+  <mrow>
+   <mrow>
+    <mi>Nlimitf</mi>
+    <mo>[</mo>
+    <mi>x_</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>:=</mo>
+   <mrow>
+    <mn>2.33591576728</mn>
+    <mo>+</mo>
+    <mrow>
+     <mn>0.490467147856</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.15</mn>
+       </mrow>
+       <mo>*</mo>
+       <mtext> </mtext>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mtext> </mtext>
+            <mn>1.20105406966</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.0158823287785</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mn>1.75</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.5</mn>
+       </mrow>
+       <mo>*</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>1.37980913362</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.0363780607304</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mn>0.46814803103</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.5</mn>
+       </mrow>
+       <mo>*</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>1.89383556463</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.0619017859509</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mn>1.2</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.5</mn>
+       </mrow>
+       <mo>*</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>2.37120887758</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.0524109033795</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mn>2.04831493617</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.5</mn>
+       </mrow>
+       <mo>*</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>2.84399373813</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.07</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mn>4.482483411</mn>
+     <mtext> </mtext>
+     <mo>*</mo>
+     <mrow>
+      <mi>Exp</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mo>-</mo>
+        <mn>0.5</mn>
+       </mrow>
+       <mo>*</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>3.05938898807</mn>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo>/</mo>
+          <mn>0.0696193158778</mn>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Nlimitf</mi>
+  <mo>[</mo>
+  <mn>0.25</mn>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2.33591576728</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mtext>&#62371;</mtext>
+  <mrow>
+   <mi>Plot</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>Nlimitf</mi>
+     <mo>[</mo>
+     <mi>m</mi>
+     <mo>]</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>m</mi>
+      <mo>,</mo>
+      <mn>0.25</mn>
+      <mo>,</mo>
+      <mn>9.</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>PlotRange</mi>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mn>0.1</mn>
+         <mo>,</mo>
+         <mn>6.</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mn>0.</mn>
+         <mo>,</mo>
+         <mn>7.</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_4.gif" alt="limit_CMS_run2_2018_90CL_4.gif" width="432" height="285" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>5</mn>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mrow>
+    <mi>Br</mi>
+    <mtext> </mtext>
+    <mo>=</mo>
+    <mtext> </mtext>
+    <mrow>
+     <mi>ReadList</mi>
+     <mo>[</mo>
+     <mrow>
+      <mtext>/Users/Alfredo/Desktop/limite_DarkSUSY_2017/Br_2016.dat</mtext>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>Real</mi>
+        <mo>,</mo>
+        <mi>Real</mi>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mo>;</mo>
+  </mrow>
+  <mo>&InvisibleTimes;</mo>
+  <mrow>
+   <mtext>(*</mtext>
+   <mtext> </mtext>
+   <mrow>
+    <mi>Br</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mtext>  </mtext>
+    <mi>GammaD</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>to</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mn>2</mn>
+    <mo>&InvisibleTimes;</mo>
+    <mi>mu</mi>
+   </mrow>
+   <mtext> </mtext>
+   <mtext>*)</mtext>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>ListLogLogPlot</mi>
+  <mo>[</mo>
+  <mi>Br</mi>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_5.gif" alt="limit_CMS_run2_2018_90CL_5.gif" width="432" height="269" style="vertical-align:middle" />
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Brf</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Interpolation</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>Br</mi>
+    <mo>,</mo>
+    <mrow>
+     <mi>InterpolationOrder</mi>
+     <mo>&rightarrow;</mo>
+     <mn>1</mn>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_6.gif" alt="limit_CMS_run2_2018_90CL_6.gif" width="422" height="63" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>listBrf</mi>
+   <mtext> </mtext>
+   <mo>=</mo>
+   <mtext> </mtext>
+   <mrow>
+    <mi>Table</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>m</mi>
+       <mo>,</mo>
+       <mrow>
+        <mi>Brf</mi>
+        <mo>[</mo>
+        <mi>m</mi>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>m</mi>
+       <mo>,</mo>
+       <mn>0.</mn>
+       <mo>,</mo>
+       <mn>9.</mn>
+       <mo>,</mo>
+       <mn>0.01</mn>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_7.gif" alt="limit_CMS_run2_2018_90CL_7.gif" width="747" height="18" style="vertical-align:middle;" usemap="#map_7" />
+<map name="map_7">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_8.gif" alt="limit_CMS_run2_2018_90CL_8.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_8" />
+<map name="map_8">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_9.gif" alt="limit_CMS_run2_2018_90CL_9.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_9" />
+<map name="map_9">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_10.gif" alt="limit_CMS_run2_2018_90CL_10.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_10" />
+<map name="map_10">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Brlog</mi>
+  <mo>=</mo>
+  <mrow>
+   <mi>ListLogLogPlot</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>listBrf</mi>
+    <mo>,</mo>
+    <mrow>
+     <mi>Joined</mi>
+     <mo>&rightarrow;</mo>
+     <mi>True</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>Joined</mi>
+     <mo>&rightarrow;</mo>
+     <mi>True</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>ImageSize</mi>
+     <mo>&rightarrow;</mo>
+     <mn>500</mn>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>AspectRatio</mi>
+     <mo>&rightarrow;</mo>
+     <mn>1.</mn>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>TicksStyle</mi>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mi>Directive</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>FontSize</mi>
+       <mo>&rightarrow;</mo>
+       <mn>16</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>Frame</mi>
+     <mo>&rightarrow;</mo>
+     <mi>True</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>FrameLabel</mi>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <semantics>
+        <mrow>
+         <msub>
+          <ms>m</ms>
+          <ms>&gamma;D</ms>
+         </msub>
+         <ms> [GeV]</ms>
+        </mrow>
+        <annotation encoding='Mathematica'>&quot;\&quot;\!\(\*SubscriptBox[\(m\), \(\[Gamma]D\)]\) [GeV]\&quot;&quot;</annotation>
+       </semantics>
+       <mo>,</mo>
+       <ms>Br</ms>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>RotateLabel</mi>
+     <mo>&rightarrow;</mo>
+     <mi>True</mi>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>BaseStyle</mi>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>FontSize</mi>
+       <mo>&rightarrow;</mo>
+       <mn>20</mn>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>PlotRange</mi>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mn>0.25</mn>
+         <mo>,</mo>
+         <mn>10.</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mn>0.01</mn>
+         <mo>,</mo>
+         <mn>1.</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_11.gif" alt="limit_CMS_run2_2018_90CL_11.gif" width="600" height="585" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mtext>(*</mtext>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Partial</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>witdths</mi>
+  </mrow>
+  <mtext>*)</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>alpha</mi>
+  <mo>=</mo>
+  <mn>0.0072973525664</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.0072973525664</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>masse</mi>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mn>0.000510998928</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.000510998928</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>massmu</mi>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mtext>.1056583715</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.1056583715</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ParWidthE</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>3</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>alpha</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msqrt>
+    <mrow>
+     <mn>1</mn>
+     <mo>-</mo>
+     <mfrac>
+      <mrow>
+       <mn>4</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>masse</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+   </msqrt>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <mfrac>
+      <mrow>
+       <mn>2</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>masse</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ParWidthM</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>3</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>alpha</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msqrt>
+    <mrow>
+     <mn>1</mn>
+     <mo>-</mo>
+     <mfrac>
+      <mrow>
+       <mn>4</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>massmu</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+   </msqrt>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <mfrac>
+      <mrow>
+       <mn>2</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>massmu</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ParWidthHad</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>3</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>alpha</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msqrt>
+    <mrow>
+     <mn>1</mn>
+     <mo>-</mo>
+     <mfrac>
+      <mrow>
+       <mn>4</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>massmu</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+   </msqrt>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <mfrac>
+      <mrow>
+       <mn>2</mn>
+       <mo>&InvisibleTimes;</mo>
+       <msup>
+        <mi>massmu</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <msup>
+       <mi>m</mi>
+       <mn>2</mn>
+      </msup>
+     </mfrac>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>R</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ParWidthTot</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mrow>
+    <mi>ParWidthE</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>ParWidthM</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>ParWidthHad</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mn>1</mn>
+  <mo>/</mo>
+  <mrow>
+   <mi>ParWidthTot</mi>
+   <mo>[</mo>
+   <mn>1.</mn>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>125.12062011489175</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>funfm</mi>
+   <mo>[</mo>
+   <mi>m_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo>/</mo>
+   <mrow>
+    <mi>ParWidthTot</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>funfm</mi>
+    <mo>[</mo>
+    <mi>m</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mn>0.25</mn>
+     <mo>,</mo>
+     <mn>9.</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotRange</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0.</mn>
+        <mo>,</mo>
+        <mn>9.</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0.</mn>
+        <mo>,</mo>
+        <mn>800</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_12.gif" alt="limit_CMS_run2_2018_90CL_12.gif" width="789" height="18" style="vertical-align:middle;" usemap="#map_12" />
+<map name="map_12">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_13.gif" alt="limit_CMS_run2_2018_90CL_13.gif" width="789" height="18" style="vertical-align:middle;" usemap="#map_13" />
+<map name="map_13">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_14.gif" alt="limit_CMS_run2_2018_90CL_14.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_14" />
+<map name="map_14">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_15.gif" alt="limit_CMS_run2_2018_90CL_15.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_15" />
+<map name="map_15">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_16.gif" alt="limit_CMS_run2_2018_90CL_16.gif" width="432" height="278" style="vertical-align:middle" />
+</p>
+
+<p class='Subsubsection' style='font-size: 24px;background-color: #F0E8E0;'>
+ Limit on&nbsp;&nbsp;<span><span>Br(H&rarr;2&gamma;)&nbsp;&nbsp;as a function of mass and ctau</span></span> for different values (1%,&nbsp;&nbsp;5%,10%,20%,40%)
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mtext>(*</mtext>
+  <mrow>
+   <mtext> </mtext>
+   <mrow>
+    <mrow>
+     <mi>Since</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>we</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>have</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>epsilon</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>as</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>a</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>function</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>of</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>mass</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>and</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>ctau</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>we</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>cannot</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>just</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>plot</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>distributions</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>as</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>above</mi>
+    </mrow>
+    <mo>,</mo>
+    <mtext> </mtext>
+    <mrow>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>limit</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>is</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>done</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>in</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>an</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>iterative</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>way</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>getting</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>value</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>in</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>every</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>mass</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>bin</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>and</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>scanning</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>in</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>epsilon</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>until</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>it</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>converges</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>to</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>the</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>value</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>of</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>limit</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>on</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>N</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mi>m</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mtext>*)</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_17.gif" alt="limit_CMS_run2_2018_90CL_17.gif" width="1866" height="99" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Labelepsvsctau</mi>
+  <mo>=</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <ms>c&tau;=100.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=50.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=20.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=10.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=5.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=3.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=1.0</ms>
+    <mo>,</mo>
+    <ms>c&tau;=0.1</ms>
+    <mo>,</mo>
+    <ms>c&tau;=0.001</ms>
+    <mo>,</mo>
+    <ms>c&tau;=0.00001</ms>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mtext>c&tau;=100.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=50.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=20.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=10.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=5.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=3.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=1.0</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=0.1</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=0.001</mtext>
+   <mo>,</mo>
+   <mtext>c&tau;=0.00001</mtext>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=0.1%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_18.gif" alt="limit_CMS_run2_2018_90CL_18.gif" width="1370" height="855" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <mi>Null</mi>
+    <mo>,</mo>
+    <mi>Null</mi>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_19.gif" alt="limit_CMS_run2_2018_90CL_19.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_19" />
+<map name="map_19">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_20.gif" alt="limit_CMS_run2_2018_90CL_20.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_20" />
+<map name="map_20">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_21.gif" alt="limit_CMS_run2_2018_90CL_21.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_21" />
+<map name="map_21">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_22.gif" alt="limit_CMS_run2_2018_90CL_22.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_22" />
+<map name="map_22">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=1%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_23.gif" alt="limit_CMS_run2_2018_90CL_23.gif" width="1691" height="831" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <mi>Null</mi>
+    <mo>,</mo>
+    <mi>Null</mi>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_24.gif" alt="limit_CMS_run2_2018_90CL_24.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_24" />
+<map name="map_24">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_25.gif" alt="limit_CMS_run2_2018_90CL_25.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_25" />
+<map name="map_25">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_26.gif" alt="limit_CMS_run2_2018_90CL_26.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_26" />
+<map name="map_26">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_27.gif" alt="limit_CMS_run2_2018_90CL_27.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_27" />
+<map name="map_27">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=5%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_28.gif" alt="limit_CMS_run2_2018_90CL_28.gif" width="1518" height="812" style="vertical-align:middle" />
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=10%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_29.gif" alt="limit_CMS_run2_2018_90CL_29.gif" width="1691" height="812" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <mi>Null</mi>
+    <mo>,</mo>
+    <mi>Null</mi>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_30.gif" alt="limit_CMS_run2_2018_90CL_30.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_30" />
+<map name="map_30">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_31.gif" alt="limit_CMS_run2_2018_90CL_31.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_31" />
+<map name="map_31">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_32.gif" alt="limit_CMS_run2_2018_90CL_32.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_32" />
+<map name="map_32">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_33.gif" alt="limit_CMS_run2_2018_90CL_33.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_33" />
+<map name="map_33">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=20%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_34.gif" alt="limit_CMS_run2_2018_90CL_34.gif" width="1518" height="812" style="vertical-align:middle" />
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=40%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_35.gif" alt="limit_CMS_run2_2018_90CL_35.gif" width="1691" height="812" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <mi>Null</mi>
+    <mo>,</mo>
+    <mi>Null</mi>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_36.gif" alt="limit_CMS_run2_2018_90CL_36.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_36" />
+<map name="map_36">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_37.gif" alt="limit_CMS_run2_2018_90CL_37.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_37" />
+<map name="map_37">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_38.gif" alt="limit_CMS_run2_2018_90CL_38.gif" width="761" height="18" style="vertical-align:middle;" usemap="#map_38" />
+<map name="map_38">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_39.gif" alt="limit_CMS_run2_2018_90CL_39.gif" width="597" height="18" style="vertical-align:middle;" usemap="#map_39" />
+<map name="map_39">
+<area shape="rect" coords="0,17,24,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mtext> </mtext>
+</math>
+</p>
+
+<p class='Subsubsection' style='font-size: 16px;background-color: #DEF0FF;'>
+ Br=60%&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mtext>(*</mtext>
+   <mrow>
+    <mrow>
+     <mi>listbr60</mi>
+     <mo>=</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Null</mi>
+         <mo>,</mo>
+         <mi>Null</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>&InvisibleTimes;</mo>
+      <mrow>
+       <mtext>(*</mtext>
+       <mtext> </mtext>
+       <mrow>
+        <mi>To</mi>
+        <mo>&InvisibleTimes;</mo>
+        <mi>Store</mi>
+        <mo>&InvisibleTimes;</mo>
+        <mi>the</mi>
+        <mo>&InvisibleTimes;</mo>
+        <mi>limit</mi>
+        <mo>&InvisibleTimes;</mo>
+        <mi>value</mi>
+       </mrow>
+       <mtext> </mtext>
+       <mtext>*)</mtext>
+      </mrow>
+      <mo>&InvisibleTimes;</mo>
+      <mtext>&#62371;</mtext>
+      <mrow>
+       <mi>BrIn</mi>
+       <mo>=</mo>
+       <mn>0.6</mn>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mo>;</mo>
+    <mtext> </mtext>
+    <mrow>
+     <mtext>(*</mtext>
+     <mtext> </mtext>
+     <mrow>
+      <mi>value</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>of</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>Br</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>H</mi>
+        <mo>&rightarrow;</mo>
+        <mi>GammaD</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mtext> </mtext>
+     <mtext>*)</mtext>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mtext>&#62371;</mtext>
+    <mrow>
+     <mi>min</mi>
+     <mo>=</mo>
+     <mtext> </mtext>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.25</mn>
+       <mo>,</mo>
+       <mn>0.7</mn>
+       <mo>,</mo>
+       <mn>0.8</mn>
+       <mo>,</mo>
+       <mn>1.</mn>
+       <mo>,</mo>
+       <mn>1.1</mn>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>;</mo>
+    <mtext>&#62371;</mtext>
+    <mrow>
+     <mi>mfin</mi>
+     <mo>=</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.7</mn>
+       <mo>,</mo>
+       <mn>0.8</mn>
+       <mo>,</mo>
+       <mn>1.</mn>
+       <mo>,</mo>
+       <mn>1.1</mn>
+       <mo>,</mo>
+       <mn>2.</mn>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>;</mo>
+    <mtext>&#62371;</mtext>
+    <mrow>
+     <mi>step</mi>
+     <mo>=</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mn>0.05</mn>
+       <mo>,</mo>
+       <mn>0.001</mn>
+       <mo>,</mo>
+       <mn>0.05</mn>
+       <mo>,</mo>
+       <mn>0.01</mn>
+       <mo>,</mo>
+       <mn>0.1</mn>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>;</mo>
+    <mtext>&#62371;</mtext>
+    <mrow>
+     <mi>Table</mi>
+     <mo>[</mo>
+     <mtext>&#62371;</mtext>
+     <mrow>
+      <mtext>(*</mtext>
+      <mrow>
+       <mrow>
+        <mi>Print</mi>
+        <mo>[</mo>
+        <mrow>
+         <ms>  i  </ms>
+         <mo>,</mo>
+         <mi>i</mi>
+         <mo>,</mo>
+         <ms>   massmin  </ms>
+         <mo>,</mo>
+         <mrow>
+          <mi>min</mi>
+          <mo>[</mo>
+          <mrow>
+           <mo>[</mo>
+           <mi>i</mi>
+           <mo>]</mo>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <ms>   massf  </ms>
+         <mo>,</mo>
+         <mrow>
+          <mi>mfin</mi>
+          <mo>[</mo>
+          <mrow>
+           <mo>[</mo>
+           <mi>i</mi>
+           <mo>]</mo>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <ms>  step  </ms>
+         <mo>,</mo>
+         <mrow>
+          <mi>step</mi>
+          <mo>[</mo>
+          <mrow>
+           <mo>[</mo>
+           <mi>i</mi>
+           <mo>]</mo>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>;</mo>
+      </mrow>
+      <mtext>*)</mtext>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mtext>&#62371;</mtext>
+     <mrow>
+      <mrow>
+       <mi>Do</mi>
+       <mo>[</mo>
+       <mtext>&#62371;</mtext>
+       <mrow>
+        <mtext>(*</mtext>
+        <mrow>
+         <mrow>
+          <mi>pval</mi>
+          <mo>=</mo>
+          <mn>2.</mn>
+         </mrow>
+         <mo>;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mi>nval</mi>
+          <mo>=</mo>
+          <mn>3.</mn>
+         </mrow>
+         <mo>;</mo>
+        </mrow>
+        <mtext>*)</mtext>
+       </mrow>
+       <mo>&InvisibleTimes;</mo>
+       <mtext>&#62371;</mtext>
+       <mrow>
+        <mrow>
+         <mrow>
+          <mi>iterbin</mi>
+          <mo>=</mo>
+          <mn>0.2</mn>
+         </mrow>
+         <mo>;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mi>Mineps2</mi>
+          <mo>=</mo>
+          <mrow>
+           <mo>-</mo>
+           <mn>14.</mn>
+          </mrow>
+         </mrow>
+         <mo>;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mtext>(*</mtext>
+          <mrow>
+           <mrow>
+            <mi>Print</mi>
+            <mo>[</mo>
+            <mrow>
+             <mo>{</mo>
+             <mrow>
+              <ms>initial parameters</ms>
+              <mo>,</mo>
+              <ms>mass</ms>
+              <mo>,</mo>
+              <mi>m</mi>
+              <mo>,</mo>
+              <ms>limit</ms>
+              <mo>,</mo>
+              <mrow>
+               <mi>Nlimit2</mi>
+               <mo>[</mo>
+               <mrow>
+                <mi>m</mi>
+                <mo>,</mo>
+                <mi>BrIn</mi>
+               </mrow>
+               <mo>]</mo>
+              </mrow>
+             </mrow>
+             <mo>}</mo>
+            </mrow>
+            <mo>]</mo>
+           </mrow>
+           <mo>;</mo>
+          </mrow>
+          <mtext>*)</mtext>
+         </mrow>
+         <mo>&InvisibleTimes;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mi>While</mi>
+          <mo>[</mo>
+          <mtext> </mtext>
+          <mrow>
+           <mrow>
+            <mo>(</mo>
+            <mrow>
+             <mrow>
+              <mrow>
+               <mi>Abs</mi>
+               <mo>[</mo>
+               <mrow>
+                <mrow>
+                 <mi>Nlimit2</mi>
+                 <mo>[</mo>
+                 <mrow>
+                  <mi>m</mi>
+                  <mo>,</mo>
+                  <mi>BrIn</mi>
+                 </mrow>
+                 <mo>]</mo>
+                </mrow>
+                <mo>-</mo>
+                <mrow>
+                 <mi>Nlimitf</mi>
+                 <mo>[</mo>
+                 <mi>m</mi>
+                 <mo>]</mo>
+                </mrow>
+               </mrow>
+               <mo>]</mo>
+              </mrow>
+              <mo>&gt;</mo>
+              <mn>0.5</mn>
+             </mrow>
+             <mo>&InvisibleTimes;</mo>
+             <mrow>
+              <mtext>(*</mtext>
+              <mrow>
+               <mo>&amp;&amp;</mo>
+               <mtext> </mtext>
+               <mrow>
+                <mi>nval</mi>
+                <mo>&NotEqual;</mo>
+                <mi>pval</mi>
+               </mrow>
+              </mrow>
+              <mtext> </mtext>
+              <mtext>*)</mtext>
+             </mrow>
+             <mo>&amp;&amp;</mo>
+             <mtext> </mtext>
+             <mrow>
+              <mi>Mineps2</mi>
+              <mo>&lt;</mo>
+              <mrow>
+               <mo>-</mo>
+               <mn>4.</mn>
+              </mrow>
+             </mrow>
+            </mrow>
+            <mo>)</mo>
+           </mrow>
+           <mo>,</mo>
+           <mtext> </mtext>
+           <mrow>
+            <mtext>(*</mtext>
+            <mrow>
+             <mn>0.5</mn>
+             <mtext> </mtext>
+             <mi>is</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>the</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>precision</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>or</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>closenest</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>to</mi>
+             <mo>&InvisibleTimes;</mo>
+             <mi>the</mi>
+             <mtext> </mtext>
+             <mn>3.</mn>
+            </mrow>
+            <mtext>*)</mtext>
+           </mrow>
+           <mo>&InvisibleTimes;</mo>
+           <mtext>&#62371;</mtext>
+           <mrow>
+            <mtext>(*</mtext>
+            <mrow>
+             <mrow>
+              <mi>Print</mi>
+              <mo>[</mo>
+              <mrow>
+               <mo>{</mo>
+               <mrow>
+                <mi>m</mi>
+                <mo>,</mo>
+                <mi>iterbin</mi>
+                <mo>,</mo>
+                <mrow>
+                 <mi>Abs</mi>
+                 <mo>[</mo>
+                 <mrow>
+                  <mrow>
+                   <mi>Nlimit2</mi>
+                   <mo>[</mo>
+                   <mrow>
+                    <mi>m</mi>
+                    <mo>,</mo>
+                    <mi>BrIn</mi>
+                   </mrow>
+                   <mo>]</mo>
+                  </mrow>
+                  <mo>-</mo>
+                  <mn>3.</mn>
+                 </mrow>
+                 <mo>]</mo>
+                </mrow>
+               </mrow>
+               <mo>}</mo>
+              </mrow>
+              <mo>]</mo>
+             </mrow>
+             <mo>;</mo>
+            </mrow>
+            <mtext>*)</mtext>
+           </mrow>
+           <mo>&InvisibleTimes;</mo>
+           <mtext>&#62371;</mtext>
+           <mrow>
+            <mrow>
+             <mi>Mineps2</mi>
+             <mo>=</mo>
+             <mrow>
+              <mo>-</mo>
+              <mn>14.</mn>
+             </mrow>
+            </mrow>
+            <mo>;</mo>
+            <mtext>&#62371;</mtext>
+            <mrow>
+             <mi>While</mi>
+             <mo>[</mo>
+             <mtext>&#62371;</mtext>
+             <mrow>
+              <mrow>
+               <mo>(</mo>
+               <mrow>
+                <mrow>
+                 <mrow>
+                  <mi>Nlimit2</mi>
+                  <mo>[</mo>
+                  <mrow>
+                   <mi>m</mi>
+                   <mo>,</mo>
+                   <mi>BrIn</mi>
+                  </mrow>
+                  <mo>]</mo>
+                 </mrow>
+                 <mo>&lt;</mo>
+                 <mrow>
+                  <mi>Nlimitf</mi>
+                  <mo>[</mo>
+                  <mi>m</mi>
+                  <mo>]</mo>
+                 </mrow>
+                </mrow>
+                <mo>&InvisibleTimes;</mo>
+                <mrow>
+                 <mtext>(*</mtext>
+                 <mrow>
+                  <mo>&amp;&amp;</mo>
+                  <mtext> </mtext>
+                  <mrow>
+                   <mi>nval</mi>
+                   <mo>&NotEqual;</mo>
+                   <mi>pval</mi>
+                  </mrow>
+                 </mrow>
+                 <mtext> </mtext>
+                 <mtext>*)</mtext>
+                </mrow>
+                <mo>&amp;&amp;</mo>
+                <mtext> </mtext>
+                <mrow>
+                 <mi>Mineps2</mi>
+                 <mo>&lt;</mo>
+                 <mrow>
+                  <mo>-</mo>
+                  <mn>4.</mn>
+                 </mrow>
+                </mrow>
+               </mrow>
+               <mo>)</mo>
+              </mrow>
+              <mo>,</mo>
+              <mtext>&#62371;</mtext>
+              <mrow>
+               <mtext>(*</mtext>
+               <mrow>
+                <mrow>
+                 <mi>pval</mi>
+                 <mo>=</mo>
+                 <mtext> </mtext>
+                 <mrow>
+                  <mi>Nlimit2</mi>
+                  <mo>[</mo>
+                  <mrow>
+                   <mi>m</mi>
+                   <mo>,</mo>
+                   <mi>BrIn</mi>
+                  </mrow>
+                  <mo>]</mo>
+                 </mrow>
+                </mrow>
+                <mo>;</mo>
+               </mrow>
+               <mtext>*)</mtext>
+              </mrow>
+              <mo>&InvisibleTimes;</mo>
+              <mtext>&#62371;</mtext>
+              <mrow>
+               <mtext>(*</mtext>
+               <mrow>
+                <mrow>
+                 <mi>Print</mi>
+                 <mo>[</mo>
+                 <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                   <ms>oldval</ms>
+                   <mo>,</mo>
+                   <mi>pval</mi>
+                  </mrow>
+                  <mo>}</mo>
+                 </mrow>
+                 <mo>]</mo>
+                </mrow>
+                <mo>;</mo>
+               </mrow>
+               <mtext>*)</mtext>
+              </mrow>
+              <mo>&InvisibleTimes;</mo>
+              <mtext>&#62371;</mtext>
+              <mrow>
+               <mtext>(*</mtext>
+               <mrow>
+                <mrow>
+                 <mi>Print</mi>
+                 <mo>[</mo>
+                 <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                   <mi>iterbin</mi>
+                   <mo>,</mo>
+                   <mi>Mineps2</mi>
+                   <mo>,</mo>
+                   <mrow>
+                    <mi>Nlimit2</mi>
+                    <mo>[</mo>
+                    <mrow>
+                     <mi>m</mi>
+                     <mo>,</mo>
+                     <mi>BrIn</mi>
+                    </mrow>
+                    <mo>]</mo>
+                   </mrow>
+                  </mrow>
+                  <mo>}</mo>
+                 </mrow>
+                 <mo>]</mo>
+                </mrow>
+                <mo>;</mo>
+               </mrow>
+               <mtext>*)</mtext>
+              </mrow>
+              <mo>&InvisibleTimes;</mo>
+              <mtext>&#62371;</mtext>
+              <mrow>
+               <mrow>
+                <mi>Mineps2</mi>
+                <mtext> </mtext>
+                <mo>=</mo>
+                <mtext> </mtext>
+                <mrow>
+                 <mi>Mineps2</mi>
+                 <mo>+</mo>
+                 <mi>iterbin</mi>
+                </mrow>
+               </mrow>
+               <mo>;</mo>
+              </mrow>
+             </mrow>
+             <mo>&InvisibleTimes;</mo>
+             <mtext>&#62371;</mtext>
+             <mrow>
+              <mtext>(*</mtext>
+              <mrow>
+               <mrow>
+                <mi>nval</mi>
+                <mo>=</mo>
+                <mtext> </mtext>
+                <mrow>
+                 <mi>Nlimit2</mi>
+                 <mo>[</mo>
+                 <mrow>
+                  <mi>m</mi>
+                  <mo>,</mo>
+                  <mi>BrIn</mi>
+                 </mrow>
+                 <mo>]</mo>
+                </mrow>
+               </mrow>
+               <mo>;</mo>
+              </mrow>
+              <mtext>*)</mtext>
+             </mrow>
+             <mo>&InvisibleTimes;</mo>
+             <mtext>&#62371;</mtext>
+             <mrow>
+              <mtext>(*</mtext>
+              <mrow>
+               <mi>Print</mi>
+               <mo>[</mo>
+               <mrow>
+                <mo>{</mo>
+                <mrow>
+                 <mi>m</mi>
+                 <mo>,</mo>
+                 <mi>Mineps2</mi>
+                 <mo>,</mo>
+                 <mrow>
+                  <mi>Nlimit2</mi>
+                  <mo>[</mo>
+                  <mrow>
+                   <mi>m</mi>
+                   <mo>,</mo>
+                   <mi>BrIn</mi>
+                  </mrow>
+                  <mo>]</mo>
+                 </mrow>
+                </mrow>
+                <mo>}</mo>
+               </mrow>
+               <mo>]</mo>
+              </mrow>
+              <mtext>*)</mtext>
+             </mrow>
+             <mtext>&#62371;</mtext>
+             <mo>]</mo>
+            </mrow>
+            <mo>;</mo>
+            <mtext>&#62371;</mtext>
+            <mrow>
+             <mtext>(*</mtext>
+             <mrow>
+              <mrow>
+               <mi>Print</mi>
+               <mo>[</mo>
+               <mrow>
+                <mo>{</mo>
+                <mrow>
+                 <mi>iterbin</mi>
+                 <mo>,</mo>
+                 <mi>m</mi>
+                 <mo>,</mo>
+                 <mi>Mineps2</mi>
+                 <mo>,</mo>
+                 <mrow>
+                  <mi>Nlimit2</mi>
+                  <mo>[</mo>
+                  <mrow>
+                   <mi>m</mi>
+                   <mo>,</mo>
+                   <mi>BrIn</mi>
+                  </mrow>
+                  <mo>]</mo>
+                 </mrow>
+                </mrow>
+                <mo>}</mo>
+               </mrow>
+               <mo>]</mo>
+              </mrow>
+              <mo>;</mo>
+             </mrow>
+             <mtext>*)</mtext>
+            </mrow>
+            <mo>&InvisibleTimes;</mo>
+            <mtext>&#62371;</mtext>
+            <mrow>
+             <mi>iterbin</mi>
+             <mo>=</mo>
+             <mrow>
+              <mi>iterbin</mi>
+              <mo>-</mo>
+              <mn>0.01</mn>
+             </mrow>
+            </mrow>
+            <mo>;</mo>
+           </mrow>
+          </mrow>
+          <mtext>&#62371;</mtext>
+          <mo>]</mo>
+         </mrow>
+         <mo>;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mtext>(*</mtext>
+          <mrow>
+           <mrow>
+            <mi>Print</mi>
+            <mo>[</mo>
+            <mrow>
+             <mo>{</mo>
+             <mrow>
+              <mi>iterbin</mi>
+              <mo>,</mo>
+              <mi>m</mi>
+              <mo>,</mo>
+              <mi>Mineps2</mi>
+              <mo>,</mo>
+              <mrow>
+               <mi>Nlimit2</mi>
+               <mo>[</mo>
+               <mrow>
+                <mi>m</mi>
+                <mo>,</mo>
+                <mi>BrIn</mi>
+               </mrow>
+               <mo>]</mo>
+              </mrow>
+             </mrow>
+             <mo>}</mo>
+            </mrow>
+            <mo>]</mo>
+           </mrow>
+           <mo>;</mo>
+          </mrow>
+          <mtext>*)</mtext>
+         </mrow>
+         <mo>&InvisibleTimes;</mo>
+         <mtext>&#62371;</mtext>
+         <mrow>
+          <mi>AppendTo</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr40</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>m</mi>
+             <mo>,</mo>
+             <mi>Mineps2</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>;</mo>
+        </mrow>
+        <mtext>&#62371;</mtext>
+        <mo>,</mo>
+        <mrow>
+         <mo>{</mo>
+         <mrow>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mrow>
+           <mi>min</mi>
+           <mo>[</mo>
+           <mrow>
+            <mo>[</mo>
+            <mi>i</mi>
+            <mo>]</mo>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+           <mi>mfin</mi>
+           <mo>[</mo>
+           <mrow>
+            <mo>[</mo>
+            <mi>i</mi>
+            <mo>]</mo>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+           <mi>step</mi>
+           <mo>[</mo>
+           <mrow>
+            <mo>[</mo>
+            <mi>i</mi>
+            <mo>]</mo>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+         </mrow>
+         <mo>}</mo>
+        </mrow>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+      <mtext>&#62371;</mtext>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>i</mi>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>;</mo>
+    <mtext>&#62371;</mtext>
+    <mrow>
+     <mi>Export</mi>
+     <mo>[</mo>
+     <mrow>
+      <ms>/Users/Luca2/Downloads/LIMITS/Limit_epsvsmass_BrHtoGamD_60_1ev.dat</ms>
+      <mo>,</mo>
+      <mi>listbr60</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>;</mo>
+   </mrow>
+   <mtext>*)</mtext>
+  </mrow>
+  <mtext>&#62371;</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class='Subsection' style='font-size: 36px;background-color: #DEF0FF;'>
+ Plot the limit
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mtext>(*</mtext>
+  <mrow>
+   <mrow>
+    <mi>Function</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>to</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>convert</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>mass</mi>
+   </mrow>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mrow>
+    <mrow>
+     <mi>Log</mi>
+     <mo>[</mo>
+     <mrow>
+      <mn>10</mn>
+      <mo>,</mo>
+      <mrow>
+       <mi>epsilon</mi>
+       <mo>^</mo>
+       <mrow>
+        <mo>{</mo>
+        <mn>2</mn>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mtext>   </mtext>
+    <mi>to</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mtext>   </mtext>
+    <mi>mass</mi>
+   </mrow>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mi>epsilon</mi>
+  </mrow>
+  <mtext>*)</mtext>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>DataConvertermine</mi>
+   <mo>[</mo>
+   <mi>data_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Table</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mi>data</mi>
+       <mo>[</mo>
+       <mrow>
+        <mo>[</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo>,</mo>
+         <mn>1</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+      <mo>,</mo>
+      <msqrt>
+       <msup>
+        <mn>10</mn>
+        <mrow>
+         <mi>data</mi>
+         <mo>[</mo>
+         <mrow>
+          <mo>[</mo>
+          <mrow>
+           <mi>i</mi>
+           <mo>,</mo>
+           <mn>2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+       </msup>
+      </msqrt>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo>,</mo>
+      <mrow>
+       <mi>Length</mi>
+       <mo>[</mo>
+       <mi>data</mi>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Labelslin</mi>
+  <mo>=</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=0.1%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=0.1%\&quot;&quot;</annotation>
+    </semantics>
+    <mo>,</mo>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=1%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=1%\&quot;&quot;</annotation>
+    </semantics>
+    <mo>,</mo>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=5%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=5%\&quot;&quot;</annotation>
+    </semantics>
+    <mo>,</mo>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=10%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=10%\&quot;&quot;</annotation>
+    </semantics>
+    <mo>,</mo>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=20%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=20%\&quot;&quot;</annotation>
+    </semantics>
+    <mo>,</mo>
+    <semantics>
+     <mrow>
+      <ms>Br(H-&gt;2</ms>
+      <msub>
+       <ms>&gamma;</ms>
+       <ms>D</ms>
+      </msub>
+      <ms>)=40%</ms>
+     </mrow>
+     <annotation encoding='Mathematica'>&quot;\&quot;Br(H-&gt;2\!\(\*SubscriptBox[\(\[Gamma]\), \(D\)]\))=40%\&quot;&quot;</annotation>
+    </semantics>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=0.1%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=0.1%&quot;</annotation>
+   </semantics>
+   <mo>,</mo>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=1%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=1%&quot;</annotation>
+   </semantics>
+   <mo>,</mo>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=5%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=5%&quot;</annotation>
+   </semantics>
+   <mo>,</mo>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=10%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=10%&quot;</annotation>
+   </semantics>
+   <mo>,</mo>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=20%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=20%&quot;</annotation>
+   </semantics>
+   <mo>,</mo>
+   <semantics>
+    <mrow>
+     <mtext>Br(H-&gt;2</mtext>
+     <msub>
+      <mi>&gamma;</mi>
+      <mi>D</mi>
+     </msub>
+     <mtext>)=40%</mtext>
+    </mrow>
+    <annotation encoding='Mathematica'>&quot;Br(H-&gt;2\\!\\(\\*SubscriptBox[\\(\[Gamma]\\), \\(D\\)]\\))=40%&quot;</annotation>
+   </semantics>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>legendlin</mi>
+   <mo>=</mo>
+   <mrow>
+    <mi>SwatchLegend</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Cyan</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Blue</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Green</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Yellow</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Orange</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>Darker</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>Red</mi>
+         <mo>,</mo>
+         <mn>0.2</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Black</mi>
+         <mo>,</mo>
+         <mi>Dashed</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Purple</mi>
+         <mo>,</mo>
+         <mi>Dashed</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Brown</mi>
+         <mo>,</mo>
+         <mi>Dashed</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Cyan</mi>
+         <mo>,</mo>
+         <mi>Dashed</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>Pink</mi>
+         <mo>,</mo>
+         <mi>Dashed</mi>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>,</mo>
+     <mi>Labelslin</mi>
+     <mo>,</mo>
+     <mrow>
+      <mi>LegendMarkerSize</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mn>15</mn>
+         <mo>,</mo>
+         <mn>15</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>LabelStyle</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>Italic</mi>
+        <mo>,</mo>
+        <mn>9</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>LegendMarkers</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>{</mo>
+       <ms>Line</ms>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_40.gif" alt="limit_CMS_run2_2018_90CL_40.gif" width="941" height="140" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>plotLimEpsilonvsmass</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Legended</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>ListLogPlot</mi>
+     <mo>[</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr01</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr1</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr5</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr10</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr20</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mi>DataConvertermine</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>DeleteCases</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>listbr40</mi>
+           <mo>,</mo>
+           <mrow>
+            <mo>{</mo>
+            <mrow>
+             <mi>Null</mi>
+             <mo>,</mo>
+             <mi>Null</mi>
+            </mrow>
+            <mo>}</mo>
+           </mrow>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mtext> </mtext>
+      <mrow>
+       <mi>Joined</mi>
+       <mo>&rightarrow;</mo>
+       <mi>True</mi>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>PlotRange</mi>
+       <mo>&rightarrow;</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>0.25</mn>
+           <mo>,</mo>
+           <mn>9.</mn>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mrow>
+            <mn>0.4</mn>
+            <mtext> </mtext>
+            <msup>
+             <mn>10</mn>
+             <mrow>
+              <mo>-</mo>
+              <mn>9</mn>
+             </mrow>
+            </msup>
+           </mrow>
+           <mo>,</mo>
+           <mrow>
+            <mn>0.1</mn>
+            <mtext> </mtext>
+            <msup>
+             <mn>10</mn>
+             <mrow>
+              <mo>-</mo>
+              <mn>1</mn>
+             </mrow>
+            </msup>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>ImageSize</mi>
+       <mo>&rightarrow;</mo>
+       <mn>500</mn>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>AspectRatio</mi>
+       <mo>&rightarrow;</mo>
+       <mn>1.</mn>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>TicksStyle</mi>
+       <mo>&rightarrow;</mo>
+       <mrow>
+        <mi>Directive</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>FontSize</mi>
+         <mo>&rightarrow;</mo>
+         <mn>18</mn>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>Frame</mi>
+       <mo>&rightarrow;</mo>
+       <mi>True</mi>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>FrameLabel</mi>
+       <mo>&rightarrow;</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <semantics>
+          <mrow>
+           <msub>
+            <ms>m</ms>
+            <ms>&gamma;D</ms>
+           </msub>
+           <ms>[GeV]</ms>
+          </mrow>
+          <annotation encoding='Mathematica'>&quot;\&quot;\!\(\*SubscriptBox[\(m\), \(\[Gamma]D\)]\)[GeV]\&quot;&quot;</annotation>
+         </semantics>
+         <mo>,</mo>
+         <ms>Kinetic Mixing Parameter &#1013;</ms>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>RotateLabel</mi>
+       <mo>&rightarrow;</mo>
+       <mi>True</mi>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>BaseStyle</mi>
+       <mo>&rightarrow;</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mi>FontSize</mi>
+         <mo>&rightarrow;</mo>
+         <mn>18</mn>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>PlotStyle</mi>
+       <mo>&rightarrow;</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Cyan</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Blue</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Green</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Yellow</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Orange</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mi>Darker</mi>
+          <mo>[</mo>
+          <mrow>
+           <mi>Red</mi>
+           <mo>,</mo>
+           <mn>0.2</mn>
+          </mrow>
+          <mo>]</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mi>Black</mi>
+           <mo>,</mo>
+           <mi>Dashed</mi>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mi>Purple</mi>
+           <mo>,</mo>
+           <mi>Dashed</mi>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mi>Brown</mi>
+           <mo>,</mo>
+           <mi>Dashed</mi>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mi>Cyan</mi>
+           <mo>,</mo>
+           <mi>Dashed</mi>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mi>Pink</mi>
+           <mo>,</mo>
+           <mi>Dashed</mi>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>Placed</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>legendlin</mi>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0.74</mn>
+        <mo>,</mo>
+        <mn>0.7</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Part</mi>
+   <mtext>::</mtext>
+   <mi>partw</mi>
+  </mrow>
+  <mo>:</mo>
+  <mtext> </mtext>
+  <semantics>
+   <mrow>
+    <mtext>Part &#8288;</mtext>
+    <mn>1</mn>
+    <mtext>&#8288; of &#8288;</mtext>
+    <mrow>
+     <mo>{</mo>
+     <mo>}</mo>
+    </mrow>
+    <mtext>&#8288; does not exist. </mtext>
+    <maction actiontype='highlight'>
+     <mo>&#63330;</mo>
+    </maction>
+   </mrow>
+   <annotation encoding='Mathematica'>&quot;Part \[NoBreak]\\!\\(1\\)\[NoBreak] of \[NoBreak]\\!\\({}\\)\[NoBreak] does not exist. \\!\\(\\*ButtonBox[\\\&quot;\[RightSkeleton]\\\&quot;, ButtonStyle-&gt;\\\&quot;Link\\\&quot;, ButtonFrame-&gt;None, ButtonData:&gt;\\\&quot;paclet:ref/message/General/partw\\\&quot;, ButtonNote -&gt; \\\&quot;Part::partw\\\&quot;]\\)&quot;</annotation>
+  </semantics>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Part</mi>
+   <mtext>::</mtext>
+   <mi>partw</mi>
+  </mrow>
+  <mo>:</mo>
+  <mtext> </mtext>
+  <semantics>
+   <mrow>
+    <mtext>Part &#8288;</mtext>
+    <mn>2</mn>
+    <mtext>&#8288; of &#8288;</mtext>
+    <mrow>
+     <mo>{</mo>
+     <mo>}</mo>
+    </mrow>
+    <mtext>&#8288; does not exist. </mtext>
+    <maction actiontype='highlight'>
+     <mo>&#63330;</mo>
+    </maction>
+   </mrow>
+   <annotation encoding='Mathematica'>&quot;Part \[NoBreak]\\!\\(2\\)\[NoBreak] of \[NoBreak]\\!\\({}\\)\[NoBreak] does not exist. \\!\\(\\*ButtonBox[\\\&quot;\[RightSkeleton]\\\&quot;, ButtonStyle-&gt;\\\&quot;Link\\\&quot;, ButtonFrame-&gt;None, ButtonData:&gt;\\\&quot;paclet:ref/message/General/partw\\\&quot;, ButtonNote -&gt; \\\&quot;Part::partw\\\&quot;]\\)&quot;</annotation>
+  </semantics>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Part</mi>
+   <mtext>::</mtext>
+   <mi>partw</mi>
+  </mrow>
+  <mo>:</mo>
+  <mtext> </mtext>
+  <semantics>
+   <mrow>
+    <mtext>Part &#8288;</mtext>
+    <mn>1</mn>
+    <mtext>&#8288; of &#8288;</mtext>
+    <mrow>
+     <mo>{</mo>
+     <mo>}</mo>
+    </mrow>
+    <mtext>&#8288; does not exist. </mtext>
+    <maction actiontype='highlight'>
+     <mo>&#63330;</mo>
+    </maction>
+   </mrow>
+   <annotation encoding='Mathematica'>&quot;Part \[NoBreak]\\!\\(1\\)\[NoBreak] of \[NoBreak]\\!\\({}\\)\[NoBreak] does not exist. \\!\\(\\*ButtonBox[\\\&quot;\[RightSkeleton]\\\&quot;, ButtonStyle-&gt;\\\&quot;Link\\\&quot;, ButtonFrame-&gt;None, ButtonData:&gt;\\\&quot;paclet:ref/message/General/partw\\\&quot;, ButtonNote -&gt; \\\&quot;Part::partw\\\&quot;]\\)&quot;</annotation>
+  </semantics>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>General</mi>
+   <mtext>::</mtext>
+   <mi>stop</mi>
+  </mrow>
+  <mo>:</mo>
+  <mtext> </mtext>
+  <semantics>
+   <mrow>
+    <mtext>Further output of &#8288;</mtext>
+    <mrow>
+     <mi>Part</mi>
+     <mtext>::</mtext>
+     <mi>partw</mi>
+    </mrow>
+    <mtext>&#8288; will be suppressed during this calculation. </mtext>
+    <maction actiontype='highlight'>
+     <mo>&#63330;</mo>
+    </maction>
+   </mrow>
+   <annotation encoding='Mathematica'>&quot;Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Part :: partw\\), \\\&quot;MessageName\\\&quot;]\\)\[NoBreak] will be suppressed during this calculation. \\!\\(\\*ButtonBox[\\\&quot;\[RightSkeleton]\\\&quot;, ButtonStyle-&gt;\\\&quot;Link\\\&quot;, ButtonFrame-&gt;None, ButtonData:&gt;\\\&quot;paclet:ref/message/General/stop\\\&quot;, ButtonNote -&gt; \\\&quot;General::stop\\\&quot;]\\)&quot;</annotation>
+  </semantics>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/limit_CMS_run2_2018_90CL_41.gif" alt="limit_CMS_run2_2018_90CL_41.gif" width="600" height="595" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Export</mi>
+  <mo>[</mo>
+  <mrow>
+   <ms>/Users/Usuario/Desktop/limite_DarkSUSY_2017/Limit_DarkPhoton_Epsilon_vs_mass_Run2.pdf</ms>
+   <mo>,</mo>
+   <mi>plotLimEpsilonvsmass</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mtext>/Users/Alfredo/Documents/Shared_Ubuntu/Limit_DarkPhoton_Epsilon_vs_mass_Run2.pdf</mtext>
+</math>
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>

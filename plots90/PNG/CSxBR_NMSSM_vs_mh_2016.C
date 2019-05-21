@@ -1,7 +1,7 @@
 void CSxBR_NMSSM_vs_mh_2016()
 {
 //=========Macro generated from canvas: cnv/cnv
-//=========  (Fri Mar  8 12:09:50 2019) by ROOT version6.06/09
+//=========  (Wed Mar 13 17:11:44 2019) by ROOT version6.06/09
    TCanvas *cnv = new TCanvas("cnv", "cnv",1,1,904,904);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -21,56 +21,56 @@ void CSxBR_NMSSM_vs_mh_2016()
    cnv->SetFrameFillStyle(0);
    cnv->SetFrameBorderMode(0);
    
-   TH2F *h_CSxBR_NMSSM_vs_mh_dummy__2 = new TH2F("h_CSxBR_NMSSM_vs_mh_dummy__2","h_CSxBR_NMSSM_vs_mh_dummy",1000,83,153,1000,0,3.2);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->SetStats(0);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->SetLineStyle(0);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->SetMarkerStyle(20);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetTitle("m_{h_{i}} [GeV]");
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetTitleSize(0.06);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetTitleOffset(0.95);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetXaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]");
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetTitleSize(0.05);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetTitleOffset(1.2);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetYaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetZaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetZaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetZaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetZaxis()->SetTitleSize(0.06);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->GetZaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy__2->Draw("");
+   TH2F *h_CSxBR_NMSSM_vs_mh_dummy__5 = new TH2F("h_CSxBR_NMSSM_vs_mh_dummy__5","h_CSxBR_NMSSM_vs_mh_dummy",1000,83,153,1000,0,3.2);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->SetStats(0);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->SetLineStyle(0);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->SetMarkerStyle(20);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetTitle("m_{h_{i}} [GeV]");
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetTitleSize(0.06);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetTitleOffset(0.95);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetXaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]");
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetTitleSize(0.05);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetTitleOffset(1.2);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetYaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetZaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetZaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetZaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetZaxis()->SetTitleSize(0.06);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->GetZaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy__5->Draw("");
    
-   TH2F *h_CSxBR_NMSSM_vs_mh_dummy_copy__3 = new TH2F("h_CSxBR_NMSSM_vs_mh_dummy_copy__3","h_CSxBR_NMSSM_vs_mh_dummy",1000,83,153,1000,0,3.2);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->SetDirectory(0);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->SetStats(0);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->SetLineStyle(0);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->SetMarkerStyle(20);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetTitle("m_{h_{i}} [GeV]");
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetTitleSize(0.06);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetTitleOffset(0.95);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetXaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]");
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetTitleSize(0.05);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetTitleOffset(1.2);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetYaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetZaxis()->SetLabelFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetZaxis()->SetLabelOffset(0.007);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetZaxis()->SetLabelSize(0.044);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetZaxis()->SetTitleSize(0.06);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->GetZaxis()->SetTitleFont(42);
-   h_CSxBR_NMSSM_vs_mh_dummy_copy__3->Draw("sameaxis");
+   TH2F *h_CSxBR_NMSSM_vs_mh_dummy_copy__6 = new TH2F("h_CSxBR_NMSSM_vs_mh_dummy_copy__6","h_CSxBR_NMSSM_vs_mh_dummy",1000,83,153,1000,0,3.2);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->SetDirectory(0);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->SetStats(0);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->SetLineStyle(0);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->SetMarkerStyle(20);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetTitle("m_{h_{i}} [GeV]");
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetTitleSize(0.06);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetTitleOffset(0.95);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetXaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]");
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetTitleSize(0.05);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetTitleOffset(1.2);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetYaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetZaxis()->SetLabelFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetZaxis()->SetLabelOffset(0.007);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetZaxis()->SetLabelSize(0.044);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetZaxis()->SetTitleSize(0.06);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->GetZaxis()->SetTitleFont(42);
+   h_CSxBR_NMSSM_vs_mh_dummy_copy__6->Draw("sameaxis");
    
    TLegend *leg = new TLegend(0.2,0.71,0.93,0.91,NULL,"brNDC");
    leg->SetBorderSize(0);
@@ -152,19 +152,19 @@ void CSxBR_NMSSM_vs_mh_2016()
    entry->SetTextFont(42);
    leg->Draw();
    
-   Double_t Graph0_fx2[5] = {
+   Double_t Graph0_fx7[5] = {
    90,
    100,
    110,
    125,
    150};
-   Double_t Graph0_fy2[5] = {
+   Double_t Graph0_fy7[5] = {
    0.8123671,
    0.6723708,
    0.5906571,
    0.5150651,
    0.4299304};
-   TGraph *graph = new TGraph(5,Graph0_fx2,Graph0_fy2);
+   TGraph *graph = new TGraph(5,Graph0_fx7,Graph0_fy7);
    graph->SetName("Graph0");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -179,47 +179,47 @@ void CSxBR_NMSSM_vs_mh_2016()
    graph->SetMarkerStyle(23);
    graph->SetMarkerSize(1.5);
    
-   TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Graph",100,84,156);
-   Graph_Graph2->SetMinimum(0.3916867);
-   Graph_Graph2->SetMaximum(0.8506107);
-   Graph_Graph2->SetDirectory(0);
-   Graph_Graph2->SetStats(0);
-   Graph_Graph2->SetLineStyle(0);
-   Graph_Graph2->SetMarkerStyle(20);
-   Graph_Graph2->GetXaxis()->SetLabelFont(42);
-   Graph_Graph2->GetXaxis()->SetLabelOffset(0.007);
-   Graph_Graph2->GetXaxis()->SetLabelSize(0.044);
-   Graph_Graph2->GetXaxis()->SetTitleSize(0.06);
-   Graph_Graph2->GetXaxis()->SetTitleOffset(0.95);
-   Graph_Graph2->GetXaxis()->SetTitleFont(42);
-   Graph_Graph2->GetYaxis()->SetLabelFont(42);
-   Graph_Graph2->GetYaxis()->SetLabelOffset(0.007);
-   Graph_Graph2->GetYaxis()->SetLabelSize(0.044);
-   Graph_Graph2->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph2->GetYaxis()->SetTitleOffset(1.2);
-   Graph_Graph2->GetYaxis()->SetTitleFont(42);
-   Graph_Graph2->GetZaxis()->SetLabelFont(42);
-   Graph_Graph2->GetZaxis()->SetLabelOffset(0.007);
-   Graph_Graph2->GetZaxis()->SetLabelSize(0.044);
-   Graph_Graph2->GetZaxis()->SetTitleSize(0.06);
-   Graph_Graph2->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph2);
+   TH1F *Graph_Graph7 = new TH1F("Graph_Graph7","Graph",100,84,156);
+   Graph_Graph7->SetMinimum(0.3916867);
+   Graph_Graph7->SetMaximum(0.8506107);
+   Graph_Graph7->SetDirectory(0);
+   Graph_Graph7->SetStats(0);
+   Graph_Graph7->SetLineStyle(0);
+   Graph_Graph7->SetMarkerStyle(20);
+   Graph_Graph7->GetXaxis()->SetLabelFont(42);
+   Graph_Graph7->GetXaxis()->SetLabelOffset(0.007);
+   Graph_Graph7->GetXaxis()->SetLabelSize(0.044);
+   Graph_Graph7->GetXaxis()->SetTitleSize(0.06);
+   Graph_Graph7->GetXaxis()->SetTitleOffset(0.95);
+   Graph_Graph7->GetXaxis()->SetTitleFont(42);
+   Graph_Graph7->GetYaxis()->SetLabelFont(42);
+   Graph_Graph7->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph7->GetYaxis()->SetLabelSize(0.044);
+   Graph_Graph7->GetYaxis()->SetTitleSize(0.06);
+   Graph_Graph7->GetYaxis()->SetTitleOffset(1.2);
+   Graph_Graph7->GetYaxis()->SetTitleFont(42);
+   Graph_Graph7->GetZaxis()->SetLabelFont(42);
+   Graph_Graph7->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph7->GetZaxis()->SetLabelSize(0.044);
+   Graph_Graph7->GetZaxis()->SetTitleSize(0.06);
+   Graph_Graph7->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph7);
    
    graph->Draw("cp");
    
-   Double_t Graph1_fx3[5] = {
+   Double_t Graph1_fx8[5] = {
    90,
    100,
    110,
    125,
    150};
-   Double_t Graph1_fy3[5] = {
+   Double_t Graph1_fy8[5] = {
    0.3107484,
    0.2820447,
    0.2640193,
    0.2508183,
    0.2413372};
-   graph = new TGraph(5,Graph1_fx3,Graph1_fy3);
+   graph = new TGraph(5,Graph1_fx8,Graph1_fy8);
    graph->SetName("Graph1");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -234,35 +234,35 @@ void CSxBR_NMSSM_vs_mh_2016()
    graph->SetMarkerStyle(22);
    graph->SetMarkerSize(1.5);
    
-   TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","Graph",100,84,156);
-   Graph_Graph3->SetMinimum(0.2343961);
-   Graph_Graph3->SetMaximum(0.3176895);
-   Graph_Graph3->SetDirectory(0);
-   Graph_Graph3->SetStats(0);
-   Graph_Graph3->SetLineStyle(0);
-   Graph_Graph3->SetMarkerStyle(20);
-   Graph_Graph3->GetXaxis()->SetLabelFont(42);
-   Graph_Graph3->GetXaxis()->SetLabelOffset(0.007);
-   Graph_Graph3->GetXaxis()->SetLabelSize(0.044);
-   Graph_Graph3->GetXaxis()->SetTitleSize(0.06);
-   Graph_Graph3->GetXaxis()->SetTitleOffset(0.95);
-   Graph_Graph3->GetXaxis()->SetTitleFont(42);
-   Graph_Graph3->GetYaxis()->SetLabelFont(42);
-   Graph_Graph3->GetYaxis()->SetLabelOffset(0.007);
-   Graph_Graph3->GetYaxis()->SetLabelSize(0.044);
-   Graph_Graph3->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph3->GetYaxis()->SetTitleOffset(1.2);
-   Graph_Graph3->GetYaxis()->SetTitleFont(42);
-   Graph_Graph3->GetZaxis()->SetLabelFont(42);
-   Graph_Graph3->GetZaxis()->SetLabelOffset(0.007);
-   Graph_Graph3->GetZaxis()->SetLabelSize(0.044);
-   Graph_Graph3->GetZaxis()->SetTitleSize(0.06);
-   Graph_Graph3->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph3);
+   TH1F *Graph_Graph8 = new TH1F("Graph_Graph8","Graph",100,84,156);
+   Graph_Graph8->SetMinimum(0.2343961);
+   Graph_Graph8->SetMaximum(0.3176895);
+   Graph_Graph8->SetDirectory(0);
+   Graph_Graph8->SetStats(0);
+   Graph_Graph8->SetLineStyle(0);
+   Graph_Graph8->SetMarkerStyle(20);
+   Graph_Graph8->GetXaxis()->SetLabelFont(42);
+   Graph_Graph8->GetXaxis()->SetLabelOffset(0.007);
+   Graph_Graph8->GetXaxis()->SetLabelSize(0.044);
+   Graph_Graph8->GetXaxis()->SetTitleSize(0.06);
+   Graph_Graph8->GetXaxis()->SetTitleOffset(0.95);
+   Graph_Graph8->GetXaxis()->SetTitleFont(42);
+   Graph_Graph8->GetYaxis()->SetLabelFont(42);
+   Graph_Graph8->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph8->GetYaxis()->SetLabelSize(0.044);
+   Graph_Graph8->GetYaxis()->SetTitleSize(0.06);
+   Graph_Graph8->GetYaxis()->SetTitleOffset(1.2);
+   Graph_Graph8->GetYaxis()->SetTitleFont(42);
+   Graph_Graph8->GetZaxis()->SetLabelFont(42);
+   Graph_Graph8->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph8->GetZaxis()->SetLabelSize(0.044);
+   Graph_Graph8->GetZaxis()->SetTitleSize(0.06);
+   Graph_Graph8->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph8);
    
    graph->Draw("cp");
    
-   Double_t Graph2_fx4[100] = {
+   Double_t Graph2_fx9[100] = {
    90,
    90.59596,
    91.19192,
@@ -363,7 +363,7 @@ void CSxBR_NMSSM_vs_mh_2016()
    147.8081,
    148.404,
    149};
-   Double_t Graph2_fy4[100] = {
+   Double_t Graph2_fy9[100] = {
    1.799337,
    1.77919,
    1.759042,
@@ -464,7 +464,7 @@ void CSxBR_NMSSM_vs_mh_2016()
    0.6954901,
    0.6899011,
    0.6843119};
-   graph = new TGraph(100,Graph2_fx4,Graph2_fy4);
+   graph = new TGraph(100,Graph2_fx9,Graph2_fy9);
    graph->SetName("Graph2");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -474,31 +474,31 @@ void CSxBR_NMSSM_vs_mh_2016()
    graph->SetLineWidth(3);
    graph->SetMarkerStyle(20);
    
-   TH1F *Graph_Graph4 = new TH1F("Graph_Graph4","Graph",100,84.1,154.9);
-   Graph_Graph4->SetMinimum(0.5728094);
-   Graph_Graph4->SetMaximum(1.910839);
-   Graph_Graph4->SetDirectory(0);
-   Graph_Graph4->SetStats(0);
-   Graph_Graph4->SetLineStyle(0);
-   Graph_Graph4->SetMarkerStyle(20);
-   Graph_Graph4->GetXaxis()->SetLabelFont(42);
-   Graph_Graph4->GetXaxis()->SetLabelOffset(0.007);
-   Graph_Graph4->GetXaxis()->SetLabelSize(0.044);
-   Graph_Graph4->GetXaxis()->SetTitleSize(0.06);
-   Graph_Graph4->GetXaxis()->SetTitleOffset(0.95);
-   Graph_Graph4->GetXaxis()->SetTitleFont(42);
-   Graph_Graph4->GetYaxis()->SetLabelFont(42);
-   Graph_Graph4->GetYaxis()->SetLabelOffset(0.007);
-   Graph_Graph4->GetYaxis()->SetLabelSize(0.044);
-   Graph_Graph4->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph4->GetYaxis()->SetTitleOffset(1.2);
-   Graph_Graph4->GetYaxis()->SetTitleFont(42);
-   Graph_Graph4->GetZaxis()->SetLabelFont(42);
-   Graph_Graph4->GetZaxis()->SetLabelOffset(0.007);
-   Graph_Graph4->GetZaxis()->SetLabelSize(0.044);
-   Graph_Graph4->GetZaxis()->SetTitleSize(0.06);
-   Graph_Graph4->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph4);
+   TH1F *Graph_Graph9 = new TH1F("Graph_Graph9","Graph",100,84.1,154.9);
+   Graph_Graph9->SetMinimum(0.5728094);
+   Graph_Graph9->SetMaximum(1.910839);
+   Graph_Graph9->SetDirectory(0);
+   Graph_Graph9->SetStats(0);
+   Graph_Graph9->SetLineStyle(0);
+   Graph_Graph9->SetMarkerStyle(20);
+   Graph_Graph9->GetXaxis()->SetLabelFont(42);
+   Graph_Graph9->GetXaxis()->SetLabelOffset(0.007);
+   Graph_Graph9->GetXaxis()->SetLabelSize(0.044);
+   Graph_Graph9->GetXaxis()->SetTitleSize(0.06);
+   Graph_Graph9->GetXaxis()->SetTitleOffset(0.95);
+   Graph_Graph9->GetXaxis()->SetTitleFont(42);
+   Graph_Graph9->GetYaxis()->SetLabelFont(42);
+   Graph_Graph9->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph9->GetYaxis()->SetLabelSize(0.044);
+   Graph_Graph9->GetYaxis()->SetTitleSize(0.06);
+   Graph_Graph9->GetYaxis()->SetTitleOffset(1.2);
+   Graph_Graph9->GetYaxis()->SetTitleFont(42);
+   Graph_Graph9->GetZaxis()->SetLabelFont(42);
+   Graph_Graph9->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph9->GetZaxis()->SetLabelSize(0.044);
+   Graph_Graph9->GetZaxis()->SetTitleSize(0.06);
+   Graph_Graph9->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph9);
    
    graph->Draw("c");
    

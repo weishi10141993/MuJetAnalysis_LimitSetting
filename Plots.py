@@ -74,7 +74,8 @@ logEpsilon2_min = -12.1
 logEpsilon2_max =  -7.9
 
 ## 
-CL = 90
+CL = 95
+
 ## output directory
 topDirectory = "plots%d"%CL
 
@@ -1739,7 +1740,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   gr_CSxBR_vs_ma_mh_125 = ROOT.TGraph(len(array_ma_mh_125), array.array("d", zip(*array_ma_mh_125)[0]), array.array("d", zip(*array_ma_mh_125)[1]))
   gr_CSxBR_vs_ma_mh_125.SetLineWidth(2)
   gr_CSxBR_vs_ma_mh_125.SetLineColor(2)
-  gr_CSxBR_vs_ma_mh_125.SetLineStyle(10)
+  gr_CSxBR_vs_ma_mh_125.SetLineStyle(6)
   gr_CSxBR_vs_ma_mh_125.SetMarkerColor(2)
   gr_CSxBR_vs_ma_mh_125.SetMarkerStyle(20)
   gr_CSxBR_vs_ma_mh_125.SetMarkerSize(1.5)
@@ -1777,7 +1778,7 @@ def limit_CSxBR2_fb_vs_ma_2016():
   l_CSxBR_vs_ma.SetTextSize(0.035)
   l_CSxBR_vs_ma.SetHeader("NMSSM %d%% CL upper limits:"%CL)
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_86,"m_{h_{1}} =   90 GeV","LP")
-  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{2}} = 125 GeV","LP")
+  l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_125,"m_{h_{1}} = 125 GeV","LP")
   l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{2}} = 150 GeV","LP")
   l_CSxBR_vs_ma.Draw()
   
