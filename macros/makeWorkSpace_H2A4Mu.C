@@ -17,7 +17,7 @@
 
 #include <sstream>
 #include <iostream>
-#include <string> 
+#include <string>
 
 #include "RooAbsPdf.h"
 #include "RooProdPdf.h"
@@ -84,7 +84,7 @@ Double_t RooUserPdf::evaluate() const
 {
   Double_t res;
 
-  if ( fabs(x1 - x2) < 5.*(0.026 + 0.013*(x1 + x2)/2.) ) {
+  if ( fabs(x1-x2) < 3*(0.003044 + 0.007025*(x1+x2)/2.0 + 0.000053*(x1+x2)*(x1+x2)/4.0) ) {
     res = 1.0;
   } else {
     res = 0.0;
@@ -95,7 +95,7 @@ Double_t RooUserPdf::evaluate() const
 void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   using namespace RooFit;
-  RooRandom::randomGenerator()->SetSeed(seed); 
+  RooRandom::randomGenerator()->SetSeed(seed);
   RooWorkspace *w_H2A4Mu = new RooWorkspace("w_H2A4Mu");
   const double       m_min  = 0.2113;
   const double       m_max  = 9.;
@@ -107,8 +107,8 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->import(m1);
   w_H2A4Mu->import(m2);
 
-  //Signal Diagonal Area
-  RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1-m2) < (0.13 + 0.065*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  //Signal Diagonal Area in 2017 and 2018
+  RooGenericPdf dia1( "dia1", "generic PDF for diaginal region", "fabs(m1-m2) < 3*(0.003044 + 0.007025*(m1+m2)/2.0 + 0.000053*(m1+m2)*(m1+m2)/4.0)", RooArgSet(m1,m2) );
   w_H2A4Mu->import(dia1);
 
   //Observed data in signal region
@@ -116,10 +116,15 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   TTree* tree_dimudimu_signal_2D = new TTree("tree_dimudimu_signal_2D","tree_dimudimu_signal_2D");
   tree_dimudimu_signal_2D->Branch("massC",&massC,"massC/D");
   tree_dimudimu_signal_2D->Branch("massF",&massF,"massF/D");
-//  massC = 100.; //BLINDED
-//  massF = 100.;
+  //BLINDED DATA
+  massC = 100.;
+  massF = 100.;
 
-  // massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal_2D->Fill(); 
+  /*
+  //===================
+  //2016 Data Unblinded
+  //===================
+  // massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal_2D->Fill();
   massC =2.8599584;   massF = 3.0017674; tree_dimudimu_signal_2D->Fill();
   // massC =0.4258973;   massF = 0.5848349; tree_dimudimu_signal_2D->Fill();
   // massC =3.0722196;   massF = 3.2662851; tree_dimudimu_signal_2D->Fill();
@@ -132,6 +137,17 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   massC =3.0641751;   massF = 3.0972354; tree_dimudimu_signal_2D->Fill();
   massC =1.9403913;   massF = 1.8196427; tree_dimudimu_signal_2D->Fill();
   massC =1.3540757;   massF = 1.4834892; tree_dimudimu_signal_2D->Fill();
+  */
+
+  //===================
+  //2017 Data Unblinded
+  //===================
+  //TBD
+
+  //===================
+  //2018 Data Unblinded
+  //===================
+  //TBD
 
   cout<<"--- PRINT tree_dimudimu_signal_2D ---"<<endl;
   tree_dimudimu_signal_2D->Print();
@@ -146,7 +162,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   //Signal parameteres
   RooRealVar signal_mA("signal_mA", "signal_mA", mA_GeV);
-  RooRealVar signal_sigma("signal_sigma", "signal_sigma", (0.13 + 0.065*mA_GeV)/5.0 );
+  RooRealVar signal_sigma("signal_sigma", "signal_sigma", 0.003044 + 0.007025*mA_GeV + 0.000053*mA_GeV*mA_GeV );
   RooRealVar signal_alpha("signal_alpha", "signal_alpha", 1.75);
   RooRealVar signal_n("signal_n", "signal_n", 2.0);
   //Signal 2D template
