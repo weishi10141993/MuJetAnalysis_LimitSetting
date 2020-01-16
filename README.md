@@ -4,7 +4,7 @@ Command: combine -m 125 -M HybridNew --rule CLs --testStat LHC datacard_H2A4Mu_m
 Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive
 
 ## Installing the framework
-One should always refer to the official Higgs combine page(http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/) for most updated instructions.
+One should always refer to the official [Higgs combine page](http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/) for most updated instructions.
 ```
 export SCRAM_ARCH=slc7_amd64_gcc700
 cmsrel CMSSW_10_2_13
@@ -25,23 +25,24 @@ cd MuJetAnalysis_LimitSetting
 # Running the model independent limits
 1. Copy updated "ws_FINAL.root" from bbBar estimation. It contains background p.d.f.s.   
 
-2. In this step, the datacards for each mass points are created. Also the relevant signal and background shapes (extracted from ws_FINAL.root) are imported and saved in a workspace in a root file. Edit CreateDatacards.C in order to set " isLxplus=true"/"false" depending if you are on lxplus or brazos and "string pwd=" to your current directory. Then do
+2. In this step, the datacards for each mass points are created.
+   Edit CreateDatacards.C in order to set " isLxplus=true"/"false" depending if you are on lxplus or brazos and "string pwd=" to your current directory. Then do:
    ```
    root -l -b -q  CreateDatacards.C+  
    ```
    -> The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with S and B needed by CMS official limit calculator.   
    -> NB: makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range and binning, plus the Signal events. So for unblinding, add here the events you see.   
 
-
-3. (1st time only) Make RooStat files that should be supplied to CMS official limit calculator.
+3. (1st time only) Make RooStat files that should be supplied to CMS official limit calculator. The relevant signal and background shapes (extracted from ws_FINAL.root) are imported and saved in a workspace in a root file.
    ```
-   source macros/CreateROOTfiles.sh   
+   cd macros; source CreateROOTfiles.sh; cd ..;
    ```  
 
-4. Send jobs to run on all datacards and save outputs in outPut.txt. The options with the least toys is
+4. Send jobs to run on all datacards and save outputs in outPut.txt. The options with the default toys (500) is
    ```
    source macros/RunOnDataCard_std.sh
    ```
+   Refer to [TAMU SLURM page](http://brazos.tamu.edu/docs/slurm.html) for info about the batch submission system.
 
    If you want more toys, please use one of the following below
    ```
