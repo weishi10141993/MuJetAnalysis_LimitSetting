@@ -97,47 +97,73 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   using namespace RooFit;
   RooRandom::randomGenerator()->SetSeed(seed);
   RooWorkspace *w_H2A4Mu = new RooWorkspace("w_H2A4Mu");
-  const double       m_min  = 0.2113;
-  const double       m_max  = 9.;
-  const unsigned int m_bins = 220;
+  //Define SR1/2/3 mass ranges
+  //SR1: Below Jpsi
+  const double       m_SR1_min  = 0.2113;
+  const double       m_SR1_max  = 2.72;
+  const unsigned int m_SR1_bins = 63;//same as bbBar background binning
+  //SR2: Above Jpsi and below 9GeV
+  const double       m_SR2_min  = 3.24;
+  const double       m_SR2_max  = 9.;
+  const unsigned int m_SR2_bins = 144;//same as bbBar background binning
+  //SR3: Above 9GeV high mass
+  const double       m_SR3_min  = 11.;
+  const double       m_SR3_max  = 59.;
+  const unsigned int m_SR3_bins = 12;
 
-  const double       m_Jpsi_dn = 2.72;
-  const double       m_Jpsi_up = 3.24;
-  const unsigned int m_bins_below_Jpsi = 63;//bin size is ~0.04GeV, as above
-  const unsigned int m_bins_above_Jpsi = 144;
-  //RooRealVar m1("m1", "m_{#mu#mu_{1}}", m_min, m_max, "GeV");
-  //RooRealVar m2("m2", "m_{#mu#mu_{2}}", m_min, m_max, "GeV");
-  //m1.setBins(m_bins);
-  //m2.setBins(m_bins);
+  RooRealVar m1_below_Jpsi("m1_below_Jpsi", "m_{#mu#mu_{1}}", m_SR1_min, m_SR1_max, "GeV");
+  RooRealVar m2_below_Jpsi("m2_below_Jpsi", "m_{#mu#mu_{2}}", m_SR1_min, m_SR1_max, "GeV");
+  RooRealVar m1_above_Jpsi("m1_above_Jpsi", "m_{#mu#mu_{1}}", m_SR2_min, m_SR2_max, "GeV");
+  RooRealVar m2_above_Jpsi("m2_above_Jpsi", "m_{#mu#mu_{2}}", m_SR2_min, m_SR2_max, "GeV");
+  RooRealVar m1_high_mass("m1_high_mass", "m_{#mu#mu_{1}}", m_SR3_min, m_SR3_max, "GeV");
+  RooRealVar m2_high_mass("m2_high_mass", "m_{#mu#mu_{2}}", m_SR3_min, m_SR3_max, "GeV");
+  m1_below_Jpsi.setBins(m_SR1_bins);
+  m2_below_Jpsi.setBins(m_SR1_bins);
+  m1_above_Jpsi.setBins(m_SR2_bins);
+  m2_above_Jpsi.setBins(m_SR2_bins);
+  m1_high_mass.setBins(m_SR3_bins);
+  m2_high_mass.setBins(m_SR3_bins);
 
-  RooRealVar m1_below_Jpsi("m1_below_Jpsi", "m_{#mu#mu_{1}}", m_min, m_Jpsi_dn, "GeV");
-  RooRealVar m2_below_Jpsi("m2_below_Jpsi", "m_{#mu#mu_{2}}", m_min, m_Jpsi_dn, "GeV");
-  //RooRealVar m1_above_Jpsi("m1_above_Jpsi", "m_{#mu#mu_{1}}", m_Jpsi_up, m_max, "GeV");
-  //RooRealVar m2_above_Jpsi("m2_above_Jpsi", "m_{#mu#mu_{2}}", m_Jpsi_up, m_max, "GeV");
-  m1_below_Jpsi.setBins(m_bins_below_Jpsi);
-  m2_below_Jpsi.setBins(m_bins_below_Jpsi);
-  //m1_above_Jpsi.setBins(m_bins_above_Jpsi);
-  //m2_above_Jpsi.setBins(m_bins_above_Jpsi);
-
-  //w_H2A4Mu->import(m1);
-  //w_H2A4Mu->import(m2);
   w_H2A4Mu->import(m1_below_Jpsi);
   w_H2A4Mu->import(m2_below_Jpsi);
-  //w_H2A4Mu->import(m1_above_Jpsi);
-  //w_H2A4Mu->import(m2_above_Jpsi);
+  w_H2A4Mu->import(m1_above_Jpsi);
+  w_H2A4Mu->import(m2_above_Jpsi);
+  w_H2A4Mu->import(m1_high_mass);
+  w_H2A4Mu->import(m2_high_mass);
 
   //Signal Diagonal Area in 2017 and 2018
-  RooGenericPdf dia( "dia", "generic PDF for diaginal region", "fabs(m1_below_Jpsi-m2_below_Jpsi) < 3*(0.003044 + 0.007025*(m1_below_Jpsi+m2_below_Jpsi)/2.0 + 0.000053*(m1_below_Jpsi+m2_below_Jpsi)*(m1_below_Jpsi+m2_below_Jpsi)/4.0)", RooArgSet(m1_below_Jpsi, m2_below_Jpsi) );
-  w_H2A4Mu->import(dia);
+  RooGenericPdf dia1( "dia1", "generic PDF for diagonal region at SR1", "fabs(m1_below_Jpsi-m2_below_Jpsi) < 3*(0.003044 + 0.007025*(m1_below_Jpsi+m2_below_Jpsi)/2.0 + 0.000053*(m1_below_Jpsi+m2_below_Jpsi)*(m1_below_Jpsi+m2_below_Jpsi)/4.0)", RooArgSet(m1_below_Jpsi, m2_below_Jpsi) );
+  w_H2A4Mu->import(dia1);
+  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region at SR2", "fabs(m1_above_Jpsi-m2_above_Jpsi) < 3*(0.003044 + 0.007025*(m1_above_Jpsi+m2_above_Jpsi)/2.0 + 0.000053*(m1_above_Jpsi+m2_above_Jpsi)*(m1_above_Jpsi+m2_above_Jpsi)/4.0)", RooArgSet(m1_above_Jpsi, m2_above_Jpsi) );
+  w_H2A4Mu->import(dia2);
+  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region at SR3", "fabs(m1_high_mass-m2_high_mass) < 3*(0.003044 + 0.007025*(m1_high_mass+m2_high_mass)/2.0 + 0.000053*(m1_high_mass+m2_high_mass)*(m1_high_mass+m2_high_mass)/4.0)", RooArgSet(m1_high_mass, m2_high_mass) );
+  w_H2A4Mu->import(dia3);
 
-  //Observed data in signal region
-  Double_t massC, massF;
-  TTree* tree_dimudimu_signal_2D = new TTree("tree_dimudimu_signal_2D", "tree_dimudimu_signal_2D");
-  tree_dimudimu_signal_2D->Branch("massC", &massC, "massC/D");
-  tree_dimudimu_signal_2D->Branch("massF", &massF, "massF/D");
+  //Observed data in SR1
+  Double_t massC_SR1, massF_SR1;
+  TTree* tree_dimudimu_signal1_2D = new TTree("tree_dimudimu_signal1_2D", "tree_dimudimu_signal1_2D");
+  tree_dimudimu_signal1_2D->Branch("massC_SR1", &massC_SR1, "massC_SR1/D");
+  tree_dimudimu_signal1_2D->Branch("massF_SR1", &massF_SR1, "massF_SR1/D");
+
+  //Observed data in SR2
+  Double_t massC_SR2, massF_SR2;
+  TTree* tree_dimudimu_signal2_2D = new TTree("tree_dimudimu_signal2_2D", "tree_dimudimu_signal2_2D");
+  tree_dimudimu_signal2_2D->Branch("massC_SR2", &massC_SR2, "massC_SR2/D");
+  tree_dimudimu_signal2_2D->Branch("massF_SR2", &massF_SR2, "massF_SR2/D");
+
+  //Observed data in SR3
+  Double_t massC_SR3, massF_SR3;
+  TTree* tree_dimudimu_signal3_2D = new TTree("tree_dimudimu_signal3_2D", "tree_dimudimu_signal3_2D");
+  tree_dimudimu_signal3_2D->Branch("massC_SR3", &massC_SR3, "massC_SR3/D");
+  tree_dimudimu_signal3_2D->Branch("massF_SR3", &massF_SR3, "massF_SR3/D");
+
   //BLINDED DATA
-  massC = 100.;
-  massF = 100.;
+  massC_SR1 = 100.;
+  massF_SR1 = 100.;
+  massC_SR2 = 100.;
+  massF_SR2 = 100.;
+  massC_SR3 = 100.;
+  massF_SR3 = 100.;
 
   /*
   //===================
@@ -168,37 +194,81 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   //===================
   //TBD
 
-  cout<<"--- PRINT tree_dimudimu_signal_2D ---"<<endl;
-  tree_dimudimu_signal_2D->Print();
+  cout<<"--- PRINT signal trees ---"<<endl;
+  tree_dimudimu_signal1_2D->Print();
+  tree_dimudimu_signal2_2D->Print();
+  tree_dimudimu_signal3_2D->Print();
   cout<<"-------------------------------------"<<endl;
-  tree_dimudimu_signal_2D->GetBranch("massC")->SetName("m1_below_Jpsi");
-  tree_dimudimu_signal_2D->GetBranch("massF")->SetName("m2_below_Jpsi");
-  RooDataSet* ds_dimudimu_signal_2D = new RooDataSet( "ds_dimudimu_signal_2D","ds_dimudimu_signal_2D", tree_dimudimu_signal_2D, RooArgSet(m1_below_Jpsi, m2_below_Jpsi) );
-  cout<<"--- PRINT ds_dimudimu_signal_2D ---"<<endl;
-  ds_dimudimu_signal_2D->Print("v");
-  cout<<"-------------------------------------"<<endl;
-  w_H2A4Mu->import(*ds_dimudimu_signal_2D, Rename("data_obs"));
+  tree_dimudimu_signal1_2D->GetBranch("massC_SR1")->SetName("m1_below_Jpsi");
+  tree_dimudimu_signal1_2D->GetBranch("massF_SR1")->SetName("m2_below_Jpsi");
+  tree_dimudimu_signal2_2D->GetBranch("massC_SR2")->SetName("m1_above_Jpsi");
+  tree_dimudimu_signal2_2D->GetBranch("massF_SR2")->SetName("m2_above_Jpsi");
+  tree_dimudimu_signal3_2D->GetBranch("massC_SR3")->SetName("m1_high_mass");
+  tree_dimudimu_signal3_2D->GetBranch("massF_SR3")->SetName("m2_high_mass");
 
-  //Signal parameteres
-  RooRealVar signal_mA("signal_mA", "signal_mA", mA_GeV);
-  RooRealVar signal_sigma("signal_sigma", "signal_sigma", 0.003044 + 0.007025*mA_GeV + 0.000053*mA_GeV*mA_GeV );
-  RooRealVar signal_alpha("signal_alpha", "signal_alpha", 1.75);
-  RooRealVar signal_n("signal_n", "signal_n", 2.0);
+  RooDataSet* ds_dimudimu_signal1_2D = new RooDataSet("ds_dimudimu_signal1_2D", "ds_dimudimu_signal1_2D", tree_dimudimu_signal1_2D, RooArgSet(m1_below_Jpsi, m2_below_Jpsi) );
+  RooDataSet* ds_dimudimu_signal2_2D = new RooDataSet("ds_dimudimu_signal2_2D", "ds_dimudimu_signal2_2D", tree_dimudimu_signal2_2D, RooArgSet(m1_above_Jpsi, m2_above_Jpsi) );
+  RooDataSet* ds_dimudimu_signal3_2D = new RooDataSet("ds_dimudimu_signal3_2D", "ds_dimudimu_signal3_2D", tree_dimudimu_signal3_2D, RooArgSet(m1_high_mass, m2_high_mass) );
+  cout<<"--- PRINT signal datasets ---"<<endl;
+  ds_dimudimu_signal1_2D->Print("v");
+  ds_dimudimu_signal2_2D->Print("v");
+  ds_dimudimu_signal3_2D->Print("v");
+  cout<<"-------------------------------------"<<endl;
+  w_H2A4Mu->import(*ds_dimudimu_signal1_2D, Rename("data_obs_SR1"));//this will be used for the wildcard in shapes in datacard
+  w_H2A4Mu->import(*ds_dimudimu_signal2_2D, Rename("data_obs_SR2"));
+  w_H2A4Mu->import(*ds_dimudimu_signal3_2D, Rename("data_obs_SR3"));
+
+  //Signal parameteres below Jpsi
+  RooRealVar signal1_mA("signal1_mA", "signal1_mA", mA_GeV);
+  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", 0.003044 + 0.007025*mA_GeV + 0.000053*mA_GeV*mA_GeV );
+  RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", 1.75);
+  RooRealVar signal1_n("signal1_n", "signal1_n", 2.0);
   //Signal Shape
-  RooCBShape signal_m1("signal_m1", "signal_m1", m1_below_Jpsi, signal_mA, signal_sigma, signal_alpha, signal_n);
-  w_H2A4Mu->import(signal_m1);
-  RooCBShape signal_m2("signal_m2", "signal_m2", m2_below_Jpsi, signal_mA, signal_sigma, signal_alpha, signal_n);
-  w_H2A4Mu->import(signal_m2);
-  w_H2A4Mu->factory("PROD::signal(signal_m1, signal_m2)");
+  RooCBShape signal1_m1("signal1_m1", "signal1_m1", m1_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
+  w_H2A4Mu->import(signal1_m1);
+  RooCBShape signal1_m2("signal1_m2", "signal1_m2", m2_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
+  w_H2A4Mu->import(signal1_m2);
+  w_H2A4Mu->factory("PROD::signal1(signal1_m1, signal1_m2)");
+
+  //Signal parameteres above Jpsi
+  RooRealVar signal2_mA("signal2_mA", "signal2_mA", mA_GeV);
+  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", 0.003044 + 0.007025*mA_GeV + 0.000053*mA_GeV*mA_GeV );
+  RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", 1.75);
+  RooRealVar signal2_n("signal2_n", "signal2_n", 2.0);
+  //Signal Shape
+  RooCBShape signal2_m1("signal2_m1", "signal2_m1", m1_above_Jpsi, signal2_mA, signal2_sigma, signal2_alpha, signal2_n);
+  w_H2A4Mu->import(signal2_m1);
+  RooCBShape signal2_m2("signal2_m2", "signal2_m2", m2_above_Jpsi, signal2_mA, signal2_sigma, signal2_alpha, signal2_n);
+  w_H2A4Mu->import(signal2_m2);
+  w_H2A4Mu->factory("PROD::signal2(signal2_m1, signal2_m2)");
+
+  //Signal parameteres at high mass
+  RooRealVar signal3_mA("signal3_mA", "signal3_mA", mA_GeV);
+  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", 0.003044 + 0.007025*mA_GeV + 0.000053*mA_GeV*mA_GeV );
+  RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", 1.75);
+  RooRealVar signal3_n("signal3_n", "signal3_n", 2.0);
+  //Signal Shape
+  RooCBShape signal3_m1("signal3_m1", "signal3_m1", m1_high_mass, signal3_mA, signal3_sigma, signal3_alpha, signal3_n);
+  w_H2A4Mu->import(signal3_m1);
+  RooCBShape signal3_m2("signal3_m2", "signal3_m2", m2_high_mass, signal3_mA, signal3_sigma, signal3_alpha, signal3_n);
+  w_H2A4Mu->import(signal3_m2);
+  w_H2A4Mu->factory("PROD::signal3(signal3_m1, signal3_m2)");
 
   TFile* file = new TFile("../ws_FINAL.root");
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
   w_H2A4Mu->import( *w->pdf("template1D_m1_below_Jpsi") );
   w_H2A4Mu->import( *w->pdf("template1D_m2_below_Jpsi") );
-  w_H2A4Mu->factory("PROD::BBbar_below_Jpsi_2D(template1D_m1_below_Jpsi, template1D_m2_below_Jpsi )*dia");
-  //w_H2A4Mu->import( *w->pdf("template1D_m1_above_Jpsi") );
-  //w_H2A4Mu->import( *w->pdf("template1D_m2_above_Jpsi") );
-  //w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1_above_Jpsi, template1D_m2_above_Jpsi )*dia");
+  w_H2A4Mu->factory("PROD::BBbar_below_Jpsi_2D(template1D_m1_below_Jpsi, template1D_m2_below_Jpsi )*dia1");
+  w_H2A4Mu->import( *w->pdf("template1D_m1_above_Jpsi") );
+  w_H2A4Mu->import( *w->pdf("template1D_m2_above_Jpsi") );
+  w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1_above_Jpsi, template1D_m2_above_Jpsi )*dia2");
+  //**************************************************
+  //Here we need a bkg pdf for high mass, TBD @Jan17
+  //**************************************************
+  //At the moment use flat/uniform pdf at high mass
+  w_H2A4Mu->factory("SUM::template1D_m1_high_mass(6.98*Uniform(m1_high_mass))");
+  w_H2A4Mu->factory("SUM::template1D_m2_high_mass(7.50*Uniform(m2_high_mass))");
+  w_H2A4Mu->factory("PROD::HighMassBKG(template1D_m1_high_mass, template1D_m2_high_mass)");//Do we need to multiply dia3?
 
   // Set all fit variables to constants
   w_H2A4Mu->var("MmumuC_c_below_Jpsi")->setConstant(true);
@@ -236,7 +306,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("norm_etaF_below_Jpsi")->setConstant(true);
   w_H2A4Mu->var("norm_phiF_below_Jpsi")->setConstant(true);
   w_H2A4Mu->var("norm_rhoF_below_Jpsi")->setConstant(true);
-/*
+
   w_H2A4Mu->var("bC06_above_Jpsi")->setConstant(true);
   w_H2A4Mu->var("bC16_above_Jpsi")->setConstant(true);
   w_H2A4Mu->var("bC26_above_Jpsi")->setConstant(true);
@@ -257,11 +327,22 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->var("bF66_above_Jpsi")->setConstant(true);
   w_H2A4Mu->var("psiF_sigma_above_Jpsi")->setConstant(true);
   w_H2A4Mu->var("norm_bgF_above_Jpsi")->setConstant(true);
-  w_H2A4Mu->var("norm_psiF_above_Jpsi")->setConstant(true);*/
-
-  w_H2A4Mu->var("signal_mA")->setConstant(true);
-  w_H2A4Mu->var("signal_n")->setConstant(true);
-  w_H2A4Mu->var("signal_sigma")->setConstant(true);
+  w_H2A4Mu->var("norm_psiF_above_Jpsi")->setConstant(true);
+  //Below Jpsi
+  w_H2A4Mu->var("signal1_mA")->setConstant(true);
+  w_H2A4Mu->var("signal1_sigma")->setConstant(true);
+  w_H2A4Mu->var("signal1_alpha")->setConstant(true);
+  w_H2A4Mu->var("signal1_n")->setConstant(true);
+  //Above Jpsi
+  w_H2A4Mu->var("signal2_mA")->setConstant(true);
+  w_H2A4Mu->var("signal2_sigma")->setConstant(true);
+  w_H2A4Mu->var("signal2_alpha")->setConstant(true);
+  w_H2A4Mu->var("signal2_n")->setConstant(true);
+  //High mass
+  w_H2A4Mu->var("signal3_mA")->setConstant(true);
+  w_H2A4Mu->var("signal3_sigma")->setConstant(true);
+  w_H2A4Mu->var("signal3_alpha")->setConstant(true);
+  w_H2A4Mu->var("signal3_n")->setConstant(true);
 
   cout<<"---------------WORKING-SPACE----------------"<<endl;
   w_H2A4Mu->Print("v");

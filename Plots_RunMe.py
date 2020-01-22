@@ -5,12 +5,15 @@ ROOT.gROOT.SetBatch(True)
 execfile("Plots.py")
 
 ###-------Model Independent Limits-------###
-#--Limits on N_ext vs m(a) #fix MGammaD_array is for GammaD or NMSSM
-limit_vs_mGammaD_2016()
-#--Limits on xsecBr*alpha vs m(a) #fix MGammaD_array is for GammaD or NMSSM
-limit_CSxBR2xAlpha_fb_vs_mGammaD_2016()
+#--Limits on N_ext vs m
+limit_vs_mGammaD()
+#--Limits on xsec*Br^2*alpha vs m
+limit_CSxBR2xAlpha_fb_vs_mGammaD()
 
-###-------       Dark SUSY       -------###
+###-------       ALP         -------###
+#Placeholder
+
+###-------       MSSMD       -------###
 #--BR(a->mumu) vs m(a)
 #plot_BR_GammaD_to_2mu()
 #--Acceptance vs things-------
@@ -20,8 +23,8 @@ limit_CSxBR2xAlpha_fb_vs_mGammaD_2016()
 #Plot_Eff_vs_R()          # Step function
 
 ###-------       NMSSM       -------###
-limit_CSxBR2_fb_vs_mh_2016()
-limit_CSxBR2_fb_vs_ma_2016()
+#limit_CSxBR2_fb_vs_mh_2016()
+#limit_CSxBR2_fb_vs_ma_2016()
 
 #print f1(0.4,40.0,5.0,1.0,1.0)
 #print f2(0.4,40,5,1.0)
@@ -31,7 +34,7 @@ limit_CSxBR2_fb_vs_ma_2016()
 #print f_Alpha_vs_ctau(0.4,40.0,0.1,0.068)
 #print f_Alpha_vs_ctau(0.4,40.0,5.0,0.068)
 
-###-------       Dark Susy       -------###
+###-------       MSSMD       -------###
 #!limit_CSxBR2_fb_vs_mGammaD_2015()
 #!limit_CS_fb_vs_mGammaD_2015()
 #!limit_CSxBR2_fb_vs_ctau_2015()

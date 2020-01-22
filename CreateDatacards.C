@@ -31,10 +31,12 @@
 #include <fstream>
 #include <iomanip>
 
-//#define N_Signals 48
-#define N_Signals 39
+#define N_Signals 60 //48 low mass + 12 high mass
 
 void CreateDatacards( bool makeRoot=true ){
+  //*******************************
+  // User change parameters below
+  //*******************************
   //On which machine are you running jobs? Brazos: false; Lxplus: true
   bool isLxplus=false;
   //TString Myrule = "--rule CLs --LHCmode LHC-limits --toysFrequentist"; //OLD command "--rule CLs --testStat LHC"
@@ -42,9 +44,12 @@ void CreateDatacards( bool makeRoot=true ){
   Myrule = Myrule + " --cl 0.95";
   string pwd = "/home/ws13/Run2LimitSetting/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/";
 
-  //After looking at data we need to change the mass granularity
-  //float masses[N_Signals] = {0.2113, 0.2400, 0.2600, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.5300, 0.5600, 0.6000, 0.7000, 0.8000, 0.8800, 0.9000, 0.9100, 0.9200, 0.9300, 0.9400, 1.0000, 1.1000, 1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000, 2.1000, 2.2000, 2.3000, 2.4000, 2.5000, 2.6000, 2.7000, 3.3000, 3.4000, 3.7000, 4.0000, 5.0000, 6.0000, 7.0000, 8.0000, 8.5000};
-  float masses[N_Signals] = {0.2113, 0.2400, 0.2600, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.5300, 0.5600, 0.6000, 0.7000, 0.8000, 0.8800, 0.9000, 0.9100, 0.9200, 0.9300, 0.9400, 1.0000, 1.1000, 1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000, 2.1000, 2.2000, 2.3000, 2.4000, 2.5000, 2.6000, 2.7000};
+  //After unblinding data, need to change the mass granularity accordingly
+  float masses[N_Signals] = {0.2113, 0.2400, 0.2600, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000,
+     0.5300, 0.5600, 0.6000, 0.7000, 0.8000, 0.8800, 0.9000, 0.9100, 0.9200, 0.9300, 0.9400, 1.0000, 1.1000,
+     1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000, 2.1000, 2.2000, 2.3000, 2.4000,
+     2.5000, 2.6000, 2.7000, 3.3000, 3.4000, 3.7000, 4.0000, 5.0000, 6.0000, 7.0000, 8.0000, 8.5000,
+     13.0000, 17.0000, 21.0000, 25.0000, 29.0000, 33.0000, 37.0000, 41.0000, 45.0000, 49.0000, 53.0000, 57.0000};
 
   bool DiffSeed=true;
   int Ninit=0, Nend=1;//Each mass point will be submitted (Nend-Ninit) times
@@ -54,6 +59,21 @@ void CreateDatacards( bool makeRoot=true ){
 
   //N events
   int obs = -1;
+  //==============
+  //2017 expected
+  //==============
+  //SR1: Below J/psi
+  float signal1_rate = 1, BBbar_below_Jpsi_2D_rate = 1.50; //Sig and Bkg rate
+  float BBbar_norm = 1.123, BBbar_syst = 1.2; //Background Uncertainties, also apply to SR2
+  //SR2: Above J/psi, below 9 GeV
+  float signal2_rate = 1, BBbar_above_Jpsi_2D_rate = 0.06;
+  //SR3: Above 9 GeV
+  float signal3_rate = 1, HighMassBKG_rate = 7.24;
+
+  //Signal Uncertainties
+  float lumi_13TeV = 1.025, mu_hlt = 1.015, mu_id = 1.024, mu_iso = 1.02, mu_pu = 1.0017;
+  float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02, pdf_as = 1.08, HxecBr = 1.038;
+
   /*
   //==============
   //2016 expected
@@ -67,15 +87,9 @@ void CreateDatacards( bool makeRoot=true ){
   float DJpsiD_norm=5, DJpsiD_norm2=0.0038, DJpsiS_norm=27, DJpsiS_norm2=0.01178, DJpsi_extr=1.15;
   */
 
-  //==============
-  //2017 expected
-  //==============
-  float signal_rate = 1, BBbar_below_Jpsi_2D_rate = 1.56657;
-  //Signal Uncertainties
-  float lumi_13TeV = 1.025, mu_hlt = 1.06, mu_id = 1.024, mu_iso = 1.02, mu_pu = 1.0017;
-  float ovlp_trk = 1.024, ovlp_mu = 1.026, dimu_M = 1.015, nnlo_pt = 1.02, pdf_as = 1.08, HxecBr = 1.038;
-  //Background Uncertainties
-  float BBbar_norm = 1.123, BBbar_syst = 1.2;
+  //*******************************
+  // User change parameters above
+  //*******************************
 
   //Creat Folders
   TString makeFold="mkdir -p macros/sh";
@@ -247,37 +261,99 @@ void CreateDatacards( bool makeRoot=true ){
     TString Thisname_txt = "datacard_H2A4Mu_mA_" + massesS.str() + "_GeV.txt";
     FILE *file_txt=fopen( ("Datacards/" + Thisname_txt).Data(),"w");
     fprintf(file_txt, "# HybridNew CLs: \n");
-    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV            -m 125 -M HybridNew --rule CLs --LHCmode LHC-limits     datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
+    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV            -m 125 -M HybridNew --rule CLs --LHCmode LHC-limits     datacard_H2A4Mu_mA_%.4f_GeV.txt \n", masses[i], masses[i]);
     fprintf(file_txt, "# Maximum likelihood fits and diagnostics \n");
-    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal0 -m 125 -M MaxLikelihoodFit --expectSignal=0 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
-    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal1 -m 125 -M MaxLikelihoodFit --expectSignal=1 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n",masses[i],masses[i]);
-    fprintf(file_txt, "imax 1  number of channels \n");
-    fprintf(file_txt, "jmax 1  number of backgrounds \n");
-    fprintf(file_txt, "kmax *  number of nuisance parameters (sources of systematical uncertainties) \n");
-    fprintf(file_txt, "----------------------------------------------------------------------------- \n");
-    fprintf(file_txt, "shapes * * ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:$PROCESS \n", masses[i]);
-    fprintf(file_txt, "----------------------------------------------------------------------------- \n");
-    fprintf(file_txt, "bin               A \n");
-    fprintf(file_txt, "observation      %d \n", obs);
-    fprintf(file_txt, "----------------------------------------------------------------------------- \n");
-    fprintf(file_txt, "bin                           A         A \n");
-    fprintf(file_txt, "process                       0         1 \n");
-    fprintf(file_txt, "process                       signal    BBbar_below_Jpsi_2D \n");
-    fprintf(file_txt, "rate                          %.3f      %.3f \n", signal_rate, BBbar_below_Jpsi_2D_rate);
-    fprintf(file_txt, "----------------------------------------------------------------------------- \n");
-    fprintf(file_txt, "lumi_13TeV              lnN   %.3f      -         Lumi (signal only; BBbar background are data-driven) \n", lumi_13TeV);
-    fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f      -         Muon trigger \n", mu_hlt);
-    fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f      -         Muon identification \n", mu_id);
-    fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f      -         Muon isolation \n", mu_iso);
-    fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f      -         Reconstruction of close muons in the muon system \n", mu_pu);
-    fprintf(file_txt, "QCDscale_ggH            lnN   %.3f      -         Theoretical uncertainties in acceptance (not included in model independent limit) \n", pdf_as);
-    fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f      -         Theoretical uncertainties in production (not included in model independent limit) \n", HxecBr);
-    fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f      -         Reconstruction of close muons in the tracker \n", ovlp_trk);
-    fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f      -         Reconstruction of close muons in the muon system \n", ovlp_mu);
-    fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f      -         Dimuons mass consistency m1~m2 \n", dimu_M);
-    fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f      -         Reconstruction of close muons in the muon system \n", nnlo_pt);
-    fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -       %.3f      BBbar estimate\n", BBbar_norm);
-    fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -       %.3f      Syst on BBar normalization from the difference of the estimation done inverting ISO cut \n", BBbar_syst);
+    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal0 -m 125 -M MaxLikelihoodFit --expectSignal=0 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n", masses[i], masses[i]);
+    fprintf(file_txt, "#    combine      -n .H2A4Mu_mA_%.4f_GeV_expSignal1 -m 125 -M MaxLikelihoodFit --expectSignal=1 -t -1 datacard_H2A4Mu_mA_%.4f_GeV.txt \n", masses[i], masses[i]);
+    if(masses[i] < 3.09){//Below J/psi
+      fprintf(file_txt, "imax 1  number of channels \n");
+      fprintf(file_txt, "jmax 1  number of backgrounds \n");
+      fprintf(file_txt, "kmax *  number of nuisance parameters (sources of systematical uncertainties) \n");
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "shapes * * ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:$PROCESS \n", masses[i]);
+      fprintf(file_txt, "shapes data_obs A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:data_obs_SR1 \n",masses[i]);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin               A \n");
+      fprintf(file_txt, "observation      %d \n", obs);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin                           A          A \n");
+      fprintf(file_txt, "process                       0          1 \n");
+      fprintf(file_txt, "process                       signal1    BBbar_below_Jpsi_2D \n");
+      fprintf(file_txt, "rate                          %.3f       %.3f \n", signal1_rate, BBbar_below_Jpsi_2D_rate);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "lumi_13TeV              lnN   %.3f       -        Lumi (signal only; BBbar background are data-driven) \n", lumi_13TeV);
+      fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       -        Muon trigger \n", mu_hlt);
+      fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       -        Muon identification \n", mu_id);
+      fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       -        Muon isolation \n", mu_iso);
+      fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       -        Reconstruction of close muons in the muon system \n", mu_pu);
+      fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -        Theoretical uncertainties in acceptance (not included in model independent limit) \n", pdf_as);
+      fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -        Theoretical uncertainties in production (not included in model independent limit) \n", HxecBr);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       -        Reconstruction of close muons in the tracker \n", ovlp_trk);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       -        Reconstruction of close muons in the muon system \n", ovlp_mu);
+      fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       -        Dimuons mass consistency m1~m2 \n", dimu_M);
+      fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       -        Reconstruction of close muons in the muon system \n", nnlo_pt);
+      fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f     BBbar estimate\n", BBbar_norm);
+      fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f     Syst on BBar normalization from the difference of the estimation done inverting ISO cut \n", BBbar_syst);
+    }
+    else if (masses[i] > 3.09 && masses[i] < 9){//Above J/psi
+      fprintf(file_txt, "imax 1  number of channels \n");
+      fprintf(file_txt, "jmax 1  number of backgrounds \n");
+      fprintf(file_txt, "kmax *  number of nuisance parameters (sources of systematical uncertainties) \n");
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "shapes * * ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:$PROCESS \n", masses[i]);
+      fprintf(file_txt, "shapes data_obs A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:data_obs_SR2 \n",masses[i]);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin               A \n");
+      fprintf(file_txt, "observation      %d \n", obs);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin                           A          A \n");
+      fprintf(file_txt, "process                       0          1 \n");
+      fprintf(file_txt, "process                       signal2    BBbar_above_Jpsi_2D \n");
+      fprintf(file_txt, "rate                          %.3f       %.3f \n", signal2_rate, BBbar_above_Jpsi_2D_rate);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "lumi_13TeV              lnN   %.3f       -        Lumi (signal only; BBbar background are data-driven) \n", lumi_13TeV);
+      fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       -        Muon trigger \n", mu_hlt);
+      fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       -        Muon identification \n", mu_id);
+      fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       -        Muon isolation \n", mu_iso);
+      fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       -        Reconstruction of close muons in the muon system \n", mu_pu);
+      fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -        Theoretical uncertainties in acceptance (not included in model independent limit) \n", pdf_as);
+      fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -        Theoretical uncertainties in production (not included in model independent limit) \n", HxecBr);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       -        Reconstruction of close muons in the tracker \n", ovlp_trk);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       -        Reconstruction of close muons in the muon system \n", ovlp_mu);
+      fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       -        Dimuons mass consistency m1~m2 \n", dimu_M);
+      fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       -        Reconstruction of close muons in the muon system \n", nnlo_pt);
+      fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f     BBbar estimate\n", BBbar_norm);
+      fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f     Syst on BBar normalization from the difference of the estimation done inverting ISO cut \n", BBbar_syst);
+    }
+    else if (masses[i] > 9){//High mass backgrounds
+      fprintf(file_txt, "imax 1  number of channels \n");
+      fprintf(file_txt, "jmax 1  number of backgrounds \n");
+      fprintf(file_txt, "kmax *  number of nuisance parameters (sources of systematical uncertainties) \n");
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "shapes * * ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:$PROCESS \n", masses[i]);
+      fprintf(file_txt, "shapes data_obs A  ../workSpaces/ws_H2A4Mu_mA_%.4f_GeV.root w_H2A4Mu:data_obs_SR3 \n",masses[i]);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin               A \n");
+      fprintf(file_txt, "observation      %d \n", obs);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "bin                           A          A \n");
+      fprintf(file_txt, "process                       0          1 \n");
+      fprintf(file_txt, "process                       signal3    HighMassBKG \n");
+      fprintf(file_txt, "rate                          %.3f       %.3f \n", signal3_rate, HighMassBKG_rate);
+      fprintf(file_txt, "----------------------------------------------------------------------------- \n");
+      fprintf(file_txt, "lumi_13TeV              lnN   %.3f       %.3f        Lumi (signal only; BBbar background are data-driven) \n", lumi_13TeV, lumi_13TeV);
+      fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       %.3f        Muon trigger \n", mu_hlt, mu_hlt);
+      fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       %.3f        Muon identification \n", mu_id, mu_id);
+      fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       %.3f        Muon isolation \n", mu_iso, mu_iso);
+      fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       %.3f        Reconstruction of close muons in the muon system \n", mu_pu, mu_pu);
+      fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -           Theoretical uncertainties in acceptance (not included in model independent limit) \n", pdf_as);
+      fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -           Theoretical uncertainties in production (not included in model independent limit) \n", HxecBr);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       %.3f        Reconstruction of close muons in the tracker \n", ovlp_trk, ovlp_trk);
+      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       %.3f        Reconstruction of close muons in the muon system \n", ovlp_mu, ovlp_mu);
+      fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       %.3f        Dimuons mass consistency m1~m2 \n", dimu_M, dimu_M);
+      fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       %.3f        Reconstruction of close muons in the muon system \n", nnlo_pt, nnlo_pt);
+    }
+    //Add high mass bkgs
     fclose(file_txt);
   }
 }

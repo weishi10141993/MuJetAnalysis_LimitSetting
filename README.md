@@ -3,7 +3,7 @@ Command: combine -m 125 -M HybridNew --rule CLs --testStat LHC datacard_H2A4Mu_m
 
 Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive
 
-## Installing the framework
+## Install the Higgs combine framework
 One should always refer to the official [Higgs combine page](http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/) for most updated instructions.
 ```
 export SCRAM_ARCH=slc7_amd64_gcc700
@@ -22,7 +22,7 @@ git clone -b test git@github.com:weishi10141993/MuJetAnalysis_LimitSetting
 cd MuJetAnalysis_LimitSetting     
 ```
 
-# Running the model independent limits
+# Run the model independent limits
 1. Copy updated "ws_FINAL.root" from bbBar estimation. It contains background p.d.f.s.   
 
 2. In this step, the datacards for each mass points are created.
@@ -58,16 +58,18 @@ cd MuJetAnalysis_LimitSetting
    -> This macro will print the lines you have to copy inside scripts/CmsLimitVsM.py (that will be used by Plots.py).
    -> You have to copy the lined from "That contain N limits: \n XXX" until teh line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit   
 
-6. In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
+6. [Not Tested] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
    -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
 
-7. vim scripts/CmsLimitVsM.py + copy the lines you just produced after "Limits_HybridNew = ["    
+7. Edit "scripts/CmsLimitVsM.py" and copy the lines you just produced after "Limits_HybridNew = ["    
    -> If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
-8. python Plots_RunMe.py    
-   -> To make final limit plots. Here you can specify which function of Plots.py do you want to use.    
+8. Make final limit plots. You can specify which functions from Plots.py to use.  
+   ```
+   python Plots_RunMe.py  
+   ```  
 
 # Notes   
 1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis
