@@ -36,7 +36,7 @@ eFullMc_over_aGen = 0.55 # average constant from all signal MC samples
 #SF = 0.9265 # eFullData / eFullMc
 #eFullMc_over_aGen = 0.611
 
-## mass range
+## mass range for SR1/2/3
 m_SR1_min  = 0.2113;
 m_SR1_max  = 2.72;
 m_SR2_min  = 3.24;
@@ -92,7 +92,7 @@ cnv = ROOT.TCanvas("cnv", "cnv")
 cnv.SetCanvasSize(900, 900)
 
 ################################################################################
-#       Plot Upper 95% CL Limit on number of events: 0.25 < mGammaD < 1.0
+#       Plot Upper %CL% CL Limit on number of events: 0.25 < mGammaD < 1.0
 ################################################################################
 
 def save_canvas(cnv, title):
@@ -109,16 +109,29 @@ def limit_vs_mGammaD():
     padTop.Draw()
     padTop.cd()
     padTop.SetLogx()
-    array_mGammaD_limit_toy = []
-    array_mGammaD_limit_fit_SR1 = []
+    array_mGammaD_limit_toy_SR1 = [] #Expected median @specified XX% CL
+    array_mGammaD_limit_toy_SR2 = []
+    array_mGammaD_limit_toy_SR3 = []
+    array_mGammaD_limit_toy_p_one_sigma_SR1 = [] #Expected +1 sigma @specified XX% CL
+    array_mGammaD_limit_toy_p_one_sigma_SR2 = []
+    array_mGammaD_limit_toy_p_one_sigma_SR3 = []
+    array_mGammaD_limit_toy_n_one_sigma_SR1 = [] #Expected -1 sigma @specified XX% CL
+    array_mGammaD_limit_toy_n_one_sigma_SR2 = []
+    array_mGammaD_limit_toy_n_one_sigma_SR3 = []
+    array_mGammaD_limit_toy_p_two_sigma_SR1 = [] #Expected +2 sigma @specified XX% CL
+    array_mGammaD_limit_toy_p_two_sigma_SR2 = []
+    array_mGammaD_limit_toy_p_two_sigma_SR3 = []
+    array_mGammaD_limit_toy_n_two_sigma_SR1 = [] #Expected -2 sigma @specified XX% CL
+    array_mGammaD_limit_toy_n_two_sigma_SR2 = []
+    array_mGammaD_limit_toy_n_two_sigma_SR3 = []
+    array_mGammaD_limit_fit_SR1 = [] #Fit to toy limit
     array_mGammaD_limit_fit_SR2 = []
     array_mGammaD_limit_fit_SR3 = []
-    array_mGammaD_limit_fit_uncertainty = []
+    array_mGammaD_limit_fit_uncertainty = [] # don't need specify SR1 as we only draw discrete points, no lines
     rnd = ROOT.TRandom()
     rnd.SetSeed(2016)
 
-    # Fitted function to limits
-    # Avoid J/psi and Upsilon regions
+    # Fitted function to limits at SR1/2/3, Avoid J/psi and Upsilon regions
     for m in np.arange(m_SR1_min, m_SR1_max, 0.005):
         array_mGammaD_limit_fit_SR1.append( (m, fCmsLimitVsM(m)) )
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
@@ -126,11 +139,32 @@ def limit_vs_mGammaD():
     for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
         array_mGammaD_limit_fit_SR3.append( (m, fCmsLimitVsM(m)) )
 
+    # Start: Limits from toy experiment
     for m in MGammaD_array:
-        array_mGammaD_limit_toy.append(( m, fCmsLimitVsM_HybridNew(m) )) # limit from toys experiments.
-        array_mGammaD_limit_fit_uncertainty.append(( m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties
+        if (m >= m_SR1_min and m <= m_SR1_max):
+            array_mGammaD_limit_toy_SR1.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
+            array_mGammaD_limit_toy_p_two_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) ) # expected 95 CI upper bound "
+            array_mGammaD_limit_toy_n_two_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) ) # expected 95 CI lower bound "
+            array_mGammaD_limit_toy_p_one_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) ) # expected 68 CI upper bound "
+            array_mGammaD_limit_toy_n_one_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) ) # expected 68 CI lower bound "
+            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties for expected median @XX% CL
+        elif (m >= m_SR2_min and m <= m_SR2_max):
+            array_mGammaD_limit_toy_SR2.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
+            array_mGammaD_limit_toy_p_two_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) )
+            array_mGammaD_limit_toy_n_two_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) )
+            array_mGammaD_limit_toy_p_one_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) )
+            array_mGammaD_limit_toy_n_one_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) )
+            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+        elif (m >= m_SR3_min and m <= m_SR3_max):
+            array_mGammaD_limit_toy_SR3.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
+            array_mGammaD_limit_toy_p_two_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) )
+            array_mGammaD_limit_toy_n_two_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) )
+            array_mGammaD_limit_toy_p_one_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) )
+            array_mGammaD_limit_toy_n_one_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) )
+            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+    # End: Limits from toy experiment
 
-    # histogram range: x: mass; y: N_evt @95CL
+    # histogram range: x: mass; y: N_evt @%XX%CL
     h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, 10.0)
     h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
     h_limit_vs_mGammaD_dummy.SetYTitle("%d%% CL upper limit on N_{evt}"%CL)
@@ -139,35 +173,77 @@ def limit_vs_mGammaD():
     h_limit_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
     h_limit_vs_mGammaD_dummy.Draw()
 
-    # Limit from toy experiments
-    gr_limit_vs_mGammaD_toy = ROOT.TGraph( len(array_mGammaD_limit_toy), array.array("d", zip(*array_mGammaD_limit_toy)[0]), array.array("d", zip(*array_mGammaD_limit_toy)[1]) )
-    gr_limit_vs_mGammaD_toy.SetLineWidth(1)
-    gr_limit_vs_mGammaD_toy.SetLineColor(ROOT.kBlack)
-    gr_limit_vs_mGammaD_toy.SetLineStyle(1)
-    gr_limit_vs_mGammaD_toy.SetMarkerColor(ROOT.kBlack)
-    gr_limit_vs_mGammaD_toy.Draw("P")
+    # Start: Limit from toy experiments median SR1/2/3
+    gr_limit_vs_mGammaD_toy_SR1 = ROOT.TGraph( len(array_mGammaD_limit_toy_SR1), array.array("d", zip(*array_mGammaD_limit_toy_SR1)[0]), array.array("d", zip(*array_mGammaD_limit_toy_SR1)[1]) )
+    gr_limit_vs_mGammaD_toy_SR1.SetLineColor(1)
+    gr_limit_vs_mGammaD_toy_SR1.SetLineWidth(2)
+    gr_limit_vs_mGammaD_toy_SR1.SetLineStyle(2) #dashed line, for showing expected median @%XX%CL
+    gr_limit_vs_mGammaD_toy_SR1.SetMarkerColor(ROOT.kBlack)
+    gr_limit_vs_mGammaD_toy_SR1.Draw("P")
+    ## SR2
+    gr_limit_vs_mGammaD_toy_SR2 = ROOT.TGraph( len(array_mGammaD_limit_toy_SR2), array.array("d", zip(*array_mGammaD_limit_toy_SR2)[0]), array.array("d", zip(*array_mGammaD_limit_toy_SR2)[1]) )
+    gr_limit_vs_mGammaD_toy_SR2.SetLineColor(1)
+    gr_limit_vs_mGammaD_toy_SR2.SetLineWidth(2)
+    gr_limit_vs_mGammaD_toy_SR2.SetLineStyle(2)
+    gr_limit_vs_mGammaD_toy_SR2.SetMarkerColor(ROOT.kBlack)
+    gr_limit_vs_mGammaD_toy_SR2.Draw("P")
+    ## SR3
+    gr_limit_vs_mGammaD_toy_SR3 = ROOT.TGraph( len(array_mGammaD_limit_toy_SR3), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[1]) )
+    gr_limit_vs_mGammaD_toy_SR3.SetLineColor(1)
+    gr_limit_vs_mGammaD_toy_SR3.SetLineWidth(2)
+    gr_limit_vs_mGammaD_toy_SR3.SetLineStyle(2)
+    gr_limit_vs_mGammaD_toy_SR3.SetMarkerColor(ROOT.kBlack)
+    gr_limit_vs_mGammaD_toy_SR3.Draw("P")
+    # End: Limit from toy experiments median SR1/2/3
 
-    # Fitted function to toy limit: SR1
-    gr_limit_vs_mGammaD_SR1 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR1), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[1]) )
-    gr_limit_vs_mGammaD_SR1.SetLineWidth(2)
-    gr_limit_vs_mGammaD_SR1.SetLineColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR1.SetLineStyle(1)
-    gr_limit_vs_mGammaD_SR1.SetMarkerColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR1.Draw("L")
-    # Fitted function to toy limit: SR2
-    gr_limit_vs_mGammaD_SR2 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR2), array.array("d", zip(*array_mGammaD_limit_fit_SR2)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR2)[1]) )
-    gr_limit_vs_mGammaD_SR2.SetLineWidth(2)
-    gr_limit_vs_mGammaD_SR2.SetLineColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR2.SetLineStyle(1)
-    gr_limit_vs_mGammaD_SR2.SetMarkerColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR2.Draw("L")
-    # Fitted function to toy limit: SR3
-    gr_limit_vs_mGammaD_SR3 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR3), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[1]) )
-    gr_limit_vs_mGammaD_SR3.SetLineWidth(2)
-    gr_limit_vs_mGammaD_SR3.SetLineColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR3.SetLineStyle(1)
-    gr_limit_vs_mGammaD_SR3.SetMarkerColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_SR3.Draw("L")
+    # Similar as above, but expected +/- 1, 2 sigma @ %XX%CL from toy experiments for Brazilian Plot below
+    # An example: https://wiki.physik.uzh.ch/cms/limits:brazilianplotexample
+    gr_limit_vs_mGammaD_toy_one_sigma_SR1 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_one_sigma_SR1))
+    gr_limit_vs_mGammaD_toy_two_sigma_SR1 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_two_sigma_SR1)) # length should both equal array_mGammaD_limit_toy
+    for i in range(len(array_mGammaD_limit_toy_p_one_sigma_SR1)):
+        gr_limit_vs_mGammaD_toy_two_sigma_SR1.SetPoint(i, array_mGammaD_limit_toy_p_two_sigma_SR1[i][0], array_mGammaD_limit_toy_p_two_sigma_SR1[i][1]) # + 2 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR1.SetPoint(i, array_mGammaD_limit_toy_p_one_sigma_SR1[i][0], array_mGammaD_limit_toy_p_one_sigma_SR1[i][1]) # + 1 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR1.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR1)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR1[i][0], array_mGammaD_limit_toy_n_one_sigma_SR1[i][1]) # - 1 sigma
+        gr_limit_vs_mGammaD_toy_two_sigma_SR1.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR1)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR1[i][0], array_mGammaD_limit_toy_n_two_sigma_SR1[i][1]) # - 2 sigma
+
+    gr_limit_vs_mGammaD_toy_one_sigma_SR2 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_one_sigma_SR2))
+    gr_limit_vs_mGammaD_toy_two_sigma_SR2 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_two_sigma_SR2)) # length should both equal array_mGammaD_limit_toy
+    for i in range(len(array_mGammaD_limit_toy_p_one_sigma_SR2)):
+        gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetPoint(i, array_mGammaD_limit_toy_p_two_sigma_SR2[i][0], array_mGammaD_limit_toy_p_two_sigma_SR2[i][1]) # + 2 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetPoint(i, array_mGammaD_limit_toy_p_one_sigma_SR2[i][0], array_mGammaD_limit_toy_p_one_sigma_SR2[i][1]) # + 1 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR2)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR2[i][0], array_mGammaD_limit_toy_n_one_sigma_SR2[i][1]) # - 1 sigma
+        gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR2)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR2[i][0], array_mGammaD_limit_toy_n_two_sigma_SR2[i][1]) # - 2 sigma
+
+    gr_limit_vs_mGammaD_toy_one_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3))
+    gr_limit_vs_mGammaD_toy_two_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)) # length should both equal array_mGammaD_limit_toy
+    for i in range(len(array_mGammaD_limit_toy_p_one_sigma_SR3)):
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_two_sigma_SR3[i][0], array_mGammaD_limit_toy_p_two_sigma_SR3[i][1]) # + 2 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_one_sigma_SR3[i][0], array_mGammaD_limit_toy_p_one_sigma_SR3[i][1]) # + 1 sigma
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR3[i][0], array_mGammaD_limit_toy_n_one_sigma_SR3[i][1]) # - 1 sigma
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR3[i][0], array_mGammaD_limit_toy_n_two_sigma_SR3[i][1]) # - 2 sigma
+
+    # Start: Fitted function to toy limit: SR1/2/3
+    gr_limit_vs_mGammaD_fit_SR1 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR1), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[1]) )
+    gr_limit_vs_mGammaD_fit_SR1.SetLineWidth(2)
+    gr_limit_vs_mGammaD_fit_SR1.SetLineColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR1.SetLineStyle(1)
+    gr_limit_vs_mGammaD_fit_SR1.SetMarkerColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR1.Draw("L")
+    ## SR2
+    gr_limit_vs_mGammaD_fit_SR2 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR2), array.array("d", zip(*array_mGammaD_limit_fit_SR2)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR2)[1]) )
+    gr_limit_vs_mGammaD_fit_SR2.SetLineWidth(2)
+    gr_limit_vs_mGammaD_fit_SR2.SetLineColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR2.SetLineStyle(1)
+    gr_limit_vs_mGammaD_fit_SR2.SetMarkerColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR2.Draw("L")
+    ## SR3
+    gr_limit_vs_mGammaD_fit_SR3 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR3), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[1]) )
+    gr_limit_vs_mGammaD_fit_SR3.SetLineWidth(2)
+    gr_limit_vs_mGammaD_fit_SR3.SetLineColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR3.SetLineStyle(1)
+    gr_limit_vs_mGammaD_fit_SR3.SetMarkerColor(ROOT.kRed)
+    gr_limit_vs_mGammaD_fit_SR3.Draw("L")
+    # End: Fitted function to toy limit: SR1/2/3
 
     l_limit_vs_mGammaD = ROOT.TLegend(0.63, 0.65, 0.9, 0.75)
     l_limit_vs_mGammaD.SetFillColor(ROOT.kWhite)
@@ -175,8 +251,8 @@ def limit_vs_mGammaD():
     l_limit_vs_mGammaD.SetBorderSize(0)
     l_limit_vs_mGammaD.SetTextFont(42)
     l_limit_vs_mGammaD.SetTextSize(0.035)
-    l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_toy, "Toys", "P")
-    l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_SR1, "Fit",  "L")
+    l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_toy_SR1, "Toys", "P")
+    l_limit_vs_mGammaD.AddEntry(gr_limit_vs_mGammaD_fit_SR1, "Fit",  "L")
     l_limit_vs_mGammaD.Draw()
 
     txtHeader.Draw()
@@ -203,7 +279,6 @@ def limit_vs_mGammaD():
     gr_limit_vs_mGammaD_fit_uncertainty.SetLineStyle(1)
     gr_limit_vs_mGammaD_fit_uncertainty.SetMarkerColor(ROOT.kBlue)
     gr_limit_vs_mGammaD_fit_uncertainty.Draw("P") #Don't draw line, it will connect Jpsi and Upsilon regions
-
     cnv.cd()
     cnv.Update()
     save_canvas(cnv, "limit_Events_vs_mGammaD_FitUncert")
@@ -212,15 +287,70 @@ def limit_vs_mGammaD():
     cnv.cd()
     cnv.SetLogx()
     h_limit_vs_mGammaD_dummy.Draw()
-    gr_limit_vs_mGammaD_toy.Draw("P")
-    gr_limit_vs_mGammaD_SR1.Draw("L")
-    gr_limit_vs_mGammaD_SR2.Draw("L")
-    gr_limit_vs_mGammaD_SR3.Draw("L")
+    gr_limit_vs_mGammaD_toy_SR1.Draw("P") #toy
+    gr_limit_vs_mGammaD_toy_SR2.Draw("P")
+    gr_limit_vs_mGammaD_toy_SR3.Draw("P")
+    gr_limit_vs_mGammaD_fit_SR1.Draw("L") # Fit
+    gr_limit_vs_mGammaD_fit_SR2.Draw("L")
+    gr_limit_vs_mGammaD_fit_SR3.Draw("L")
     txtHeader.Draw()
-
     cnv.Update()
     save_canvas(cnv, "limit_Events_vs_mGammaD")
-    gr_limit_vs_mGammaD_toy.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD.root")
+
+    ##################
+    # Brazilian plot #
+    ##################
+    # CMS requirment: https://ghm.web.cern.ch/ghm/plots
+    cnv.cd()
+    cnv.SetLogx()
+    h_limit_vs_mGammaD_dummy.Draw()
+    gr_limit_vs_mGammaD_toy_two_sigma_SR1.SetFillColor(ROOT.kOrange) #CMS requirement for showing expected 95% CI
+    gr_limit_vs_mGammaD_toy_two_sigma_SR1.SetLineColor(ROOT.kOrange)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR1.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR1.Draw("F") #expected +/- 2 sigma
+    gr_limit_vs_mGammaD_toy_one_sigma_SR1.SetFillColor(ROOT.kGreen+1) #CMS requirement for showing expected 68% CI
+    gr_limit_vs_mGammaD_toy_one_sigma_SR1.SetLineColor(ROOT.kGreen+1)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR1.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR1.Draw("F") #expected +/- 1 sigma
+    gr_limit_vs_mGammaD_toy_SR1.Draw("L") #expected median @ %XX% CL
+    ## SR2
+    gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetFillColor(ROOT.kOrange)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetLineColor(ROOT.kOrange)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR2.Draw("F")
+    gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetFillColor(ROOT.kGreen+1)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetLineColor(ROOT.kGreen+1)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR2.Draw("F")
+    gr_limit_vs_mGammaD_toy_SR2.Draw("L")
+    ## SR3
+    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillColor(ROOT.kOrange)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetLineColor(ROOT.kOrange)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_two_sigma_SR3.Draw("F")
+    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillColor(ROOT.kGreen+1)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetLineColor(ROOT.kGreen+1)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillStyle(1001)
+    gr_limit_vs_mGammaD_toy_one_sigma_SR3.Draw("F")
+    gr_limit_vs_mGammaD_toy_SR3.Draw("L")
+
+    l_limit_Events_vs_mGammaD_Brazil_Bands = ROOT.TLegend(0.6,0.65,0.9,0.75)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.SetFillColor(ROOT.kWhite)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.SetMargin(0.13)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.SetBorderSize(0)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.SetTextFont(42)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.SetTextSize(0.035)
+    l_limit_Events_vs_mGammaD_Brazil_Bands.AddEntry(gr_limit_vs_mGammaD_toy_SR1, "Expected", "L")
+    l_limit_Events_vs_mGammaD_Brazil_Bands.AddEntry(gr_limit_vs_mGammaD_toy_one_sigma_SR1, "#pm 1 std. deviation", "f")
+    l_limit_Events_vs_mGammaD_Brazil_Bands.AddEntry(gr_limit_vs_mGammaD_toy_two_sigma_SR1, "#pm 2 std. deviation", "f")
+    l_limit_Events_vs_mGammaD_Brazil_Bands.Draw()
+    txtHeader.Draw()
+    cnv.Update()
+    save_canvas(cnv, "limit_Events_vs_mGammaD_Brazil_Bands")
+
+    gr_limit_vs_mGammaD_toy_SR1.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR1.root")
+    gr_limit_vs_mGammaD_toy_SR2.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR2.root")
+    gr_limit_vs_mGammaD_toy_SR3.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR3.root")
 
 #####################################################################################################
 #   Plot Upper Limit on XSec*BR^2*Alpha = "Limit on number of events"/Luminosity/"Scale factor"
@@ -275,7 +405,7 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetBorderSize(0)
     l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextFont(42)
     l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextSize(0.035)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1, "%d%% CL upper limit"%CL,"L")
+    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1, "%d%% CL upper limits"%CL,"L")
     l_limit_CSxBR2xAlpha_fb_vs_mGammaD.Draw()
 
     txtHeader.Draw()
@@ -716,7 +846,7 @@ def Alpha_vs_mGammaD_ctau_3D():
     save_canvas(cnv,"Alpha_vs_mGammaD_ctau_3D")
 
 ################################################################################
-#       Plot Upper 95% CL Limit on CSxBR2 vs mGammaD: 0.25 < mGammaD < 1.0
+#       Plot Upper %XX% CL Limit on CSxBR2 vs mGammaD: 0.25 < mGammaD < 1.0
 ################################################################################
 def limit_CSxBR2_fb_vs_mGammaD_2015():
     cnv.SetLogy(1)
@@ -804,7 +934,7 @@ def limit_CSxBR2_fb_vs_mGammaD_2015():
     os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CSxBR2_fb_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_CSxBR2_fb_vs_mGammaD_2015.png")
 
 ################################################################################
-#       Plot Upper 95% CL Limit on CS vs mGammaD: 0.25 < mGammaD < 1.0
+#       Plot Upper %XX% CL Limit on CS vs mGammaD: 0.25 < mGammaD < 1.0
 ################################################################################
 def limit_CS_fb_vs_mGammaD_2015():
     cnv.SetLogy(0)
@@ -880,7 +1010,7 @@ def limit_CS_fb_vs_mGammaD_2015():
     os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CS_fb_vs_mGammaD_2015.pdf -resize 900x900 plots/PNG/limit_CS_fb_vs_mGammaD_2015.png")
 
 ################################################################################
-#         Plot Upper 95% CL Limit on CSxBR2 vs ctau: 0.2 < ctau < 2.0
+#         Plot Upper %XX% CL Limit on CSxBR2 vs ctau: 0.2 < ctau < 2.0
 ################################################################################
 def limit_CSxBR2_fb_vs_ctau_2015():
     cnv.SetLogy(0)
@@ -936,7 +1066,7 @@ def limit_CSxBR2_fb_vs_ctau_2015():
     os.system("convert -define pdf:use-cropbox=true -density 300 plots/PDF/limit_CSxBR2_fb_vs_ctau_2015.pdf -resize 900x900 plots/PNG/limit_CSxBR2_fb_vs_ctau_2015.png")
 
 ################################################################################
-#            Plot 95% CL Limit on CSxBR2 and on CS vs mGammaD and ctau
+#            Plot %XX% CL Limit on CSxBR2 and on CS vs mGammaD and ctau
 ################################################################################
 def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
     CSsm_fb = 1000.0 * fCS_SM_ggH_13TeV_pb(126.0)[0]
@@ -1170,7 +1300,7 @@ def limit_CSxBR2_fb_and_CS_fb_and_CS_over_CSsm_vs_mGammaD_ctau_3D_and_2D():
     save_canvas(cnv,"limit_CS_over_CSsm_vs_mGammaD_epsilon2_2D")
 
 ################################################################################
-#  Plot 95% CL Limit lines on CSxBR2 vs (mGammaD, ctau) and (mGammaD, epsilon^2)
+#  Plot %XX% CL Limit lines on CSxBR2 vs (mGammaD, ctau) and (mGammaD, epsilon^2)
 ################################################################################
 def limit_Lines_CSxBR2_fb_vs_mGammaD_ctau():
     line_m_ctau_2 = ROOT.TLine(0.25, 2.0, 1.0, 2.0)

@@ -38,7 +38,11 @@ void CreateDatacards( bool makeRoot=true ){
   // User change parameters below
   //*******************************
   //On which machine are you running jobs? Brazos: false; Lxplus: true
-  bool isLxplus=false;
+  bool isLxplus = false;
+
+  //Expected Limit quantiles
+  float expected_quantiles[5] = {0.500, 0.840, 0.160, 0.975, 0.025};
+
   //TString Myrule = "--rule CLs --LHCmode LHC-limits --toysFrequentist"; //OLD command "--rule CLs --testStat LHC"
   TString Myrule = "--rule CLs --testStat LHC";
   Myrule = Myrule + " --cl 0.95";
@@ -119,140 +123,148 @@ void CreateDatacards( bool makeRoot=true ){
   if(!isLxplus) endCom="slrm";
 
   FILE *file_sh_std = fopen("macros/RunOnDataCard_std.sh", "w");
-  for(int Nit=Ninit; Nit<Nend; Nit++ ){
-    string pedex = std::to_string(Nit);
-
-    for(int i=0; i<N_Signals; i++){
-      char command[100];
-      if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      else sprintf(command, "sbatch %s/macros/sh/send%.4f_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      fprintf(file_sh_std, "%s \n", command);
+  for(int h=0;h<5;h++){//loop over quantile
+    for(int Nit=Ninit; Nit<Nend; Nit++ ){//loop over number of jobs
+      string pedex = std::to_string(Nit);
+      for(int i=0; i<N_Signals; i++){//loop over mass points
+        char command[100];
+        if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send_%.3f_%.4f_%s.%s", masses[i], pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        else sprintf(command, "sbatch %s/macros/sh/send_%.3f_%.4f_%s.%s", pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        fprintf(file_sh_std, "%s \n", command);
+      }
     }
   }
   fclose(file_sh_std);
 
   FILE *file_sh_10k = fopen("macros/RunOnDataCard_T10000.sh", "w");
-  for(int Nit=Ninit; Nit<Nend; Nit++ ){
-    string pedex = std::to_string(Nit);
-
-    for(int i=0; i<N_Signals; i++){
-      char command[100];
-      if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T10000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T10000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      fprintf(file_sh_10k, "%s \n", command);
+  for(int h=0;h<5;h++){
+    for(int Nit=Ninit; Nit<Nend; Nit++ ){
+      string pedex = std::to_string(Nit);
+      for(int i=0; i<N_Signals; i++){
+        char command[100];
+        if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send_%.3f_%.4f_T10000_%s.%s", masses[i], pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        else         sprintf(command, "sbatch %s/macros/sh/send_%.3f_%.4f_T10000_%s.%s", pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        fprintf(file_sh_10k, "%s \n", command);
+      }
     }
   }
   fclose(file_sh_10k);
 
   FILE *file_sh_50k = fopen("macros/RunOnDataCard_T50000.sh", "w");
-  for(int Nit=Ninit; Nit<Nend; Nit++ ){
-    string pedex = std::to_string(Nit);
-
-    for(int i=0; i<N_Signals; i++){
-      char command[100];
-      if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T50000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T50000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      fprintf(file_sh_50k, "%s \n", command);
+  for(int h=0;h<5;h++){
+    for(int Nit=Ninit; Nit<Nend; Nit++ ){
+      string pedex = std::to_string(Nit);
+      for(int i=0; i<N_Signals; i++){
+        char command[100];
+        if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send_%.3f_%.4f_T50000_%s.%s", masses[i], pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        else         sprintf(command, "sbatch %s/macros/sh/send_%.3f_%.4f_T50000_%s.%s", pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        fprintf(file_sh_50k, "%s \n", command);
+      }
     }
   }
   fclose(file_sh_50k);
 
   FILE *file_sh_30k = fopen("macros/RunOnDataCard_T30000.sh", "w");
-  for(int Nit=Ninit; Nit<Nend; Nit++ ){
-    string pedex = std::to_string(Nit);
-
-    for(int i=0; i<N_Signals; i++){
-      char command[100];
-      if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send%.4f_T30000_%s.%s", masses[i], pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      else         sprintf(command, "sbatch %s/macros/sh/send%.4f_T30000_%s.%s", pwd.c_str(), masses[i], pedex.c_str(), endCom.c_str());
-      fprintf(file_sh_30k, "%s \n", command);
+  for(int h=0;h<5;h++){
+    for(int Nit=Ninit; Nit<Nend; Nit++ ){
+      string pedex = std::to_string(Nit);
+      for(int i=0; i<N_Signals; i++){
+        char command[100];
+        if(isLxplus) sprintf(command, "bsub -q 1nd -u youremail -J \"comb%.4f\" bash %s/macros/sh/send_%.3f_%.4f_T30000_%s.%s", masses[i], pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        else         sprintf(command, "sbatch %s/macros/sh/send_%.3f_%.4f_T30000_%s.%s", pwd.c_str(), expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        fprintf(file_sh_30k, "%s \n", command);
+      }
     }
   }
   fclose(file_sh_30k);
 
-  for(int Nit=Ninit; Nit<Nend; Nit++ ){
-    string pedex = std::to_string(Nit);
+  // Produce submission file
+  // Loop over quantiles
+  for(int h=0;h<5;h++){
+    // Loop over jobs
+    for(int Nit=Ninit; Nit<Nend; Nit++ ){
+      string pedex = std::to_string(Nit);
+      // Loop over mass points
+      for(int i=0; i<N_Signals; i++){
+        char name[100];
+        char name_T10000[100];
+        char name_T50000[100];
+        char name_T30000[100];
+        sprintf(name, "macros/sh/send_%.3f_%.4f_%s.%s", expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        sprintf(name_T10000, "macros/sh/send_%.3f_%.4f_T10000_%s.%s", expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        sprintf(name_T50000, "macros/sh/send_%.3f_%.4f_T50000_%s.%s", expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
+        sprintf(name_T30000, "macros/sh/send_%.3f_%.4f_T30000_%s.%s", expected_quantiles[h], masses[i], pedex.c_str(), endCom.c_str());
 
-    for(int i=0; i<N_Signals; i++){
+        FILE *file_combine_std=fopen(name, "w");
+        fprintf(file_combine_std, "#!/bin/bash\n");
+        if(!isLxplus){
+          fprintf(file_combine_std, "#SBATCH -J runsplit\n");
+          fprintf(file_combine_std, "#SBATCH -p stakeholder-4g\n");
+          fprintf(file_combine_std, "#SBATCH -n1\n");
+          fprintf(file_combine_std, "#SBATCH --mem-per-cpu=4000\n");
+          fprintf(file_combine_std, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
+          fprintf(file_combine_std, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
+          fprintf(file_combine_std, "#SBATCH --ntasks-per-core=1\n");
+        }
+        fprintf(file_combine_std, "cd %s \n", pwd.c_str());
+        fprintf(file_combine_std, "eval `scramv1 runtime -sh`\n");
+        if(DiffSeed) fprintf(file_combine_std, "combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        else         fprintf(file_combine_std, "combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        fclose(file_combine_std);
 
-      char name[100];
-	    char name_T10000[100];
-      char name_T50000[100];
-      char name_T30000[100];
-      sprintf(name, "macros/sh/send%.4f_%s.%s", masses[i], pedex.c_str(), endCom.c_str());
-      sprintf(name_T10000, "macros/sh/send%.4f_T10000_%s.%s", masses[i], pedex.c_str(), endCom.c_str());
-      sprintf(name_T50000, "macros/sh/send%.4f_T50000_%s.%s", masses[i], pedex.c_str(), endCom.c_str());
-      sprintf(name_T30000, "macros/sh/send%.4f_T30000_%s.%s", masses[i], pedex.c_str(), endCom.c_str());
+        FILE *file_combine_10k=fopen(name_T10000, "w");
+        fprintf(file_combine_10k, "#!/bin/bash\n");
+        if(!isLxplus){
+          fprintf(file_combine_10k, "#SBATCH -J runsplit\n");
+          fprintf(file_combine_10k, "#SBATCH -p stakeholder-4g\n");
+          fprintf(file_combine_10k, "#SBATCH -n1\n");
+          fprintf(file_combine_10k, "#SBATCH --mem-per-cpu=4000\n");
+          fprintf(file_combine_10k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
+          fprintf(file_combine_10k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
+          fprintf(file_combine_10k, "#SBATCH --ntasks-per-core=1\n");
+        }
+        fprintf(file_combine_10k, "cd %s \n", pwd.c_str());
+        fprintf(file_combine_10k, "eval `scramv1 runtime -sh`\n");
+        if(DiffSeed) fprintf(file_combine_10k, "combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T10000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        else         fprintf(file_combine_10k, "combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T10000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        fclose(file_combine_10k);
 
-      FILE *file_combine_std=fopen(name, "w");
-      fprintf(file_combine_std, "#!/bin/bash\n");
-      if(!isLxplus){
-        fprintf(file_combine_std, "#SBATCH -J runsplit\n");
-        fprintf(file_combine_std, "#SBATCH -p stakeholder-4g\n");
-        fprintf(file_combine_std, "#SBATCH -n1\n");
-        fprintf(file_combine_std, "#SBATCH --mem-per-cpu=4000\n");
-        fprintf(file_combine_std, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
-        fprintf(file_combine_std, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
-        fprintf(file_combine_std, "#SBATCH --ntasks-per-core=1\n");
-      }
-      fprintf(file_combine_std, "cd %s \n", pwd.c_str());
-      fprintf(file_combine_std, "eval `scramv1 runtime -sh`\n");
-      if(DiffSeed) fprintf(file_combine_std, "combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew " + Myrule + " -s %d Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], masses[i], masses[i], pedex.c_str());
-      else         fprintf(file_combine_std, "combine -n .H2A4Mu_mA_%.4f_GeV_%s -m 125 -M HybridNew " + Myrule + " Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_%s.txt \n", masses[i], pedex.c_str(), masses[i], masses[i], pedex.c_str());
-      fclose(file_combine_std);
+        FILE *file_combine_50k = fopen(name_T50000, "w");
+        fprintf(file_combine_50k, "#!/bin/bash\n");
+        if(!isLxplus){
+          fprintf(file_combine_50k, "#SBATCH -J runsplit\n");
+          fprintf(file_combine_50k, "#SBATCH -p stakeholder-4g\n");
+          fprintf(file_combine_50k, "#SBATCH -n1\n");
+          fprintf(file_combine_50k, "#SBATCH --mem-per-cpu=4000\n");
+          fprintf(file_combine_50k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
+          fprintf(file_combine_50k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
+          fprintf(file_combine_50k, "#SBATCH --ntasks-per-core=1\n");
+        }
+        fprintf(file_combine_50k, "cd %s \n",pwd.c_str());
+        fprintf(file_combine_50k, "eval `scramv1 runtime -sh`\n");
+        if(DiffSeed) fprintf(file_combine_50k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 50000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T50000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        else         fprintf(file_combine_50k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 50000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T50000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        fclose(file_combine_50k);
 
-      FILE *file_combine_10k=fopen(name_T10000, "w");
-      fprintf(file_combine_10k, "#!/bin/bash\n");
-      if(!isLxplus){
-        fprintf(file_combine_10k, "#SBATCH -J runsplit\n");
-        fprintf(file_combine_10k, "#SBATCH -p stakeholder-4g\n");
-        fprintf(file_combine_10k, "#SBATCH -n1\n");
-        fprintf(file_combine_10k, "#SBATCH --mem-per-cpu=4000\n");
-        fprintf(file_combine_10k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
-        fprintf(file_combine_10k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
-        fprintf(file_combine_10k, "#SBATCH --ntasks-per-core=1\n");
-      }
-      fprintf(file_combine_10k, "cd %s \n", pwd.c_str());
-      fprintf(file_combine_10k, "eval `scramv1 runtime -sh`\n");
-      if(DiffSeed) fprintf(file_combine_10k, "combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], masses[i], masses[i], pedex.c_str());
-      else         fprintf(file_combine_10k, "combine -n .H2A4Mu_mA_%.4f_GeV_T10000_%s -m 125 -M HybridNew " + Myrule + " -T 10000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T10000_%s.txt \n", masses[i], pedex.c_str(), masses[i], masses[i], pedex.c_str());
-      fclose(file_combine_10k);
-
-      FILE *file_combine_50k = fopen(name_T50000, "w");
-      fprintf(file_combine_50k, "#!/bin/bash\n");
-      if(!isLxplus){
-        fprintf(file_combine_50k, "#SBATCH -J runsplit\n");
-        fprintf(file_combine_50k, "#SBATCH -p stakeholder-4g\n");
-        fprintf(file_combine_50k, "#SBATCH -n1\n");
-        fprintf(file_combine_50k, "#SBATCH --mem-per-cpu=4000\n");
-        fprintf(file_combine_50k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
-        fprintf(file_combine_50k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
-        fprintf(file_combine_50k, "#SBATCH --ntasks-per-core=1\n");
-      }
-      fprintf(file_combine_50k, "cd %s \n",pwd.c_str());
-      fprintf(file_combine_50k, "eval `scramv1 runtime -sh`\n");
-      if(DiffSeed) fprintf(file_combine_50k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 50000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], masses[i], masses[i], pedex.c_str());
-      else         fprintf(file_combine_50k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T50000_%s -m 125 -M HybridNew " + Myrule + " -T 50000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T50000_%s.txt \n", masses[i], pedex.c_str(), masses[i], masses[i], pedex.c_str());
-      fclose(file_combine_50k);
-
-      FILE *file_combine_30k = fopen(name_T30000, "w");
-      fprintf(file_combine_30k, "#!/bin/bash\n");
-      if(!isLxplus){
-        fprintf(file_combine_30k, "#SBATCH -J runsplit\n");
-        fprintf(file_combine_30k, "#SBATCH -p stakeholder-4g\n");
-        fprintf(file_combine_30k, "#SBATCH -n1\n");
-        fprintf(file_combine_30k, "#SBATCH --mem-per-cpu=4000\n");
-        fprintf(file_combine_30k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
-        fprintf(file_combine_30k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
-        fprintf(file_combine_30k, "#SBATCH --ntasks-per-core=1\n");
-      }
-      fprintf(file_combine_30k, "cd %s \n",pwd.c_str());
-      fprintf(file_combine_30k, "eval `scramv1 runtime -sh`\n");
-      if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew " + Myrule + " -s %d -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], masses[i], masses[i], pedex.c_str());
-      else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew " + Myrule + " -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), masses[i], masses[i], pedex.c_str());
-      fclose(file_combine_30k);
-    }//End N_Signals
-  }//End Ninit
+        FILE *file_combine_30k = fopen(name_T30000, "w");
+        fprintf(file_combine_30k, "#!/bin/bash\n");
+        if(!isLxplus){
+          fprintf(file_combine_30k, "#SBATCH -J runsplit\n");
+          fprintf(file_combine_30k, "#SBATCH -p stakeholder-4g\n");
+          fprintf(file_combine_30k, "#SBATCH -n1\n");
+          fprintf(file_combine_30k, "#SBATCH --mem-per-cpu=4000\n");
+          fprintf(file_combine_30k, "#SBATCH -o batchjobs_runsplit-%%A-%%a.out\n");
+          fprintf(file_combine_30k, "#SBATCH -e batchjobs_runsplit-%%A-%%a.err\n");
+          fprintf(file_combine_30k, "#SBATCH --ntasks-per-core=1\n");
+        }
+        fprintf(file_combine_30k, "cd %s \n",pwd.c_str());
+        fprintf(file_combine_30k, "eval `scramv1 runtime -sh`\n");
+        if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        fclose(file_combine_30k);
+      }//End N_Signals
+    }//End Ninit
+  }//End h quantile
 
   //Create datacards for each mass point
   for(int i=0; i<N_Signals; i++){
