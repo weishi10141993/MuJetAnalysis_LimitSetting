@@ -45,6 +45,9 @@
 #include "RooAddPdf.h"
 #include "RooCBShape.h"
 
+#include "../Constants.h"
+#include "../Config.h"
+
 #ifndef __CINT__
 #include "RooCFunction1Binding.h"
 #endif
@@ -94,22 +97,12 @@ Double_t RooUserPdf::evaluate() const
 
 void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
+  //Configure inputfile for year
+  Limit_cfg::ConfigureInput(year);
+
   using namespace RooFit;
   RooRandom::randomGenerator()->SetSeed(seed);
   RooWorkspace *w_H2A4Mu = new RooWorkspace("w_H2A4Mu");
-  //Define SR1/2/3 mass ranges
-  //SR1: Below Jpsi
-  const double       m_SR1_min  = 0.2113;
-  const double       m_SR1_max  = 2.72;
-  const unsigned int m_SR1_bins = 63;//same as bbBar background binning
-  //SR2: Above Jpsi and below 9GeV
-  const double       m_SR2_min  = 3.24;
-  const double       m_SR2_max  = 9.;
-  const unsigned int m_SR2_bins = 144;//same as bbBar background binning
-  //SR3: Above 9GeV high mass
-  const double       m_SR3_min  = 11.;
-  const double       m_SR3_max  = 59.;
-  const unsigned int m_SR3_bins = 12;
 
   RooRealVar m1_below_Jpsi("m1_below_Jpsi", "m_{#mu#mu_{1}}", m_SR1_min, m_SR1_max, "GeV");
   RooRealVar m2_below_Jpsi("m2_below_Jpsi", "m_{#mu#mu_{2}}", m_SR1_min, m_SR1_max, "GeV");
@@ -157,7 +150,9 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   tree_dimudimu_signal3_2D->Branch("massC_SR3", &massC_SR3, "massC_SR3/D");
   tree_dimudimu_signal3_2D->Branch("massF_SR3", &massF_SR3, "massF_SR3/D");
 
+  //===================
   //BLINDED DATA
+  //===================
   massC_SR1 = 100.;
   massF_SR1 = 100.;
   massC_SR2 = 100.;
@@ -254,7 +249,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->import(signal3_m2);
   w_H2A4Mu->factory("PROD::signal3(signal3_m1, signal3_m2)");
 
-  TFile* file = new TFile("../ws_FINAL.root");
+  TFile* file = new TFile(inputFile1); // defined in ../Config.h
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
   w_H2A4Mu->import( *w->pdf("template1D_m1_below_Jpsi") );
   w_H2A4Mu->import( *w->pdf("template1D_m2_below_Jpsi") );

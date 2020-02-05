@@ -2,66 +2,18 @@ import ROOT, array, os, re, math, random
 from math import *
 import numpy as np
 
+execfile("scripts/UserInput.py") #user input
+execfile("scripts/UserConfig.py") #user config input
 execfile("scripts/tdrStyle.py")
 execfile("scripts/fSetPalette.py")
 execfile("scripts/fRange.py")
-execfile("scripts/CmsLimitVsM.py")
+execfile("scripts/CmsLimitVsM.py") # functions and limits
 execfile("scripts/SMHiggsCrossSections.py")
 execfile("scripts/DarkPhotonWidths_and_Branchings.py")
 execfile("scripts/R_Hadrons.py")
 execfile("scripts/CmsDarkSusyAcceptance.py")
 execfile("scripts/CmsNmssmAcceptance.py")
 execfile("scripts/NMSSM_Br_a_Function.py")
-
-################################
-# User change parameters below
-################################
-## upper limit
-CL = 95
-
-## 2017: TBD
-year = 2017 # Analyzed dataset from which year?
-lumi_fbinv = 36.734 # Total lumi [fb^-1]
-SF = 0.969 # scale factor from MC to data: eFullData / eFullMc
-eFullMc_over_aGen = 0.55 # average constant from all signal MC samples
-
-## 2018: TBD
-#year = 2018
-#lumi_fbinv = XX # Total lumi [fb^-1]
-#SF = XX # scale factor from MC to data: eFullData / eFullMc
-#eFullMc_over_aGen = XX # average constant from all signal MC samples
-
-## 2016
-#lumi_fbinv = 35.9 # fb-1
-#SF = 0.9265 # eFullData / eFullMc
-#eFullMc_over_aGen = 0.611
-
-## mass range for SR1/2/3
-m_SR1_min  = 0.2113;
-m_SR1_max  = 2.72;
-m_SR2_min  = 3.24;
-m_SR2_max  = 9.;
-m_SR3_min  = 11.;
-m_SR3_max  = 59.;
-
-mGammaD_GeV = [0.25, 0.40, 0.55, 0.70, 0.85, 1.00]
-mGammaD_GeV_bot = 0.00 # low boundary where histograms start in m
-mGammaD_GeV_min = 0.25
-mGammaD_GeV_max = 2.00
-mGammaD_GeV_top = 10.0 # high boundary where histograms stops in m
-
-ctau_mm = [0.0, 0.2, 0.5, 2.0, 5.0]
-ctau_mm_bot = -0.5
-ctau_mm_min =  0.0
-ctau_mm_max =  5.0
-ctau_mm_top =  5.5
-c_hbar_mm_GeV = 1.974*pow(10.0, -13) # c = 3*10^11 mm/s; hbar = 6.58*10^-25 GeV*sec
-
-epsilon2_min  = 0.000000000001
-epsilon2_max  = 0.0001
-epsilon2_bins = 1000
-logEpsilon2_min = -12.1
-logEpsilon2_max = -7.9
 
 txtHeader = ROOT.TLegend(.05, .933, .99, 1.)
 txtHeader.SetFillColor(ROOT.kWhite)
@@ -70,14 +22,10 @@ txtHeader.SetBorderSize(0)
 txtHeader.SetTextFont(42)
 txtHeader.SetTextSize(0.045)
 txtHeader.SetTextAlign(22)
-txtHeader.SetHeader("#bf{CMS} #it{Preliminary}    36.734 fb^{-1} (2017 13 TeV)");
-
-################################
-# User change parameters above
-################################
+txtHeader.SetHeader(header); # header defined in UserConfig.py
 
 ## output directory
-topDirectory = "plots%d"%CL
+topDirectory = "plots%d"%CL # CL defined in UserInput.py
 PNGDir = os.path.join(topDirectory, "PNG")
 PDFDir = os.path.join(topDirectory, "PDF")
 CDir   = os.path.join(topDirectory, "C")
@@ -140,32 +88,32 @@ def limit_vs_mGammaD():
         array_mGammaD_limit_fit_SR3.append( (m, fCmsLimitVsM(m)) )
 
     # Start: Limits from toy experiment
-    for m in MGammaD_array:
+    for m in masses:
         if (m >= m_SR1_min and m <= m_SR1_max):
-            array_mGammaD_limit_toy_SR1.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
-            array_mGammaD_limit_toy_p_two_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) ) # expected 95 CI upper bound "
-            array_mGammaD_limit_toy_n_two_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) ) # expected 95 CI lower bound "
-            array_mGammaD_limit_toy_p_one_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) ) # expected 68 CI upper bound "
-            array_mGammaD_limit_toy_n_one_sigma_SR1.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) ) # expected 68 CI lower bound "
-            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties for expected median @XX% CL
+            array_mGammaD_limit_toy_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) )) # expected median limit from toys experiments
+            array_mGammaD_limit_toy_p_two_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) )) # expected 95 CI upper bound "
+            array_mGammaD_limit_toy_n_two_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) )) # expected 95 CI lower bound "
+            array_mGammaD_limit_toy_p_one_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) )) # expected 68 CI upper bound "
+            array_mGammaD_limit_toy_n_one_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) )) # expected 68 CI lower bound "
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties for expected median @XX% CL
         elif (m >= m_SR2_min and m <= m_SR2_max):
-            array_mGammaD_limit_toy_SR2.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
-            array_mGammaD_limit_toy_p_two_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) )
-            array_mGammaD_limit_toy_n_two_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) )
-            array_mGammaD_limit_toy_p_one_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) )
-            array_mGammaD_limit_toy_n_one_sigma_SR2.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) )
-            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+            array_mGammaD_limit_toy_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) ))
+            array_mGammaD_limit_toy_p_two_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ))
+            array_mGammaD_limit_toy_n_two_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ))
+            array_mGammaD_limit_toy_p_one_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ))
+            array_mGammaD_limit_toy_n_one_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ))
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
         elif (m >= m_SR3_min and m <= m_SR3_max):
-            array_mGammaD_limit_toy_SR3.append(( m, fCmsLimitVsM_HybridNew(m) )) # expected median limit from toys experiments
-            array_mGammaD_limit_toy_p_two_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ) )
-            array_mGammaD_limit_toy_n_two_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ) )
-            array_mGammaD_limit_toy_p_one_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ) )
-            array_mGammaD_limit_toy_n_one_sigma_SR3.append( (m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ) )
-            array_mGammaD_limit_fit_uncertainty.append( (m, (fCmsLimitVsM_HybridNew(m) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+            array_mGammaD_limit_toy_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) ))
+            array_mGammaD_limit_toy_p_two_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ))
+            array_mGammaD_limit_toy_n_two_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ))
+            array_mGammaD_limit_toy_p_one_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ))
+            array_mGammaD_limit_toy_n_one_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ))
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
     # End: Limits from toy experiment
 
     # histogram range: x: mass; y: N_evt @%XX%CL
-    h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, 10.0)
+    h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, NMax)
     h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
     h_limit_vs_mGammaD_dummy.SetYTitle("%d%% CL upper limit on N_{evt}"%CL)
     h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
@@ -283,16 +231,13 @@ def limit_vs_mGammaD():
     cnv.Update()
     save_canvas(cnv, "limit_Events_vs_mGammaD_FitUncert")
 
-    # Now same plots with no errors
+    # Now simply draw toy (no fit)
     cnv.cd()
     cnv.SetLogx()
     h_limit_vs_mGammaD_dummy.Draw()
     gr_limit_vs_mGammaD_toy_SR1.Draw("P") #toy
     gr_limit_vs_mGammaD_toy_SR2.Draw("P")
     gr_limit_vs_mGammaD_toy_SR3.Draw("P")
-    gr_limit_vs_mGammaD_fit_SR1.Draw("L") # Fit
-    gr_limit_vs_mGammaD_fit_SR2.Draw("L")
-    gr_limit_vs_mGammaD_fit_SR3.Draw("L")
     txtHeader.Draw()
     cnv.Update()
     save_canvas(cnv, "limit_Events_vs_mGammaD")
@@ -359,57 +304,196 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     cnv.SetLogy(0)
     cnv.SetLogx()
 
-    # Transforming the Limit on N_event to Xsec limit
-    array_mGammaD_limit_CSxBR2xAlpha_fb_SR1 = []
-    array_mGammaD_limit_CSxBR2xAlpha_fb_SR2 = []
-    array_mGammaD_limit_CSxBR2xAlpha_fb_SR3 = []
-    # Specify correct mass ranges
+    #***************************************************************************
+    # Transforming the Limit on N_event to Xsec limit using the fitted function
+    #***************************************************************************
+    CSxBR2xAlpha_fb_fit_SR1 = []
+    CSxBR2xAlpha_fb_fit_SR2 = []
+    CSxBR2xAlpha_fb_fit_SR3 = []
+    # Specify correct mass ranges, use fitted function
     for m in np.arange(m_SR1_min, m_SR1_max, 0.005):
-        array_mGammaD_limit_CSxBR2xAlpha_fb_SR1.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        CSxBR2xAlpha_fb_fit_SR1.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
-        array_mGammaD_limit_CSxBR2xAlpha_fb_SR2.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        CSxBR2xAlpha_fb_fit_SR2.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
     for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
-        array_mGammaD_limit_CSxBR2xAlpha_fb_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        CSxBR2xAlpha_fb_fit_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
 
     # specify mass range
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy = ROOT.TH2F("h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", "h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, 10.0/lumi_fbinv/SF/eFullMc_over_aGen)
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.SetTitleOffset(1.47, "Y")
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetXaxis().SetNdivisions(505)
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
-    h_limit_CSxBR2xAlpha_fb_vs_mGammaD_dummy.Draw()
+    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, NMax/lumi_fbinv/SF/eFullMc_over_aGen)
+    h_CSxBR2xAlpha_fb_dummy.SetXTitle("m_{a} [GeV]")
+    h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
+    h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.47, "Y")
+    h_CSxBR2xAlpha_fb_dummy.GetXaxis().SetNdivisions(505)
+    h_CSxBR2xAlpha_fb_dummy.GetYaxis().SetTitleSize(0.05)
+    h_CSxBR2xAlpha_fb_dummy.Draw()
 
     # Fitted function to toy limit: SR1
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1 = ROOT.TGraph( len(array_mGammaD_limit_CSxBR2xAlpha_fb_SR1), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR1)[0]), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR1)[1]) )
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1.SetLineWidth(2)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1.SetLineColor(ROOT.kRed)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1.SetLineStyle(1)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1.Draw("C") # Draw smooth curve
+    gr_CSxBR2xAlpha_fb_fit_SR1 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR1), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR1)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR1)[1]) )
+    gr_CSxBR2xAlpha_fb_fit_SR1.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_fit_SR1.SetLineColor(ROOT.kRed)
+    gr_CSxBR2xAlpha_fb_fit_SR1.SetLineStyle(1)
+    gr_CSxBR2xAlpha_fb_fit_SR1.Draw("C") # Draw smooth curve
     # Fitted function to toy limit: SR2
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR2 = ROOT.TGraph( len(array_mGammaD_limit_CSxBR2xAlpha_fb_SR2), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR2)[0]), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR2)[1]) )
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR2.SetLineWidth(2)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR2.SetLineColor(ROOT.kRed)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR2.SetLineStyle(1)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR2.Draw("C")
+    gr_CSxBR2xAlpha_fb_fit_SR2 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR2), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR2)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR2)[1]) )
+    gr_CSxBR2xAlpha_fb_fit_SR2.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_fit_SR2.SetLineColor(ROOT.kRed)
+    gr_CSxBR2xAlpha_fb_fit_SR2.SetLineStyle(1)
+    gr_CSxBR2xAlpha_fb_fit_SR2.Draw("C")
     # Fitted function to toy limit: SR3
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR3 = ROOT.TGraph( len(array_mGammaD_limit_CSxBR2xAlpha_fb_SR3), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_CSxBR2xAlpha_fb_SR3)[1]) )
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR3.SetLineWidth(2)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR3.SetLineColor(ROOT.kRed)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR3.SetLineStyle(1)
-    gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR3.Draw("C")
+    gr_CSxBR2xAlpha_fb_fit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[1]) )
+    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineColor(ROOT.kRed)
+    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineStyle(1)
+    gr_CSxBR2xAlpha_fb_fit_SR3.Draw("C")
 
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD = ROOT.TLegend(0.6,0.65,0.9,0.75)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetFillColor(ROOT.kWhite)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetMargin(0.13)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetBorderSize(0)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextFont(42)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.SetTextSize(0.035)
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.AddEntry(gr_limit_CSxBR2xAlpha_fb_vs_mGammaD_SR1, "%d%% CL upper limits"%CL,"L")
-    l_limit_CSxBR2xAlpha_fb_vs_mGammaD.Draw()
+    l_CSxBR2xAlpha_fb_fit = ROOT.TLegend(0.6,0.65,0.9,0.75)
+    l_CSxBR2xAlpha_fb_fit.SetFillColor(ROOT.kWhite)
+    l_CSxBR2xAlpha_fb_fit.SetMargin(0.13)
+    l_CSxBR2xAlpha_fb_fit.SetBorderSize(0)
+    l_CSxBR2xAlpha_fb_fit.SetTextFont(42)
+    l_CSxBR2xAlpha_fb_fit.SetTextSize(0.035)
+    l_CSxBR2xAlpha_fb_fit.AddEntry(gr_CSxBR2xAlpha_fb_fit_SR1, "%d%% CL upper limits"%CL,"L")
+    l_CSxBR2xAlpha_fb_fit.Draw()
 
     txtHeader.Draw()
-    save_canvas(cnv, "limit_CSxBR2xAlpha_fb_vs_mGammaD")
+    save_canvas(cnv, "CSxBR2xAlpha_fb_fit")
+
+    ##############################################################################
+    # Transforming the Limit on N_event to Xsec limit using toy experiment values
+    # at discrete mass points, not the fitted function
+    ##############################################################################
+    CSxBR2xAlpha_fb_toy_median_limit_SR1 = [] #Expected median @specified XX% CL
+    CSxBR2xAlpha_fb_toy_median_limit_SR2 = []
+    CSxBR2xAlpha_fb_toy_median_limit_SR3 = []
+    CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1 = [] #Expected +1 sigma @specified XX% CL
+    CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2 = []
+    CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3 = []
+    CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR1 = [] #Expected -1 sigma @specified XX% CL
+    CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2 = []
+    CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3 = []
+    CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1 = [] #Expected +2 sigma @specified XX% CL
+    CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2 = []
+    CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3 = []
+    CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR1 = [] #Expected -2 sigma @specified XX% CL
+    CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2 = []
+    CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3 = []
+    # Start: CSxBR2xAlpha
+    for m in masses:
+        if (m >= m_SR1_min and m <= m_SR1_max):
+            CSxBR2xAlpha_fb_toy_median_limit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        elif (m >= m_SR2_min and m <= m_SR2_max):
+            CSxBR2xAlpha_fb_toy_median_limit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        elif (m >= m_SR3_min and m <= m_SR3_max):
+            CSxBR2xAlpha_fb_toy_median_limit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
+    # End: CSxBR2xAlpha
+
+    # Start: Brazilian Plot CSxBR2xAlpha
+    ## SR1
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1 = ROOT.TGraph( len(CSxBR2xAlpha_fb_toy_median_limit_SR1), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR1)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR1)[1]) )
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1.SetLineColor(1)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1.SetLineStyle(2) #dashed line, for showing expected median @%XX%CL
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1.SetMarkerColor(ROOT.kBlack)
+    ## SR2
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2 = ROOT.TGraph( len(CSxBR2xAlpha_fb_toy_median_limit_SR2), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR2)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR2)[1]) )
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetLineColor(1)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetLineStyle(2)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetMarkerColor(ROOT.kBlack)
+    ## SR3
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_toy_median_limit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[1]) )
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineColor(1)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineWidth(2)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineStyle(2)
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetMarkerColor(ROOT.kBlack)
+
+    # Similar as above, but expected +/- 1, 2 sigma @ %XX%CL from toy experiments
+    ## SR1
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1))
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1)) # length should equal to above
+    for i in range(len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1)):
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetPoint(i, CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1[i][0], CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1[i][1]) # + 2 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1[i][1]) # + 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR1)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR1[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR1[i][1]) # - 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR1)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR1[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR1[i][1]) # - 2 sigma
+
+    ## SR2
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2))
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2)) # length should equal to above
+    for i in range(len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2)):
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetPoint(i, CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2[i][1]) # + 2 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2[i][1]) # + 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2[i][1]) # - 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2[i][1]) # - 2 sigma
+
+    ## SR3
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3))
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)) # length should equal to above
+    for i in range(len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)):
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][1]) # + 2 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][1]) # + 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][1]) # - 1 sigma
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][1]) # - 2 sigma
+
+    cnv.cd()
+    cnv.SetLogx()
+    h_CSxBR2xAlpha_fb_dummy.Draw()
+    ## SR1
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetFillColor(ROOT.kOrange) #CMS requirement for showing expected 95% CI
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetLineColor(ROOT.kOrange)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.Draw("F") #expected +/- 2 sigma
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.SetFillColor(ROOT.kGreen+1) #CMS requirement for showing expected 68% CI
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.SetLineColor(ROOT.kGreen+1)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1.Draw("F") #expected +/- 1 sigma
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR1.Draw("L") #expected median @ %XX% CL
+    ## SR2
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetFillColor(ROOT.kOrange)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetLineColor(ROOT.kOrange)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.Draw("F")
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetFillColor(ROOT.kGreen+1)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetLineColor(ROOT.kGreen+1)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.Draw("F")
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.Draw("L")
+    ## SR3
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillColor(ROOT.kOrange)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetLineColor(ROOT.kOrange)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.Draw("F")
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillColor(ROOT.kGreen+1)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetLineColor(ROOT.kGreen+1)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillStyle(1001)
+    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.Draw("F")
+    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.Draw("L")
+
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands = ROOT.TLegend(0.6,0.65,0.9,0.75)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetFillColor(ROOT.kWhite)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetMargin(0.13)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetBorderSize(0)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetTextFont(42)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetTextSize(0.035)
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.AddEntry(gr_CSxBR2xAlpha_fb_toy_median_limit_SR1, "Expected", "L")
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.AddEntry(gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR1, "#pm 1 std. deviation", "f")
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.AddEntry(gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1, "#pm 2 std. deviation", "f")
+    l_CSxBR2xAlpha_fb_toy_Brazil_Bands.Draw()
+    txtHeader.Draw()
+    cnv.Update()
+    save_canvas(cnv, "CSxBR2xAlpha_fb_toy_Brazil_Bands")
 
 ################################################################################
 #           Plot acceptance Alpha vs mGammaD: 0.25 < mGammaD < 1.0

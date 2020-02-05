@@ -18,33 +18,17 @@ cd MuJetAnalysis_LimitSetting
 ```
 
 # Run the model independent limits
-1. Copy updated "ws_FINAL.root" from bbBar estimation. It contains background p.d.f.s.   
-   ```
-   cp ~/RunII2017/CMSSW_9_4_7/src/MuJetAnalysis_bbBarEstimation/ws_FINAL.root .
-   ```
+1. Make sure background shape root file is updated from low mass background estimation.    
 
 2. In this step, the datacards for each mass points are created. Also the submission files to run combine toy experiments are created.
-   Edit CreateDatacards.C in order to set " isLxplus=true"/"false" depending if you are on lxplus or brazos and "string pwd=" to your current directory. Then do:
+   Edit Config.h in order to set which year (default is 2018) to run. Also open Constants.h to see if you need to update signal and background rates for the year. Then do:
    ```
    root -l -b -q  CreateDatacards.C+  
    ```
-   -> The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with S and B needed by CMS official limit calculator.   
-   -> NB: makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range and binning, plus the signal events. So for unblinding, add here the events you see.
 
-   A typical combine command to obtain expected 95% CL limit for 0.5 quantile (median) looks like this:
-   ```
-   combine -n .H2A4Mu_mA_0.2113_GeV_0 -m 125 -M HybridNew --saveHybridResult --expectedFromGrid 0.500 --rule CLs --testStat LHC --cl 0.95  -s -1 -T 30000 Datacards/datacard_H2A4Mu_mA_0.2113_GeV.txt -v 1
-   ```
-   "--cl" is a common statistic option to many combine methods. It specifies the confidence level you want, default as 0.95 in combine. The "rule" option specifies the rule to use, default us CLs.
-   "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit, remove the "--expectedFromGrid" option.
+   N.B.:The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with S and B needed by CMS official limit calculator. makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range and binning, plus the signal events. So for unblinding, add here the events you see.
 
-   For more combine options:
-   ```
-   combine --help
-   ```
-   In the case the AsymptoticLimits method is used, there is no need to add "--expectedFromGrid". It will produce both observed and expected limits at different quantiles.
-
-3. (1st time only) Make RooStat files that should be supplied to CMS official limit calculator. The relevant signal and background shapes (extracted from ws_FINAL.root) are imported and saved in a workspace in a root file.
+3. (1st time only) Make RooStat files that should be supplied to CMS official limit calculator. The relevant signal and background shapes are imported and saved in a workspace in a root file.
    ```
    cd macros; source CreateROOTfiles.sh; cd ..;
    ```  
@@ -60,17 +44,17 @@ cd MuJetAnalysis_LimitSetting
 
    After jobs are done, toy stats distributions along with the limit value, error and expected quantiles will be stored in root files like this:
    ```
-   higgsCombine.H2A4Mu_mA_0.2113_GeV_0.HybridNew.mH125.1239963725.quant0.500.root
+   higgsCombine.H2A4Mu_mA_*_GeV_0.HybridNew.mH125.*.quant0.500.root
    ```
 
    Run the following to plot the test statistic distributions:
    ```
-   python $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/test/plotTestStatCLs.py --input higgsCombine.H2A4Mu_mA_0.2113_GeV_0.HybridNew.mH125.1239963725.quant0.500.root --poi r --val all --mass 125
+   python $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/test/plotTestStatCLs.py --input higgsCombine.H2A4Mu_mA_*.root --poi r --val all --mass 125
    ```
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
-5. This macro will print the lines you have to copy inside scripts/CmsLimitVsM.py (that will be used by Plots.py).
-   Edit the quantile parameter file to get limits for that quantile each time.
+5. This macro will print the lines you have to copy inside UserInput.py (that will be used by CmsLimitVsM.py and Plots.py).
+   Edit the UserInput.py file and change the quantile parameter in the 'PrintOutLimits.py' block
    ```
    cd macros; python PrintOutLimits.py; cd ..;  
    ```
@@ -81,10 +65,10 @@ cd MuJetAnalysis_LimitSetting
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
 
-7. Edit "scripts/CmsLimitVsM.py" and copy the lines you just produced after "Limits_HybridNew = ["    
-   -> If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
+7. Edit "scripts/UserInput.py" and copy the lines you just produced for each quantile for that year.
+   N.B.: If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
-8. Make final limit plots. You can specify which functions from Plots.py to use.  
+8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in UserConfig.py. You can specify which plots to draw from Plots.py.  
    ```
    python Plots_RunMe.py  
    ```  
@@ -94,4 +78,18 @@ cd MuJetAnalysis_LimitSetting
 
 2. Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive
 
-3. Command: combine -m 125 -M HybridNew --rule CLs --testStat LHC datacard_H2A4Mu_mA_0.2200_GeV.txt -t 100000 -s -1 (--fork 10)
+3. A typical combine command to obtain expected 95% CL limit for 0.5 quantile (median) looks like this:
+```
+combine -n .H2A4Mu_mA_0.2113_GeV_0 -m 125 -M HybridNew --saveHybridResult --expectedFromGrid 0.500 --rule CLs --testStat LHC --cl 0.95  -s -1 -T 30000 Datacards/datacard_H2A4Mu_mA_0.2113_GeV.txt -v 1
+```
+
+"--cl" is a common statistic option to many combine methods. It specifies the confidence level you want, default as 0.95 in combine. The "rule" option specifies the rule to use, default is CLs.
+"expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit, remove the "--expectedFromGrid" option.
+In case you have some knowledge of where the limit should be, then setting an appropriate --rMax can speed up the search.
+
+Finding the expected -2 s.t.d. deviation band can take significantly longer: CLs = CLs+b / CLb where CLb = 0.025 by construction, Need ~ 20 times as many toys to get same CLs accuracy as for median. You can use the --fork N option to run up to N toys in parallel.
+
+For more combine options:
+```
+combine --help
+```
