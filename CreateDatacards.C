@@ -151,7 +151,7 @@ void CreateDatacards( bool makeRoot=true ){
           fprintf(file_combine_std, "#SBATCH -p stakeholder-4g\n");
           fprintf(file_combine_std, "#SBATCH --time=120:00:00\n");// time limit of Brazos
           fprintf(file_combine_std, "#SBATCH --mem-per-cpu=4000\n"); // 4GB memory limit per core
-          fprintf(file_combine_std, "#SBATCH --ntasks-per-node=16\n"); // This specifies how many cores you want
+          fprintf(file_combine_std, "#SBATCH --ntasks-per-node=32\n"); // This specifies how many cores you want
           fprintf(file_combine_std, "#SBATCH -N 1\n");// # of hosts you want to run on. "-N 1" ensures to get all cores on the same physical host, so they share memory.
           fprintf(file_combine_std, "#SBATCH -o macros/batch/batchjobs_runsplit-%%A-%%a.out\n");// batch err and output directed to folder batch
           fprintf(file_combine_std, "#SBATCH -e macros/batch/batchjobs_runsplit-%%A-%%a.err\n");
@@ -169,7 +169,7 @@ void CreateDatacards( bool makeRoot=true ){
           fprintf(file_combine_10k, "#SBATCH -p stakeholder-4g\n");
           fprintf(file_combine_10k, "#SBATCH --time=120:00:00\n");
           fprintf(file_combine_10k, "#SBATCH --mem-per-cpu=4000\n");
-          fprintf(file_combine_10k, "#SBATCH --ntasks-per-node=16\n");
+          fprintf(file_combine_10k, "#SBATCH --ntasks-per-node=32\n");
           fprintf(file_combine_10k, "#SBATCH -N 1\n");
           fprintf(file_combine_10k, "#SBATCH -o macros/batch/batchjobs_runsplit-%%A-%%a.out\n");
           fprintf(file_combine_10k, "#SBATCH -e macros/batch/batchjobs_runsplit-%%A-%%a.err\n");
@@ -187,7 +187,7 @@ void CreateDatacards( bool makeRoot=true ){
           fprintf(file_combine_50k, "#SBATCH -p stakeholder-4g\n");
           fprintf(file_combine_50k, "#SBATCH --time=120:00:00\n");
           fprintf(file_combine_50k, "#SBATCH --mem-per-cpu=4000\n");
-          fprintf(file_combine_50k, "#SBATCH --ntasks-per-node=16\n");
+          fprintf(file_combine_50k, "#SBATCH --ntasks-per-node=32\n");
           fprintf(file_combine_50k, "#SBATCH -N 1\n");
           fprintf(file_combine_50k, "#SBATCH -o macros/batch/batchjobs_runsplit-%%A-%%a.out\n");
           fprintf(file_combine_50k, "#SBATCH -e macros/batch/batchjobs_runsplit-%%A-%%a.err\n");
@@ -205,15 +205,15 @@ void CreateDatacards( bool makeRoot=true ){
           fprintf(file_combine_30k, "#SBATCH -p stakeholder-4g\n");
           fprintf(file_combine_30k, "#SBATCH --time=120:00:00\n");
           fprintf(file_combine_30k, "#SBATCH --mem-per-cpu=4000\n");
-          fprintf(file_combine_30k, "#SBATCH --ntasks-per-node=16\n");
+          fprintf(file_combine_30k, "#SBATCH --ntasks-per-node=32\n");
           fprintf(file_combine_30k, "#SBATCH -N 1\n");
           fprintf(file_combine_30k, "#SBATCH -o macros/batch/batchjobs_runsplit-%%A-%%a.out\n");
           fprintf(file_combine_30k, "#SBATCH -e macros/batch/batchjobs_runsplit-%%A-%%a.err\n");
         }
         fprintf(file_combine_30k, "cd %s \n",pwd.c_str());
         fprintf(file_combine_30k, "eval `scramv1 runtime -sh`\n");
-        if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 300000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
-        else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 300000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 600000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+        else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 600000 --fork 50 Datacards/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/OutPut_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
         fclose(file_combine_30k);
       }//End N_Signals
     }//End Ninit

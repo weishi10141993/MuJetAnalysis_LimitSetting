@@ -20,13 +20,13 @@ float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.400
 bool DiffSeed = true; //Use differnet seed each time using combine
 int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times
 
-//Sig and Bkg rate for 2017 and 2018: to be updated
+// Following constants are used in datacards for 2017 and 2018: to be finalized
 // SR1: Below J/psi
-float signal1_rate_2017 = 1, BBbar_below_Jpsi_2D_rate_2017 = 1.23;
-float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 2.65;
+float signal1_rate_2017 = 1, BBbar_below_Jpsi_2D_rate_2017 = 1.29;
+float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 2.78;//subtract below only from total
 // SR2: Above J/psi, below 9 GeV
-float signal2_rate_2017 = 1, BBbar_above_Jpsi_2D_rate_2017 = 0.33;
-float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 0.75;
+float signal2_rate_2017 = 1, BBbar_above_Jpsi_2D_rate_2017 = 0.28;
+float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 0.58;//subtract below only from total
 // SR3: Above 9 GeV
 float signal3_rate_2017 = 1, HighMassBKG_rate_2017 = 7.24;
 float signal3_rate_2018 = 1, HighMassBKG_rate_2018 = 10.55;

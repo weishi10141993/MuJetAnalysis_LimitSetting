@@ -33,7 +33,7 @@ cd MuJetAnalysis_LimitSetting
    cd macros; source CreateROOTfiles.sh; cd ..;
    ```  
 
-4. Send jobs to run on all datacards and save outputs in outPut.txt. The default toys in combine is 500. Typically, we'll need 30000 toys/job:
+4. Send jobs to run on all datacards and save outputs in outPut.txt. 
    ```
    source macros/RunOnDataCard_T30000.sh #30000 toys/job (recommended)
    #source macros/RunOnDataCard_std.sh #500 toys/job
