@@ -33,7 +33,7 @@ cd MuJetAnalysis_LimitSetting
    cd macros; source CreateROOTfiles.sh; cd ..;
    ```  
 
-4. Send jobs to run on all datacards and save outputs in outPut.txt. 
+4. Send jobs to run on all datacards and save outputs in outPut.txt.
    ```
    source macros/RunOnDataCard_T30000.sh #30000 toys/job (recommended)
    #source macros/RunOnDataCard_std.sh #500 toys/job
@@ -54,7 +54,7 @@ cd MuJetAnalysis_LimitSetting
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
 5. This macro will print the lines you have to copy inside UserInput.py (that will be used by CmsLimitVsM.py and Plots.py).
-   Edit the UserInput.py file and change the quantile parameter in the 'PrintOutLimits.py' block
+   Edit the UserInput.py file at the 'PrintOutLimits.py' block if necessary
    ```
    cd macros; python PrintOutLimits.py; cd ..;  
    ```
@@ -65,7 +65,7 @@ cd MuJetAnalysis_LimitSetting
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
 
-7. Edit "scripts/UserInput.py" and copy the lines you just produced for each quantile for that year.
+7. Edit "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for that year.
    N.B.: If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
 8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in UserConfig.py. You can specify which plots to draw from Plots.py.  

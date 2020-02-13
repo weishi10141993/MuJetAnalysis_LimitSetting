@@ -8,8 +8,10 @@
 // Default machine: Brazos, Lxplus not tested yet
 bool isLxplus = false;
 // Expected Limit quantiles: %.3f
-const int N_Quantiles = 5;
-float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
+// const int N_Quantiles = 5;
+// float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
+const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
+float expected_quantiles[N_Quantiles] = {0.500};
 // # of mass points for expected limits (before unblinding), see below
 const int N_Signals = 55;
 float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.5300, 0.5600,
