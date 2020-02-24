@@ -46,6 +46,11 @@ m_SR2_max  = 9.;
 m_SR3_min  = 11.;
 m_SR3_max  = 59.;
 
+# NMSSM limit plot ma and mh mass points: limit_CSxBR2_fb_vs_ma, limit_CSxBR2_fb_vs_mh
+# following choices of 2016 unblinded result, to be updated after 2017/2018 unblinding
+array_ma = [0.25, 0.5, 0.75, 1.0, 1.15, 1.2, 1.3, 1.4, 1.5, 1.75, 1.8, 1.9, 2.1, 2.25, 2.4, 2.5, 2.6, 2.75, 2.85, 3.0]
+array_mh = [90., 100., 110., 125., 150.]
+
 ## Y axis maximum on N_evt
 NMax = 10.0
 

@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
 
-execfile("scripts/UserInput.py") #define input
-execfile("scripts/UserConfig.py") #define year and config limits
+execfile("UserInput.py") #define input
+execfile("UserConfig.py") #define year and config limits
 
 def myGaus(x, mu, sigma):
     return 1./( sigma * sqrt(2.0*pi) ) * exp( - (x - mu)*(x - mu) / 2.0/sigma/sigma )

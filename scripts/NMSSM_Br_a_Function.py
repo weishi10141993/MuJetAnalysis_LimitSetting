@@ -1,7 +1,7 @@
 import array, os, re, math
 from math import *
 
-execfile("scripts/NMSSM_Br_a_Data.py")
+execfile("NMSSM_Br_a_Data.py")
 
 def fNMSSM_Br_a(ma,tanBeta,channel):
     if channel   == "bb":     channel_i = 2

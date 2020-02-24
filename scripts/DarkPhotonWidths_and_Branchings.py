@@ -1,6 +1,6 @@
 from math import *
 
-execfile("scripts/R_Hadrons.py")
+execfile("R_Hadrons.py")
 
 alphaEM        = 1.0/137.036
 m_electron_GeV = 0.00051
@@ -9,7 +9,7 @@ m_pion_GeV     = 0.13957
 m_tau_GeV      = 1.77682
 
 ################################################################################
-#           Decay Width(gammaD -> 2 leptons) / epsilon^2 in GeV                 
+#           Decay Width(gammaD -> 2 leptons) / epsilon^2 in GeV
 ################################################################################
 
 def Width_GammaD_to_ll_over_e2_GeV(m_GammaD, m_l):
@@ -19,30 +19,30 @@ def Width_GammaD_to_ll_over_e2_GeV(m_GammaD, m_l):
   w = w1*sqrt(w2)*w3
   return w
 
-#           Decay Width(gammaD -> 2 electrons) / epsilon^2 in GeV               
+#           Decay Width(gammaD -> 2 electrons) / epsilon^2 in GeV
 
 def Width_GammaD_to_2el_over_e2_GeV(m_GammaD):
   return Width_GammaD_to_ll_over_e2_GeV( m_GammaD, m_electron_GeV )
 
-#           Decay Width(gammaD -> 2 muons) / epsilon^2 in GeV                   
+#           Decay Width(gammaD -> 2 muons) / epsilon^2 in GeV
 
 def Width_GammaD_to_2mu_over_e2_GeV(m_GammaD):
   return Width_GammaD_to_ll_over_e2_GeV( m_GammaD, m_muon_GeV )
 
-#           Decay Width(gammaD -> 2 taus) / epsilon^2 in GeV                   
+#           Decay Width(gammaD -> 2 taus) / epsilon^2 in GeV
 
 def Width_GammaD_to_2tau_over_e2_GeV(m_GammaD):
   return Width_GammaD_to_ll_over_e2_GeV( m_GammaD, m_tau_GeV )
-  
+
 ################################################################################
-#           Decay Width(gammaD -> hadrons) / epsilon^2 in GeV                   
+#           Decay Width(gammaD -> hadrons) / epsilon^2 in GeV
 ################################################################################
 
 def Width_GammaD_to_hadrons_over_e2_GeV(m_GammaD):
   return Width_GammaD_to_2mu_over_e2_GeV(m_GammaD) * fR_Hadrons(m_GammaD)
 
 ################################################################################
-#           Decay Width(gammaD -> 2 pions) / epsilon^2 in GeV                   
+#           Decay Width(gammaD -> 2 pions) / epsilon^2 in GeV
 ################################################################################
 
 # Cross section e+e- -> mu+mu-
@@ -67,7 +67,7 @@ def Width_GammaD_to_2pi_over_e2_GeV(m_GammaD):
     return Width_GammaD_to_2mu_over_e2_GeV(m_GammaD) * CS_2pi(m_GammaD) / CS_2mu(m_GammaD)
 
 ################################################################################
-#           Total Decay Width(gammaD -> all) / epsilon^2 in GeV                 
+#           Total Decay Width(gammaD -> all) / epsilon^2 in GeV
 ################################################################################
 
 def Width_GammaD_over_e2_GeV(m_GammaD):
@@ -83,7 +83,7 @@ def Width_GammaD_over_e2_GeV(m_GammaD):
     return Width_GammaD_to_2el_over_e2_GeV(m_GammaD) + Width_GammaD_to_2mu_over_e2_GeV(m_GammaD) + Width_GammaD_to_2tau_over_e2_GeV(m_GammaD) + Width_GammaD_to_hadrons_over_e2_GeV(m_GammaD)
 
 ################################################################################
-#                  Branching Fraction BR(gammaD -> 2mu)                         
+#                  Branching Fraction BR(gammaD -> 2mu)
 ################################################################################
 
 def BR_GammaD_to_2mu(m_GammaD):

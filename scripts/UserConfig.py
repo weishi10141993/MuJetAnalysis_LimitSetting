@@ -12,7 +12,7 @@ year = 2018 #Configure which year ntuples to run, options: 2017, 2018
 #!  USER Configure Above        !
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-execfile("scripts/UserInput.py") # define constants for 2017-2018
+execfile("UserInput.py") # define constants for 2017-2018
 
 if year == 2017:
 

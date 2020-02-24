@@ -25,10 +25,10 @@ int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times
 // Following constants are used in datacards for 2017 and 2018: to be finalized
 // SR1: Below J/psi
 float signal1_rate_2017 = 1, BBbar_below_Jpsi_2D_rate_2017 = 1.29;
-float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 2.78;//subtract below only from total
+float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 2.78;
 // SR2: Above J/psi, below 9 GeV
-float signal2_rate_2017 = 1, BBbar_above_Jpsi_2D_rate_2017 = 0.28;
-float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 0.58;//subtract below only from total
+float signal2_rate_2017 = 1, BBbar_above_Jpsi_2D_rate_2017 = 0.01;//!!!Note!!!:suppose to be 0, but use 0.01 for tool to run
+float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 0.29;
 // SR3: Above 9 GeV
 float signal3_rate_2017 = 1, HighMassBKG_rate_2017 = 7.24;
 float signal3_rate_2018 = 1, HighMassBKG_rate_2018 = 10.55;

@@ -68,9 +68,9 @@ cd MuJetAnalysis_LimitSetting
 7. Edit "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for that year.
    N.B.: If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
-8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in UserConfig.py. You can specify which plots to draw from Plots.py.  
+8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in scripts/UserConfig.py. You can specify which plots to draw from Plots.py. The default output dir is scripts/plots95.
    ```
-   python Plots_RunMe.py  
+   cd scripts; python Plots_RunMe.py  
    ```  
 
 # Notes   
