@@ -26,12 +26,12 @@ def fCmsLimitVsM(m):
     ## 95% CL
     if CL == 95 and year == 2018:
         #Fit to expected limit (avg. const from all mass points toys)
-        return 3.05803472727 #2018
+        return 3.05791963636 #2018 3.05803472727 flat pdf
         #Fit to observed limit (After unblinding, TBD)
         #return 3.00174326806+0.758400444753* myGaus2(m,1.21537045458, 0.0402388548379) + 1.81322228899* myGaus2(m,1.4117157352, 0.05) + 0.581002295405* myGaus2(m,1.90264292745, 0.0648260169513) + 1.46155733387* myGaus2(m,2.37797756173, 0.0585759605432) + 1.84612408697* myGaus2(m,2.80000000002, 0.07) + 4.89437383246* myGaus2(m,3.04849077039, 0.09)
     if CL == 95 and year == 2017:
         #Fit to expected limit (avg. const from all mass points toys)
-        return 3.03509 #2017
+        return 3.02920163636 #2017  3.03509 flat pdf
         #Fit to observed limit (After unblinding, TBD)
         #return 3.00174326806+0.758400444753* myGaus2(m,1.21537045458, 0.0402388548379) + 1.81322228899* myGaus2(m,1.4117157352, 0.05) + 0.581002295405* myGaus2(m,1.90264292745, 0.0648260169513) + 1.46155733387* myGaus2(m,2.37797756173, 0.0585759605432) + 1.84612408697* myGaus2(m,2.80000000002, 0.07) + 4.89437383246* myGaus2(m,3.04849077039, 0.09)
 

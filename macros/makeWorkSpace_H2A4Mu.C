@@ -257,13 +257,37 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   w_H2A4Mu->import( *w->pdf("template1D_m1_above_Jpsi") );
   w_H2A4Mu->import( *w->pdf("template1D_m2_above_Jpsi") );
   w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1_above_Jpsi, template1D_m2_above_Jpsi )*dia2");
+
   //**************************************************
   //Here we need a bkg pdf for high mass, TBD @Jan17
   //**************************************************
-  //At the moment use flat/uniform pdf at high mass
-  w_H2A4Mu->factory("SUM::template1D_m1_high_mass(6.98*Uniform(m1_high_mass))");
-  w_H2A4Mu->factory("SUM::template1D_m2_high_mass(7.50*Uniform(m2_high_mass))");
-  w_H2A4Mu->factory("PROD::HighMassBKG(template1D_m1_high_mass, template1D_m2_high_mass)");//Do we need to multiply dia3?
+  /*
+  //A flat/uniform pdf
+  w_H2A4Mu->factory("SUM::template1D_m1_high_mass(1.0*Uniform(m1_high_mass))");
+  w_H2A4Mu->factory("SUM::template1D_m2_high_mass(1.0*Uniform(m2_high_mass))");
+  w_H2A4Mu->factory("PROD::HighMassBKG(template1D_m1_high_mass, template1D_m2_high_mass)*dia3");
+  */
+
+  //A binned likelihood fitted poly-n function
+  //poly-0
+  //2017 m1: p0=4.65780e-01 (FCN=1.18272); m2: p0=4.72551e-01 (FCN=1.13543)
+  //2018 m1: p0=8.68679e-01 (FCN=2.12934); m2: p0=8.60217e-01 (FCN=2.02808)
+
+  //poly-4
+  RooGenericPdf HighMassFit2017_m1( "HighMassFit2017_m1", "2017 m1 fit function for estimated BKG at SR3", "2.10843 - 0.367391*m1_high_mass + 0.0213367*m1_high_mass*m1_high_mass - 0.000454813*m1_high_mass*m1_high_mass*m1_high_mass + 0.00000324109*m1_high_mass*m1_high_mass*m1_high_mass*m1_high_mass", RooArgSet(m1_high_mass) );//FCN=0.241282
+  RooGenericPdf HighMassFit2017_m2( "HighMassFit2017_m2", "2017 m2 fit function for estimated BKG at SR3", "2.27162 - 0.394333*m2_high_mass + 0.0228821*m2_high_mass*m2_high_mass - 0.000491115*m2_high_mass*m2_high_mass*m2_high_mass + 0.00000353842*m2_high_mass*m2_high_mass*m2_high_mass*m2_high_mass", RooArgSet(m2_high_mass) );//FCN=0.197935
+  RooGenericPdf HighMassFit2018_m1( "HighMassFit2018_m1", "2018 m1 fit function for estimated BKG at SR3", "4.36662 - 0.772224*m1_high_mass + 0.0458093*m1_high_mass*m1_high_mass - 0.00101979*m1_high_mass*m1_high_mass*m1_high_mass  + 0.00000769120*m1_high_mass*m1_high_mass*m1_high_mass*m1_high_mass", RooArgSet(m1_high_mass) );//FCN=0.306416
+  RooGenericPdf HighMassFit2018_m2( "HighMassFit2018_m2", "2018 m2 fit function for estimated BKG at SR3", "4.11417 - 0.730639*m2_high_mass + 0.0435120*m2_high_mass*m2_high_mass - 0.000969273*m2_high_mass*m2_high_mass*m2_high_mass + 0.00000730823*m2_high_mass*m2_high_mass*m2_high_mass*m2_high_mass", RooArgSet(m2_high_mass) );//FCN=0.260233
+  if (year == 2017){
+    w_H2A4Mu->import(HighMassFit2017_m1);
+    w_H2A4Mu->import(HighMassFit2017_m2);
+    w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2017_m1, HighMassFit2017_m2)*dia3");
+  }
+  if (year == 2018){
+    w_H2A4Mu->import(HighMassFit2018_m1);
+    w_H2A4Mu->import(HighMassFit2018_m2);
+    w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
+  }
 
   // Set all fit variables to constants
   w_H2A4Mu->var("MmumuC_c_below_Jpsi")->setConstant(true);

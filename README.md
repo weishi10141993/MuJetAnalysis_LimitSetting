@@ -23,7 +23,7 @@ cd MuJetAnalysis_LimitSetting
 2. In this step, the datacards for each mass points are created. Also the submission files to run combine toy experiments are created.
    Edit Config.h in order to set which year (default is 2018) to run. Also open Constants.h to see if you need to update signal and background rates for the year. Then do:
    ```
-   root -l -b -q  CreateDatacards.C+  
+   root -l -b -q  CreateDatacards.C+
    ```
 
    N.B.:The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with S and B needed by CMS official limit calculator. makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range and binning, plus the signal events. So for unblinding, add here the events you see.
@@ -35,7 +35,7 @@ cd MuJetAnalysis_LimitSetting
 
 4. Send jobs to run on all datacards and save outputs in outPut.txt.
    ```
-   source macros/RunOnDataCard_T30000.sh #30000 toys/job (recommended)
+   source macros/RunOnDataCard_T30000.sh #600000 toys/job (recommended)
    #source macros/RunOnDataCard_std.sh #500 toys/job
    #source macros/RunOnDataCard_T10000.sh #10000 toys/job
    #source macros/RunOnDataCard_T50000.sh #50000 toys/job
@@ -53,8 +53,8 @@ cd MuJetAnalysis_LimitSetting
    ```
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
-5. This macro will print the lines you have to copy inside UserInput.py (that will be used by CmsLimitVsM.py and Plots.py).
-   Edit the UserInput.py file at the 'PrintOutLimits.py' block if necessary
+5. This macro will print the lines you have to copy inside scripts/UserInput.py (that will be used by CmsLimitVsM.py and Plots.py).
+   Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary
    ```
    cd macros; python PrintOutLimits.py; cd ..;  
    ```
