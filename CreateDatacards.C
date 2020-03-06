@@ -317,8 +317,6 @@ void CreateDatacards( bool makeRoot=true ){
       fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       %.3f \n", mu_pu, mu_pu);
       fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -    \n", pdf_as);
       fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -    \n", HxecBr);
-      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       %.3f \n", ovlp_trk, ovlp_trk);
-      fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       %.3f \n", ovlp_mu, ovlp_mu);
       fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       %.3f \n", dimu_M, dimu_M);
       fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       %.3f \n", nnlo_pt, nnlo_pt);
     }
