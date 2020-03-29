@@ -1,5 +1,5 @@
 ################################################################################
-#                    7 TeV                                                      
+#                    7 TeV
 ################################################################################
 
 # (m_a, m_h) : (acceptance)
@@ -65,7 +65,7 @@ def fCmsNmssmAcceptance_2011_7TeV(ma, mh):
     return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2011_7TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2011_7TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2011_7TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2011_7TeV[alow, hhigh]
 
 ################################################################################
-#                    8 TeV                                                      
+#                    8 TeV
 ################################################################################
 
 # (m_a, m_h) : (acceptance)
@@ -123,7 +123,7 @@ def fCmsNmssmAcceptance_2012_8TeV(ma, mh):
     return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2012_8TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2012_8TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2012_8TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2012_8TeV[alow, hhigh]
 
 ################################################################################
-#                    13 TeV - 2015 year                                         
+#                    13 TeV - 2015 year
 ################################################################################
 # (m_a, m_h) : (acceptance)
 CmsNmssmAcceptance_2015_13TeV = {
@@ -180,7 +180,7 @@ def fCmsNmssmAcceptance_2015_13TeV(ma, mh):
     return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2015_13TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2015_13TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2015_13TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2015_13TeV[alow, hhigh]
 
 ################################################################################
-#                    13 TeV - 2016 year                                         
+#                    13 TeV - 2016 year
 ################################################################################
 # (m_a, m_h) : (acceptance)
 CmsNmssmAcceptance_2016_13TeV = {
@@ -234,3 +234,82 @@ def fCmsNmssmAcceptance_2016_13TeV(ma, mh):
     hinc = (mh - hlow)/(hhigh - hlow)
 
     return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance_2016_13TeV[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance_2016_13TeV[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance_2016_13TeV[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance_2016_13TeV[alow, hhigh]
+
+#####################################################
+#                    13 TeV - year 2017
+#####################################################
+# (m_a, m_h) : (full acceptance)
+CmsNmssmAcceptance_2017_13TeV = {
+(0.50,90): (0.109),
+(0.75,90): (0.097),
+(1.00,90): (0.093),
+(2.00,90): (0.088),
+(3.00,90): (0.087),
+(0.50,100): (0.132),
+(0.75,100): (0.116),
+(1.00,100): (0.111),
+(2.00,100): (0.106),
+(3.00,100): (0.105),
+(0.50,110): (0.206),
+(0.75,110): (0.132),
+(1.00,110): (0.127),
+(2.00,110): (0.122),
+(3.00,110): (0.120),
+(0.50,125): (0.171),
+(0.75,125): (0.154),
+(1.00,125): (0.147),
+(2.00,125): (0.141),
+(3.00,125): (0.138),
+(0.50,150): (0.206),
+(0.75,150): (0.185),
+(1.00,150): (0.176),
+(2.00,150): (0.168),
+(3.00,150): (0.165),
+}
+
+#####################################################
+#               13 TeV - year 2018
+#####################################################
+# (m_a, m_h) : (full acceptance)
+CmsNmssmAcceptance_2018_13TeV = {
+(0.50,90): (0.109),
+(0.75,90): (0.097),
+(1.00,90): (0.093),
+(2.00,90): (0.088),
+(3.00,90): (0.087),
+(0.50,100): (0.132),
+(0.75,100): (0.116),
+(1.00,100): (0.111),
+(2.00,100): (0.106),
+(3.00,100): (0.105),
+(0.50,110): (0.206),
+(0.75,110): (0.132),
+(1.00,110): (0.127),
+(2.00,110): (0.122),
+(3.00,110): (0.120),
+(0.50,125): (0.171),
+(0.75,125): (0.154),
+(1.00,125): (0.147),
+(2.00,125): (0.141),
+(3.00,125): (0.138),
+(0.50,150): (0.206),
+(0.75,150): (0.185),
+(1.00,150): (0.176),
+(2.00,150): (0.168),
+(3.00,150): (0.165),
+}
+
+#general function to do extrapolate
+def fCmsNmssmAcceptance(ma, mh):
+    if ma < 0.5 or ma > 3.00: raise Exception, "ma = %g" % ma
+    if mh < 90. or mh > 150.: raise Exception, "mh = %g" % mh
+    for alow, ahigh in [(0.5,0.75),(0.75,1.0),(1.0,2.0),(2.0,3.0)]:
+        for hlow, hhigh in [(90.,100.),(100.,110.),(110.,125.),(125.,150.)]:
+            if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+                break
+        if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+            break
+    ainc = (ma - alow)/(ahigh - alow)
+    hinc = (mh - hlow)/(hhigh - hlow)
+
+    return (1. - ainc)*(1. - hinc)*CmsNmssmAcceptance[alow, hlow] + (ainc)*(1. - hinc)*CmsNmssmAcceptance[ahigh, hlow] + (ainc)*(hinc)*CmsNmssmAcceptance[ahigh, hhigh] + (1. - ainc)*(hinc)*CmsNmssmAcceptance[alow, hhigh]

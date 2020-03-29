@@ -12,7 +12,7 @@ masses = [0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600
 #**************************************
 CLsymbol = '95%' # confidence level
 quantile = "0.500" # %.3f precision of expected quantiles, options: 0.500 (the following options if specified in Constants.h: 0.840, 0.160, 0.975, 0.025)
-pwd = '/home/ws13/Run2LimitSetting/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/macros/'
+pwd = '/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/macros/'
 basetxt = "sh/OutPut_"
 
 #endtxt = "_T50000_";
@@ -50,6 +50,13 @@ m_SR3_max  = 59.;
 # following choices of 2016 unblinded result, to be updated after 2017/2018 unblinding
 array_ma = [0.25, 0.5, 0.75, 1.0, 1.15, 1.2, 1.3, 1.4, 1.5, 1.75, 1.8, 1.9, 2.1, 2.25, 2.4, 2.5, 2.6, 2.75, 2.85, 3.0]
 array_mh = [90., 100., 110., 125., 150.]
+
+# ALP limit plot ma mass points: limit_ALP_Higgs_vs_ma
+Br_ALP_Lepton = 1.
+ggHXsecpb = 48.52 #pb
+HiggsSMWidthMeV = 4.1 #MeV
+VEV = 246 #GeV
+HiggsMass = 125.10 #GeV PDG2018
 
 ## Y axis maximum on N_evt
 NMax = 10.0

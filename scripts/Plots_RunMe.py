@@ -23,7 +23,7 @@ limit_CSxBR2_fb_vs_mh()
 #print f_Alpha_vs_ctau(0.4,40.0,5.0,0.068)
 
 ###------ Limits Interpreted in ALP -------###
-#Placeholder
+limit_ALP_Higgs_vs_ma()
 
 ###-------       MSSMD       -------###
 #--BR(a->mumu) vs m(a)
