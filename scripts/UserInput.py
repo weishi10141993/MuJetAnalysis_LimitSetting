@@ -52,10 +52,9 @@ array_ma = [0.25, 0.5, 0.75, 1.0, 1.15, 1.2, 1.3, 1.4, 1.5, 1.75, 1.8, 1.9, 2.1,
 array_mh = [90., 100., 110., 125., 150.]
 
 # ALP limit plot ma mass points: limit_ALP_Higgs_vs_ma
-Br_ALP_Lepton = 1.
 ggHXsecpb = 48.52 #pb
 HiggsSMWidthMeV = 4.1 #MeV
-VEV = 246 #GeV
+HiggsVEV = 246 #GeV
 HiggsMass = 125.10 #GeV PDG2018
 
 ## Y axis maximum on N_evt
