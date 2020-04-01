@@ -2,18 +2,19 @@ import ROOT, array, os, re, math, random
 from math import *
 import numpy as np
 
-execfile("UserInput.py") #user input
-execfile("UserConfig.py") #user config input
 execfile("tdrStyle.py")
 execfile("fSetPalette.py")
 execfile("fRange.py")
+
+execfile("UserInput.py") # miscellaneous inputs
+execfile("UserConfig.py") # user config year
+execfile("CmsAlpAcceptance.py") #ALP acceptance and width from GEN LHE
+execfile("CmsNmssmAcceptance.py")
 execfile("CmsLimitVsM.py") # functions and limits
 execfile("SMHiggsCrossSections.py")
 execfile("DarkPhotonWidths_and_Branchings.py")
 execfile("R_Hadrons.py")
-execfile("CmsAlpAcceptance.py")
 execfile("CmsDarkSusyAcceptance.py")
-execfile("CmsNmssmAcceptance.py")
 execfile("NMSSM_Br_a_Function.py")
 
 txtHeader = ROOT.TLegend(.05, .933, .99, 1.)
@@ -1933,11 +1934,11 @@ def plot_ctauConst_vs_logEpsilon2_mGammaD():
 #                 Plot limit on CSxBr2 vs ma
 ################################################################################
 def limit_CSxBR2_fb_vs_ma():
-    print "----------- limit_CSxBR2_fb_vs_ma -----------"
+    print "----------- NMSSM limit_CSxBR2_fb_vs_ma -----------"
     BR_h_aa = 0.003 #reference
     cnv.SetLogy(1)
     cnv.SetLogx(0)
-    h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0., 3.5, 1000, 0.08, 150.)
+    h_CSxBR_vs_ma_dummy = ROOT.TH2F("h_CSxBR_vs_ma_dummy", "h_CSxBR_vs_ma_dummy", 1000, 0.21, 3.3, 1000, 0.08, 150.)
     h_CSxBR_vs_ma_dummy.SetXTitle("m_{a_{1}} [GeV]")
     h_CSxBR_vs_ma_dummy.SetYTitle("#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) B^{2}(a_{1} #rightarrow 2 #mu) [fb]")
     h_CSxBR_vs_ma_dummy.SetTitleOffset(1.1, "Y")
@@ -1951,9 +1952,9 @@ def limit_CSxBR2_fb_vs_ma():
     array_ma_mh_125 = []
     array_ma_mh_150 = []
     for ma_i in array_ma: #defined in UserInput.py
-        array_ma_mh_90.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 90. ) ))
-        array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 125.) ))
-        array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(ma_i, 150.) ))
+        array_ma_mh_90.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 90.,  CmsNmssmAcceptance) ))
+        array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 125., CmsNmssmAcceptance) ))
+        array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 150., CmsNmssmAcceptance) ))
 
     gr_CSxBR_vs_ma_mh_90 = ROOT.TGraph(len(array_ma_mh_90), array.array("d", zip(*array_ma_mh_90)[0]), array.array("d", zip(*array_ma_mh_90)[1]))
     gr_CSxBR_vs_ma_mh_90.SetLineWidth(2)
@@ -1984,7 +1985,7 @@ def limit_CSxBR2_fb_vs_ma():
 
     #Draw reference model
     array_ma_mh_125_SM = []
-    for ma_i in fRange(0.25, 3.0, 100):
+    for ma_i in fRange(0.5, 3.0, 100):
         CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
         CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
         CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
@@ -2025,17 +2026,17 @@ def limit_CSxBR2_fb_vs_ma():
     gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
     txtHeader.Draw()
 
-    save_canvas(cnv,"CSxBR_vs_ma")
+    save_canvas(cnv,"CSxBR_NMSSM_vs_ma")
 
 ################################################################################
 #                 Plot limit on CSxBr2 vs mh
 ################################################################################
 def limit_CSxBR2_fb_vs_mh():
-    print "----------- limit_CSxBR2_fb_vs_mh -----------"
+    print "----------- NMSSM limit_CSxBR2_fb_vs_mh -----------"
     BR_h_aa = 0.003 #reference
     cnv.SetLogy(0)
     cnv.SetLogx(0)
-    h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 83., 153., 1000, 0., 3.2)
+    h_CSxBR_NMSSM_vs_mh_dummy = ROOT.TH2F("h_CSxBR_NMSSM_vs_mh_dummy", "h_CSxBR_NMSSM_vs_mh_dummy", 1000, 85., 155., 1000, 0., 3.2)
     h_CSxBR_NMSSM_vs_mh_dummy.SetXTitle("m_{h_{i}} [GeV]")
     h_CSxBR_NMSSM_vs_mh_dummy.SetYTitle("#sigma(pp #rightarrow h_{i}#rightarrow 2a_{1}) B^{2}(a_{1}#rightarrow 2 #mu) [fb]")
     h_CSxBR_NMSSM_vs_mh_dummy.SetTitleOffset(1.2, "Y")
@@ -2046,19 +2047,19 @@ def limit_CSxBR2_fb_vs_mh():
     #h_CSxBR_NMSSM_vs_mh_dummy.GetXaxis().SetTitleSize(0.05)
     h_CSxBR_NMSSM_vs_mh_dummy.Draw()
 
-    array_mh_CSxBR_NMSSM_ma_025 = []
+    array_mh_CSxBR_NMSSM_ma_0p5 = []
     array_mh_CSxBR_NMSSM_ma_3 = []
     for mh_i in array_mh:
-        array_mh_CSxBR_NMSSM_ma_025.append(( mh_i, fCmsLimitVsM(0.25)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(0.25, mh_i ) )) # Model Independent limits transformed to Xsec
-        array_mh_CSxBR_NMSSM_ma_3.append(( mh_i, fCmsLimitVsM(3)/lumi_fbinv/SF/fCmsNmssmAcceptance_2016_13TeV(3, mh_i ) ))
+        array_mh_CSxBR_NMSSM_ma_0p5.append(( mh_i, fCmsLimitVsM(0.5)/lumi_fbinv/SF/fCmsNmssmExtrapolate(0.5, mh_i, CmsNmssmAcceptance) )) # Model Independent limits transformed to Xsec
+        array_mh_CSxBR_NMSSM_ma_3.append(( mh_i,   fCmsLimitVsM(3)/lumi_fbinv/SF/fCmsNmssmExtrapolate(3, mh_i, CmsNmssmAcceptance) ))
 
-    gr_CSxBR_NMSSM_vs_mh_ma_025 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_025), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_025)[1]))
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetLineWidth(2)
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetLineColor(ROOT.kMagenta+2)
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetLineStyle(9)
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerColor(ROOT.kMagenta+2)
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerStyle(22)
-    gr_CSxBR_NMSSM_vs_mh_ma_025.SetMarkerSize(1.5)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_0p5), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_0p5)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_0p5)[1]))
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetLineWidth(2)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetLineColor(ROOT.kMagenta+2)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetLineStyle(9)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetMarkerColor(ROOT.kMagenta+2)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetMarkerStyle(22)
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetMarkerSize(1.5)
 
     gr_CSxBR_NMSSM_vs_mh_ma_3 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_3), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_3)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_3)[1]))
     gr_CSxBR_NMSSM_vs_mh_ma_3.SetLineWidth(2)
@@ -2107,7 +2108,7 @@ def limit_CSxBR2_fb_vs_mh():
     l_CSxBR_NMSSM_vs_mh.SetMargin(0.13)
     l_CSxBR_NMSSM_vs_mh.SetHeader("NMSSM: Expected %d%% CL upper limits:"%CL)
     l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_3,  "m_{a_{1}} = 3.00 GeV", "LP")
-    l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_025,"m_{a_{1}} = 0.25 GeV", "LP")
+    l_CSxBR_NMSSM_vs_mh.AddEntry(gr_CSxBR_NMSSM_vs_mh_ma_0p5,"m_{a_{1}} = 0.50 GeV", "LP")
     l_CSxBR_NMSSM_vs_mh.Draw()
 
     l_CSxBR_NMSSM_vs_mh_2 = ROOT.TLegend(0.20,0.56,0.93,0.71)
@@ -2149,7 +2150,7 @@ def limit_CSxBR2_fb_vs_mh():
     #l_mh2.Draw()
 
     gr_CSxBR_NMSSM_vs_mh_ma_3.Draw("CP")
-    gr_CSxBR_NMSSM_vs_mh_ma_025.Draw("CP")
+    gr_CSxBR_NMSSM_vs_mh_ma_0p5.Draw("CP")
     gr_CSxBR_SM.Draw("C")
 
     txtHeader.Draw()
@@ -2178,8 +2179,6 @@ def limit_ALP_Higgs_vs_ma():
     # Use Eq. (5.12) in theory paper to get |Cah|/Lambda^2
     # |Cah|/Lambda^2 = sqrt[ Width(H->2ALP)*32*Pi/v^2/m_h^3/(1-2m_a^2/m_h^2)^2/sqrt( 1 - 4m_a^2/m_h^2) ]
 
-    Br_ALP_Lepton_1 = 1.0
-    Br_ALP_Lepton_0p1 = 0.1
     h_CahEff_over_LambdaSquare_TeV = ROOT.TH2F("h_CahEff_over_LambdaSquare_TeV", "h_CahEff_over_LambdaSquare_TeV", 1000, 0.2, 70, 1000, 1E-3, 1.)
     h_CahEff_over_LambdaSquare_TeV.SetXTitle("m_{a} [GeV]")
     h_CahEff_over_LambdaSquare_TeV.SetYTitle("|C_{ah}^{eff}|/#Lambda^{2} [TeV^{-2}]")
@@ -2194,19 +2193,19 @@ def limit_ALP_Higgs_vs_ma():
     CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1 = []
     CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR2 = []
     CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR3 = []
+
     # Specify correct mass ranges, use fitted function [m] = GeV
-    # Specify Br(a->mumu)
-
     for m in np.arange(0.5, m_SR1_max, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
     for m in np.arange(m_SR3_min, 30, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpAcceptance(m)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
 
+    # For Br_ALP_Lepton_1
     # SR1
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1 = ROOT.TGraph( len(CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1), array.array("d", zip(*CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1)[0]), array.array("d", zip(*CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1)[1]) )
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1.SetLineWidth(2)
@@ -2226,6 +2225,7 @@ def limit_ALP_Higgs_vs_ma():
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.SetLineStyle(1)
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.Draw("L")
 
+    # For Br_ALP_Lepton_0p1
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1 = ROOT.TGraph( len(CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1), array.array("d", zip(*CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1)[0]), array.array("d", zip(*CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1)[1]) )
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.SetLineWidth(2)
     gr_CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.SetLineColor(ROOT.kRed)
@@ -2258,9 +2258,120 @@ def limit_ALP_Higgs_vs_ma():
     txtHeader.Draw()
     save_canvas(cnv, "CahEff_over_LambdaSquare_TeV_fit")
 
-#def limit_ALP_Lepton_vs_ma():
-    #    print "----------- limit_ALP_Lepton_vs_ma -----------"
-    #    cnv.SetLogy()
-    #    cnv.SetLogx()
-        # Assume Cah/LAmda^2 = 0.01TeV^-2 and 0.001^-2, cf. HIG-19-007
-        # p.22 Eq. 4.7?
+def limit_ALP_Lepton_vs_ma():
+    print "----------- limit_ALP_Lepton_vs_ma -----------"
+    cnv.SetLogy()
+    cnv.SetLogx()
+    # Xsec(ggH) * Br(H->2ALP) * Br(ALP->mumu)^2 = N_evt/Lumi/SF/FullSelEffALPMC.
+    # Use ggF->H Xsec @ LHC 13TeV, ggHXsecpb 48.52 [pb]
+    # Use h->SM=4.1MeV, define: Br(H->2ALP) = Width(H->2ALP) / [Width(H->2ALP) + Width(H->SM)]
+    # Assume Cah/Lambda^2 = 0.01 TeV^-2 can get Width(H->2ALP) and Br(H->2ALP)
+    # From above get Br(ALP->mumu)
+    # Assume ALP total Width 10^-5GeV, Use Eq. (3.12) in theory paper to get |Cll|/Lambda
+    # Width(ALP->mumu) = ALPWidthGeV * sqrt( N_evt/Lumi/SF/FullSelEffALPMC/Xec/Br(H->2ALP) )
+
+    h_clleff_over_Lambda_TeV = ROOT.TH2F("h_clleff_over_Lambda_TeV", "h_clleff_over_Lambda_TeV", 1000, 0.2, 70, 1000, 1E-3, 1E3)
+    h_clleff_over_Lambda_TeV.SetXTitle("m_{a} [GeV]")
+    h_clleff_over_Lambda_TeV.SetYTitle("|c_{ll}^{eff}|/#Lambda [TeV^{-1}]")
+    h_clleff_over_Lambda_TeV.SetTitleOffset(1.47, "Y")
+    h_clleff_over_Lambda_TeV.GetXaxis().SetNdivisions(505)
+    h_clleff_over_Lambda_TeV.GetYaxis().SetTitleSize(0.05)
+    h_clleff_over_Lambda_TeV.Draw()
+
+    clleff_over_Lambda_TeV_Cah_1_fit_SR1 = []
+    clleff_over_Lambda_TeV_Cah_1_fit_SR2 = []
+    clleff_over_Lambda_TeV_Cah_1_fit_SR3 = []
+    clleff_over_Lambda_TeV_Cah_0p1_fit_SR1 = []
+    clleff_over_Lambda_TeV_Cah_0p1_fit_SR2 = []
+    clleff_over_Lambda_TeV_Cah_0p1_fit_SR3 = []
+    clleff_over_Lambda_TeV_Cah_0p01_fit_SR1 = []
+    clleff_over_Lambda_TeV_Cah_0p01_fit_SR2 = []
+    clleff_over_Lambda_TeV_Cah_0p01_fit_SR3 = []
+
+    # Specify correct mass ranges, use fitted function [m] = GeV
+    # 1./Br(H->2ALP) = ( 1+ HiggsSMWidthMeV/1000./( (CahEff_over_LambdaSquare_TeV_1/1000/1000)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2)/32/3.1415 ) )
+    for m in np.arange(0.5, m_SR1_max, 0.005):
+        clleff_over_Lambda_TeV_Cah_1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+    for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
+        clleff_over_Lambda_TeV_Cah_1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+    for m in np.arange(m_SR3_min, 30, 0.005):
+        clleff_over_Lambda_TeV_Cah_1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+
+    # For CahEff_over_LambdaSquare_TeV_1
+    # SR1
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_1_fit_SR1), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR1)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR1)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1.SetLineStyle(1)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1.Draw("L")
+    # SR2
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR2 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_1_fit_SR2), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR2)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR2)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR2.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR2.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR2.SetLineStyle(1)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR2.Draw("L")
+    # SR3
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_1_fit_SR3), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR3)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_1_fit_SR3)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.SetLineStyle(1)
+    gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.Draw("L")
+
+    # For CahEff_over_LambdaSquare_TeV_0p1
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p1_fit_SR1), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR1)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR1)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.SetLineStyle(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.Draw("L")
+
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p1_fit_SR2), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR2)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR2)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.SetLineStyle(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.Draw("L")
+
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p1_fit_SR3), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR3)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR3)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineStyle(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.Draw("L")
+
+    # For CahEff_over_LambdaSquare_TeV_0p01
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p01_fit_SR1), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR1)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR1)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.SetLineStyle(3)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.Draw("L")
+
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR2 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p01_fit_SR2), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR2)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR2)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.SetLineStyle(3)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.Draw("L")
+
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p01_fit_SR3), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR3)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR3)[1]) )
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.SetLineWidth(2)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.SetLineColor(ROOT.kRed)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.SetLineStyle(3)
+    gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.Draw("L")
+
+    l_clleff_over_Lambda_TeV_Cah_fit = ROOT.TLegend(0.20,0.71,0.93,0.91)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetFillColor(ROOT.kWhite)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetMargin(0.13)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetBorderSize(0)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetTextFont(42)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetTextSize(0.035)
+    l_clleff_over_Lambda_TeV_Cah_fit.SetHeader("ALP Expected %d%% CL upper limits:"%CL)
+    l_clleff_over_Lambda_TeV_Cah_fit.AddEntry(gr_clleff_over_Lambda_TeV_Cah_1_fit_SR1,    "|C_{ah}^{eff}|/#Lambda^{2} = %.2f TeV^{-2}"%CahEff_over_LambdaSquare_TeV_1,    "L")
+    l_clleff_over_Lambda_TeV_Cah_fit.AddEntry(gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1,  "|C_{ah}^{eff}|/#Lambda^{2} = %.2f TeV^{-2}"%CahEff_over_LambdaSquare_TeV_0p1,  "L")
+    l_clleff_over_Lambda_TeV_Cah_fit.AddEntry(gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1, "|C_{ah}^{eff}|/#Lambda^{2} = %.2f TeV^{-2}"%CahEff_over_LambdaSquare_TeV_0p01, "L")
+    l_clleff_over_Lambda_TeV_Cah_fit.Draw()
+
+    txtHeader.Draw()
+    save_canvas(cnv, "clleff_over_Lambda_TeV_fit")

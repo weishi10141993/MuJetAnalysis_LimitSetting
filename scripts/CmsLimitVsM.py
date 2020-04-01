@@ -81,6 +81,43 @@ def ExpectedLimitVsM_HybridNew(m, limit_array):
     else:
         print "Warning! Mass if outside the range."
 
+#general function to do extrapolate for ALP model
+#array is in the form [m, f(m)]
+def fCmsAlpExtrapolate(m, array):
+    if m >= 0.5 and m <= 30.:
+        m_im1 = 0.5
+        m_i   = 0.5
+        for i in range(len(array)):
+            m_i   = array[i][0]
+            lim_i = array[i][1]
+            if m == m_i:
+                return lim_i
+            elif m > m_im1 and m < m_i:
+                a = (lim_i - lim_im1) / (m_i - m_im1)
+                b = (lim_im1*m_i - lim_i*m_im1) / (m_i - m_im1)
+                lim = a*m+b
+                return lim
+            m_im1 = m_i
+            lim_im1 = lim_i
+    else:
+        print "Warning! Mass if outside the range."
+
+#general function to do extrapolate for NMSSM
+#array is in the form [(0.50,90): (0.109)]
+def fCmsNmssmExtrapolate(ma, mh, array):
+    if ma < 0.5 or ma > 3.00: raise Exception, "ma = %g" % ma
+    if mh < 90. or mh > 150.: raise Exception, "mh = %g" % mh
+    for alow, ahigh in [(0.5,0.75),(0.75,1.0),(1.0,2.0),(2.0,3.0)]:
+        for hlow, hhigh in [(90.,100.),(100.,110.),(110.,125.),(125.,150.)]:
+            if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+                break
+        if alow <= ma <= ahigh and hlow <= mh <= hhigh:
+            break
+    ainc = (ma - alow)/(ahigh - alow)
+    hinc = (mh - hlow)/(hhigh - hlow)
+
+    return (1. - ainc)*(1. - hinc)*array[alow, hlow] + (ainc)*(1. - hinc)*array[ahigh, hlow] + (ainc)*(hinc)*array[ahigh, hhigh] + (1. - ainc)*(hinc)*array[alow, hhigh]
+
 # fit the data
 def myGaus2(x, mu, sigma):
     #print "type x", type(x)

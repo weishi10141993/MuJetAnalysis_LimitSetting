@@ -24,6 +24,7 @@ limit_CSxBR2_fb_vs_mh()
 
 ###------ Limits Interpreted in ALP -------###
 limit_ALP_Higgs_vs_ma()
+limit_ALP_Lepton_vs_ma()
 
 ###-------       MSSMD       -------###
 #--BR(a->mumu) vs m(a)
