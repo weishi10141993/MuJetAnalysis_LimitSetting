@@ -1,6 +1,7 @@
 import ROOT, array, os, re, math, random
 from math import *
 import numpy as np
+import sys
 
 execfile("tdrStyle.py")
 execfile("fSetPalette.py")
@@ -2265,7 +2266,7 @@ def limit_ALP_Lepton_vs_ma():
     # Xsec(ggH) * Br(H->2ALP) * Br(ALP->mumu)^2 = N_evt/Lumi/SF/FullSelEffALPMC.
     # Use ggF->H Xsec @ LHC 13TeV, ggHXsecpb 48.52 [pb]
     # Use h->SM=4.1MeV, define: Br(H->2ALP) = Width(H->2ALP) / [Width(H->2ALP) + Width(H->SM)]
-    # Assume Cah/Lambda^2 = 0.01 TeV^-2 can get Width(H->2ALP) and Br(H->2ALP)
+    # Assume Cah/Lambda^2 = 1, 0.1, 0.01 TeV^-2 can get Width(H->2ALP) and Br(H->2ALP)
     # From above get Br(ALP->mumu)
     # Assume ALP total Width 10^-5GeV, Use Eq. (3.12) in theory paper to get |Cll|/Lambda
     # Width(ALP->mumu) = ALPWidthGeV * sqrt( N_evt/Lumi/SF/FullSelEffALPMC/Xec/Br(H->2ALP) )
@@ -2323,6 +2324,15 @@ def limit_ALP_Lepton_vs_ma():
     gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.SetLineStyle(1)
     gr_clleff_over_Lambda_TeV_Cah_1_fit_SR3.Draw("L")
 
+    print "     ------ write: ../ALPLimits/CMSRun2ALP_cll_TeV_Cah_1.txt"
+    with open("../ALPLimits/CMSRun2ALP_cll_TeV_Cah_1.txt", "w") as f1:
+        for a, b in clleff_over_Lambda_TeV_Cah_1_fit_SR1:
+            print >> f1, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_1_fit_SR2:
+            print >> f1, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_1_fit_SR3:
+            print >> f1, "%.3f"%a, b
+
     # For CahEff_over_LambdaSquare_TeV_0p1
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p1_fit_SR1), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR1)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR1)[1]) )
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.SetLineWidth(2)
@@ -2336,11 +2346,21 @@ def limit_ALP_Lepton_vs_ma():
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.SetLineStyle(2)
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.Draw("L")
 
+
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p1_fit_SR3), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR3)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p1_fit_SR3)[1]) )
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineWidth(2)
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineColor(ROOT.kRed)
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.SetLineStyle(2)
     gr_clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.Draw("L")
+
+    print "     ------ write: ../ALPLimits/CMSRun2ALP_cll_TeV_Cah_0p1.txt"
+    with open("../ALPLimits/CMSRun2ALP_cll_TeV_Cah_0p1.txt", "w") as f2:
+        for a, b in clleff_over_Lambda_TeV_Cah_0p1_fit_SR1:
+            print >> f2, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_0p1_fit_SR2:
+            print >> f2, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_0p1_fit_SR3:
+            print >> f2, "%.3f"%a, b
 
     # For CahEff_over_LambdaSquare_TeV_0p01
     gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR1 = ROOT.TGraph( len(clleff_over_Lambda_TeV_Cah_0p01_fit_SR1), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR1)[0]), array.array("d", zip(*clleff_over_Lambda_TeV_Cah_0p01_fit_SR1)[1]) )
@@ -2360,6 +2380,15 @@ def limit_ALP_Lepton_vs_ma():
     gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.SetLineColor(ROOT.kRed)
     gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.SetLineStyle(3)
     gr_clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.Draw("L")
+
+    print "     ------ write: ../ALPLimits/CMSRun2ALP_cll_TeV_Cah_0p01.txt"
+    with open("../ALPLimits/CMSRun2ALP_cll_TeV_Cah_0p01.txt", "w") as f3:
+        for a, b in clleff_over_Lambda_TeV_Cah_0p01_fit_SR1:
+            print >> f3, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_0p01_fit_SR2:
+            print >> f3, "%.3f"%a, b
+        for a, b in clleff_over_Lambda_TeV_Cah_0p01_fit_SR3:
+            print >> f3, "%.3f"%a, b
 
     l_clleff_over_Lambda_TeV_Cah_fit = ROOT.TLegend(0.20,0.71,0.93,0.91)
     l_clleff_over_Lambda_TeV_Cah_fit.SetFillColor(ROOT.kWhite)
