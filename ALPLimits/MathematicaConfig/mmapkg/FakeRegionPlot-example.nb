@@ -1,0 +1,381 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     12230,        372]
+NotebookOptionsPosition[     10685,        315]
+NotebookOutlinePosition[     11214,        338]
+CellTagsIndexPosition[     11129,        333]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["FakeRegionPlot examples", "Section",
+ CellChangeTimes->{{3.4016138362284126`*^9, 3.4016138387019696`*^9}, {
+  3.404537307434083*^9, 3.404537309627237*^9}, {3.4046052272784643`*^9, 
+  3.4046052283199615`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Setup", "Subsection",
+ CellChangeTimes->{{3.4045373125714703`*^9, 3.4045373142538896`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "\"\<FakeRegionPlot`\>\""}]}], "Input",
+ CellChangeTimes->{
+  3.3986335564413104`*^9, {3.4045373351238995`*^9, 3.404537340982323*^9}, 
+   3.404537422219136*^9, {3.4046025772579217`*^9, 3.404602587512667*^9}}],
+
+Cell["A function for plotting regions:", "Text",
+ CellChangeTimes->{{3.4046052081409454`*^9, 3.404605215691803*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ell", "[", 
+   RowBox[{"d_", ",", "h_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"x", "+", "d"}], ")"}], "^", "2"}], "+", 
+    RowBox[{"2", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"y", "+", "h"}], ")"}], "^", "2"}]}]}], "<", 
+   "2"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ell", "[", "d_", "]"}], ":=", 
+  RowBox[{"ell", "[", 
+   RowBox[{"d", ",", "0"}], "]"}]}]}], "Input"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The problem", "Section",
+ CellChangeTimes->{{3.401613850368746*^9, 3.4016138508294077`*^9}, {
+  3.4045375681690016`*^9, 3.4045375702419825`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica's",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["RegionPlot", "Input"],
+ " suffers a flaw when being exported to EPS: the transparency of its \
+overlapping regions is broken because PostScript does not support transparent \
+objects. Here's an example of what happens (with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " output and EPS output, respectively):"
+}], "Text",
+ CellChangeTimes->{{3.4045376382698016`*^9, 3.4045377252448654`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rr", "=", 
+   RowBox[{"RegionPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"ell", "[", "0", "]"}], ",", 
+       RowBox[{"ell", "[", 
+        RowBox[{"-", "1"}], "]"}], ",", 
+       RowBox[{"ell", "[", "1", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<regionplot.eps\>\"", ",", "rr"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ss", "=", 
+   RowBox[{"Show", "@", 
+    RowBox[{"Import", "[", "\"\<regionplot.eps\>\"", "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"{", 
+  RowBox[{"rr", ",", "ss"}], "}"}]}], "Input",
+ CellChangeTimes->{{3.4045297788985806`*^9, 3.404530040134219*^9}, {
+   3.4045304562225246`*^9, 3.404530458876341*^9}, {3.404530496530485*^9, 
+   3.404530496640643*^9}, {3.4045308176422205`*^9, 3.4045308400744767`*^9}, {
+   3.40453152709236*^9, 3.404531560580514*^9}, {3.404531625163379*^9, 
+   3.4045317787342033`*^9}, {3.4045318187717743`*^9, 3.4045318760541425`*^9}, 
+   3.4045319215996337`*^9, {3.4045321405544753`*^9, 3.404532272424094*^9}, {
+   3.404532305481629*^9, 3.4045323114502115`*^9}, {3.4045323476923246`*^9, 
+   3.4045323626638527`*^9}, {3.404535642359824*^9, 3.40453565753164*^9}, {
+   3.404537264171875*^9, 3.4045373010849533`*^9}, {3.4045373623230095`*^9, 
+   3.4045373899126816`*^9}, {3.4045374354982305`*^9, 3.4045375460672207`*^9}, 
+   3.404602603836139*^9, {3.404605204035042*^9, 3.404605204345488*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The solution", "Section",
+ CellChangeTimes->{{3.4045375742978144`*^9, 3.404537579164813*^9}, {
+  3.404537978168552*^9, 3.4045379785791426`*^9}}],
+
+Cell["\<\
+Here's a hack to solve the problem. Rather than plotting the regions with \
+transparent objects so their overlap is clearly visible, we plot every \
+combination of region overlap separately, manually blending the transparent \
+colours as we go. \
+\>", "Text"],
+
+Cell["\<\
+Note that the boundary colour is taken from the PlotStyle, which is much more \
+convenient than the way RegionPlot does things!\
+\>", "Text"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rr", "=", 
+   RowBox[{"FakeRegionPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"ell", "[", "0", "]"}], ",", 
+       RowBox[{"ell", "[", 
+        RowBox[{"-", "1"}], "]"}], ",", 
+       RowBox[{"ell", "[", "1", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Blue", ",", "Red", ",", "Green"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<regionplot.eps\>\"", ",", "rr"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ss", "=", 
+   RowBox[{"Show", "@", 
+    RowBox[{"Import", "[", "\"\<regionplot.eps\>\"", "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"{", 
+  RowBox[{"rr", ",", "ss"}], "}"}]}], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "Section",
+ CellChangeTimes->{{3.4046048597099266`*^9, 3.4046048622635984`*^9}}],
+
+Cell["Help:", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "FakeRegionPlot"}]], "Input"],
+
+Cell[BoxData[
+ StyleBox["\<\"FakeRegionPlot: use similarly to RegionPlot; creates a figure \
+\\nthat shows overlapping regions WITHOUT using transparency. \\nThis allows \
+correct export to EPS, unlike regular RegionPlot.\\n\\nOptions interpreted by \
+FakeRegionPlot:\\n    PlotStyle -> Blue  |  {list, of, colours}\\n    \
+BoundaryStyle -> Blue  |  {list, of, colours}\\n    Opacity -> 0.25  |  \
+{list, of, opacities}\\n\\nIf not specified, the BoundaryStyle colours are \
+infered from\\nthe PlotStyle colours.\\n\\nAll other options are passed \
+through to RegionPlot.\"\>", "MSG"]], "Print", "PrintUsage",
+ CellTags->"Info3418733262-2073041"]
+}, Open  ]],
+
+Cell["Defaults:", "Text",
+ CellChangeTimes->{{3.404604926285658*^9, 3.404604928619013*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FakeRegionPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ell", "[", "0", "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"-", "1"}], "]"}], ",", 
+     RowBox[{"ell", "[", "1", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4045375630816865`*^9, 3.4045376121722755`*^9}, {
+  3.404539039694952*^9, 3.404539067965603*^9}, {3.4045391121090784`*^9, 
+  3.404539112279323*^9}, {3.404603974607211*^9, 3.4046039901595745`*^9}, {
+  3.4046044032235312`*^9, 3.4046044349791937`*^9}, {3.404604714200694*^9, 
+  3.404604747188128*^9}, {3.4046048645969534`*^9, 3.4046048888918877`*^9}, {
+  3.4046049242026625`*^9, 3.40460492449308*^9}}],
+
+Cell["More colourful, overriding the default boundary colours:", "Text",
+ CellChangeTimes->{{3.404604956689376*^9, 3.4046049915495024`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FakeRegionPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ell", "[", "0", "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"-", "1"}], "]"}], ",", 
+     RowBox[{"ell", "[", "1", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", "Red", ",", "Green"}], "}"}]}], ",", 
+   RowBox[{"BoundaryStyle", "\[Rule]", "Black"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4045375630816865`*^9, 3.4045376121722755`*^9}, {
+  3.404539039694952*^9, 3.404539067965603*^9}, {3.4045391121090784`*^9, 
+  3.404539112279323*^9}, {3.404603974607211*^9, 3.4046039901595745`*^9}, {
+  3.4046044032235312`*^9, 3.4046044349791937`*^9}, {3.404604714200694*^9, 
+  3.404604747188128*^9}, {3.4046048645969534`*^9, 3.4046049161110272`*^9}}],
+
+Cell["Customising the transparency:", "Text"],
+
+Cell[BoxData[
+ RowBox[{"FakeRegionPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ell", "[", "0", "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"-", "1"}], "]"}], ",", 
+     RowBox[{"ell", "[", "1", "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"0", ",", "1"}], "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "1"}], "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"1", ",", "1"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "Blue", ",", "Blue", ",", "Blue", ",", "Red", ",", "Red", ",", "Red"}], 
+     "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"BoundaryStyle", "\[Rule]", "Black"}], ",", "\[IndentingNewLine]", 
+   
+   RowBox[{"Opacity", "\[Rule]", "0.2"}]}], "]"}]], "Input"],
+
+Cell["More transparency fun:", "Text"],
+
+Cell[BoxData[
+ RowBox[{"FakeRegionPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"ell", "[", "1", "]"}], ",", 
+     RowBox[{"ell", "[", "0", "]"}], ",", 
+     RowBox[{"ell", "[", 
+      RowBox[{"-", "1"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Green", ",", "Blue", ",", "Red"}], "}"}]}], ",", 
+   RowBox[{"Opacity", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.1", ",", "0.3", ",", "0.5"}], "}"}]}]}], "]"}]], "Input"]
+}, Open  ]]
+},
+Evaluator->"2nd",
+WindowSize->{636, 829},
+WindowMargins->{{Automatic, 159}, {Automatic, 20}},
+ShowSelection->True,
+FrontEndVersion->"6.0 for Mac OS X x86 (32-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3418733262-2073041"->{
+  Cell[6126, 192, 646, 9, 255, "Print",
+   CellTags->"Info3418733262-2073041"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3418733262-2073041", 11025, 327}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[590, 23, 214, 3, 67, "Section"],
+Cell[CellGroupData[{
+Cell[829, 30, 97, 1, 34, "Subsection"],
+Cell[929, 33, 357, 7, 43, "Input"],
+Cell[1289, 42, 116, 1, 26, "Text"],
+Cell[1408, 45, 474, 17, 43, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1931, 68, 151, 2, 67, "Section"],
+Cell[2085, 72, 483, 12, 56, "Text"],
+Cell[2571, 86, 1697, 39, 73, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4305, 130, 150, 2, 67, "Section"],
+Cell[4458, 134, 269, 5, 56, "Text"],
+Cell[4730, 141, 151, 3, 41, "Text"],
+Cell[4884, 146, 999, 31, 88, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5920, 182, 97, 1, 67, "Section"],
+Cell[6020, 185, 21, 0, 26, "Text"],
+Cell[CellGroupData[{
+Cell[6066, 189, 57, 1, 27, "Input"],
+Cell[6126, 192, 646, 9, 255, "Print",
+ CellTags->"Info3418733262-2073041"]
+}, Open  ]],
+Cell[6787, 204, 91, 1, 26, "Text"],
+Cell[6881, 207, 864, 20, 27, "Input"],
+Cell[7748, 229, 140, 1, 26, "Text"],
+Cell[7891, 232, 988, 23, 43, "Input"],
+Cell[8882, 257, 45, 0, 26, "Text"],
+Cell[8930, 259, 1020, 29, 88, "Input"],
+Cell[9953, 290, 38, 0, 26, "Text"],
+Cell[9994, 292, 675, 20, 43, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
