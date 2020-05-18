@@ -2,7 +2,7 @@
 //!  USER Configure Below        !
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-const int year = 2018;//Configure which year ntuples to run, options: 2017, 2018
+const int year = 2018;//Configure which year ntuples to run, options: 2017, 2018, 2016
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //!  USER Configure Above        !
@@ -81,13 +81,24 @@ namespace Limit_cfg {
       obs_SR3    = obs_SR3_2018;
 
     }//end 2018
+    else if(year == 2016){
+      signal1_rate = signal1_rate_2016; BBbar_below_Jpsi_2D_rate = BBbar_below_Jpsi_2D_rate_2016;
+      signal2_rate = signal2_rate_2016; BBbar_above_Jpsi_2D_rate = BBbar_above_Jpsi_2D_rate_2016;
+      BBbar_norm = BBbar_norm_2016; BBbar_syst = BBbar_syst_2016;
+      lumi_13TeV = lumi_13TeV_2016; mu_hlt     = mu_hlt_2016;  mu_id  = mu_id_2016;  mu_iso  = mu_iso_2016;  mu_pu  = mu_pu_2016;
+      ovlp_trk   = ovlp_trk_2016;   ovlp_mu    = ovlp_mu_2016; dimu_M = dimu_M_2016; nnlo_pt = nnlo_pt_2016; pdf_as = pdf_as_2016; HxecBr = HxecBr_2016;
+
+      inputFile1 = "../ws_2016_FINAL.root";
+      obs_SR1    = obs_SR1_2016;
+      obs_SR2    = obs_SR2_2016;
+    }//end 2016
     else{
       std::cout << "*** User input year is unknown! Please check. ***" << std::endl;
     }
 
     //Common Combine rule for 2017 and 2018
     Myrule = Myrule + "--rule CLs --testStat LHC --cl 0.95 --rAbsAcc 0.01 --rRelAcc 0.001";//Require accuracy on r because of ~zero bkg analysis, otherwise r fluctuates
-    pwd = pwd + "/home/ws13/Run2LimitSetting/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/";
+    pwd = pwd + "/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/";
 
   } // End function
 

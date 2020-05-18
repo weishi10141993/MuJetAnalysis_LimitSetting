@@ -1,0 +1,37 @@
+# HybridNew CLs: 
+#    combine      -n .H2A4Mu_mA_3.0500_GeV            -m 125 -M HybridNew --rule CLs --LHCmode LHC-limits     datacard_H2A4Mu_mA_3.0500_GeV.txt 
+# Maximum likelihood fits and diagnostics 
+#    combine      -n .H2A4Mu_mA_3.0500_GeV_expSignal0 -m 125 -M MaxLikelihoodFit --expectSignal=0 -t -1 datacard_H2A4Mu_mA_3.0500_GeV.txt 
+#    combine      -n .H2A4Mu_mA_3.0500_GeV_expSignal1 -m 125 -M MaxLikelihoodFit --expectSignal=1 -t -1 datacard_H2A4Mu_mA_3.0500_GeV.txt 
+imax 1  number of channels 
+jmax 3  number of backgrounds 
+kmax *  number of nuisance parameters (sources of systematical uncertainties) 
+------------------------------- 
+shapes * * ../workSpaces/ws_H2A4Mu_mA_3.0500_GeV.root w_H2A4Mu:$PROCESS 
+shapes DJpsiS_2D A  ../workSpaces/ws_H2A4Mu_mA_3.0500_GeV.root w_H2A4Mu:DJpsi_2D 
+shapes DJpsiD_2D A  ../workSpaces/ws_H2A4Mu_mA_3.0500_GeV.root w_H2A4Mu:DJpsi_2D 
+------------------------------- 
+bin               A 
+observation      -1 
+------------------------------- 
+bin                           A          A         A         A 
+process                       0          1         2         3 
+process                       signal     BBbar_2D  DJpsiS_2D DJpsiD_2D 
+rate                          1.000          7.258       0.318      0.019 
+------------------------------- 
+lumi_13TeV              lnN   1.025      -         -         -           Lumi (signal only; BBbar and DJpsi backgrounds are data-driven) 
+CMS_eff_mu_hlt          lnN   1.060      -         -         -           Muon trigger 
+CMS_eff_mu_id           lnN   1.024      -         -         -           Muon identification 
+CMS_eff_mu_iso          lnN   1.020      -         -         -           Muon isolation 
+CMS_eff_mu_pileup       lnN   1.002      -         -         -           Reconstruction of close muons in the muon system 
+QCDscale_ggH            lnN   1.080      -         -         -           Theoretical uncertainties in acceptance (not included in model independent limit) 
+Xsec_BR_decay           lnN   1.038      -         -         -           Theoretical uncertainties in production (not included in model independent limit) 
+CMS_H2A4Mu_eff_ovlp_trk lnN   1.024      -         -         -           Reconstruction of close muons in the tracker 
+CMS_H2A4Mu_eff_ovlp_mu  lnN   1.026      -         -         -           Reconstruction of close muons in the muon system 
+CMS_H2A4Mu_effdimu_mass lnN   1.015      -         -         -           Dimuons mass consistency m1~m2 
+CMS_H2A4Mu_nnlo_pt      lnN   1.020      -         -         -           Reconstruction of close muons in the muon system 
+CMS_H2A4Mu_BBbar_norm   lnN     -       1.123      -         -           BBbar estimate
+CMS_H2A4Mu_BBbar_syst   lnN     -       1.200      -         -           Syst on BBar normalization from the difference of the estimation done inverting ISO cut 
+CMS_H2A4Mu_DJpsi_extr   lnN     -         -       1.150     1.150        Double J/psi MC-to-data extrapolation 
+CMS_H2A4Mu_DJpsiS_norm  gmN 27  -         -       0.0118     -           Double J/psi single parton scattering (SPS) estimate of 0.061 comes from 3 MC events 
+CMS_H2A4Mu_DJpsiD_norm  gmN 5   -         -        -        0.003800     Double J/psi double parton scattering (DPS) estimate of 0.003 comes from 8 MC events 

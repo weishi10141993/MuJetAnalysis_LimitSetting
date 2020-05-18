@@ -13,15 +13,15 @@ elif "T50000" in endtxt: gr = "grep T50000 | grep -v T30000 | grep -v T10000"
 elif "T10000" in endtxt: gr = "grep T10000 | grep -v T30000 | grep -v T50000"
 else: gr = "grep -v T50000 | grep -v 10000 | grep -v 30000"
 
-bashCommand = "ls " + pwd + "sh/  | grep OutPut | " + gr + " | sort | grep -c '" + endtxt + "'"
+bashCommand = "ls " + pwd + "  | grep OutPut | " + gr + " | sort | grep -c '" + endtxt + "'"
 print str(bashCommand)
 subprocess.call(bashCommand, shell=True)
 print "That contain N limits:"
-bashCommand = "grep 'Limit: r <' " + pwd + basetxt + quantile + "*" + endtxt + "* | grep -c txt"
+bashCommand = "grep 'Limit: r <' " + pwd + str(year) + basetxt + quantile + "*" + endtxt + "* | grep -c txt"
 print str(bashCommand)
 subprocess.call(bashCommand, shell=True)
 
-cmd1 = "grep 'Hybrid New' " + pwd + basetxt + quantile + "*" + endtxt + "* "
+cmd1 = "grep 'Hybrid New' " + pwd + str(year) + basetxt + quantile + "*" + endtxt + "* "
 cmd2 = " | awk  '{print $1}' | sed 's/.$//'"
 i=0; oldline=""; average=0; average_n=0; average_m=0; average_m_n=0;
 Resulter_TOT=[]

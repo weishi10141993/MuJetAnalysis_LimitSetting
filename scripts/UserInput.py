@@ -1,3 +1,13 @@
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!  USER Configure Above        !
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+year = 2018 #Configure which year limits to run, options: 2017, 2018
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!  USER Configure Above        !
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 #**************************************
 #* Common Constants
 #**************************************
@@ -12,8 +22,8 @@ masses = [0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600
 #**************************************
 CLsymbol = '95%' # confidence level
 quantile = "0.500" # %.3f precision of expected quantiles, options: 0.500 (the following options if specified in Constants.h: 0.840, 0.160, 0.975, 0.025)
-pwd = '/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/macros/'
-basetxt = "sh/OutPut_"
+pwd = '/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/macros/sh/'
+basetxt = "/output/output_"
 
 #endtxt = "_T50000_";
 endtxt = "_T30000_";

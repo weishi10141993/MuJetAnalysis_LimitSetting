@@ -2,16 +2,6 @@ import ROOT, array, os, re, math, random
 from math import *
 import numpy as np
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#!  USER Configure Above        !
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-year = 2018 #Configure which year ntuples to run, options: 2017, 2018
-
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#!  USER Configure Above        !
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 execfile("UserInput.py") # define model independent constants for 2017-2018
 execfile("CmsAlpAcceptance.py") #ALP input
 execfile("CmsNmssmAcceptance.py") #NMSSM input
