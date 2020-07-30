@@ -9,8 +9,8 @@
 bool isLxplus = false;
 // Expected Limit quantiles: %.3f
 // const int N_Quantiles = 5;
-// float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
 const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
+// float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
 float expected_quantiles[N_Quantiles] = {0.500};
 // # of mass points for expected limits (before unblinding), see below
 const int N_Signals = 55;
@@ -22,23 +22,27 @@ float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.400
 bool DiffSeed = true; //Use differnet seed each time using combine
 int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times
 
-// Following constants are used in datacards for 2017 and 2018: to be finalized (2016 is finalized)
+// Following constants are used in datacards, 2018 to be finalized (2016 is finalized), 2017 data is not analyzed
 // SR1: Below J/psi
 float signal1_rate_2017 = 1, BBbar_below_Jpsi_2D_rate_2017 = 1.29;
-float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 2.78;
+float signal1_rate_2018 = 1, BBbar_below_Jpsi_2D_rate_2018 = 6.31;
 float signal1_rate_2016 = 1, BBbar_below_Jpsi_2D_rate_2016 = 7.26;//for 0-9GeV
 // SR2: Above J/psi, below 9 GeV
 float signal2_rate_2017 = 1, BBbar_above_Jpsi_2D_rate_2017 = 0.01;//!!!Note!!!:suppose to be 0, but use 0.01 for tool to run
-float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 0.29;
+float signal2_rate_2018 = 1, BBbar_above_Jpsi_2D_rate_2018 = 5.83;
 float signal2_rate_2016 = 1, BBbar_above_Jpsi_2D_rate_2016 = 7.26;//for 0-9GeV
 // SR3: Above 9 GeV
 float signal3_rate_2017 = 1, HighMassBKG_rate_2017 = 7.24;
-float signal3_rate_2018 = 1, HighMassBKG_rate_2018 = 10.55;
+float signal3_rate_2018 = 1, HighMassBKG_rate_2018 = 7.90;
 // Background Uncertainties: apply to SR1 and SR2
-float BBbar_norm_2017   = 1.123,   BBbar_syst_2017 = 1.2;
-float BBbar_norm_2018   = 1.123,   BBbar_syst_2018 = 1.2;
-float BBbar_norm_2016   = 1.123,   BBbar_syst_2016 = 1.2;
-// Systematic Uncertainties
+// 2018 SR1: Stat. uncetainty 10.1%; SR2: Stat. unc. 12.7%; Sys. unc. need to recheck
+float BBbar_norm_2017  = 1.127,  BBbar_syst_2017 = 1.2;
+float BBbar_norm_2018  = 1.127,  BBbar_syst_2018 = 1.2;
+float BBbar_norm_2016  = 1.123,  BBbar_syst_2016 = 1.2;
+
+//PLACEHOLDER: high mass bkg stat. unc. 13.9%, Sys. unc need to recheck
+
+// Systematic Uncertainties: Need to add MC scale to data at high mass, to be updated: PU/mass window/HLT
 float lumi_13TeV_2017 = 1.025, mu_hlt_2017  = 1.015, mu_id_2017  = 1.024, mu_iso_2017  = 1.02, mu_pu_2017  = 1.0017, ovlp_trk_2017 = 1.024, ovlp_mu_2017 = 1.026, dimu_M_2017 = 1.015, nnlo_pt_2017 = 1.02, pdf_as_2017 = 1.08, HxecBr_2017 = 1.038;
 float lumi_13TeV_2018 = 1.025, mu_hlt_2018  = 1.015, mu_id_2018  = 1.024, mu_iso_2018  = 1.02, mu_pu_2018  = 1.0017, ovlp_trk_2018 = 1.024, ovlp_mu_2018 = 1.026, dimu_M_2018 = 1.015, nnlo_pt_2018 = 1.02, pdf_as_2018 = 1.08, HxecBr_2018 = 1.038;
 float lumi_13TeV_2016 = 1.025, mu_hlt_2016  = 1.060, mu_id_2016  = 1.024, mu_iso_2016  = 1.02, mu_pu_2016  = 1.0017, ovlp_trk_2016 = 1.024, ovlp_mu_2016 = 1.026, dimu_M_2016 = 1.015, nnlo_pt_2016 = 1.02, pdf_as_2016 = 1.08, HxecBr_2016 = 1.038;
@@ -46,7 +50,7 @@ float lumi_13TeV_2016 = 1.025, mu_hlt_2016  = 1.060, mu_id_2016  = 1.024, mu_iso
 // Observed events after unblinding
 int obs_SR1_2017 = -1, obs_SR2_2017 = -1, obs_SR3_2017 = -1;
 int obs_SR1_2018 = -1, obs_SR2_2018 = -1, obs_SR3_2018 = -1;
-int obs_SR1_2016 = -1, obs_SR2_2016 = -1;
+int obs_SR1_2016 = -1, obs_SR2_2016 = -1; //no SR3 for 2016
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //!  Constants for makeWorkSpace_H2A4Mu.C    !

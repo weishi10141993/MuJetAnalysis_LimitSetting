@@ -5,6 +5,7 @@
 #SBATCH --mem-per-cpu=4000
 #SBATCH --ntasks-per-node=28
 #SBATCH --output=ToyLimit.out.%j
+#SBATCH --account=122747014089
 
 module load cctools
 export PARROT_CVMFS_ALIEN_CACHE=/scratch/group/mitchcomp/CVMFS_cache

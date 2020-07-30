@@ -23,8 +23,12 @@ limit_CSxBR2_fb_vs_mh()
 #print f_Alpha_vs_ctau(0.4,40.0,5.0,0.068)
 
 ###------ Limits Interpreted in ALP -------###
-limit_ALP_Higgs_vs_ma()
-limit_ALP_Lepton_vs_ma()
+###############################################################################
+## Don't plot ALP limits if do combine for 2016+2018, ALP not searched in 2016
+###############################################################################
+if year != 2020:
+    limit_ALP_Higgs_vs_ma()
+    limit_ALP_Lepton_vs_ma()
 
 ###-------       MSSMD       -------###
 #--BR(a->mumu) vs m(a)

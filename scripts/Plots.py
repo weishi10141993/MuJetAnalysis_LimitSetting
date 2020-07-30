@@ -87,8 +87,12 @@ def limit_vs_mGammaD():
         array_mGammaD_limit_fit_SR1.append( (m, fCmsLimitVsM(m)) )
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
         array_mGammaD_limit_fit_SR2.append( (m, fCmsLimitVsM(m)) )
-    for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
-        array_mGammaD_limit_fit_SR3.append( (m, fCmsLimitVsM(m)) )
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
+            array_mGammaD_limit_fit_SR3.append( (m, fCmsLimitVsM(m)) )
 
     # Start: Limits from toy experiment
     for m in masses:
@@ -116,7 +120,7 @@ def limit_vs_mGammaD():
     # End: Limits from toy experiment
 
     # histogram range: x: mass; y: N_evt @%XX%CL
-    h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, NMax)
+    h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.0, NMax)
     h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
     h_limit_vs_mGammaD_dummy.SetYTitle("%d%% CL upper limit on N_{evt}"%CL)
     h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
@@ -138,13 +142,16 @@ def limit_vs_mGammaD():
     gr_limit_vs_mGammaD_toy_SR2.SetLineStyle(2)
     gr_limit_vs_mGammaD_toy_SR2.SetMarkerColor(ROOT.kBlack)
     gr_limit_vs_mGammaD_toy_SR2.Draw("P")
-    ## SR3
-    gr_limit_vs_mGammaD_toy_SR3 = ROOT.TGraph( len(array_mGammaD_limit_toy_SR3), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[1]) )
-    gr_limit_vs_mGammaD_toy_SR3.SetLineColor(1)
-    gr_limit_vs_mGammaD_toy_SR3.SetLineWidth(2)
-    gr_limit_vs_mGammaD_toy_SR3.SetLineStyle(2)
-    gr_limit_vs_mGammaD_toy_SR3.SetMarkerColor(ROOT.kBlack)
-    gr_limit_vs_mGammaD_toy_SR3.Draw("P")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_toy_SR3 = ROOT.TGraph( len(array_mGammaD_limit_toy_SR3), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_toy_SR3)[1]) )
+        gr_limit_vs_mGammaD_toy_SR3.SetLineColor(1)
+        gr_limit_vs_mGammaD_toy_SR3.SetLineWidth(2)
+        gr_limit_vs_mGammaD_toy_SR3.SetLineStyle(2)
+        gr_limit_vs_mGammaD_toy_SR3.SetMarkerColor(ROOT.kBlack)
+        gr_limit_vs_mGammaD_toy_SR3.Draw("P")
     # End: Limit from toy experiments median SR1/2/3
 
     # Similar as above, but expected +/- 1, 2 sigma @ %XX%CL from toy experiments for Brazilian Plot below
@@ -165,13 +172,17 @@ def limit_vs_mGammaD():
         gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR2)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR2[i][0], array_mGammaD_limit_toy_n_one_sigma_SR2[i][1]) # - 1 sigma
         gr_limit_vs_mGammaD_toy_two_sigma_SR2.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR2)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR2[i][0], array_mGammaD_limit_toy_n_two_sigma_SR2[i][1]) # - 2 sigma
 
-    gr_limit_vs_mGammaD_toy_one_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3))
-    gr_limit_vs_mGammaD_toy_two_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)) # length should both equal array_mGammaD_limit_toy
-    for i in range(len(array_mGammaD_limit_toy_p_one_sigma_SR3)):
-        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_two_sigma_SR3[i][0], array_mGammaD_limit_toy_p_two_sigma_SR3[i][1]) # + 2 sigma
-        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_one_sigma_SR3[i][0], array_mGammaD_limit_toy_p_one_sigma_SR3[i][1]) # + 1 sigma
-        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR3[i][0], array_mGammaD_limit_toy_n_one_sigma_SR3[i][1]) # - 1 sigma
-        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR3[i][0], array_mGammaD_limit_toy_n_two_sigma_SR3[i][1]) # - 2 sigma
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3))
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3 = ROOT.TGraph(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)) # length should both equal array_mGammaD_limit_toy
+        for i in range(len(array_mGammaD_limit_toy_p_one_sigma_SR3)):
+            gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_two_sigma_SR3[i][0], array_mGammaD_limit_toy_p_two_sigma_SR3[i][1]) # + 2 sigma
+            gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(i, array_mGammaD_limit_toy_p_one_sigma_SR3[i][0], array_mGammaD_limit_toy_p_one_sigma_SR3[i][1]) # + 1 sigma
+            gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_one_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_one_sigma_SR3[i][0], array_mGammaD_limit_toy_n_one_sigma_SR3[i][1]) # - 1 sigma
+            gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetPoint(2*len(array_mGammaD_limit_toy_p_two_sigma_SR3)-1-i, array_mGammaD_limit_toy_n_two_sigma_SR3[i][0], array_mGammaD_limit_toy_n_two_sigma_SR3[i][1]) # - 2 sigma
 
     # Start: Fitted function to toy limit: SR1/2/3
     gr_limit_vs_mGammaD_fit_SR1 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR1), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR1)[1]) )
@@ -187,13 +198,16 @@ def limit_vs_mGammaD():
     gr_limit_vs_mGammaD_fit_SR2.SetLineStyle(1)
     gr_limit_vs_mGammaD_fit_SR2.SetMarkerColor(ROOT.kRed)
     gr_limit_vs_mGammaD_fit_SR2.Draw("L")
-    ## SR3
-    gr_limit_vs_mGammaD_fit_SR3 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR3), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[1]) )
-    gr_limit_vs_mGammaD_fit_SR3.SetLineWidth(2)
-    gr_limit_vs_mGammaD_fit_SR3.SetLineColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_fit_SR3.SetLineStyle(1)
-    gr_limit_vs_mGammaD_fit_SR3.SetMarkerColor(ROOT.kRed)
-    gr_limit_vs_mGammaD_fit_SR3.Draw("L")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_fit_SR3 = ROOT.TGraph( len(array_mGammaD_limit_fit_SR3), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[0]), array.array("d", zip(*array_mGammaD_limit_fit_SR3)[1]) )
+        gr_limit_vs_mGammaD_fit_SR3.SetLineWidth(2)
+        gr_limit_vs_mGammaD_fit_SR3.SetLineColor(ROOT.kRed)
+        gr_limit_vs_mGammaD_fit_SR3.SetLineStyle(1)
+        gr_limit_vs_mGammaD_fit_SR3.SetMarkerColor(ROOT.kRed)
+        gr_limit_vs_mGammaD_fit_SR3.Draw("L")
     # End: Fitted function to toy limit: SR1/2/3
 
     l_limit_vs_mGammaD = ROOT.TLegend(0.63, 0.65, 0.9, 0.75)
@@ -209,14 +223,15 @@ def limit_vs_mGammaD():
     txtHeader.Draw()
     cnv.cd()
 
-    # Now Draw Errors
+    # Draw fit errors (as to the toy result) in lower panel
     padBot = ROOT.TPad( "padBot", "padBot", 0.0, 0.0, 1.0, 0.3 )
     padBot.Draw()
     padBot.cd()
     padBot.SetGrid()
     padBot.SetLogx()
+
     # Specify ranges for mass and fit uncertainty
-    h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, -0.2, 0.2)
+    h_limit_vs_mGammaD_error_dummy = ROOT.TH2F("h_limit_vs_mGammaD_error_dummy", "h_limit_vs_mGammaD_error_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, -0.2, 0.2)
     h_limit_vs_mGammaD_error_dummy.SetXTitle("m_{a} [GeV]")
     h_limit_vs_mGammaD_error_dummy.SetYTitle("Fit Uncertainty [%]")
     h_limit_vs_mGammaD_error_dummy.SetTitleOffset(1.1, "Y")
@@ -240,7 +255,11 @@ def limit_vs_mGammaD():
     h_limit_vs_mGammaD_dummy.Draw()
     gr_limit_vs_mGammaD_toy_SR1.Draw("P") #toy
     gr_limit_vs_mGammaD_toy_SR2.Draw("P")
-    gr_limit_vs_mGammaD_toy_SR3.Draw("P")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_toy_SR3.Draw("P")
     txtHeader.Draw()
     cnv.Update()
     save_canvas(cnv, "limit_Events_vs_mGammaD")
@@ -271,16 +290,20 @@ def limit_vs_mGammaD():
     gr_limit_vs_mGammaD_toy_one_sigma_SR2.SetFillStyle(1001)
     gr_limit_vs_mGammaD_toy_one_sigma_SR2.Draw("F")
     gr_limit_vs_mGammaD_toy_SR2.Draw("L")
-    ## SR3
-    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillColor(ROOT.kOrange)
-    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetLineColor(ROOT.kOrange)
-    gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillStyle(1001)
-    gr_limit_vs_mGammaD_toy_two_sigma_SR3.Draw("F")
-    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillColor(ROOT.kGreen+1)
-    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetLineColor(ROOT.kGreen+1)
-    gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillStyle(1001)
-    gr_limit_vs_mGammaD_toy_one_sigma_SR3.Draw("F")
-    gr_limit_vs_mGammaD_toy_SR3.Draw("L")
+
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillColor(ROOT.kOrange)
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetLineColor(ROOT.kOrange)
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.SetFillStyle(1001)
+        gr_limit_vs_mGammaD_toy_two_sigma_SR3.Draw("F")
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillColor(ROOT.kGreen+1)
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetLineColor(ROOT.kGreen+1)
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.SetFillStyle(1001)
+        gr_limit_vs_mGammaD_toy_one_sigma_SR3.Draw("F")
+        gr_limit_vs_mGammaD_toy_SR3.Draw("L")
 
     l_limit_Events_vs_mGammaD_Brazil_Bands = ROOT.TLegend(0.6,0.65,0.9,0.75)
     l_limit_Events_vs_mGammaD_Brazil_Bands.SetFillColor(ROOT.kWhite)
@@ -298,7 +321,12 @@ def limit_vs_mGammaD():
 
     gr_limit_vs_mGammaD_toy_SR1.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR1.root")
     gr_limit_vs_mGammaD_toy_SR2.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR2.root")
-    gr_limit_vs_mGammaD_toy_SR3.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR3.root")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_limit_vs_mGammaD_toy_SR3.SaveAs(topDirectory + "/C/limit_Events_vs_mGammaD_SR3.root")
+
 
 #####################################################################################################
 #   Plot Upper Limit on XSec*BR^2*Alpha = "Limit on number of events"/Luminosity/"Scale factor"
@@ -320,11 +348,15 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
         CSxBR2xAlpha_fb_fit_SR1.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
         CSxBR2xAlpha_fb_fit_SR2.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
-    for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
-        CSxBR2xAlpha_fb_fit_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
+            CSxBR2xAlpha_fb_fit_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
 
-    # specify mass range
-    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, m_SR3_max+20, 1000, 0.0, NMax/lumi_fbinv/SF/eFullMc_over_aGen)
+    # specify mass range: MaxGraphMass is specifief in UserConfig for each year
+    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.0, NMax/lumi_fbinv/SF/eFullMc_over_aGen)
     h_CSxBR2xAlpha_fb_dummy.SetXTitle("m_{a} [GeV]")
     h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
     h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.47, "Y")
@@ -345,11 +377,15 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     gr_CSxBR2xAlpha_fb_fit_SR2.SetLineStyle(1)
     gr_CSxBR2xAlpha_fb_fit_SR2.Draw("C")
     # Fitted function to toy limit: SR3
-    gr_CSxBR2xAlpha_fb_fit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[1]) )
-    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineWidth(2)
-    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineColor(ROOT.kRed)
-    gr_CSxBR2xAlpha_fb_fit_SR3.SetLineStyle(1)
-    gr_CSxBR2xAlpha_fb_fit_SR3.Draw("C")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_CSxBR2xAlpha_fb_fit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR3)[1]) )
+        gr_CSxBR2xAlpha_fb_fit_SR3.SetLineWidth(2)
+        gr_CSxBR2xAlpha_fb_fit_SR3.SetLineColor(ROOT.kRed)
+        gr_CSxBR2xAlpha_fb_fit_SR3.SetLineStyle(1)
+        gr_CSxBR2xAlpha_fb_fit_SR3.Draw("C")
 
     l_CSxBR2xAlpha_fb_fit = ROOT.TLegend(0.6,0.65,0.9,0.75)
     l_CSxBR2xAlpha_fb_fit.SetFillColor(ROOT.kWhite)
@@ -417,12 +453,15 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetLineWidth(2)
     gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetLineStyle(2)
     gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.SetMarkerColor(ROOT.kBlack)
-    ## SR3
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_toy_median_limit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[1]) )
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineColor(1)
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineWidth(2)
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineStyle(2)
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetMarkerColor(ROOT.kBlack)
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3 = ROOT.TGraph( len(CSxBR2xAlpha_fb_toy_median_limit_SR3), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_toy_median_limit_SR3)[1]) )
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineColor(1)
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineWidth(2)
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetLineStyle(2)
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.SetMarkerColor(ROOT.kBlack)
 
     # Similar as above, but expected +/- 1, 2 sigma @ %XX%CL from toy experiments
     ## SR1
@@ -442,15 +481,17 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
         gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2[i][1]) # + 1 sigma
         gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR2)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR2[i][1]) # - 1 sigma
         gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR2.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR2)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR2[i][1]) # - 2 sigma
-
-    ## SR3
-    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3))
-    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)) # length should equal to above
-    for i in range(len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)):
-        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][1]) # + 2 sigma
-        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][1]) # + 1 sigma
-        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][1]) # - 1 sigma
-        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][1]) # - 2 sigma
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3))
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3 = ROOT.TGraph(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)) # length should equal to above
+        for i in range(len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)):
+            gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3[i][1]) # + 2 sigma
+            gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(i, CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3[i][1]) # + 1 sigma
+            gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_one_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_one_sigma_limit_SR3[i][1]) # - 1 sigma
+            gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][1]) # - 2 sigma
 
     cnv.cd()
     cnv.SetLogx()
@@ -475,16 +516,19 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.SetFillStyle(1001)
     gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR2.Draw("F")
     gr_CSxBR2xAlpha_fb_toy_median_limit_SR2.Draw("L")
-    ## SR3
-    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillColor(ROOT.kOrange)
-    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetLineColor(ROOT.kOrange)
-    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillStyle(1001)
-    gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.Draw("F")
-    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillColor(ROOT.kGreen+1)
-    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetLineColor(ROOT.kGreen+1)
-    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillStyle(1001)
-    gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.Draw("F")
-    gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.Draw("L")
+    ###########################################################
+    ## SR3: don't plot this region if do combine for 2016+2018
+    ###########################################################
+    if year != 2020:
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillColor(ROOT.kOrange)
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetLineColor(ROOT.kOrange)
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetFillStyle(1001)
+        gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.Draw("F")
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillColor(ROOT.kGreen+1)
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetLineColor(ROOT.kGreen+1)
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.SetFillStyle(1001)
+        gr_CSxBR2xAlpha_fb_toy_one_sigma_limit_SR3.Draw("F")
+        gr_CSxBR2xAlpha_fb_toy_median_limit_SR3.Draw("L")
 
     l_CSxBR2xAlpha_fb_toy_Brazil_Bands = ROOT.TLegend(0.6,0.65,0.9,0.75)
     l_CSxBR2xAlpha_fb_toy_Brazil_Bands.SetFillColor(ROOT.kWhite)

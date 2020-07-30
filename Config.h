@@ -2,7 +2,7 @@
 //!  USER Configure Below        !
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-const int year = 2018;//Configure which year ntuples to run, options: 2017, 2018, 2016
+const int year = 2018;//Configure which year ntuples to run, options: 2018, 2020(combine 2016+2018)
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //!  USER Configure Above        !
@@ -53,7 +53,7 @@ namespace Limit_cfg {
 
     std::cout << "\nConfiguring inputs for year " << year << std::endl;
 
-    if(year == 2017){
+    if ( year == 2017 ) {
       signal1_rate = signal1_rate_2017; BBbar_below_Jpsi_2D_rate = BBbar_below_Jpsi_2D_rate_2017;
       signal2_rate = signal2_rate_2017; BBbar_above_Jpsi_2D_rate = BBbar_above_Jpsi_2D_rate_2017;
       signal3_rate = signal3_rate_2017; HighMassBKG_rate         = HighMassBKG_rate_2017;
@@ -65,9 +65,8 @@ namespace Limit_cfg {
       obs_SR1    = obs_SR1_2017;
       obs_SR2    = obs_SR2_2017;
       obs_SR3    = obs_SR3_2017;
-
     }//end 2017
-    else if(year == 2018){
+    else if ( year == 2018 ) {
       signal1_rate = signal1_rate_2018; BBbar_below_Jpsi_2D_rate = BBbar_below_Jpsi_2D_rate_2018;
       signal2_rate = signal2_rate_2018; BBbar_above_Jpsi_2D_rate = BBbar_above_Jpsi_2D_rate_2018;
       signal3_rate = signal3_rate_2018; HighMassBKG_rate         = HighMassBKG_rate_2018;
@@ -79,9 +78,8 @@ namespace Limit_cfg {
       obs_SR1    = obs_SR1_2018;
       obs_SR2    = obs_SR2_2018;
       obs_SR3    = obs_SR3_2018;
-
     }//end 2018
-    else if(year == 2016){
+    else if ( year == 2016 ) {
       signal1_rate = signal1_rate_2016; BBbar_below_Jpsi_2D_rate = BBbar_below_Jpsi_2D_rate_2016;
       signal2_rate = signal2_rate_2016; BBbar_above_Jpsi_2D_rate = BBbar_above_Jpsi_2D_rate_2016;
       BBbar_norm = BBbar_norm_2016; BBbar_syst = BBbar_syst_2016;
@@ -92,6 +90,9 @@ namespace Limit_cfg {
       obs_SR1    = obs_SR1_2016;
       obs_SR2    = obs_SR2_2016;
     }//end 2016
+    else if ( year == 2020 ) {
+      std::cout << "*** Combining data cards of 2016 and 2018 below 9 GeV. ***" << std::endl;
+    }
     else{
       std::cout << "*** User input year is unknown! Please check. ***" << std::endl;
     }
