@@ -2,9 +2,9 @@ import ROOT, array, os, re, math, random
 from math import *
 import numpy as np
 
-execfile("UserInput.py") # define model independent constants for 2017-2018
-execfile("CmsAlpAcceptance.py") #ALP input
-execfile("CmsNmssmAcceptance.py") #NMSSM input
+execfile("../scripts/UserInput.py") # define model independent constants for 2017-2018
+execfile("../scripts/CmsAlpAcceptance.py") #ALP input
+execfile("../scripts/CmsNmssmAcceptance.py") #NMSSM input
 
 if year == 2017:
     # following will be used in CmsLimitVsM.py
@@ -64,4 +64,4 @@ if year == 2020:
     MaxGraphMass = m_SR2_max+1.5
     masses = masses2020
 
-header = " #bf{CMS} #it{Preliminary}      " + str(lumi_fbinv) + "fb^{-1} (13 TeV)";
+header = " #bf{CMS} #it{Preliminary}           " + str(lumi_fbinv) + "fb^{-1} (13 TeV)";

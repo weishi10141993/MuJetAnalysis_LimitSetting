@@ -6,6 +6,7 @@ import os.path
 import commands
 
 execfile("../scripts/UserInput.py") #define CLsymbol, quantile, pwd, basetxt, masses, pwd etc
+execfile("../scripts/UserConfig.py")
 
 print "Your will run on N files:"
 if   "T30000" in endtxt: gr = "grep T30000 | grep -v T50000 | grep -v T10000"

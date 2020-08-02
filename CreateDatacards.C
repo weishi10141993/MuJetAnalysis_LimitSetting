@@ -99,9 +99,9 @@ void CreateDatacards(){
             fprintf(file_30k, "#!/bin/bash\n");
             if(!isLxplus){
               fprintf(file_30k, "#SBATCH --job-name=ToyLimit\n");//FYI: https://hprc.tamu.edu/wiki/Terra:Batch_Processing_SLURM
-              fprintf(file_30k, "#SBATCH --time=02:00:00\n");
+              fprintf(file_30k, "#SBATCH --time=03:00:00\n");
               fprintf(file_30k, "#SBATCH --nodes=1\n");
-              fprintf(file_30k, "#SBATCH --mem-per-cpu=4000\n");
+              fprintf(file_30k, "#SBATCH --mem-per-cpu=10000\n");
               fprintf(file_30k, "#SBATCH --ntasks-per-node=1\n");
               fprintf(file_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
               fprintf(file_30k, "#SBATCH --account=122747014089\n");

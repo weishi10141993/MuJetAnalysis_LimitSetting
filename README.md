@@ -21,7 +21,7 @@ git clone -b test git@github.com:weishi10141993/MuJetAnalysis_LimitSetting
 cd MuJetAnalysis_LimitSetting     
 ```
 
-#  Model Independent Limits for Each Year
+##  Model Independent Limits for Each Year
 1. Make sure background shape root file (ws_*FINAL.root) from each year is updated from low mass background estimation. Make sure high mass bkg fitted shape is updated.  
 
 2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set which year (default is 2018, can choose 2016/2018) to run (2020 option will combine data cards for 2016+2018). Also edit Constants.h to update signal and background rates for the year. Then do:
@@ -50,6 +50,9 @@ cd MuJetAnalysis_LimitSetting
 
    The more toys, the better, but it takes more time. Refer to [TAMU Terra page](https://hprc.tamu.edu/wiki/Terra:Batch_Processing_SLURM) for info about the slurm batch system.
 
+   After the jobs are done, you should be able to see the text file containing the limit for each mass point in "macros/sh/<year>/output/".
+
+   [Optional]
    After jobs are done, toy stats distributions along with the limit value, error and expected quantiles will be stored in root files like this:
    ```
    higgsCombine.H2A4Mu_mA_*_GeV_0.HybridNew.mH125.*.quant0.500.root
@@ -61,17 +64,15 @@ cd MuJetAnalysis_LimitSetting
    ```
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
-   After the jobs are done, you should be able to see the text file containing the limit for each mass point in "macros/sh/<year>/output/".
-
 5. This step prints the limit of each mass point in the text files of previous step. You will need to copy the printed limits inside scripts/UserInput.py (later to be used by CmsLimitVsM.py and Plots.py). Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary. Then do:
 
    ```
-   cd macros; python PrintOutLimits.py; cd ..;  
+   cd macros; python PrintOutLimits.py; cd ..;
    ```
 
    Note: You have to copy the line from "That contain N limits: \n XXX" until the line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit.   
 
-6. [Not Tested] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
+6. [Note: this step is not tested, use with caution!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
    -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
@@ -82,16 +83,25 @@ cd MuJetAnalysis_LimitSetting
 8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in scripts/UserInput.py. You can specify which plots to draw from Plots.py. The default output dir is 'scripts/plots95'.
 
    ```
-   cd scripts; python Plots_RunMe.py  
+   cd scripts; python Plots_RunMe.py
    ```  
 
 9. Limits for benchmark Models:
 
-   (A) ALP limits: After running the command in previous step, files "ALPLimits/CMSRun2ALP*.txt" will be updated. Replace the same files in "ALPLimits/Electron_Coupling/" with the updated files and run 'ALP_CMSRun2.nb' in Mathematica to get updated limit plot for ALP couplings to leptons. The ALP couplings to the higgs limit plot is in scripts/plots95.
+   (A) ALP limits:
+
+   The ALP couplings to the higgs and leptons limit plot is in scripts/plots95.
+
+   To get updated limit plot for ALP couplings to leptons in the theory paper: after running the command in previous step, files "ALPLimits/CMSRun2ALP*.txt" will be updated. Replace the same files in "ALPLimits/Electron_Coupling/" with the updated text files and evaluate 'ALP_CMSRun2.nb' in Mathematica (tested in 12.1.1 student version) to get updated limit plot for ALP couplings to leptons.
+
+   Note: Download the ALPLimits folder to local Downloads folder, make sure the directory setting in 'ALP_CMSRun2.nb' match your local directory, default as:
+   In[114]: ~/Downloads/ALPLimits/MathematicaConfig/mmapkg
+   In[171]: ~/Downloads/ALPLimits/MathematicaConfig/RunDec.m
+   In[180]: ~/Downloads/ALPLimits/Electron_Coupling
 
    (B) NMSSM Limits: The NMSSM limits as a function of CP-even/odd higgs mass are in scripts/plots95.
 
-# Combine Data Cards (2016+2018) Below 9 GeV
+## Combine Data Cards (2016+2018) Below 9 GeV
 1. Make sure the workSpace of 2016 and 2018 contain the updated shape files. Make sure 2016 and 2018 data cards are available at each mass point.
 
    Notes: The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have quite different distributions.
@@ -99,12 +109,12 @@ cd MuJetAnalysis_LimitSetting
 2. Edit the year in 'Config.h' to 2020 (default is 2018), and run the following to combine data cards:
 
    ```
-   root -l -b -q  CreateDatacards.C+ # this creates shell scripts below
+   root -l -b -q  CreateDatacards.C+ # this creates the 'CombineLowMass.sh' file below
    cd Datacards/2020;
    source CombineLowMass.sh;
    cd ../..;
    ```
-   Combined data cards should appear in Datacards/2020 folder.
+   After this step, combined data cards should appear in Datacards/2020 folder. Also the shell script used in step 3 is created.
 
 3. Send jobs to run combine for each mass point with combined data cards:
 
@@ -126,7 +136,7 @@ cd MuJetAnalysis_LimitSetting
    ```  
 
 
-# Notes   
+## Notes   
 1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis
 
 2. Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive

@@ -28,7 +28,7 @@ txtHeader.SetTextAlign(22)
 txtHeader.SetHeader(header); # header defined in UserConfig.py
 
 ## output directory
-topDirectory = "plots%d"%CL # CL defined in UserInput.py
+topDirectory = "%dplots%d" % (year, CL) # defined in UserInput.py
 PNGDir = os.path.join(topDirectory, "PNG")
 PDFDir = os.path.join(topDirectory, "PDF")
 CDir   = os.path.join(topDirectory, "C")
