@@ -122,7 +122,7 @@ def limit_vs_mGammaD():
     # histogram range: x: mass; y: N_evt @%XX%CL
     h_limit_vs_mGammaD_dummy = ROOT.TH2F("h_limit_vs_mGammaD_dummy", "h_limit_vs_mGammaD_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.0, NMax)
     h_limit_vs_mGammaD_dummy.SetXTitle("m_{a} [GeV]")
-    h_limit_vs_mGammaD_dummy.SetYTitle("%d%% CL upper limit on N_{evt}"%CL)
+    h_limit_vs_mGammaD_dummy.SetYTitle("Expected %d%% CL upper limit on N_{evt}"%CL)
     h_limit_vs_mGammaD_dummy.SetTitleOffset(1.1, "Y")
     h_limit_vs_mGammaD_dummy.GetXaxis().SetNdivisions(505)
     h_limit_vs_mGammaD_dummy.GetYaxis().SetTitleSize(0.05)
@@ -387,13 +387,13 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
         gr_CSxBR2xAlpha_fb_fit_SR3.SetLineStyle(1)
         gr_CSxBR2xAlpha_fb_fit_SR3.Draw("C")
 
-    l_CSxBR2xAlpha_fb_fit = ROOT.TLegend(0.6,0.65,0.9,0.75)
+    l_CSxBR2xAlpha_fb_fit = ROOT.TLegend(0.35,0.65,0.9,0.75)
     l_CSxBR2xAlpha_fb_fit.SetFillColor(ROOT.kWhite)
     l_CSxBR2xAlpha_fb_fit.SetMargin(0.13)
     l_CSxBR2xAlpha_fb_fit.SetBorderSize(0)
     l_CSxBR2xAlpha_fb_fit.SetTextFont(42)
     l_CSxBR2xAlpha_fb_fit.SetTextSize(0.035)
-    l_CSxBR2xAlpha_fb_fit.AddEntry(gr_CSxBR2xAlpha_fb_fit_SR1, "%d%% CL upper limits"%CL,"L")
+    l_CSxBR2xAlpha_fb_fit.AddEntry(gr_CSxBR2xAlpha_fb_fit_SR1, "Expected %d%% CL upper limits"%CL,"L")
     l_CSxBR2xAlpha_fb_fit.Draw()
 
     txtHeader.Draw()

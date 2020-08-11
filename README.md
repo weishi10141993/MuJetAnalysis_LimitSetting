@@ -94,7 +94,7 @@ cd MuJetAnalysis_LimitSetting
 
    To get updated limit plot for ALP couplings to leptons in the theory paper: after running the command in previous step, files "ALPLimits/CMSRun2ALP*.txt" will be updated. Replace the same files in "ALPLimits/Electron_Coupling/" with the updated text files and evaluate 'ALP_CMSRun2.nb' in Mathematica (tested in 12.1.1 student version) to get updated limit plot for ALP couplings to leptons.
 
-   Note: Download the ALPLimits folder to local Downloads folder, make sure the directory setting in 'ALP_CMSRun2.nb' match your local directory, default as:
+   Note: Download the ALPLimits folder to local Downloads folder, make sure the directory setting in 'ALP_CMSRun2.nb' match your local directory, default at these input lines:
    In[114]: ~/Downloads/ALPLimits/MathematicaConfig/mmapkg
    In[171]: ~/Downloads/ALPLimits/MathematicaConfig/RunDec.m
    In[180]: ~/Downloads/ALPLimits/Electron_Coupling
