@@ -22,15 +22,15 @@ cd MuJetAnalysis_LimitSetting
 ```
 
 ##  Model Independent Limits for Each Year
-1. Make sure background shape root file (ws_*FINAL.root) from each year is updated from low mass background estimation. Make sure high mass bkg fitted shape is updated.  
+1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. Make sure high mass background shape is up-to-date.  
 
-2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set which year (default is 2018, can choose 2016/2018) to run (2020 option will combine data cards for 2016+2018). Also edit Constants.h to update signal and background rates for the year. Then do:
+2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit Constants.h to update signal and background rates for the year. Then do:
 
    ```
    root -l -b -q  CreateDatacards.C+
    ```
 
-   Note:The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with S and B needed by CMS official limit calculator. makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range, binning and the signal events. So for unblinding, add here events you see.
+   Note:The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with signal and background needed by limit calculator. makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range, binning and the signal events. So for unblinding, add here events you see.
 
    After running this step, you should be able to see the data cards appear in the folder "Datacards/<year>". Also two shell scripts in step 3 and 4 should be there.
 
@@ -42,7 +42,7 @@ cd MuJetAnalysis_LimitSetting
 
    After this step you should be able to find the root files for each mass point in "workSpaces/<year>" folder.
 
-4. Send jobs to run combine for each mass point.
+4. Send jobs to run combine for each mass point. Before submit, test run one point using the combine command. Stay outside the macros directory to source the file below as the relative directory matters here.
 
    ```
    source macros/RunOnDataCard_T30000.sh #30k toys/job (recommended)
@@ -72,7 +72,7 @@ cd MuJetAnalysis_LimitSetting
 
    Note: You have to copy the line from "That contain N limits: \n XXX" until the line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit.   
 
-6. [Note: this step is not tested, use with caution!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
+6. [Note: this step is not tested, use with caution!!!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
    -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
@@ -95,11 +95,16 @@ cd MuJetAnalysis_LimitSetting
    To get updated limit plot for ALP couplings to leptons in the theory paper: after running the command in previous step, files "ALPLimits/CMSRun2ALP*.txt" will be updated. Replace the same files in "ALPLimits/Electron_Coupling/" with the updated text files and evaluate 'ALP_CMSRun2.nb' in Mathematica (tested in 12.1.1 student version) to get updated limit plot for ALP couplings to leptons.
 
    Note: Download the ALPLimits folder to local Downloads folder, make sure the directory setting in 'ALP_CMSRun2.nb' match your local directory, default at these input lines:
+
    In[114]: ~/Downloads/ALPLimits/MathematicaConfig/mmapkg
+
    In[171]: ~/Downloads/ALPLimits/MathematicaConfig/RunDec.m
+
    In[180]: ~/Downloads/ALPLimits/Electron_Coupling
 
    (B) NMSSM Limits: The NMSSM limits as a function of CP-even/odd higgs mass are in scripts/plots95.
+
+   (C) Dark SUSY Limits: Ask Alfredo for help.
 
 ## Combine Data Cards (2016+2018) Below 9 GeV
 1. Make sure the workSpace of 2016 and 2018 contain the updated shape files. Make sure 2016 and 2018 data cards are available at each mass point.

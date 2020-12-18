@@ -104,7 +104,7 @@ void CreateDatacards(){
               fprintf(file_30k, "#SBATCH --mem-per-cpu=10000\n");
               fprintf(file_30k, "#SBATCH --ntasks-per-node=1\n");
               fprintf(file_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
-              fprintf(file_30k, "#SBATCH --account=122747014089\n");
+              fprintf(file_30k, "#SBATCH --account=122747014489\n");
               fprintf(file_30k, "\n");
               fprintf(file_30k, "module load cctools\n");
               fprintf(file_30k, "export PARROT_CVMFS_ALIEN_CACHE=/scratch/group/mitchcomp/CVMFS_cache\n");
@@ -157,6 +157,7 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       - \n", mu_hlt);
           fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       - \n", mu_id);
           fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       - \n", mu_iso);
+          fprintf(file_txt, "CMS_eff_mu_pu_eff       lnN   %.3f       - \n", mu_pu_eff);
           fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       - \n", mu_pu);
           fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       - \n", pdf_as);
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       - \n", HxecBr);
@@ -164,8 +165,8 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       - \n", ovlp_mu);
           fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       - \n", dimu_M);
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
-          fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm);
-          fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst);
+          fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR1);
+          fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst_SR1);
         }
         //***************
         //* Above J/psi *
@@ -190,6 +191,7 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       - \n", mu_hlt);
           fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       - \n", mu_id);
           fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       - \n", mu_iso);
+          fprintf(file_txt, "CMS_eff_mu_pu_eff       lnN   %.3f       - \n", mu_pu_eff);
           fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       - \n", mu_pu);
           fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       - \n", pdf_as);
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       - \n", HxecBr);
@@ -197,8 +199,8 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       - \n", ovlp_mu);
           fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       - \n", dimu_M);
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
-          fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm);
-          fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst);
+          fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR2);
+          fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst_SR2);
         }
         //*************************
         //* High mass backgrounds *
@@ -219,15 +221,18 @@ void CreateDatacards(){
           fprintf(file_txt, "process                       signal3    HighMassBKG \n");
           fprintf(file_txt, "rate                          %.3f       %.3f \n", signal3_rate, HighMassBKG_rate);
           fprintf(file_txt, "----------------------------------------------------------------------------- \n");
-          fprintf(file_txt, "lumi_13TeV              lnN   %.3f       %.3f \n", lumi_13TeV, lumi_13TeV);
+          fprintf(file_txt, "lumi_13TeV              lnN   %.3f       %.3f \n", lumi_13TeV, lumi_13TeV);//MC driven
           fprintf(file_txt, "CMS_eff_mu_hlt          lnN   %.3f       %.3f \n", mu_hlt, mu_hlt);
           fprintf(file_txt, "CMS_eff_mu_id           lnN   %.3f       %.3f \n", mu_id, mu_id);
           fprintf(file_txt, "CMS_eff_mu_iso          lnN   %.3f       %.3f \n", mu_iso, mu_iso);
-          fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       %.3f \n", mu_pu, mu_pu);
+          fprintf(file_txt, "CMS_eff_mu_pu_eff       lnN   %.3f       -    \n", mu_pu_eff);
+          fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       -    \n", mu_pu);
           fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -    \n", pdf_as);
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -    \n", HxecBr);
-          fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       %.3f \n", dimu_M, dimu_M);
-          fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       %.3f \n", nnlo_pt, nnlo_pt);
+          fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       -    \n", dimu_M);
+          fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       -    \n", nnlo_pt);
+          fprintf(file_txt, "CMS_H2A4Mu_BKG_norm     lnN     -        %.3f \n", BKG_norm_SR3);
+          fprintf(file_txt, "CMS_H2A4Mu_BKG_syst     lnN     -        %.3f \n", BKG_syst_SR3);
         }
         fclose(file_txt);
       }
@@ -286,7 +291,7 @@ void CreateDatacards(){
             fprintf(file_combine_30k, "#SBATCH --mem-per-cpu=15000\n");
             fprintf(file_combine_30k, "#SBATCH --ntasks-per-node=1\n");
             fprintf(file_combine_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
-            fprintf(file_combine_30k, "#SBATCH --account=122747014089\n");
+            fprintf(file_combine_30k, "#SBATCH --account=122747014489\n");
             fprintf(file_combine_30k, "\n");
             fprintf(file_combine_30k, "module load cctools\n");
             fprintf(file_combine_30k, "export PARROT_CVMFS_ALIEN_CACHE=/scratch/group/mitchcomp/CVMFS_cache\n");

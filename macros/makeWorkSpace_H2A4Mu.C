@@ -134,9 +134,10 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   }
 
   //Signal Diagonal Area in 2018: check if it's updated
-  RooGenericPdf dia1( "dia1", "generic PDF for diagonal region at SR1", "fabs(m1_below_Jpsi - m2_below_Jpsi) < 5*(0.00849813 + 0.00475107*(m1_below_Jpsi+m2_below_Jpsi)/2.0 - 0.00665393*pow((m1_below_Jpsi+m2_below_Jpsi)/2.0, 2) + 0.00337777*pow((m1_below_Jpsi+m2_below_Jpsi)/2.0, 3) )", RooArgSet(m1_below_Jpsi, m2_below_Jpsi) );
-  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region at SR2", "fabs(m1_above_Jpsi - m2_above_Jpsi) < 5*(0.0472738  - 0.00591865*(m1_above_Jpsi+m2_above_Jpsi)/2.0 + 0.00113991*pow((m1_above_Jpsi+m2_above_Jpsi)/2.0, 2) - 2.62048e-05*pow((m1_above_Jpsi+m2_above_Jpsi)/2.0, 3) + 1.92254e-07*pow((m1_above_Jpsi+m2_above_Jpsi)/2.0, 4) )", RooArgSet(m1_above_Jpsi, m2_above_Jpsi) );
-  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region at SR3", "fabs(m1_high_mass  - m2_high_mass)  < 5*(0.0472738  - 0.00591865*(m1_high_mass + m2_high_mass)/2.0 + 0.00113991*pow((m1_high_mass + m2_high_mass)/2.0, 2) - 2.62048e-05*pow((m1_high_mass + m2_high_mass)/2.0, 3) + 1.92254e-07*pow((m1_high_mass + m2_high_mass)/2.0, 4) )", RooArgSet(m1_high_mass,  m2_high_mass) );
+  //fabs(massC - massF) < My_MassWindow(massC, massF)
+  RooGenericPdf dia1( "dia1", "generic PDF for diagonal region at SR1", "fabs(m1_below_Jpsi - m2_below_Jpsi) < Limit_cfg::My_MassWindow(m1_below_Jpsi, m2_below_Jpsi)", RooArgSet(m1_below_Jpsi,m2_below_Jpsi) );
+  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region at SR2", "fabs(m1_above_Jpsi - m2_above_Jpsi) < Limit_cfg::My_MassWindow(m1_above_Jpsi, m2_above_Jpsi)", RooArgSet(m1_above_Jpsi,m2_above_Jpsi) );
+  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region at SR3", "fabs(m1_high_mass  - m2_high_mass)  < Limit_cfg::My_MassWindow(m1_high_mass, m2_high_mass)", RooArgSet(m1_high_mass,m2_high_mass) );
   //2016 window
   RooGenericPdf dia2016( "dia2016", "generic PDF for diaginal region in 2016", "fabs(m1-m2) < (0.13 + 0.065*(m1 + m2)/2.)", RooArgSet(m1,m2) );
 
@@ -149,19 +150,19 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import(dia2016);
   }
 
-  //Observed data in SR1
+  //Observed data in SR1 2018
   Double_t massC_SR1, massF_SR1;
   TTree* tree_dimudimu_signal1_2D = new TTree("tree_dimudimu_signal1_2D", "tree_dimudimu_signal1_2D");
   tree_dimudimu_signal1_2D->Branch("massC_SR1", &massC_SR1, "massC_SR1/D");
   tree_dimudimu_signal1_2D->Branch("massF_SR1", &massF_SR1, "massF_SR1/D");
 
-  //Observed data in SR2
+  //Observed data in SR2 2018
   Double_t massC_SR2, massF_SR2;
   TTree* tree_dimudimu_signal2_2D = new TTree("tree_dimudimu_signal2_2D", "tree_dimudimu_signal2_2D");
   tree_dimudimu_signal2_2D->Branch("massC_SR2", &massC_SR2, "massC_SR2/D");
   tree_dimudimu_signal2_2D->Branch("massF_SR2", &massF_SR2, "massF_SR2/D");
 
-  //Observed data in SR3
+  //Observed data in SR3 2018
   Double_t massC_SR3, massF_SR3;
   TTree* tree_dimudimu_signal3_2D = new TTree("tree_dimudimu_signal3_2D", "tree_dimudimu_signal3_2D");
   tree_dimudimu_signal3_2D->Branch("massC_SR3", &massC_SR3, "massC_SR3/D");
@@ -207,17 +208,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   massC =1.9403913;   massF = 1.8196427; tree_dimudimu_signal2016_2D->Fill();
   massC =1.3540757;   massF = 1.4834892; tree_dimudimu_signal2016_2D->Fill();
   */
-
-  //===================
-  //2017 Data Unblinded
-  //===================
-  /*
-  massC_SR1 = 100.;
-  massF_SR1 = 100.;
-  massC_SR2 = 100.;
-  massF_SR2 = 100.;
-  massC_SR3 = 100.;
-  massF_SR3 = 100.;*/
 
   //===================
   //2018 Data Unblinded
@@ -268,18 +258,20 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import(*ds_dimudimu_signal2016SR2_2D, Rename("data_obs_SR2"));
   }
 
+  //Differnet alpha, sigma and n depending on the mass, ctau? Wei@2020Sep
   //Signal parameteres below Jpsi
   RooRealVar signal1_mA("signal1_mA", "signal1_mA", mA_GeV);
-  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", 0.00849813 + 0.00475107*mA_GeV - 0.00665393*pow(mA_GeV, 2) + 0.00337777*pow(mA_GeV, 3) );
+  //assume +/-1.65*sigma is 90% signal efficiency: https://en.wikipedia.org/wiki/Standard_normal_table, same below
+  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", 1.75);
   RooRealVar signal1_n("signal1_n", "signal1_n", 2.0);
   //Signal Shape
   RooCBShape signal1_m1("signal1_m1", "signal1_m1", m1_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
   RooCBShape signal1_m2("signal1_m2", "signal1_m2", m2_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
 
-  //Signal parameteres above Jpsi
+  //Signal parameteres above Jpsi and below Upsilon
   RooRealVar signal2_mA("signal2_mA", "signal2_mA", mA_GeV);
-  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", 0.0472738 - 0.00591865*mA_GeV + 0.00113991*pow(mA_GeV, 2) - 2.62048e-05*pow(mA_GeV, 3) + 1.92254e-07*pow(mA_GeV, 4) );
+  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", 1.75);
   RooRealVar signal2_n("signal2_n", "signal2_n", 2.0);
   //Signal Shape
@@ -288,7 +280,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   //Signal parameteres at high mass
   RooRealVar signal3_mA("signal3_mA", "signal3_mA", mA_GeV);
-  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", 0.0472738 - 0.00591865*mA_GeV + 0.00113991*pow(mA_GeV, 2) - 2.62048e-05*pow(mA_GeV, 3) + 1.92254e-07*pow(mA_GeV, 4) );
+  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", 1.75);
   RooRealVar signal3_n("signal3_n", "signal3_n", 2.0);
   //Signal Shape
@@ -339,37 +331,37 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1, template1D_m2)*dia2016");//keep same name as 2017 and 2018
   }
 
-  //**************************************************
-  //Here we need a bkg pdf for high mass, TBD @Jan17
-  //**************************************************
   //2017 not analyzed
   RooGenericPdf HighMassFit2017_m1( "HighMassFit2017_m1", "2017 m1 fit function for estimated BKG at SR3", "2.10843 - 0.367391*m1_high_mass + 0.0213367*pow(m1_high_mass,2) - 0.000454813*pow(m1_high_mass,3) + 0.00000324109*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );//FCN=0.241282
   RooGenericPdf HighMassFit2017_m2( "HighMassFit2017_m2", "2017 m2 fit function for estimated BKG at SR3", "2.27162 - 0.394333*m2_high_mass + 0.0228821*pow(m2_high_mass,2) - 0.000491115*pow(m2_high_mass,3) + 0.00000353842*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );//FCN=0.197935
 
   //2018 m1 poly4 binned likelihood fit
-  //FCN=0.464656 FROM MIGRAD    STATUS=CONVERGED     569 CALLS         570 TOTAL
-  //                   EDM=2.42072e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  //FCN=1.03513 FROM MIGRAD    STATUS=CONVERGED     567 CALLS         568 TOTAL
+  //                   EDM=2.07657e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
   //EXT PARAMETER                                   STEP         FIRST
   //NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
-  // 1  p0           1.90541e-01   5.75783e-01   7.12115e-05  -1.12781e-03
-  // 2  p1          -5.80203e-02   5.78349e-02   2.87242e-06  -2.46180e-02
-  // 3  p2           4.42210e-03   1.67179e-03   6.47229e-08  -6.48250e-01
-  // 4  p3          -7.96473e-05   3.23532e-05   1.23574e-09  -1.99048e+01
-  // 5  p4           3.46347e-07   4.01675e-07   2.27706e-11  -6.75821e+02
+  // 1  p0          -2.14011e+00   7.92336e-01   1.03621e-04   2.69036e-04
+  // 2  p1           3.52624e-01   8.89594e-02   4.93906e-06   1.41599e-02
+  // 3  p2          -1.99695e-02   3.63200e-03   1.36997e-07   7.60963e-01
+  // 4  p3           4.93652e-04   9.24746e-05   2.86801e-09   4.09011e+01
+  // 5  p4          -4.09360e-06   9.68703e-07   5.48143e-11   2.20471e+03
   //                             ERR DEF= 0.5
   //2018 m2 poly4 binned likelihood fit
-  //FCN=0.426348 FROM MIGRAD    STATUS=CONVERGED     493 CALLS         494 TOTAL
-  //                   EDM=8.24263e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  //FCN=0.869066 FROM MIGRAD    STATUS=CONVERGED     689 CALLS         690 TOTAL
+  //                   EDM=3.99019e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
   //EXT PARAMETER                                   STEP         FIRST
   //NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
-  // 1  p0          -2.06372e+00   6.43616e-01   8.30952e-05  -1.00821e-03
-  // 2  p1           2.74335e-01   6.19206e-02   2.91688e-06  -3.66403e-02
-  // 3  p2          -1.13786e-02   1.66265e-03   6.21869e-08  -1.60966e+00
-  // 4  p3           2.23236e-04   3.06295e-05   1.17444e-09  -8.62670e+01
-  // 5  p4          -1.68615e-06   3.85957e-07   2.15228e-11  -5.04768e+03
+  // 1  p0          -1.62302e+00   8.53285e-01   1.01288e-04   1.48811e-04
+  // 2  p1           2.65622e-01   9.55153e-02   4.73584e-06   6.75011e-03
+  // 3  p2          -1.50027e-02   3.89996e-03   1.30635e-07   3.15583e-01
+  // 4  p3           3.79279e-04   9.75599e-05   2.74062e-09   1.47979e+01
+  // 5  p4          -3.18819e-06   1.00651e-06   5.25089e-11   7.01362e+02
   //                             ERR DEF= 0.5
-  RooGenericPdf HighMassFit2018_m1( "HighMassFit2018_m1", "2018 m1 fit function for estimated BKG at SR3", "1.90541e-01 - 5.80203e-02*m1_high_mass + 4.42210e-03*pow(m1_high_mass,2) - 7.96473e-05*pow(m1_high_mass,3)  + 3.46347e-07*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );
-  RooGenericPdf HighMassFit2018_m2( "HighMassFit2018_m2", "2018 m2 fit function for estimated BKG at SR3", "-2.06372e+00 + 2.74335e-01*m2_high_mass - 1.13786e-02*pow(m2_high_mass,2) + 2.23236e-04*pow(m2_high_mass,3) - 1.68615e-06*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );
+  //RooGenericPdf HighMassFit2018_m1( "HighMassFit2018_m1", "2018 m1 fit function for estimated BKG at SR3", "-2.14011e+00 + 3.52624e-01*m1_high_mass - 1.99695e-02*pow(m1_high_mass,2) + 4.93652e-04*pow(m1_high_mass,3) - 4.09360e-06*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );
+  //RooGenericPdf HighMassFit2018_m2( "HighMassFit2018_m2", "2018 m2 fit function for estimated BKG at SR3", "-1.62302e+00 + 2.65622e-01*m2_high_mass - 1.50027e-02*pow(m2_high_mass,2) + 3.79279e-04*pow(m2_high_mass,3) - 3.18819e-06*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );
+
+  RooGenericPdf HighMassFit2018_m1("HighMassFit2018_m1", "2018 m1 estimated BKG shape at SR3", "Limit_cfg::My_BKGShapem1(m1_high_mass)", RooArgSet(m1_high_mass) );
+  RooGenericPdf HighMassFit2018_m2("HighMassFit2018_m2", "2018 m2 estimated BKG shape at SR3", "Limit_cfg::My_BKGShapem2(m2_high_mass)", RooArgSet(m2_high_mass) );
 
   if (year == 2017){
     w_H2A4Mu->import(HighMassFit2017_m1);

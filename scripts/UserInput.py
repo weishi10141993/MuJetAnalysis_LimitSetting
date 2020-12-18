@@ -42,15 +42,15 @@ debug1 = False
 #************************************************
 CL = 95 ## upper limit
 
-## 2017: To be updated
+## 2017: NOT ANALYZED
 lumi_fbinv_2017 = 36.73 # Total lumi [fb^-1]
-SF_2017 = 0.969 # scale factor from MC to data: eFullData / eFullMc
-eFullMc_over_aGen_2017 = 0.55 # average constant from all signal MC samples
+SF_2017 = 1.0 # scale factor from MC to data: eFullData / eFullMc
+eFullMc_over_aGen_2017 = 0.418 # average constant from all signal MC samples
 
-## 2018: To be updated
+## 2018
 lumi_fbinv_2018 = 59.97 # Total lumi [fb^-1]
-SF_2018 = 0.969 # To be updated: scale factor from MC to data: eFullData / eFullMc
-eFullMc_over_aGen_2018 = 0.40 # To be updated: average constant from all signal MC samples
+SF_2018 = 0.996 # To be updated: scale factor from MC to data: eFullData / eFullMc
+eFullMc_over_aGen_2018 = 0.418 # To be updated: average constant from all signal MC samples
 
 ## 2020 Combines 2016+2018 : To be updated
 lumi_fbinv_2020 = 95.87 # Total lumi [fb^-1] 35.9+59.97
