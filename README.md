@@ -17,6 +17,7 @@ git checkout v8.0.1
 scramv1 b clean; scramv1 b # always make a clean build
 
 # clone repo for the analysis
+cd ../../
 git clone -b test git@github.com:weishi10141993/MuJetAnalysis_LimitSetting
 cd MuJetAnalysis_LimitSetting     
 ```
@@ -40,11 +41,38 @@ cd MuJetAnalysis_LimitSetting
    cd macros; source CreateROOTfiles.sh; cd ..;
    ```
 
-   After this step you should be able to find the root files for each mass point in "workSpaces/<year>" folder.
+   After this step you should be able to find the root files for each mass point in "workSpaces/<year>" folder. Open any one file and print out the workspace to see if there is any obvious evaluation problem of the contents in the workspace.
 
-4. Send jobs to run combine for each mass point. Before submit, test run one point using the combine command. Stay outside the macros directory to source the file below as the relative directory matters here.
+4. On TAMU Terra, make sure the line:
 
    ```
+   gROOT->ProcessLine(".L /home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/Helpers.h");
+   ```
+   is added to the HiggsAnalysis/CombinedLimit/src/Combine.cc file right before this line:
+
+   ```
+   w = dynamic_cast<RooWorkspace *>(fIn->Get(workspaceName_.c_str()));
+   ```
+   This will preload the mass window and the background shapes functions.
+
+   (Note: if you use "combine -v 3" mode, the functions evaluate error may appear due to a line in the HiggsAnalysis/CombinedLimit/python/ModelTools.py file:
+
+   ```
+   if self.options.verbose > 1: self.out.Print("tv")
+   ```
+   It prints out the workspace. But this doesn't affect the combine calculation as we've added the functions in Combine.cc above.)
+
+   Then recompile the HiggsAnalysis/CombinedLimit directory:
+
+   ```
+   scramv1 b clean;
+   scramv1 b
+   ```
+
+5. Send jobs to run combine for each mass point. Before submit, do a local test on one mass point using the combine command inside the submission file. Stay outside the macros directory to source the file below as the relative directory matters here.
+
+   ```
+   cd MuJetAnalysis_LimitSetting
    source macros/RunOnDataCard_T30000.sh #30k toys/job (recommended)
    ```
 
@@ -144,20 +172,24 @@ cd MuJetAnalysis_LimitSetting
 ## Notes   
 1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis
 
-2. Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive
+2. Method HybridNew: Searching for a signal where a small number of events are expected (<10). Because asymptotic profile likelihood test-statistic distribution is no longer a good approximation, but can be very CPU / time intensive.
 
 3. A typical combine command to obtain expected 95% CL limit for 0.5 quantile (median) looks like this:
-```
-combine -n .H2A4Mu_mA_0.2113_GeV_0 -m 125 -M HybridNew --saveHybridResult --expectedFromGrid 0.500 --rule CLs --testStat LHC --cl 0.95  -s -1 -T 30000 Datacards/datacard_H2A4Mu_mA_0.2113_GeV.txt -v 1
-```
 
-"--cl" is a common statistic option to many combine methods. It specifies the confidence level you want, default as 0.95 in combine. The "rule" option specifies the rule to use, default is CLs.
-"expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit, remove the "--expectedFromGrid" option.
-In case you have some knowledge of where the limit should be, then setting an appropriate --rMax can speed up the search.
+   ```
+   combine -n .H2A4Mu_mA_0.2113_GeV_0 -m 125 -M HybridNew --saveHybridResult --expectedFromGrid 0.500 --rule CLs --testStat LHC --cl 0.95  -s -1 -T 30000 Datacards/datacard_H2A4Mu_mA_0.2113_GeV.txt -v 1
+   ```
 
-Finding the expected -2 s.t.d. deviation band can take significantly longer: CLs = CLs+b / CLb where CLb = 0.025 by construction, Need ~ 20 times as many toys to get same CLs accuracy as for median. You can use the --fork N option to run up to N toys in parallel.
+  The "--cl" is a common statistic option to many combine methods. It specifies the confidence level you want, default as 0.95 in combine. The "rule" option specifies the rule to use, default is CLs.
 
-For more combine options:
-```
-combine --help
-```
+  The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
+
+  In case you have some knowledge of where the limit should be, then setting an appropriate --rMax can speed up the search.
+
+  Finding the expected -2 s.t.d. deviation band can take significantly longer: CLs = CLs+b / CLb where CLb = 0.025 by construction, Need ~ 20 times as many toys to get same CLs accuracy as for median. You can use the --fork N option to run up to N toys in parallel.
+
+  For more combine options:
+
+  ```
+  combine --help
+  ```

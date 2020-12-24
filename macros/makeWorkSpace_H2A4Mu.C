@@ -47,6 +47,7 @@
 
 #include "../Constants.h"
 #include "../Config.h"
+#include "../Helpers.h"//several interpolation functions
 
 #ifndef __CINT__
 #include "RooCFunction1Binding.h"
@@ -54,52 +55,15 @@
 
 using namespace RooFit;
 
-class RooUserPdf : public RooAbsPdf {
-
-  public:
-    RooUserPdf(const char *name, const char *title, RooAbsReal& _x1, RooAbsReal& _x2);
-    RooUserPdf(const RooUserPdf& other, const char* name=0) ;
-    virtual TObject* clone(const char* newname) const {return new RooUserPdf(*this,newname);}
-    inline virtual ~RooUserPdf() { }
-
-  protected:
-    RooRealProxy x1;
-    RooRealProxy x2;
-    Double_t evaluate() const ;
-
-  private:
-    ClassDef(RooUserPdf,0)
-};
-
-RooUserPdf::RooUserPdf(const char *name, const char *title, RooAbsReal& _x1, RooAbsReal& _x2) :
-  RooAbsPdf(name,title),
-  x1("x1","Dependent1",this,_x1),
-  x2("x2","Dependent2",this,_x2)
-{}
-
-RooUserPdf::RooUserPdf(const RooUserPdf& other, const char* name) :
-  RooAbsPdf(other,name),
-  x1("x1", this, other.x1),
-  x2("x2", this, other.x2)
-{}
-
-Double_t RooUserPdf::evaluate() const
-{
-  Double_t res;
-  if ( x1-x2 < x1+x2 ) {//what's this function for? should get rid of it?@WEI JULY 2020
-    res = 1.0;
-  } else {
-    res = 0.0;
-  }
-  return res;
-}
-
 void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
+
+  using namespace RooFit;
+  using namespace Limit_cfg;
+  using namespace Helpers_cfg;
 
   //Configure inputfile for year
   Limit_cfg::ConfigureInput(year);
 
-  using namespace RooFit;
   RooRandom::randomGenerator()->SetSeed(seed);
   RooWorkspace *w_H2A4Mu = new RooWorkspace("w_H2A4Mu");
 
@@ -131,23 +95,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   if(year==2016){
     w_H2A4Mu->import(m1);
     w_H2A4Mu->import(m2);
-  }
-
-  //Signal Diagonal Area in 2018: check if it's updated
-  //fabs(massC - massF) < My_MassWindow(massC, massF)
-  RooGenericPdf dia1( "dia1", "generic PDF for diagonal region at SR1", "fabs(m1_below_Jpsi - m2_below_Jpsi) < Limit_cfg::My_MassWindow(m1_below_Jpsi, m2_below_Jpsi)", RooArgSet(m1_below_Jpsi,m2_below_Jpsi) );
-  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region at SR2", "fabs(m1_above_Jpsi - m2_above_Jpsi) < Limit_cfg::My_MassWindow(m1_above_Jpsi, m2_above_Jpsi)", RooArgSet(m1_above_Jpsi,m2_above_Jpsi) );
-  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region at SR3", "fabs(m1_high_mass  - m2_high_mass)  < Limit_cfg::My_MassWindow(m1_high_mass, m2_high_mass)", RooArgSet(m1_high_mass,m2_high_mass) );
-  //2016 window
-  RooGenericPdf dia2016( "dia2016", "generic PDF for diaginal region in 2016", "fabs(m1-m2) < (0.13 + 0.065*(m1 + m2)/2.)", RooArgSet(m1,m2) );
-
-  if(year==2017 || year==2018){
-    w_H2A4Mu->import(dia1);
-    w_H2A4Mu->import(dia2);
-    w_H2A4Mu->import(dia3);
-  }
-  if(year==2016){
-    w_H2A4Mu->import(dia2016);
   }
 
   //Observed data in SR1 2018
@@ -258,11 +205,14 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import(*ds_dimudimu_signal2016SR2_2D, Rename("data_obs_SR2"));
   }
 
+  //===================
+  //= Signal Shape
+  //===================
   //Differnet alpha, sigma and n depending on the mass, ctau? Wei@2020Sep
   //Signal parameteres below Jpsi
   RooRealVar signal1_mA("signal1_mA", "signal1_mA", mA_GeV);
   //assume +/-1.65*sigma is 90% signal efficiency: https://en.wikipedia.org/wiki/Standard_normal_table, same below
-  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", 1.75);
   RooRealVar signal1_n("signal1_n", "signal1_n", 2.0);
   //Signal Shape
@@ -271,7 +221,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   //Signal parameteres above Jpsi and below Upsilon
   RooRealVar signal2_mA("signal2_mA", "signal2_mA", mA_GeV);
-  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", 1.75);
   RooRealVar signal2_n("signal2_n", "signal2_n", 2.0);
   //Signal Shape
@@ -280,7 +230,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
 
   //Signal parameteres at high mass
   RooRealVar signal3_mA("signal3_mA", "signal3_mA", mA_GeV);
-  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Limit_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
   RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", 1.75);
   RooRealVar signal3_n("signal3_n", "signal3_n", 2.0);
   //Signal Shape
@@ -314,6 +264,67 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->factory("PROD::signal2(signal2016_m1, signal2016_m2)");
   }
 
+  //===================
+  //= BKG Shape
+  //===================
+  //2018 mass window
+  RooGenericPdf dia1( "dia1", "generic PDF for diagonal region at SR1", "fabs(m1_below_Jpsi - m2_below_Jpsi) < Helpers_cfg::My_MassWindow(m1_below_Jpsi, m2_below_Jpsi)", RooArgSet(m1_below_Jpsi,m2_below_Jpsi) );
+  RooGenericPdf dia2( "dia2", "generic PDF for diaginal region at SR2", "fabs(m1_above_Jpsi - m2_above_Jpsi) < Helpers_cfg::My_MassWindow(m1_above_Jpsi, m2_above_Jpsi)", RooArgSet(m1_above_Jpsi,m2_above_Jpsi) );
+  RooGenericPdf dia3( "dia3", "generic PDF for diaginal region at SR3", "fabs(m1_high_mass  - m2_high_mass)  < Helpers_cfg::My_MassWindow(m1_high_mass, m2_high_mass)", RooArgSet(m1_high_mass,m2_high_mass) );
+  //2016 mass window
+  RooGenericPdf dia2016( "dia2016", "generic PDF for diaginal region in 2016", "fabs(m1-m2) < (0.13 + 0.065*(m1 + m2)/2.)", RooArgSet(m1,m2) );
+  //2018 bkg shape interpolation above 11 GeV
+  RooGenericPdf HighMassFit2018_m1("HighMassFit2018_m1", "2018 m1 estimated BKG shape at SR3", "Helpers_cfg::My_BKGShapem1(m1_high_mass)", RooArgSet(m1_high_mass) );
+  RooGenericPdf HighMassFit2018_m2("HighMassFit2018_m2", "2018 m2 estimated BKG shape at SR3", "Helpers_cfg::My_BKGShapem2(m2_high_mass)", RooArgSet(m2_high_mass) );
+
+  //Method1
+  /*
+  TF1 *myfuncA = new TF1("myfuncA", "Helpers_cfg::My_BKGShapem1(x)", 11., 60.);
+  TF1 *myfuncB = new TF1("myfuncB", "Helpers_cfg::My_BKGShapem2(x)", 11., 60.);
+  RooRealVar a0("a0", "a0", 0);
+  a0.setConstant(kTRUE);
+  RooChebychev flatA("flatA", "flatA", m1_high_mass, RooArgList(a0));
+  RooChebychev flatB("flatB", "flatB", m2_high_mass, RooArgList(a0));
+  RooAbsReal *firstdimu = bindFunction(myfuncA, m1_high_mass);
+  RooAbsReal *secondimu = bindFunction(myfuncB, m2_high_mass);
+  // Print definition
+  firstdimu->Print();
+  secondimu->Print();
+  // plot func
+  RooPlot *myframe = m2_high_mass.frame(Title("myfunc"));
+  secondimu->plotOn(myframe);
+  TCanvas * mycanvas = new TCanvas("mycanvas");
+  mycanvas->cd(); myframe->Draw();
+  mycanvas->SaveAs("myfunc.pdf");
+  RooAbsPdf *HighMassFit2018_m1 = new RooRealSumPdf("HighMassFit2018_m1", "HighMassFit2018_m1", *firstdimu, flatA, 1.);
+  RooAbsPdf *HighMassFit2018_m2 = new RooRealSumPdf("HighMassFit2018_m2", "HighMassFit2018_m2", *secondimu, flatB, 1.);
+  */
+  //End method 1
+
+  if ( year == 2016 ){
+    w_H2A4Mu->import(dia2016);
+  }
+
+  if ( year == 2017 || year == 2018 ){
+    w_H2A4Mu->import(dia1);
+    w_H2A4Mu->import(dia2);
+    w_H2A4Mu->import(dia3);
+    //Method1
+    /*
+    w_H2A4Mu->import(*myfuncA);
+    w_H2A4Mu->import(*myfuncB);
+    w_H2A4Mu->import(*HighMassFit2018_m1);
+    w_H2A4Mu->import(*HighMassFit2018_m2);*/
+    //End method 1
+
+    //method 2
+    w_H2A4Mu->import(HighMassFit2018_m1);
+    w_H2A4Mu->import(HighMassFit2018_m2);
+    //end method 2
+
+    w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
+  }
+
   TFile* file = new TFile(inputFile1); // defined in ../Config.h
   RooWorkspace *w = (RooWorkspace*) file->Get("w");
   if(year==2017 || year==2018){
@@ -330,10 +341,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->factory("PROD::BBbar_below_Jpsi_2D(template1D_m1, template1D_m2)*dia2016");
     w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1, template1D_m2)*dia2016");//keep same name as 2017 and 2018
   }
-
-  //2017 not analyzed
-  RooGenericPdf HighMassFit2017_m1( "HighMassFit2017_m1", "2017 m1 fit function for estimated BKG at SR3", "2.10843 - 0.367391*m1_high_mass + 0.0213367*pow(m1_high_mass,2) - 0.000454813*pow(m1_high_mass,3) + 0.00000324109*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );//FCN=0.241282
-  RooGenericPdf HighMassFit2017_m2( "HighMassFit2017_m2", "2017 m2 fit function for estimated BKG at SR3", "2.27162 - 0.394333*m2_high_mass + 0.0228821*pow(m2_high_mass,2) - 0.000491115*pow(m2_high_mass,3) + 0.00000353842*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );//FCN=0.197935
 
   //2018 m1 poly4 binned likelihood fit
   //FCN=1.03513 FROM MIGRAD    STATUS=CONVERGED     567 CALLS         568 TOTAL
@@ -360,18 +367,13 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   //RooGenericPdf HighMassFit2018_m1( "HighMassFit2018_m1", "2018 m1 fit function for estimated BKG at SR3", "-2.14011e+00 + 3.52624e-01*m1_high_mass - 1.99695e-02*pow(m1_high_mass,2) + 4.93652e-04*pow(m1_high_mass,3) - 4.09360e-06*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );
   //RooGenericPdf HighMassFit2018_m2( "HighMassFit2018_m2", "2018 m2 fit function for estimated BKG at SR3", "-1.62302e+00 + 2.65622e-01*m2_high_mass - 1.50027e-02*pow(m2_high_mass,2) + 3.79279e-04*pow(m2_high_mass,3) - 3.18819e-06*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );
 
-  RooGenericPdf HighMassFit2018_m1("HighMassFit2018_m1", "2018 m1 estimated BKG shape at SR3", "Limit_cfg::My_BKGShapem1(m1_high_mass)", RooArgSet(m1_high_mass) );
-  RooGenericPdf HighMassFit2018_m2("HighMassFit2018_m2", "2018 m2 estimated BKG shape at SR3", "Limit_cfg::My_BKGShapem2(m2_high_mass)", RooArgSet(m2_high_mass) );
-
+  //2017 not analyzed
+  RooGenericPdf HighMassFit2017_m1( "HighMassFit2017_m1", "2017 m1 fit function for estimated BKG at SR3", "2.10843 - 0.367391*m1_high_mass + 0.0213367*pow(m1_high_mass,2) - 0.000454813*pow(m1_high_mass,3) + 0.00000324109*pow(m1_high_mass,4)", RooArgSet(m1_high_mass) );//FCN=0.241282
+  RooGenericPdf HighMassFit2017_m2( "HighMassFit2017_m2", "2017 m2 fit function for estimated BKG at SR3", "2.27162 - 0.394333*m2_high_mass + 0.0228821*pow(m2_high_mass,2) - 0.000491115*pow(m2_high_mass,3) + 0.00000353842*pow(m2_high_mass,4)", RooArgSet(m2_high_mass) );//FCN=0.197935
   if (year == 2017){
     w_H2A4Mu->import(HighMassFit2017_m1);
     w_H2A4Mu->import(HighMassFit2017_m2);
     w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2017_m1, HighMassFit2017_m2)*dia3");
-  }
-  if (year == 2018){
-    w_H2A4Mu->import(HighMassFit2018_m1);
-    w_H2A4Mu->import(HighMassFit2018_m2);
-    w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
   }
 
   // Set all fit variables to constants
