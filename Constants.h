@@ -13,11 +13,11 @@ const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantile
 // float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
 float expected_quantiles[N_Quantiles] = {0.500};
 // # of mass points for expected limits (before unblinding), see below
-const int N_Signals = 55;
+const int N_Signals = 56;
 float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.5300, 0.5600,
    0.6000, 0.7000, 0.8000, 0.9000, 1.0000, 1.1000, 1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000,
    2.1000, 2.2000, 2.3000, 2.4000, 2.5000, 2.6000, 2.7000, 3.3000, 3.4000, 3.7000, 4.0000, 5.0000, 6.0000, 7.0000, 8.0000, 8.5000,
-   13.0000, 17.0000, 21.0000, 25.0000, 29.0000, 33.0000, 37.0000, 41.0000, 45.0000, 49.0000, 53.0000, 57.0000};
+   13.0000, 17.0000, 21.0000, 25.0000, 29.0000, 33.0000, 37.0000, 41.0000, 45.0000, 49.0000, 53.0000, 57.0000, 58.0000};
 
 bool DiffSeed = true; //Use differnet seed each time using combine
 int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times

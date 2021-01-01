@@ -18,7 +18,7 @@ execfile("R_Hadrons.py")
 execfile("CmsDarkSusyAcceptance.py")
 execfile("NMSSM_Br_a_Function.py")
 
-txtHeader = ROOT.TLegend(.05, .933, .99, 1.)
+txtHeader = ROOT.TLegend(.2, .933, .91, 1)
 txtHeader.SetFillColor(ROOT.kWhite)
 txtHeader.SetFillStyle(0)
 txtHeader.SetBorderSize(0)
@@ -247,9 +247,9 @@ def limit_vs_mGammaD():
     gr_limit_vs_mGammaD_fit_uncertainty.Draw("P") #Don't draw line, it will connect Jpsi and Upsilon regions
     cnv.cd()
     cnv.Update()
-    save_canvas(cnv, "limit_Events_vs_mGammaD_FitUncert")
+    save_canvas(cnv, "limit_Events_vs_mGammaD_FitUncert") # DO NOT use this plot as the limit is not flat!
 
-    # Now simply draw toy (no fit)
+    # Now simply draw toy limit without fit
     cnv.cd()
     cnv.SetLogx()
     h_limit_vs_mGammaD_dummy.Draw()
@@ -345,21 +345,24 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     CSxBR2xAlpha_fb_fit_SR3 = []
     # Specify correct mass ranges, use fitted function
     for m in np.arange(m_SR1_min, m_SR1_max, 0.005):
-        CSxBR2xAlpha_fb_fit_SR1.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        #CSxBR2xAlpha_fb_fit_SR1.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen )) # use fit function
+        CSxBR2xAlpha_fb_fit_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen )) # use interpolation
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
-        CSxBR2xAlpha_fb_fit_SR2.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        #CSxBR2xAlpha_fb_fit_SR2.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+        CSxBR2xAlpha_fb_fit_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
     ###########################################################
     ## SR3: don't plot this region if do combine for 2016+2018
     ###########################################################
     if year != 2020:
         for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
-            CSxBR2xAlpha_fb_fit_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            #CSxBR2xAlpha_fb_fit_SR3.append(( m, fCmsLimitVsM(m)/lumi_fbinv/SF/eFullMc_over_aGen ))
+            CSxBR2xAlpha_fb_fit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
 
     # specify mass range: MaxGraphMass is specifief in UserConfig for each year
     h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.0, NMax/lumi_fbinv/SF/eFullMc_over_aGen)
     h_CSxBR2xAlpha_fb_dummy.SetXTitle("m_{a} [GeV]")
-    h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{gen} [fb]")
-    h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.47, "Y")
+    h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{Gen} [fb]")
+    h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.55, "Y")
     h_CSxBR2xAlpha_fb_dummy.GetXaxis().SetNdivisions(505)
     h_CSxBR2xAlpha_fb_dummy.GetYaxis().SetTitleSize(0.05)
     h_CSxBR2xAlpha_fb_dummy.Draw()
@@ -397,7 +400,7 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     l_CSxBR2xAlpha_fb_fit.Draw()
 
     txtHeader.Draw()
-    save_canvas(cnv, "CSxBR2xAlpha_fb_fit")
+    save_canvas(cnv, "CSxBR2xAlpha_fb")
 
     ##############################################################################
     # Transforming the Limit on N_event to Xsec limit using toy experiment values
@@ -1997,9 +2000,9 @@ def limit_CSxBR2_fb_vs_ma():
     array_ma_mh_125 = []
     array_ma_mh_150 = []
     for ma_i in array_ma: #defined in UserInput.py
-        array_ma_mh_90.append((  ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 90.,  CmsNmssmAcceptance) ))
-        array_ma_mh_125.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 125., CmsNmssmAcceptance) ))
-        array_ma_mh_150.append(( ma_i, fCmsLimitVsM(ma_i)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 150., CmsNmssmAcceptance) ))
+        array_ma_mh_90.append(( ma_i, ExpectedLimitVsM_HybridNew(ma_i, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 90.,  CmsNmssmAcceptance) ))
+        array_ma_mh_125.append(( ma_i, ExpectedLimitVsM_HybridNew(ma_i, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 125., CmsNmssmAcceptance) ))
+        array_ma_mh_150.append(( ma_i, ExpectedLimitVsM_HybridNew(ma_i, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsNmssmExtrapolate(ma_i, 150., CmsNmssmAcceptance) ))
 
     gr_CSxBR_vs_ma_mh_90 = ROOT.TGraph(len(array_ma_mh_90), array.array("d", zip(*array_ma_mh_90)[0]), array.array("d", zip(*array_ma_mh_90)[1]))
     gr_CSxBR_vs_ma_mh_90.SetLineWidth(2)
@@ -2095,8 +2098,8 @@ def limit_CSxBR2_fb_vs_mh():
     array_mh_CSxBR_NMSSM_ma_0p5 = []
     array_mh_CSxBR_NMSSM_ma_3 = []
     for mh_i in array_mh:
-        array_mh_CSxBR_NMSSM_ma_0p5.append(( mh_i, fCmsLimitVsM(0.5)/lumi_fbinv/SF/fCmsNmssmExtrapolate(0.5, mh_i, CmsNmssmAcceptance) )) # Model Independent limits transformed to Xsec
-        array_mh_CSxBR_NMSSM_ma_3.append(( mh_i,   fCmsLimitVsM(3)/lumi_fbinv/SF/fCmsNmssmExtrapolate(3, mh_i, CmsNmssmAcceptance) ))
+        array_mh_CSxBR_NMSSM_ma_0p5.append(( mh_i, ExpectedLimitVsM_HybridNew(0.5, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsNmssmExtrapolate(0.5, mh_i, CmsNmssmAcceptance) )) # Model Independent limits transformed to Xsec
+        array_mh_CSxBR_NMSSM_ma_3.append(( mh_i, ExpectedLimitVsM_HybridNew(3, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsNmssmExtrapolate(3, mh_i, CmsNmssmAcceptance) ))
 
     gr_CSxBR_NMSSM_vs_mh_ma_0p5 = ROOT.TGraph(len(array_mh_CSxBR_NMSSM_ma_0p5), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_0p5)[0]), array.array("d", zip(*array_mh_CSxBR_NMSSM_ma_0p5)[1]))
     gr_CSxBR_NMSSM_vs_mh_ma_0p5.SetLineWidth(2)
@@ -2241,14 +2244,14 @@ def limit_ALP_Higgs_vs_ma():
 
     # Specify correct mass ranges, use fitted function [m] = GeV
     for m in np.arange(0.5, m_SR1_max, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR2.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
     for m in np.arange(m_SR3_min, 30, 0.005):
-        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
-        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
+        CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR3.append(( m, math.sqrt( (HiggsSMWidthMeV/1000.)/(1./(ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000)/Br_ALP_Lepton_0p1**2) - 1)*32*3.1415/(HiggsVEV**2)/(HiggsMass**3)/( (1 - 2*(m/HiggsMass)**2)**2 )/math.sqrt(1 - 4*(m/HiggsMass)**2) )*10**6 ))
 
     # For Br_ALP_Lepton_1
     # SR1
@@ -2336,17 +2339,17 @@ def limit_ALP_Lepton_vs_ma():
     # Specify correct mass ranges, use fitted function [m] = GeV
     # 1./Br(H->2ALP) = ( 1+ HiggsSMWidthMeV/1000./( (CahEff_over_LambdaSquare_TeV_1/1000/1000)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2)/32/3.1415 ) )
     for m in np.arange(0.5, m_SR1_max, 0.005):
-        clleff_over_Lambda_TeV_Cah_1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR1.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
     for m in np.arange(m_SR2_min, m_SR2_max, 0.005):
-        clleff_over_Lambda_TeV_Cah_1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR2.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
     for m in np.arange(m_SR3_min, 30, 0.005):
-        clleff_over_Lambda_TeV_Cah_1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
-        clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*fCmsLimitVsM(m)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p1_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p1/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
+        clleff_over_Lambda_TeV_Cah_0p01_fit_SR3.append(( m, math.sqrt( ( 8*3.1415/MuMassGeV**2/m/math.sqrt( 1-4*(MuMassGeV/m)**2 ) )*fCmsAlpExtrapolate(m, ALPTotWidthGeV)*math.sqrt( 1+ HiggsSMWidthMeV*32*3.1415/1000./( (CahEff_over_LambdaSquare_TeV_0p01/10**6)**2*HiggsVEV**2*HiggsMass**3*(1 - 2*(m/HiggsMass)**2)**2*math.sqrt(1 - 4*(m/HiggsMass)**2) ) )*ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew)/lumi_fbinv/SF/fCmsAlpExtrapolate(m, CmsAlpAcceptance)/(ggHXsecpb*1000) )*10**3 ))
 
     # For CahEff_over_LambdaSquare_TeV_1
     # SR1

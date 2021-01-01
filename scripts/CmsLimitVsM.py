@@ -14,7 +14,7 @@ def myGaus(x, mu, sigma):
 def myGaus2(x, mu, sigma):
     return exp( - (x - mu)*(x - mu) / 2.0/sigma/sigma )
 
-#Fitted function to toy experiment limits
+#Fit function to toy limits
 def fCmsLimitVsM(m):
     ## 90% CL
     if CL == 90:
@@ -26,7 +26,8 @@ def fCmsLimitVsM(m):
     ## 95% CL
     if CL == 95 and year == 2018:
         #Fit to expected limit (avg. const from all mass points toys)
-        return 3.12891367347
+        return 3.05604363636
+        #NOT FIT, actual toy limit
         #Fit to observed limit (After unblinding, TBD)
         #return 3.00174326806+0.758400444753* myGaus2(m,1.21537045458, 0.0402388548379) + 1.81322228899* myGaus2(m,1.4117157352, 0.05) + 0.581002295405* myGaus2(m,1.90264292745, 0.0648260169513) + 1.46155733387* myGaus2(m,2.37797756173, 0.0585759605432) + 1.84612408697* myGaus2(m,2.80000000002, 0.07) + 4.89437383246* myGaus2(m,3.04849077039, 0.09)
     if CL == 95 and year == 2020:
@@ -61,7 +62,7 @@ if CL == 90:
 # Return the expected median @%CL% CL for a given mass point
 # if the mass point is not present, it makes an interpolation.
 def ExpectedLimitVsM_HybridNew(m, limit_array):
-    if m >= 0.2113 and m <= 60.:
+    if m >= 0.2113 and m <= 58.:
         m_im1 = 0.2113
         m_i   = 0.2113
         for i in range(len(limit_array)):

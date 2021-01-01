@@ -35,7 +35,7 @@ cd MuJetAnalysis_LimitSetting
 
    After running this step, you should be able to see the data cards appear in the folder "Datacards/<year>". Also two shell scripts in step 3 and 4 should be there.
 
-3. (1st time only) Create and save signal and background shapes to a workspace in a root file for each mass point.
+3. Create and save signal and background shapes to a workspace in a root file for each mass point.
 
    ```
    cd macros; source CreateROOTfiles.sh; cd ..;
@@ -118,7 +118,7 @@ cd MuJetAnalysis_LimitSetting
 
    (A) ALP limits:
 
-   The ALP couplings to the higgs and leptons limit plot is in scripts/plots95.
+   The ALP couplings to the SM Higgs and leptons limit plot is in scripts/plots95.
 
    To get updated limit plot for ALP couplings to leptons in the theory paper: after running the command in previous step, files "ALPLimits/CMSRun2ALP*.txt" will be updated. Replace the same files in "ALPLimits/Electron_Coupling/" with the updated text files and evaluate 'ALP_CMSRun2.nb' in Mathematica (tested in 12.1.1 student version) to get updated limit plot for ALP couplings to leptons.
 
@@ -130,7 +130,7 @@ cd MuJetAnalysis_LimitSetting
 
    In[180]: ~/Downloads/ALPLimits/Electron_Coupling
 
-   (B) NMSSM Limits: The NMSSM limits as a function of CP-even/odd higgs mass are in scripts/plots95.
+   (B) NMSSM Limits: The NMSSM limits as a function of CP-even/odd Higgs mass are in scripts/plots95.
 
    (C) Dark SUSY Limits: Ask Alfredo for help.
 

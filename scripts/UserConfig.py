@@ -64,4 +64,4 @@ if year == 2020:
     MaxGraphMass = m_SR2_max+1.5
     masses = masses2020
 
-header = " #bf{CMS} #it{Preliminary}           " + str(lumi_fbinv) + "fb^{-1} (13 TeV)";
+header = "#bf{CMS} #it{Preliminary}            " + str(lumi_fbinv) + " fb^{-1} (13 TeV)";
