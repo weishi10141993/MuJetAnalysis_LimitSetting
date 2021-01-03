@@ -61,7 +61,7 @@ if year == 2020:
     CmsNmssmAcceptance = CmsNmssmAcceptance_2018
 
     #specify max mass when drawing limits plot, stop at 10GeV for combine 2016+2018
-    MaxGraphMass = m_SR2_max+1.5
+    MaxGraphMass = m_SR2_max+2.0
     masses = masses2020
 
 header = "#bf{CMS} #it{Preliminary}            " + str(lumi_fbinv) + " fb^{-1} (13 TeV)";

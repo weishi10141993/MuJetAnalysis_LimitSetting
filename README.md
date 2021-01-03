@@ -23,7 +23,7 @@ cd MuJetAnalysis_LimitSetting
 ```
 
 ##  Model Independent Limits for Each Year
-1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. Make sure high mass background shape is up-to-date.  
+1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. Make sure high mass background shape is up-to-date. The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have different distributions.
 
 2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit Constants.h to update signal and background rates for the year. Then do:
 
@@ -135,9 +135,7 @@ cd MuJetAnalysis_LimitSetting
    (C) Dark SUSY Limits: Ask Alfredo for help.
 
 ## Combine Data Cards (2016+2018) Below 9 GeV
-1. Make sure the workSpace of 2016 and 2018 contain the updated shape files. Make sure 2016 and 2018 data cards are available at each mass point.
-
-   Notes: The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have quite different distributions.
+1. Make sure the workSpace of 2016 and 2018 contain the updated shape files. Make sure 2016 and 2018 data cards are available at each mass point (below 9GeV).
 
 2. Edit the year in 'Config.h' to 2020 (default is 2018), and run the following to combine data cards:
 
@@ -147,7 +145,7 @@ cd MuJetAnalysis_LimitSetting
    source CombineLowMass.sh;
    cd ../..;
    ```
-   After this step, combined data cards should appear in Datacards/2020 folder. Also the shell script used in step 3 is created.
+   After this step, combined data cards should appear in Datacards/2020 folder. Also the shell script used in the next step is created.
 
 3. Send jobs to run combine for each mass point with combined data cards:
 
@@ -162,12 +160,11 @@ cd MuJetAnalysis_LimitSetting
    ```
    Once done, open "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for year 2020 (i.e., combined 2016+2018).
 
-6. Make sure the year is 2020 (default is 2018) in 'scripts/UserInput.py'. After above limits are filled in UserInput.py, you can specify which plots to draw from Plots.py. The default output dir is 'scripts/plots95'.
+6. Again, make sure the year is 2020 (default is 2018) in 'scripts/UserInput.py'. After above limits are filled in UserInput.py, you can specify which plots to draw from Plots.py. The default output dir is 'scripts/plots95'.
 
    ```
    cd scripts; python Plots_RunMe.py
    ```  
-
 
 ## Notes   
 1. NMSSM plots are done assuming an efficiency for the H decay taken from 2012 analysis

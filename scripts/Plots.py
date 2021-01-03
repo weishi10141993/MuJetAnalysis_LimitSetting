@@ -2032,21 +2032,21 @@ def limit_CSxBR2_fb_vs_ma():
     gr_CSxBR_vs_ma_mh_150.Draw("CP")
 
     #Draw reference model
-    array_ma_mh_125_SM = []
-    for ma_i in fRange(0.5, 3.0, 100):
-        CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
-        CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
-        CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
-        CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HZ_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding ZH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
-        Br_a_mumu = fNMSSM_Br_a(ma_i, 20., 'mumu')
-        CSxBR = CS_h125_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
-        array_ma_mh_125_SM.append(( ma_i, CSxBR ))
+    #array_ma_mh_125_SM = []
+    #for ma_i in fRange(0.5, 3.0, 100):
+    #    CS_h125_fb = 1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]
+    #    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_VBFH_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0])                      # Adding VBF contribution, assuming it have the same acceptance in analsyis. Verifyied in 2016 analysis.
+    #    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HW_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding WH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
+    #    CS_h125_fb = CS_h125_fb + CS_h125_fb * (1000.0*fCS_SM_HZ_13TeV_pb(125.)[0])/(1000.0*fCS_SM_ggH_13TeV_pb(125.)[0]) + CS_h125_fb * (0.02)  # Adding ZH Contribution, assuming acceptance is 10% instead of 12% (measured with cutflow tables in gg and VH NMSSM samples)
+    #    Br_a_mumu = fNMSSM_Br_a(ma_i, 20., 'mumu')
+    #    CSxBR = CS_h125_fb*BR_h_aa*Br_a_mumu*Br_a_mumu
+    #    array_ma_mh_125_SM.append(( ma_i, CSxBR ))
 
-    gr_CSxBR_vs_ma_mh_125_SM = ROOT.TGraph(len(array_ma_mh_125_SM), array.array("d", zip(*array_ma_mh_125_SM)[0]), array.array("d", zip(*array_ma_mh_125_SM)[1]))
-    gr_CSxBR_vs_ma_mh_125_SM.SetLineWidth(3)
-    gr_CSxBR_vs_ma_mh_125_SM.SetLineColor(ROOT.kGreen+3)
-    gr_CSxBR_vs_ma_mh_125_SM.SetLineStyle(1)
-    gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
+    #gr_CSxBR_vs_ma_mh_125_SM = ROOT.TGraph(len(array_ma_mh_125_SM), array.array("d", zip(*array_ma_mh_125_SM)[0]), array.array("d", zip(*array_ma_mh_125_SM)[1]))
+    #gr_CSxBR_vs_ma_mh_125_SM.SetLineWidth(3)
+    #gr_CSxBR_vs_ma_mh_125_SM.SetLineColor(ROOT.kGreen+3)
+    #gr_CSxBR_vs_ma_mh_125_SM.SetLineStyle(1)
+    #gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
 
     l_CSxBR_vs_ma = ROOT.TLegend(0.35,0.72,0.9,0.92)
     l_CSxBR_vs_ma.SetFillColor(ROOT.kWhite)
@@ -2060,18 +2060,19 @@ def limit_CSxBR2_fb_vs_ma():
     l_CSxBR_vs_ma.AddEntry(gr_CSxBR_vs_ma_mh_150,"m_{h_{2}} = 150 GeV", "LP")
     l_CSxBR_vs_ma.Draw()
 
-    l_CSxBR_vs_ma_2 = ROOT.TLegend(0.35,0.56,0.9,0.71)
-    l_CSxBR_vs_ma_2.SetFillColor(ROOT.kWhite)
-    l_CSxBR_vs_ma_2.SetMargin(0.13)
-    l_CSxBR_vs_ma_2.SetBorderSize(0)
-    l_CSxBR_vs_ma_2.SetTextFont(42)
-    l_CSxBR_vs_ma_2.SetTextSize(0.035)
-    l_CSxBR_vs_ma_2.SetHeader("Reference model:")
-    l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) = 0.003 #times #sigma_{SM}","L")
-    l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{j}) #times B(h_{j} #rightarrow 2a_{1}) = 0 for j #neq i","")
-    l_CSxBR_vs_ma_2.Draw()
+    #Draw reference model legend
+    #l_CSxBR_vs_ma_2 = ROOT.TLegend(0.35,0.56,0.9,0.71)
+    #l_CSxBR_vs_ma_2.SetFillColor(ROOT.kWhite)
+    #l_CSxBR_vs_ma_2.SetMargin(0.13)
+    #l_CSxBR_vs_ma_2.SetBorderSize(0)
+    #l_CSxBR_vs_ma_2.SetTextFont(42)
+    #l_CSxBR_vs_ma_2.SetTextSize(0.035)
+    #l_CSxBR_vs_ma_2.SetHeader("Reference model:")
+    #l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{i} #rightarrow 2a_{1}) = 0.003 #times #sigma_{SM}","L")
+    #l_CSxBR_vs_ma_2.AddEntry(gr_CSxBR_vs_ma_mh_125_SM,"#sigma(pp #rightarrow h_{j}) #times B(h_{j} #rightarrow 2a_{1}) = 0 for j #neq i","")
+    #l_CSxBR_vs_ma_2.Draw()
 
-    gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
+    #gr_CSxBR_vs_ma_mh_125_SM.Draw("C")
     txtHeader.Draw()
 
     save_canvas(cnv,"CSxBR_NMSSM_vs_ma")
