@@ -233,6 +233,7 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       -    \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BKG_norm     lnN     -        %.3f \n", BKG_norm_SR3);
           fprintf(file_txt, "CMS_H2A4Mu_BKG_syst     lnN     -        %.3f \n", BKG_syst_SR3);
+          fprintf(file_txt, "CMS_H2A4Mu_BKG_shape    lnN     -        %.3f \n", BKG_shape_SR3);
         }
         fclose(file_txt);
       }

@@ -36,6 +36,7 @@ float BBbar_syst;
 float BBbar_syst_SR1;
 float BBbar_syst_SR2;
 float BKG_syst_SR3;
+float BKG_shape_SR3;
 
 // Systematic Uncertainties
 float lumi_13TeV; //Lumi (only affect signal; BBbar background are data-driven)
@@ -89,7 +90,7 @@ namespace Limit_cfg {
       signal3_rate = signal3_rate_2018; HighMassBKG_rate         = HighMassBKG_rate_2018;
       BBbar_norm_SR1 = BBbar_norm_2018_SR1; BBbar_syst_SR1 = BBbar_syst_2018_SR1;
       BBbar_norm_SR2 = BBbar_norm_2018_SR2; BBbar_syst_SR2 = BBbar_syst_2018_SR2;
-      BKG_norm_SR3   = BKG_norm_2018_SR3;   BKG_syst_SR3   = BKG_syst_2018_SR3;
+      BKG_norm_SR3   = BKG_norm_2018_SR3;   BKG_syst_SR3   = BKG_syst_2018_SR3;  BKG_shape_SR3 = BKG_shape_2018_SR3;
       lumi_13TeV = lumi_13TeV_2018; mu_hlt     = mu_hlt_2018;  mu_id  = mu_id_2018;  mu_iso  = mu_iso_2018;  mu_pu_eff = mu_pu_eff_2018; mu_pu  = mu_pu_2018;
       ovlp_trk   = ovlp_trk_2018;   ovlp_mu    = ovlp_mu_2018; dimu_M = dimu_M_2018; nnlo_pt = nnlo_pt_2018; pdf_as = pdf_as_2018; HxecBr = HxecBr_2018;
 

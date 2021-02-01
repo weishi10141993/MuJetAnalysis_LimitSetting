@@ -33,7 +33,7 @@ cd MuJetAnalysis_LimitSetting
 
    Note:The first time you need to use option "bool makeRoot=true", so you will create "CreateROOTfiles.sh", a file that uses makeWorkSpace_H2A4Mu.C to make the RooStat files with signal and background needed by limit calculator. makeWorkSpace_H2A4Mu.C has hardcoded inside the TH2 range, binning and the signal events. So for unblinding, add here events you see.
 
-   After running this step, you should be able to see the data cards appear in the folder "Datacards/<year>". Also two shell scripts in step 3 and 4 should be there.
+   After running this step, you should be able to see the data cards appear in the folder "Datacards/<year>". Also two shell scripts in step 3 and 5 should be there.
 
 3. Create and save signal and background shapes to a workspace in a root file for each mass point.
 
@@ -43,7 +43,19 @@ cd MuJetAnalysis_LimitSetting
 
    After this step you should be able to find the root files for each mass point in "workSpaces/<year>" folder. Open any one file and print out the workspace to see if there is any obvious evaluation problem of the contents in the workspace.
 
-4. On TAMU Terra, make sure the line:
+   ```
+   root -l file.root
+   w->Print()
+   ```
+   The mass window functions will report error which is expected as the these functions are not loaded. Check this by preload the functions,
+
+   ```
+   root -l file.root
+   .L /home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/Helpers.h
+   w->Print()
+   ```
+
+4. [First time only] On TAMU Terra, make sure the line:
 
    ```
    gROOT->ProcessLine(".L /home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/Helpers.h");
@@ -53,7 +65,7 @@ cd MuJetAnalysis_LimitSetting
    ```
    w = dynamic_cast<RooWorkspace *>(fIn->Get(workspaceName_.c_str()));
    ```
-   This will preload the mass window and the background shapes functions.
+   This will preload the mass window functions which is necessary for representing the 2D signal region in limit calculation.
 
    (Note: if you use "combine -v 3" mode, the functions evaluate error may appear due to a line in the HiggsAnalysis/CombinedLimit/python/ModelTools.py file:
 

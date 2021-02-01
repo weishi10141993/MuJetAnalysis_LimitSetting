@@ -2300,8 +2300,8 @@ def limit_ALP_Higgs_vs_ma():
     l_CahEff_over_LambdaSquare_TeV_fit.SetTextFont(42)
     l_CahEff_over_LambdaSquare_TeV_fit.SetTextSize(0.035)
     l_CahEff_over_LambdaSquare_TeV_fit.SetHeader("ALP Expected %d%% CL upper limits:"%CL)
-    l_CahEff_over_LambdaSquare_TeV_fit.AddEntry(gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1, "Br(a #rightarrow #mu^{+}#mu^{-}) = %.1f"%Br_ALP_Lepton_1, "L")
-    l_CahEff_over_LambdaSquare_TeV_fit.AddEntry(gr_CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1, "Br(a #rightarrow #mu^{+}#mu^{-}) = %.1f"%Br_ALP_Lepton_0p1, "L")
+    l_CahEff_over_LambdaSquare_TeV_fit.AddEntry(gr_CahEff_over_LambdaSquare_TeV_LeptBr_1_fit_SR1, "B(a #rightarrow #mu^{+}#mu^{-}) = %.1f"%Br_ALP_Lepton_1, "L")
+    l_CahEff_over_LambdaSquare_TeV_fit.AddEntry(gr_CahEff_over_LambdaSquare_TeV_LeptBr_0p1_fit_SR1, "B(a #rightarrow #mu^{+}#mu^{-}) = %.1f"%Br_ALP_Lepton_0p1, "L")
     l_CahEff_over_LambdaSquare_TeV_fit.Draw()
 
     txtHeader.Draw()
