@@ -47,6 +47,7 @@ float mu_pu_eff; //high pileup effect
 float mu_pu; //pileup distribution
 float ovlp_trk; //Reconstruction of close muons in the tracker
 float ovlp_mu; //Reconstruction of close muons in the muon system
+float llp_mu; //Reconstruction of close muons in the muon system
 float dimu_M; //Dimuons mass consistency m1~m2
 float nnlo_pt; //NNLO Higgs pT re-weighting
 float pdf_as; //Theoretical uncertainties in acceptance (not included in model independent limit)
@@ -77,7 +78,7 @@ namespace Limit_cfg {
       signal3_rate = signal3_rate_2017; HighMassBKG_rate         = HighMassBKG_rate_2017;
       BBbar_norm   = BBbar_norm_2017;   BBbar_syst = BBbar_syst_2017;
       lumi_13TeV   = lumi_13TeV_2017;   mu_hlt     = mu_hlt_2017;  mu_id  = mu_id_2017;  mu_iso  = mu_iso_2017;  mu_pu_eff = mu_pu_eff_2017; mu_pu  = mu_pu_2017;
-      ovlp_trk     = ovlp_trk_2017;     ovlp_mu    = ovlp_mu_2017; dimu_M = dimu_M_2017; nnlo_pt = nnlo_pt_2017; pdf_as = pdf_as_2017; HxecBr = HxecBr_2017;
+      ovlp_trk     = ovlp_trk_2017;     ovlp_mu    = ovlp_mu_2017; llp_mu = llp_mu_2017; dimu_M = dimu_M_2017; nnlo_pt = nnlo_pt_2017; pdf_as = pdf_as_2017; HxecBr = HxecBr_2017;
 
       inputFile1 = "../ws_2017_FINAL.root";
       obs_SR1    = obs_SR1_2017;
@@ -92,7 +93,7 @@ namespace Limit_cfg {
       BBbar_norm_SR2 = BBbar_norm_2018_SR2; BBbar_syst_SR2 = BBbar_syst_2018_SR2;
       BKG_norm_SR3   = BKG_norm_2018_SR3;   BKG_syst_SR3   = BKG_syst_2018_SR3;  BKG_shape_SR3 = BKG_shape_2018_SR3;
       lumi_13TeV = lumi_13TeV_2018; mu_hlt     = mu_hlt_2018;  mu_id  = mu_id_2018;  mu_iso  = mu_iso_2018;  mu_pu_eff = mu_pu_eff_2018; mu_pu  = mu_pu_2018;
-      ovlp_trk   = ovlp_trk_2018;   ovlp_mu    = ovlp_mu_2018; dimu_M = dimu_M_2018; nnlo_pt = nnlo_pt_2018; pdf_as = pdf_as_2018; HxecBr = HxecBr_2018;
+      ovlp_trk   = ovlp_trk_2018;   ovlp_mu    = ovlp_mu_2018; llp_mu = llp_mu_2018; dimu_M = dimu_M_2018; nnlo_pt = nnlo_pt_2018; pdf_as = pdf_as_2018; HxecBr = HxecBr_2018;
 
       inputFile1 = "../ws_2018_FINAL.root";
       obs_SR1    = obs_SR1_2018;
@@ -106,7 +107,7 @@ namespace Limit_cfg {
       BBbar_norm_SR1 = BBbar_norm_2016_SR1; BBbar_syst_SR1 = BBbar_syst_2016_SR1;
       BBbar_norm_SR2 = BBbar_norm_2016_SR2; BBbar_syst_SR2 = BBbar_syst_2016_SR2;
       lumi_13TeV = lumi_13TeV_2016; mu_hlt     = mu_hlt_2016;  mu_id  = mu_id_2016;  mu_iso  = mu_iso_2016;  mu_pu_eff = mu_pu_eff_2016; mu_pu  = mu_pu_2016;
-      ovlp_trk   = ovlp_trk_2016;   ovlp_mu    = ovlp_mu_2016; dimu_M = dimu_M_2016; nnlo_pt = nnlo_pt_2016; pdf_as = pdf_as_2016; HxecBr = HxecBr_2016;
+      ovlp_trk   = ovlp_trk_2016;   ovlp_mu    = ovlp_mu_2016; llp_mu = llp_mu_2016; dimu_M = dimu_M_2016; nnlo_pt = nnlo_pt_2016; pdf_as = pdf_as_2016; HxecBr = HxecBr_2016;
 
       inputFile1 = "../ws_2016_FINAL.root";
       obs_SR1    = obs_SR1_2016;

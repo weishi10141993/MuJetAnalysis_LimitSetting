@@ -88,6 +88,8 @@ cd MuJetAnalysis_LimitSetting
    source macros/RunOnDataCard_T30000.sh #30k toys/job (recommended)
    ```
 
+   The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
+
    The more toys, the better, but it takes more time. Refer to [TAMU Terra page](https://hprc.tamu.edu/wiki/Terra:Batch_Processing_SLURM) for info about the slurm batch system.
 
    After the jobs are done, you should be able to see the text file containing the limit for each mass point in "macros/sh/<year>/output/".
@@ -104,7 +106,7 @@ cd MuJetAnalysis_LimitSetting
    ```
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
-5. This step prints the limit of each mass point in the text files of previous step. You will need to copy the printed limits inside scripts/UserInput.py (later to be used by CmsLimitVsM.py and Plots.py). Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary. Then do:
+6. This step prints the limit of each mass point in the text files of previous step. You will need to copy the printed limits inside scripts/UserInput.py (later to be used by CmsLimitVsM.py and Plots.py). Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary. Then do:
 
    ```
    cd macros; python PrintOutLimits.py; cd ..;
@@ -112,21 +114,21 @@ cd MuJetAnalysis_LimitSetting
 
    Note: You have to copy the line from "That contain N limits: \n XXX" until the line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit.   
 
-6. [Note: this step is not tested, use with caution!!!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
+7. [Note: this step is not tested, use with caution!!!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
    -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
    -> Then you run: python MergeLimit.py (where inside you specified the txt files locations and names)
    -> It will print out the lines to place in "scripts/CmsLimitVsM.py"
 
-7. Edit "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for that year.
+8. Edit "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for that year.
    Note: If you change method from HybridNew, you can copy the line into another list and specify the correct method in CmsLimitVsM.py.    
 
-8. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in scripts/UserInput.py. You can specify which plots to draw from Plots.py. The default output dir is 'scripts/plots95'.
+9. After all limits from all quantiles are filled in UserInput.py, now we make final limit plots. Edit year (default as 2018) in scripts/UserInput.py. You can specify which plots to draw from Plots.py. The default output dir is 'scripts/2018plots95'.
 
    ```
    cd scripts; python Plots_RunMe.py
    ```  
 
-9. Limits for benchmark Models:
+10. Limits for benchmark Models:
 
    (A) ALP limits:
 
@@ -172,7 +174,7 @@ cd MuJetAnalysis_LimitSetting
    ```
    Once done, open "scripts/UserInput.py" and copy the lines you just produced for the quantile (default: only 0.5 quantile) for year 2020 (i.e., combined 2016+2018).
 
-6. Again, make sure the year is 2020 (default is 2018) in 'scripts/UserInput.py'. After above limits are filled in UserInput.py, you can specify which plots to draw from Plots.py. The default output dir is 'scripts/plots95'.
+6. Again, make sure the year is 2020 (default is 2018) in 'scripts/UserInput.py'. After above limits are filled in UserInput.py, you can specify which plots to draw from Plots.py. The default output dir is 'scripts/2020plots95'.
 
    ```
    cd scripts; python Plots_RunMe.py

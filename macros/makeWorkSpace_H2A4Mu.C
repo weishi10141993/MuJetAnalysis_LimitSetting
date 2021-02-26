@@ -285,7 +285,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import(dia1);
     w_H2A4Mu->import(dia2);
     w_H2A4Mu->import(dia3);
-    // if use interpolation 
+    // if use interpolation
     //w_H2A4Mu->import(HighMassFit2018_m1);
     //w_H2A4Mu->import(HighMassFit2018_m2);
     //w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");

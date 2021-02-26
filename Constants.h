@@ -42,14 +42,14 @@ float BBbar_norm_2016_SR1 = 1.123, BBbar_norm_2016_SR2 = 1.123, BBbar_syst_2016_
 // 2017 not analyzed
 float BBbar_norm_2017  = 1.127,  BBbar_syst_2017 = 1.2;
 
-// 2018 SR3: stat. unc. 16.4%, Sys. unc 2.3%
-float BKG_norm_2018_SR3 = 1.164, BKG_syst_2018_SR3 = 1.023, BKG_shape_2018_SR3 = 1.100;
+// 2018 SR3: stat. unc. 16.4%, Sys. unc 2.3%, shape unc 23.8%
+float BKG_norm_2018_SR3 = 1.164, BKG_syst_2018_SR3 = 1.023, BKG_shape_2018_SR3 = 1.238;
 
 // Systematic Uncertainties: Need to add MC scale to data at high mass, to be updated: PU/mass window/HLT
-float lumi_13TeV_2018 = 1.025, mu_hlt_2018  = 1.006, mu_id_2018  = 1.024, mu_iso_2018  = 1.002, mu_pu_2018  = 1.0005, mu_pu_eff_2018 = 1.018, ovlp_trk_2018 = 1.024, ovlp_mu_2018 = 1.026, dimu_M_2018 = 1.0024, nnlo_pt_2018 = 1.02, pdf_as_2018 = 1.08, HxecBr_2018 = 1.038;
-float lumi_13TeV_2016 = 1.025, mu_hlt_2016  = 1.060, mu_id_2016  = 1.024, mu_iso_2016  = 1.002, mu_pu_2016  = 1.0017, mu_pu_eff_2016 = 1.000, ovlp_trk_2016 = 1.024, ovlp_mu_2016 = 1.026, dimu_M_2016 = 1.015, nnlo_pt_2016 = 1.02, pdf_as_2016 = 1.08, HxecBr_2016 = 1.038;
+float lumi_13TeV_2018 = 1.025, mu_hlt_2018  = 1.006, mu_id_2018  = 1.024, mu_iso_2018  = 1.002, mu_pu_2018  = 1.0005, mu_pu_eff_2018 = 1.018, ovlp_trk_2018 = 1.024, ovlp_mu_2018 = 1.026, llp_mu_2018 = 1.010, dimu_M_2018 = 1.0024, nnlo_pt_2018 = 1.02, pdf_as_2018 = 1.08, HxecBr_2018 = 1.038;
+float lumi_13TeV_2016 = 1.025, mu_hlt_2016  = 1.060, mu_id_2016  = 1.024, mu_iso_2016  = 1.002, mu_pu_2016  = 1.0017, mu_pu_eff_2016 = 1.000, ovlp_trk_2016 = 1.024, ovlp_mu_2016 = 1.026, llp_mu_2016 = 1.000, dimu_M_2016 = 1.015, nnlo_pt_2016 = 1.02, pdf_as_2016 = 1.08, HxecBr_2016 = 1.038;
 // 2017 not analyzed
-float lumi_13TeV_2017 = 1.025, mu_hlt_2017  = 1.015, mu_id_2017  = 1.024, mu_iso_2017  = 1.002, mu_pu_2017  = 1.0017, mu_pu_eff_2017 = 1.018, ovlp_trk_2017 = 1.024, ovlp_mu_2017 = 1.026, dimu_M_2017 = 1.000, nnlo_pt_2017 = 1.02, pdf_as_2017 = 1.08, HxecBr_2017 = 1.038;
+float lumi_13TeV_2017 = 1.025, mu_hlt_2017  = 1.015, mu_id_2017  = 1.024, mu_iso_2017  = 1.002, mu_pu_2017  = 1.0017, mu_pu_eff_2017 = 1.018, ovlp_trk_2017 = 1.024, ovlp_mu_2017 = 1.026, llp_mu_2017 = 1.000, dimu_M_2017 = 1.000, nnlo_pt_2017 = 1.02, pdf_as_2017 = 1.08, HxecBr_2017 = 1.038;
 
 // Observed events after unblinding
 int obs_SR1_2017 = -1, obs_SR2_2017 = -1, obs_SR3_2017 = -1;

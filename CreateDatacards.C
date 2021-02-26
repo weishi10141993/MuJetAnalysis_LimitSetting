@@ -163,6 +163,7 @@ void CreateDatacards(){
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       - \n", HxecBr);
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       - \n", ovlp_trk);
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       - \n", ovlp_mu);
+          fprintf(file_txt, "CMS_H2A4Mu_eff_llp_mu   lnN   %.3f       - \n", llp_mu);
           fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       - \n", dimu_M);
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR1);
@@ -197,6 +198,7 @@ void CreateDatacards(){
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       - \n", HxecBr);
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_trk lnN   %.3f       - \n", ovlp_trk);
           fprintf(file_txt, "CMS_H2A4Mu_eff_ovlp_mu  lnN   %.3f       - \n", ovlp_mu);
+          fprintf(file_txt, "CMS_H2A4Mu_eff_llp_mu   lnN   %.3f       - \n", llp_mu);
           fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       - \n", dimu_M);
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR2);
@@ -229,6 +231,7 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_eff_mu_pileup       lnN   %.3f       -    \n", mu_pu);
           fprintf(file_txt, "QCDscale_ggH            lnN   %.3f       -    \n", pdf_as);
           fprintf(file_txt, "Xsec_BR_decay           lnN   %.3f       -    \n", HxecBr);
+          fprintf(file_txt, "CMS_H2A4Mu_eff_llp_mu   lnN   %.3f       -    \n", llp_mu);
           fprintf(file_txt, "CMS_H2A4Mu_effdimu_mass lnN   %.3f       -    \n", dimu_M);
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       -    \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BKG_norm     lnN     -        %.3f \n", BKG_norm_SR3);
