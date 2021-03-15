@@ -33,6 +33,7 @@
 
 #include "Constants.h" //Define constants used in this macro
 #include "Config.h" //Config inputs for the macro
+#include "Helpers.h"//several interpolation functions
 
 void CreateDatacards(){
 
@@ -104,7 +105,7 @@ void CreateDatacards(){
               fprintf(file_30k, "#SBATCH --mem-per-cpu=10000\n");
               fprintf(file_30k, "#SBATCH --ntasks-per-node=1\n");
               fprintf(file_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
-              fprintf(file_30k, "#SBATCH --account=122747014489\n");
+              fprintf(file_30k, "#SBATCH --account=122747015988\n");
               fprintf(file_30k, "\n");
               fprintf(file_30k, "module load cctools\n");
               fprintf(file_30k, "export PARROT_CVMFS_ALIEN_CACHE=/scratch/group/mitchcomp/CVMFS_cache\n");
@@ -168,6 +169,9 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR1);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst_SR1);
+          fprintf(file_txt, "signal1_sigma          param  %.3f       %.4f \n", Helpers_cfg::My_Sigma(masses[i],masses[i]), Helpers_cfg::My_Sigma_Unc(masses[i],masses[i]));// need %.4f to avoid zero un
+          fprintf(file_txt, "signal1_alpha          param  %.3f       %.3f \n", Helpers_cfg::My_Alpha(masses[i],masses[i]), Helpers_cfg::My_Alpha_Unc(masses[i],masses[i]));
+          fprintf(file_txt, "signal1_n              param  %.3f       %.3f \n", Helpers_cfg::My_n(masses[i],masses[i]), Helpers_cfg::My_n_Unc(masses[i],masses[i]));
         }
         //***************
         //* Above J/psi *
@@ -203,6 +207,9 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_nnlo_pt      lnN   %.3f       - \n", nnlo_pt);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_norm   lnN     -        %.3f \n", BBbar_norm_SR2);
           fprintf(file_txt, "CMS_H2A4Mu_BBbar_syst   lnN     -        %.3f \n", BBbar_syst_SR2);
+          fprintf(file_txt, "signal2_sigma          param  %.3f       %.4f \n", Helpers_cfg::My_Sigma(masses[i],masses[i]), Helpers_cfg::My_Sigma_Unc(masses[i],masses[i]));
+          fprintf(file_txt, "signal2_alpha          param  %.3f       %.3f \n", Helpers_cfg::My_Alpha(masses[i],masses[i]), Helpers_cfg::My_Alpha_Unc(masses[i],masses[i]));
+          fprintf(file_txt, "signal2_n              param  %.3f       %.3f \n", Helpers_cfg::My_n(masses[i],masses[i]), Helpers_cfg::My_n_Unc(masses[i],masses[i]));
         }
         //*************************
         //* High mass backgrounds *
@@ -237,6 +244,9 @@ void CreateDatacards(){
           fprintf(file_txt, "CMS_H2A4Mu_BKG_norm     lnN     -        %.3f \n", BKG_norm_SR3);
           fprintf(file_txt, "CMS_H2A4Mu_BKG_syst     lnN     -        %.3f \n", BKG_syst_SR3);
           fprintf(file_txt, "CMS_H2A4Mu_BKG_shape    lnN     -        %.3f \n", BKG_shape_SR3);
+          fprintf(file_txt, "signal3_sigma          param  %.3f       %.4f \n", Helpers_cfg::My_Sigma(masses[i],masses[i]), Helpers_cfg::My_Sigma_Unc(masses[i],masses[i]));
+          fprintf(file_txt, "signal3_alpha          param  %.3f       %.3f \n", Helpers_cfg::My_Alpha(masses[i],masses[i]), Helpers_cfg::My_Alpha_Unc(masses[i],masses[i]));
+          fprintf(file_txt, "signal3_n              param  %.3f       %.3f \n", Helpers_cfg::My_n(masses[i],masses[i]), Helpers_cfg::My_n_Unc(masses[i],masses[i]));
         }
         fclose(file_txt);
       }
@@ -295,7 +305,7 @@ void CreateDatacards(){
             fprintf(file_combine_30k, "#SBATCH --mem-per-cpu=15000\n");
             fprintf(file_combine_30k, "#SBATCH --ntasks-per-node=1\n");
             fprintf(file_combine_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
-            fprintf(file_combine_30k, "#SBATCH --account=122747014489\n");
+            fprintf(file_combine_30k, "#SBATCH --account=122747015988\n");
             fprintf(file_combine_30k, "\n");
             fprintf(file_combine_30k, "module load cctools\n");
             fprintf(file_combine_30k, "export PARROT_CVMFS_ALIEN_CACHE=/scratch/group/mitchcomp/CVMFS_cache\n");

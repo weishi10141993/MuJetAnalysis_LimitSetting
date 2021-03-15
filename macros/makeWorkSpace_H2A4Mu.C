@@ -212,27 +212,36 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   //Signal parameteres below Jpsi
   RooRealVar signal1_mA("signal1_mA", "signal1_mA", mA_GeV);
   //assume +/-1.65*sigma is 90% signal efficiency: https://en.wikipedia.org/wiki/Standard_normal_table, same below
-  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
-  RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", 1.75);
-  RooRealVar signal1_n("signal1_n", "signal1_n", 2.0);
+  //RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  //RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", 1.75);
+  //RooRealVar signal1_n("signal1_n", "signal1_n", 2.0);
+  RooRealVar signal1_sigma("signal1_sigma", "signal1_sigma", Helpers_cfg::My_Sigma(mA_GeV, mA_GeV));
+  RooRealVar signal1_alpha("signal1_alpha", "signal1_alpha", Helpers_cfg::My_Alpha(mA_GeV, mA_GeV));
+  RooRealVar signal1_n("signal1_n", "signal1_n", Helpers_cfg::My_n(mA_GeV, mA_GeV));
   //Signal Shape
   RooCBShape signal1_m1("signal1_m1", "signal1_m1", m1_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
   RooCBShape signal1_m2("signal1_m2", "signal1_m2", m2_below_Jpsi, signal1_mA, signal1_sigma, signal1_alpha, signal1_n);
 
   //Signal parameteres above Jpsi and below Upsilon
   RooRealVar signal2_mA("signal2_mA", "signal2_mA", mA_GeV);
-  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
-  RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", 1.75);
-  RooRealVar signal2_n("signal2_n", "signal2_n", 2.0);
+  //RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  //RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", 1.75);
+  //RooRealVar signal2_n("signal2_n", "signal2_n", 2.0);
+  RooRealVar signal2_sigma("signal2_sigma", "signal2_sigma", Helpers_cfg::My_Sigma(mA_GeV, mA_GeV));
+  RooRealVar signal2_alpha("signal2_alpha", "signal2_alpha", Helpers_cfg::My_Alpha(mA_GeV, mA_GeV));
+  RooRealVar signal2_n("signal2_n", "signal2_n", Helpers_cfg::My_n(mA_GeV, mA_GeV));
   //Signal Shape
   RooCBShape signal2_m1("signal2_m1", "signal2_m1", m1_above_Jpsi, signal2_mA, signal2_sigma, signal2_alpha, signal2_n);
   RooCBShape signal2_m2("signal2_m2", "signal2_m2", m2_above_Jpsi, signal2_mA, signal2_sigma, signal2_alpha, signal2_n);
 
   //Signal parameteres at high mass
   RooRealVar signal3_mA("signal3_mA", "signal3_mA", mA_GeV);
-  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
-  RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", 1.75);
-  RooRealVar signal3_n("signal3_n", "signal3_n", 2.0);
+  //RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Helpers_cfg::My_MassWindow(mA_GeV, mA_GeV)/1.65/2.0 );
+  //RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", 1.75);
+  //RooRealVar signal3_n("signal3_n", "signal3_n", 2.0);
+  RooRealVar signal3_sigma("signal3_sigma", "signal3_sigma", Helpers_cfg::My_Sigma(mA_GeV, mA_GeV));
+  RooRealVar signal3_alpha("signal3_alpha", "signal3_alpha", Helpers_cfg::My_Alpha(mA_GeV, mA_GeV));
+  RooRealVar signal3_n("signal3_n", "signal3_n", Helpers_cfg::My_n(mA_GeV, mA_GeV));
   //Signal Shape
   RooCBShape signal3_m1("signal3_m1", "signal3_m1", m1_above_Upsilon, signal3_mA, signal3_sigma, signal3_alpha, signal3_n);
   RooCBShape signal3_m2("signal3_m2", "signal3_m2", m2_above_Upsilon, signal3_mA, signal3_sigma, signal3_alpha, signal3_n);

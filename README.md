@@ -195,6 +195,8 @@ cd MuJetAnalysis_LimitSetting
 
   The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
 
+  Also change "--testStat LHC" to "--LHC-mode LHC-limits" when unblinding the data. The nuisance parameters are treated in a different way.
+
   In case you have some knowledge of where the limit should be, then setting an appropriate --rMax can speed up the search.
 
   Finding the expected -2 s.t.d. deviation band can take significantly longer: CLs = CLs+b / CLb where CLb = 0.025 by construction, Need ~ 20 times as many toys to get same CLs accuracy as for median. You can use the --fork N option to run up to N toys in parallel.

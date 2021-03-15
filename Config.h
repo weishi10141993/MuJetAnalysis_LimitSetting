@@ -38,6 +38,17 @@ float BBbar_syst_SR2;
 float BKG_syst_SR3;
 float BKG_shape_SR3;
 
+//signal shape unc
+float signal1_sigma_unc;
+float signal1_alpha_unc;
+float signal1_n_unc;
+float signal2_sigma_unc;
+float signal2_alpha_unc;
+float signal2_n_unc;
+float signal3_sigma_unc;
+float signal3_alpha_unc;
+float signal3_n_unc;
+
 // Systematic Uncertainties
 float lumi_13TeV; //Lumi (only affect signal; BBbar background are data-driven)
 float mu_hlt; //Muon trigger
@@ -92,6 +103,11 @@ namespace Limit_cfg {
       BBbar_norm_SR1 = BBbar_norm_2018_SR1; BBbar_syst_SR1 = BBbar_syst_2018_SR1;
       BBbar_norm_SR2 = BBbar_norm_2018_SR2; BBbar_syst_SR2 = BBbar_syst_2018_SR2;
       BKG_norm_SR3   = BKG_norm_2018_SR3;   BKG_syst_SR3   = BKG_syst_2018_SR3;  BKG_shape_SR3 = BKG_shape_2018_SR3;
+
+      signal1_sigma_unc = signal1_sigma_unc_2018; signal1_alpha_unc = signal1_alpha_unc_2018; signal1_n_unc = signal1_n_unc_2018;
+      signal2_sigma_unc = signal2_sigma_unc_2018; signal2_alpha_unc = signal2_alpha_unc_2018; signal2_n_unc = signal2_n_unc_2018;
+      signal3_sigma_unc = signal3_sigma_unc_2018; signal3_alpha_unc = signal3_alpha_unc_2018; signal3_n_unc = signal3_n_unc_2018;
+
       lumi_13TeV = lumi_13TeV_2018; mu_hlt     = mu_hlt_2018;  mu_id  = mu_id_2018;  mu_iso  = mu_iso_2018;  mu_pu_eff = mu_pu_eff_2018; mu_pu  = mu_pu_2018;
       ovlp_trk   = ovlp_trk_2018;   ovlp_mu    = ovlp_mu_2018; llp_mu = llp_mu_2018; dimu_M = dimu_M_2018; nnlo_pt = nnlo_pt_2018; pdf_as = pdf_as_2018; HxecBr = HxecBr_2018;
 
@@ -120,7 +136,7 @@ namespace Limit_cfg {
       std::cout << "*** User input year is unknown! Please check. ***" << std::endl;
     }
 
-    //Common Combine rule for 2017 and 2018
+    //Common Combine rule for 2017 and 2018: use --LHCmode LHC-limits when unblinding as suggested by HiggsCombine people
     Myrule = Myrule + "--rule CLs --testStat LHC --cl 0.95 --rAbsAcc 0.01 --rRelAcc 0.001";//Require accuracy on r because of ~zero bkg analysis, otherwise r fluctuates
     pwd = pwd + "/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/";
 

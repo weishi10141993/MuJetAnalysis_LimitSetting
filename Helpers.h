@@ -1,18 +1,31 @@
-//CB fitted mean mass [GeV] for prompt signals
+// CB fitted mean mass [GeV] for prompt signals
 double mean[11] = {0.2560, 0.4012, 0.7003, 1.0000, 1.9990, 4.9980, 8.4920, 14.990, 24.980, 34.970, 57.930};
 
-//80% signal eff needed mass window size for prompt signals
+// 80% signal eff needed mass window size for prompt signals
 //double window[11] = {0.030922364, 0.0201698988, 0.02337757474, 0.0275968, 0.04615657165, 0.124742502, 0.2110350916, 0.3849085576, 0.67586519, 0.914118934, 1.860449598};
 
-//85% signal eff needed mass window size for prompt signals
+// 85% signal eff needed mass window size for prompt signals
 //double window[11] = {0.0359823872, 0.0252123735, 0.02787326219, 0.0326656, 0.056518251, 0.1538490858, 0.2586881768, 0.46940068, 0.849659096, 1.102319891, 2.524895883};
 
-//90% signal eff needed mass window size from above prompt signals
+// 90% signal eff needed mass window size from above prompt signals: this is from counting, not from CB fit!!!
 double window[11] = {0.0438535344, 0.0336164980, 0.0359654996, 0.0428032000, 0.0753576680, 0.2037460866, 0.3539943472, 0.7041010200, 1.1972469080, 1.6131510600, 3.9866777100};
 
-//95% signal eff needed mass window size for prompt signals
+// 95% signal eff needed mass window size for prompt signals
 //double window[11] = {0.0629691776, 0.05176940692, 0.05574652438, 0.0664576, 0.1224562105, 0.3617532558, 0.748834196, 1.40820204, 2.70346076, 2.6885851, 9.523730085};
 
+// Crystal Ball function fitted sigma
+double CB_sigma[11] = {0.008014, 0.006158, 0.007727, 0.009841, 0.01575, 0.03668, 0.06253, 0.1116, 0.1815, 0.2583, 0.446};
+// Crystal Ball function fitted alpha
+double CB_alpha[11] = {-0.8495, -1.287, 1.688, 1.982, 2.023, 1.423, 1.689, 1.599, 1.511, 1.374, 1.31};
+// Crystal Ball function fitted n
+double CB_n[11] = {5.729, 2.719, 2.798, 1.415, 1.208, 2.047, 1.345, 1.343, 1.505, 1.834, 1.605};
+
+// Crystal Ball function fitted parameter uncertainty for prompt signals: to be used in datacard for signal shape unc
+double CB_sigma_unc[11] = {0.000267, 0.000192, 0.000208, 0.000242, 0.00036, 0.00102, 0.00164, 0.003, 0.0053, 0.0049, 0.004};
+double CB_alpha_unc[11] = {0.0766, 0.091, 0.159, 0.125, 0.138, 0.1, 0.106, 0.102, 0.087, 0.057, 0.03};
+double CB_n_unc[11] = {1.453, 0.344, 0.807, 0.254, 0.251, 0.271, 0.185, 0.177, 0.138, 0.114, 0.054};
+
+// Linear interpolation for background shape (this is not used in the final analysis where kernel density estimation is used)
 Double_t MCBinCenterMass[14] = {12.75, 16.25, 19.75, 23.25, 26.75, 30.25, 33.75, 37.25, 40.75, 44.25, 47.75, 51.25, 54.75, 58.25};
 
 Double_t MCBinContentm1[14] = {0.0260007, 0.070103, 0.457687, 0.161783, 0.157428, 0.62272, 0.599198, 0.887516, 1.56432, 2.07059, 0.707749, 1.12067, 2.29358, 0.954618};
@@ -24,11 +37,11 @@ Double_t MCBinErrm2[14] = {0.00767975, 0.0153949, 0.357711, 0.0224435, 0.0240383
 namespace Helpers_cfg {
 
   double My_MassWindow(double x, double y) {
-    //return this mass window size given m1 and m2
+    // return this mass window size given m1 and m2
     double mysize = 0.0;
 
-    //Interpolation
-    //Start and end with 0.2113 and 60GeV to match bkg analysis
+    // Linaer interpolation
+    // Start and end with 0.2113 and 60 GeV to match bkg analysis
     if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) mysize = window[0] + ( (x+y)/2 - mean[0] )*( window[1]  - window[0] )/( mean[1]  - mean[0] );
     if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) mysize = window[1] + ( (x+y)/2 - mean[1] )*( window[2]  - window[1] )/( mean[2]  - mean[1] );
     if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) mysize = window[2] + ( (x+y)/2 - mean[2] )*( window[3]  - window[2] )/( mean[3]  - mean[2] );
@@ -41,6 +54,114 @@ namespace Helpers_cfg {
     if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) mysize = window[9] + ( (x+y)/2 - mean[9] )*( window[10] - window[9] )/( mean[10] - mean[9] );
 
     return mysize;
+  }
+
+  double My_Sigma(double x, double y) {
+    // return this CB sigma given m1 and m2
+    double mysigma = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) mysigma = CB_sigma[0] + ( (x+y)/2 - mean[0] )*( CB_sigma[1]  - CB_sigma[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) mysigma = CB_sigma[1] + ( (x+y)/2 - mean[1] )*( CB_sigma[2]  - CB_sigma[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) mysigma = CB_sigma[2] + ( (x+y)/2 - mean[2] )*( CB_sigma[3]  - CB_sigma[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) mysigma = CB_sigma[3] + ( (x+y)/2 - mean[3] )*( CB_sigma[4]  - CB_sigma[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) mysigma = CB_sigma[4] + ( (x+y)/2 - mean[4] )*( CB_sigma[5]  - CB_sigma[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) mysigma = CB_sigma[5] + ( (x+y)/2 - mean[5] )*( CB_sigma[6]  - CB_sigma[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) mysigma = CB_sigma[6] + ( (x+y)/2 - mean[6] )*( CB_sigma[7]  - CB_sigma[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) mysigma = CB_sigma[7] + ( (x+y)/2 - mean[7] )*( CB_sigma[8]  - CB_sigma[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) mysigma = CB_sigma[8] + ( (x+y)/2 - mean[8] )*( CB_sigma[9]  - CB_sigma[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) mysigma = CB_sigma[9] + ( (x+y)/2 - mean[9] )*( CB_sigma[10] - CB_sigma[9] )/( mean[10] - mean[9] );
+
+    return mysigma;
+  }
+
+  double My_Sigma_Unc(double x, double y) {
+    // return this CB sigma unc given m1 and m2
+    double mysigmaunc = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) mysigmaunc = CB_sigma_unc[0] + ( (x+y)/2 - mean[0] )*( CB_sigma_unc[1]  - CB_sigma_unc[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) mysigmaunc = CB_sigma_unc[1] + ( (x+y)/2 - mean[1] )*( CB_sigma_unc[2]  - CB_sigma_unc[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) mysigmaunc = CB_sigma_unc[2] + ( (x+y)/2 - mean[2] )*( CB_sigma_unc[3]  - CB_sigma_unc[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) mysigmaunc = CB_sigma_unc[3] + ( (x+y)/2 - mean[3] )*( CB_sigma_unc[4]  - CB_sigma_unc[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) mysigmaunc = CB_sigma_unc[4] + ( (x+y)/2 - mean[4] )*( CB_sigma_unc[5]  - CB_sigma_unc[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) mysigmaunc = CB_sigma_unc[5] + ( (x+y)/2 - mean[5] )*( CB_sigma_unc[6]  - CB_sigma_unc[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) mysigmaunc = CB_sigma_unc[6] + ( (x+y)/2 - mean[6] )*( CB_sigma_unc[7]  - CB_sigma_unc[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) mysigmaunc = CB_sigma_unc[7] + ( (x+y)/2 - mean[7] )*( CB_sigma_unc[8]  - CB_sigma_unc[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) mysigmaunc = CB_sigma_unc[8] + ( (x+y)/2 - mean[8] )*( CB_sigma_unc[9]  - CB_sigma_unc[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) mysigmaunc = CB_sigma_unc[9] + ( (x+y)/2 - mean[9] )*( CB_sigma_unc[10] - CB_sigma_unc[9] )/( mean[10] - mean[9] );
+
+    return mysigmaunc;
+  }
+
+  double My_Alpha(double x, double y) {
+    // return this CB alpha given m1 and m2
+    double myalpha = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) myalpha = CB_alpha[0] + ( (x+y)/2 - mean[0] )*( CB_alpha[1]  - CB_alpha[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) myalpha = CB_alpha[1] + ( (x+y)/2 - mean[1] )*( CB_alpha[2]  - CB_alpha[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) myalpha = CB_alpha[2] + ( (x+y)/2 - mean[2] )*( CB_alpha[3]  - CB_alpha[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) myalpha = CB_alpha[3] + ( (x+y)/2 - mean[3] )*( CB_alpha[4]  - CB_alpha[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) myalpha = CB_alpha[4] + ( (x+y)/2 - mean[4] )*( CB_alpha[5]  - CB_alpha[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) myalpha = CB_alpha[5] + ( (x+y)/2 - mean[5] )*( CB_alpha[6]  - CB_alpha[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) myalpha = CB_alpha[6] + ( (x+y)/2 - mean[6] )*( CB_alpha[7]  - CB_alpha[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) myalpha = CB_alpha[7] + ( (x+y)/2 - mean[7] )*( CB_alpha[8]  - CB_alpha[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) myalpha = CB_alpha[8] + ( (x+y)/2 - mean[8] )*( CB_alpha[9]  - CB_alpha[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) myalpha = CB_alpha[9] + ( (x+y)/2 - mean[9] )*( CB_alpha[10] - CB_alpha[9] )/( mean[10] - mean[9] );
+
+    return myalpha;
+  }
+
+  double My_Alpha_Unc(double x, double y) {
+    // return this CB alpha unc given m1 and m2
+    double myalphaunc = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) myalphaunc = CB_alpha_unc[0] + ( (x+y)/2 - mean[0] )*( CB_alpha_unc[1]  - CB_alpha_unc[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) myalphaunc = CB_alpha_unc[1] + ( (x+y)/2 - mean[1] )*( CB_alpha_unc[2]  - CB_alpha_unc[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) myalphaunc = CB_alpha_unc[2] + ( (x+y)/2 - mean[2] )*( CB_alpha_unc[3]  - CB_alpha_unc[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) myalphaunc = CB_alpha_unc[3] + ( (x+y)/2 - mean[3] )*( CB_alpha_unc[4]  - CB_alpha_unc[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) myalphaunc = CB_alpha_unc[4] + ( (x+y)/2 - mean[4] )*( CB_alpha_unc[5]  - CB_alpha_unc[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) myalphaunc = CB_alpha_unc[5] + ( (x+y)/2 - mean[5] )*( CB_alpha_unc[6]  - CB_alpha_unc[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) myalphaunc = CB_alpha_unc[6] + ( (x+y)/2 - mean[6] )*( CB_alpha_unc[7]  - CB_alpha_unc[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) myalphaunc = CB_alpha_unc[7] + ( (x+y)/2 - mean[7] )*( CB_alpha_unc[8]  - CB_alpha_unc[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) myalphaunc = CB_alpha_unc[8] + ( (x+y)/2 - mean[8] )*( CB_alpha_unc[9]  - CB_alpha_unc[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) myalphaunc = CB_alpha_unc[9] + ( (x+y)/2 - mean[9] )*( CB_alpha_unc[10] - CB_alpha_unc[9] )/( mean[10] - mean[9] );
+
+    return myalphaunc;
+  }
+
+  double My_n(double x, double y) {
+    // return this CB n given m1 and m2
+    double myn = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) myn = CB_n[0] + ( (x+y)/2 - mean[0] )*( CB_n[1]  - CB_n[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) myn = CB_n[1] + ( (x+y)/2 - mean[1] )*( CB_n[2]  - CB_n[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) myn = CB_n[2] + ( (x+y)/2 - mean[2] )*( CB_n[3]  - CB_n[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) myn = CB_n[3] + ( (x+y)/2 - mean[3] )*( CB_n[4]  - CB_n[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) myn = CB_n[4] + ( (x+y)/2 - mean[4] )*( CB_n[5]  - CB_n[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) myn = CB_n[5] + ( (x+y)/2 - mean[5] )*( CB_n[6]  - CB_n[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) myn = CB_n[6] + ( (x+y)/2 - mean[6] )*( CB_n[7]  - CB_n[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) myn = CB_n[7] + ( (x+y)/2 - mean[7] )*( CB_n[8]  - CB_n[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) myn = CB_n[8] + ( (x+y)/2 - mean[8] )*( CB_n[9]  - CB_n[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) myn = CB_n[9] + ( (x+y)/2 - mean[9] )*( CB_n[10] - CB_n[9] )/( mean[10] - mean[9] );
+
+    return myn;
+  }
+
+  double My_n_Unc(double x, double y) {
+    // return this CB n unc given m1 and m2
+    double mynunc = 0.0;
+
+    if ( (x+y)/2 >= 0.2113   && (x+y)/2 < mean[1] ) mynunc = CB_n_unc[0] + ( (x+y)/2 - mean[0] )*( CB_n_unc[1]  - CB_n_unc[0] )/( mean[1]  - mean[0] );
+    if ( (x+y)/2 >= mean[1]  && (x+y)/2 < mean[2] ) mynunc = CB_n_unc[1] + ( (x+y)/2 - mean[1] )*( CB_n_unc[2]  - CB_n_unc[1] )/( mean[2]  - mean[1] );
+    if ( (x+y)/2 >= mean[2]  && (x+y)/2 < mean[3] ) mynunc = CB_n_unc[2] + ( (x+y)/2 - mean[2] )*( CB_n_unc[3]  - CB_n_unc[2] )/( mean[3]  - mean[2] );
+    if ( (x+y)/2 >= mean[3]  && (x+y)/2 < mean[4] ) mynunc = CB_n_unc[3] + ( (x+y)/2 - mean[3] )*( CB_n_unc[4]  - CB_n_unc[3] )/( mean[4]  - mean[3] );
+    if ( (x+y)/2 >= mean[4]  && (x+y)/2 < mean[5] ) mynunc = CB_n_unc[4] + ( (x+y)/2 - mean[4] )*( CB_n_unc[5]  - CB_n_unc[4] )/( mean[5]  - mean[4] );
+    if ( (x+y)/2 >= mean[5]  && (x+y)/2 < mean[6] ) mynunc = CB_n_unc[5] + ( (x+y)/2 - mean[5] )*( CB_n_unc[6]  - CB_n_unc[5] )/( mean[6]  - mean[5] );
+    if ( (x+y)/2 >= mean[6]  && (x+y)/2 < mean[7] ) mynunc = CB_n_unc[6] + ( (x+y)/2 - mean[6] )*( CB_n_unc[7]  - CB_n_unc[6] )/( mean[7]  - mean[6] );
+    if ( (x+y)/2 >= mean[7]  && (x+y)/2 < mean[8] ) mynunc = CB_n_unc[7] + ( (x+y)/2 - mean[7] )*( CB_n_unc[8]  - CB_n_unc[7] )/( mean[8]  - mean[7] );
+    if ( (x+y)/2 >= mean[8]  && (x+y)/2 < mean[9] ) mynunc = CB_n_unc[8] + ( (x+y)/2 - mean[8] )*( CB_n_unc[9]  - CB_n_unc[8] )/( mean[9]  - mean[8] );
+    if ( (x+y)/2 >= mean[9]  && (x+y)/2 < 60.000  ) mynunc = CB_n_unc[9] + ( (x+y)/2 - mean[9] )*( CB_n_unc[10] - CB_n_unc[9] )/( mean[10] - mean[9] );
+
+    return mynunc;
   }
 
   Double_t My_BKGShapem1(double x)

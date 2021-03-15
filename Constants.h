@@ -13,11 +13,12 @@ const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantile
 // float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
 float expected_quantiles[N_Quantiles] = {0.500};
 // # of mass points for expected limits (before unblinding), see below
-const int N_Signals = 56;
-float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.5300, 0.5600,
-   0.6000, 0.7000, 0.8000, 0.9000, 1.0000, 1.1000, 1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000,
-   2.1000, 2.2000, 2.3000, 2.4000, 2.5000, 2.6000, 2.7000, 3.3000, 3.4000, 3.7000, 4.0000, 5.0000, 6.0000, 7.0000, 8.0000, 8.5000,
-   13.0000, 17.0000, 21.0000, 25.0000, 29.0000, 33.0000, 37.0000, 41.0000, 45.0000, 49.0000, 53.0000, 57.0000, 58.0000};
+const int N_Signals = 70;
+float masses[N_Signals] = {0.2113, 0.2400, 0.2700, 0.3000, 0.3300, 0.3600, 0.4000, 0.4300, 0.4600, 0.5000, 0.6000, 0.7000,
+   0.8000, 0.9000, 1.0000, 1.1000, 1.2000, 1.3000, 1.4000, 1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000, 2.1000, 2.2000, 2.3000, 2.4000,
+   2.5000, 2.6000, 2.7200, 3.2400, 3.4000, 3.7000, 4.0000, 4.5000, 5.0000, 5.5000, 6.0000, 6.5000, 7.0000, 7.5000, 8.0000, 8.5000,
+   11.0000, 13.0000, 15.0000, 17.0000, 19.0000, 21.0000, 23.0000, 25.0000, 27.0000, 29.0000, 31.0000, 33.0000, 35.0000, 37.0000, 39.0000,
+   41.0000, 43.0000, 45.0000, 47.0000, 49.0000, 51.0000, 53.0000, 55.0000, 57.0000, 58.0000};
 
 bool DiffSeed = true; //Use differnet seed each time using combine
 int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times
@@ -44,6 +45,11 @@ float BBbar_norm_2017  = 1.127,  BBbar_syst_2017 = 1.2;
 
 // 2018 SR3: stat. unc. 16.4%, Sys. unc 2.3%, shape unc 23.8%
 float BKG_norm_2018_SR3 = 1.164, BKG_syst_2018_SR3 = 1.023, BKG_shape_2018_SR3 = 1.238;
+
+// 2018 signal CB shape param unc: use same for all signals, derived from prompt dark photon CB fits
+float signal1_sigma_unc_2018 = 0.029, signal1_alpha_unc_2018 = 0.094, signal1_n_unc_2018 = 0.288;
+float signal2_sigma_unc_2018 = 0.029, signal2_alpha_unc_2018 = 0.094, signal2_n_unc_2018 = 0.288;
+float signal3_sigma_unc_2018 = 0.029, signal3_alpha_unc_2018 = 0.094, signal3_n_unc_2018 = 0.288;
 
 // Systematic Uncertainties: Need to add MC scale to data at high mass, to be updated: PU/mass window/HLT
 float lumi_13TeV_2018 = 1.025, mu_hlt_2018  = 1.006, mu_id_2018  = 1.024, mu_iso_2018  = 1.002, mu_pu_2018  = 1.0005, mu_pu_eff_2018 = 1.018, ovlp_trk_2018 = 1.024, ovlp_mu_2018 = 1.026, llp_mu_2018 = 1.010, dimu_M_2018 = 1.0024, nnlo_pt_2018 = 1.02, pdf_as_2018 = 1.08, HxecBr_2018 = 1.038;
