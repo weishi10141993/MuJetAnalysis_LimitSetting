@@ -121,10 +121,56 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   tree_dimudimu_signal2016_2D->Branch("massC", &massC, "massC/D");
   tree_dimudimu_signal2016_2D->Branch("massF", &massF, "massF/D");
 
-  //===================
-  //BLINDED DATA
-  //===================
-  if(year==2017 || year==2018){
+  //====================
+  //Unblinded data at SR
+  //====================
+  if ( year == 2018 ){
+    // SR1 (0.21 - 2.72 GeV): 4 events
+    massC_SR1 = 1.07823; massF_SR1 = 1.08034; tree_dimudimu_signal1_2D->Fill();
+    massC_SR1 = 1.3254;  massF_SR1 = 1.27405; tree_dimudimu_signal1_2D->Fill();
+    massC_SR1 = 1.99326; massF_SR1 = 1.95203; tree_dimudimu_signal1_2D->Fill();
+    massC_SR1 = 2.45786; massF_SR1 = 2.45252; tree_dimudimu_signal1_2D->Fill();
+
+    // SR2 (3.24 - 9 GeV): 6 events
+    massC_SR2 = 5.03704; massF_SR2 = 4.86024; tree_dimudimu_signal2_2D->Fill();
+    massC_SR2 = 5.72808; massF_SR2 = 5.54132; tree_dimudimu_signal2_2D->Fill();
+    massC_SR2 = 8.05194; massF_SR2 = 8.23958; tree_dimudimu_signal2_2D->Fill();
+    massC_SR2 = 8.43057; massF_SR2 = 8.34955; tree_dimudimu_signal2_2D->Fill();
+    massC_SR2 = 8.53801; massF_SR2 = 8.41446; tree_dimudimu_signal2_2D->Fill();
+    massC_SR2 = 8.9618;  massF_SR2 = 8.87257; tree_dimudimu_signal2_2D->Fill();
+
+    // SR3 (11 - 60 GeV): 20 events
+    massC_SR3 = 16.0328; massF_SR3 = 15.3048; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 21.1458; massF_SR3 = 20.7108; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 21.7996; massF_SR3 = 21.1412; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 22.1098; massF_SR3 = 22.6903; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 34.8751; massF_SR3 = 34.646;  tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 37.0113; massF_SR3 = 38.517;  tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 37.9536; massF_SR3 = 36.4664; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 38.8183; massF_SR3 = 38.1312; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 39.0521; massF_SR3 = 41.1795; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 39.1743; massF_SR3 = 38.6899; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 40.0932; massF_SR3 = 42.109;  tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 40.2104; massF_SR3 = 39.1925; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 40.2246; massF_SR3 = 39.5777; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 41.2983; massF_SR3 = 41.1495; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 47.1707; massF_SR3 = 48.6395; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 49.08;   massF_SR3 = 47.9448; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 51.4184; massF_SR3 = 50.2041; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 54.6371; massF_SR3 = 54.2174; tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 54.8353; massF_SR3 = 57.102;  tree_dimudimu_signal3_2D->Fill();
+    massC_SR3 = 59.0704; massF_SR3 = 58.101;  tree_dimudimu_signal3_2D->Fill();
+
+    /* 5 events in the excluded region
+    massC_SR = 3.04559; massF_SR = 3.06201;
+    massC_SR = 3.06525; massF_SR = 3.09389;
+    massC_SR = 3.03277; massF_SR = 3.11892;
+    massC_SR = 3.09363; massF_SR = 3.07817;
+    massC_SR = 3.20913; massF_SR = 3.13521;
+    */
+  }
+
+  if ( year == 2017 ) {
     massC_SR1 = 100.;
     massF_SR1 = 100.;
     massC_SR2 = 100.;
@@ -132,40 +178,29 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     massC_SR3 = 100.;
     massF_SR3 = 100.;
   }
-  if(year==2016){
+
+  if ( year == 2016 ){
     massC = 100.;
     massF = 100.;
+    /*
+    //===================
+    //2016 Data Unblinded
+    //===================
+    // massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal2016_2D->Fill();
+    massC =2.8599584;   massF = 3.0017674; tree_dimudimu_signal2016_2D->Fill();
+    // massC =0.4258973;   massF = 0.5848349; tree_dimudimu_signal2016_2D->Fill();
+    // massC =3.0722196;   massF = 3.2662851; tree_dimudimu_signal2016_2D->Fill();
+    massC =3.0728187;   massF = 3.0538983; tree_dimudimu_signal2016_2D->Fill();
+    // massC =3.0950253;   massF = 3.3617882; tree_dimudimu_signal2016_2D->Fill();
+    massC =3.1521356;   massF = 2.8546791; tree_dimudimu_signal2016_2D->Fill();
+    massC =2.8254406;   massF = 2.6496100; tree_dimudimu_signal2016_2D->Fill();
+    massC =1.2541753;   massF = 1.1524148; tree_dimudimu_signal2016_2D->Fill();
+    massC =2.3863873;   massF = 2.3582603; tree_dimudimu_signal2016_2D->Fill();
+    massC =3.0641751;   massF = 3.0972354; tree_dimudimu_signal2016_2D->Fill();
+    massC =1.9403913;   massF = 1.8196427; tree_dimudimu_signal2016_2D->Fill();
+    massC =1.3540757;   massF = 1.4834892; tree_dimudimu_signal2016_2D->Fill();
+    */
   }
-
-  /*
-  //===================
-  //2016 Data Unblinded
-  //===================
-  // massC =0.8079733;   massF = 0.7267103; tree_dimudimu_signal2016_2D->Fill();
-  massC =2.8599584;   massF = 3.0017674; tree_dimudimu_signal2016_2D->Fill();
-  // massC =0.4258973;   massF = 0.5848349; tree_dimudimu_signal2016_2D->Fill();
-  // massC =3.0722196;   massF = 3.2662851; tree_dimudimu_signal2016_2D->Fill();
-  massC =3.0728187;   massF = 3.0538983; tree_dimudimu_signal2016_2D->Fill();
-  // massC =3.0950253;   massF = 3.3617882; tree_dimudimu_signal2016_2D->Fill();
-  massC =3.1521356;   massF = 2.8546791; tree_dimudimu_signal2016_2D->Fill();
-  massC =2.8254406;   massF = 2.6496100; tree_dimudimu_signal2016_2D->Fill();
-  massC =1.2541753;   massF = 1.1524148; tree_dimudimu_signal2016_2D->Fill();
-  massC =2.3863873;   massF = 2.3582603; tree_dimudimu_signal2016_2D->Fill();
-  massC =3.0641751;   massF = 3.0972354; tree_dimudimu_signal2016_2D->Fill();
-  massC =1.9403913;   massF = 1.8196427; tree_dimudimu_signal2016_2D->Fill();
-  massC =1.3540757;   massF = 1.4834892; tree_dimudimu_signal2016_2D->Fill();
-  */
-
-  //===================
-  //2018 Data Unblinded
-  //===================
-  /*
-  massC_SR1 = 100.;
-  massF_SR1 = 100.;
-  massC_SR2 = 100.;
-  massF_SR2 = 100.;
-  massC_SR3 = 100.;
-  massF_SR3 = 100.;*/
 
   cout<<"--- PRINT signal trees ---"<<endl;
   tree_dimudimu_signal1_2D->Print();

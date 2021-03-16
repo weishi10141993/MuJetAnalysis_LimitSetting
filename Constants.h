@@ -59,7 +59,7 @@ float lumi_13TeV_2017 = 1.025, mu_hlt_2017  = 1.015, mu_id_2017  = 1.024, mu_iso
 
 // Observed events after unblinding
 int obs_SR1_2017 = -1, obs_SR2_2017 = -1, obs_SR3_2017 = -1;
-int obs_SR1_2018 = -1, obs_SR2_2018 = -1, obs_SR3_2018 = -1;
+int obs_SR1_2018 =  4, obs_SR2_2018 =  6, obs_SR3_2018 = 20;
 int obs_SR1_2016 = -1, obs_SR2_2016 = -1; //no SR3 for 2016
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
