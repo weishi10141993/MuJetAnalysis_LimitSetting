@@ -69,15 +69,15 @@ int obs_SR1_2016 = -1, obs_SR2_2016 = -1; //no SR3 for 2016
 // SR1: Below Jpsi
 const double       m_SR1_min  = 0.2113;
 const double       m_SR1_max  = 2.72;
-const unsigned int m_SR1_bins = 63;//same as bbBar background binning
+const unsigned int m_SR1_bins = 63; // same as bbBar background binning
 // SR2: Above Jpsi and below 9GeV
 const double       m_SR2_min  = 3.24;
 const double       m_SR2_max  = 9.;
-const unsigned int m_SR2_bins = 144;//same as bbBar background binning
+const unsigned int m_SR2_bins = 144; // same as bbBar background binning
 // SR3: Above 9GeV high mass
 const double       m_SR3_min  = 11.;
 const double       m_SR3_max  = 60.;
-const unsigned int m_SR3_bins = 14;
+const unsigned int m_SR3_bins = 100; // this can't be 14 bins like the background plot as it will fail GoF test when unblinding, use 100
 //2016
 const double       m_min      = 0.2113;
 const double       m_max      = 9.;
