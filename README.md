@@ -195,7 +195,7 @@ cd MuJetAnalysis_LimitSetting
 
   The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
 
-  Also change "--testStat LHC" to "--LHC-mode LHC-limits" when unblinding the data. The nuisance parameters are treated in a different way.
+  Also change "--testStat LHC" to "--LHCmode LHC-limits" when unblinding the data. The nuisance parameters are treated in a different way.
 
   In case you have some knowledge of where the limit should be, then setting an appropriate --rMax can speed up the search.
 

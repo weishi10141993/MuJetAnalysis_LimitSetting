@@ -62,7 +62,7 @@ if CL == 90:
 # Return the expected median @%CL% CL for a given mass point
 # if the mass point is not present, it makes an interpolation.
 def ExpectedLimitVsM_HybridNew(m, limit_array):
-    if m >= 0.2113 and m <= 58.:
+    if m >= 0.2113 and m <= 60.:
         m_im1 = 0.2113
         m_i   = 0.2113
         for i in range(len(limit_array)):
