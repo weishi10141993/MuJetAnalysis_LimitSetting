@@ -25,7 +25,7 @@ cd MuJetAnalysis_LimitSetting
 ##  Model Independent Limits for Each Year
 1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. Make sure high mass background shape is up-to-date. The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have different distributions.
 
-2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit Constants.h to update signal and background rates for the year. Then do:
+2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit "Constants.h" to update signal and background rates and choose to produce expected (default) or observed limits. Then do:
 
    ```
    root -l -b -q  CreateDatacards.C+
@@ -106,13 +106,13 @@ cd MuJetAnalysis_LimitSetting
    ```
    This produces a new ROOT file "cls_qmu_distributions.root" containing the plots.
 
-6. This step prints the limit of each mass point in the text files of previous step. You will need to copy the printed limits inside scripts/UserInput.py (later to be used by CmsLimitVsM.py and Plots.py). Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary. Then do:
+6. This step prints the limit of each mass point in the text files of previous step. Edit other parameters in UserInput.py at the 'PrintOutLimits.py' block if necessary. For example, if you are doing several expected quantiles, you can change the "quantile" parameter to print out the limits of that quantile. Then do:
 
    ```
    cd macros; python PrintOutLimits.py; cd ..;
    ```
 
-   Note: You have to copy the line from "That contain N limits: \n XXX" until the line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit.   
+   Note: You have to copy the line from "That contain N limits: \n XXX" until the line before "Now remove the worse items". Remove also the first number each line, that represent the number of the jobs used to produce such limit. You will need to copy the printed limits to "scripts/UserInput.py" (later to be used by CmsLimitVsM.py and Plots.py).
 
 7. [Note: this step is not tested, use with caution!!!] In case you run combine several times (or more people followed the steps until here), you may want to average all the results, and place in scripts/CmsLimitVsM.py the final one
    -> Imagine 2 people followed this instruction, and you have two output from "PrintOutLimits.py". You copy the lines after "That contain N limits: \n XXX" until the line before "Now remove the worse items" in tow txt files.
@@ -192,8 +192,6 @@ cd MuJetAnalysis_LimitSetting
    ```
 
   The "--cl" is a common statistic option to many combine methods. It specifies the confidence level you want, default as 0.95 in combine. The "rule" option specifies the rule to use, default is CLs.
-
-  The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
 
   Also change "--testStat LHC" to "--LHCmode LHC-limits" when unblinding the data. The nuisance parameters are treated in a different way.
 

@@ -47,17 +47,12 @@ def fCmsResolution(m):
 
 ## Confidence level
 if CL == 95:
+    Observed_Limits_HybridNew = Observed_Limits_HybridNew_95
     Expected_Limits_Quantile_0p5_HybridNew = Expected_Limits_Quantile_0p5_HybridNew_95 # from Expected_Limits_Quantiles.py
     Expected_Limits_Quantile_0p025_HybridNew = Expected_Limits_Quantile_0p025_HybridNew_95
     Expected_Limits_Quantile_0p975_HybridNew = Expected_Limits_Quantile_0p975_HybridNew_95
     Expected_Limits_Quantile_0p16_HybridNew  = Expected_Limits_Quantile_0p16_HybridNew_95
     Expected_Limits_Quantile_0p84_HybridNew  = Expected_Limits_Quantile_0p84_HybridNew_95
-if CL == 90:
-    Expected_Limits_Quantile_0p5_HybridNew = Expected_Limits_Quantile_0p5_HybridNew_90
-    Expected_Limits_Quantile_0p025_HybridNew = Expected_Limits_Quantile_0p025_HybridNew_90
-    Expected_Limits_Quantile_0p975_HybridNew = Expected_Limits_Quantile_0p975_HybridNew_90
-    Expected_Limits_Quantile_0p16_HybridNew  = Expected_Limits_Quantile_0p16_HybridNew_90
-    Expected_Limits_Quantile_0p84_HybridNew  = Expected_Limits_Quantile_0p84_HybridNew_90
 
 # Return the expected median @%CL% CL for a given mass point
 # if the mass point is not present, it makes an interpolation.
@@ -134,30 +129,10 @@ def func(x, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s):
              q*myGaus2(x, r, s)
              )
 
-xdata = [float(i[0]) for i in Expected_Limits_Quantile_0p5_HybridNew]
-ydata = [float(i[1]) for i in Expected_Limits_Quantile_0p5_HybridNew]
+xdata = [float(i[0]) for i in Observed_Limits_HybridNew]
+ydata = [float(i[1]) for i in Observed_Limits_HybridNew]
 print xdata
 print ydata
-
-"""
-For 95% CL limits
-                       bounds=([2.95,
-                                0.5, 1.1, 0,
-                                1.75, 1.1, 0,
-                                0.25, 1.7, 0,
-                                1.2, 2.1, 0,
-                                0, 2.8, 0,
-                                4, 2.9, 0.09],
-                               [3.1,
-                                1, 1.3, 0.05,
-                                2, 1.6, 0.05,
-                                0.75, 2.1, 0.07,
-                                2, 2.7, 0.07,
-                                4, 3, 0.07,
-                                5, 3.1, 0.13]
-                               )
-
-"""
 
 ydata_error = []
 for p in range(0,len(xdata)):
@@ -201,7 +176,3 @@ print (str(popt[0]) + "+" +
        str(popt[13]) + "* myGaus(m,"+ str(popt[14]) +  ", " + str(popt[15]) + ")" + " + " +
        str(popt[16]) + "* myGaus(m,"+ str(popt[17]) +  ", " + str(popt[18]) + ")"
        )
-
-#print "Fit parameters", popt
-#print "Fit covariance matrix", pcov
-#plt.show()

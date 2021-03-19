@@ -25,6 +25,7 @@ if year == 2017:
     masses = masses2018
 
 if year == 2018:
+    Observed_Limits_HybridNew_95 = Observed_Limits_HybridNew_95_2018
     Expected_Limits_Quantile_0p5_HybridNew_95 = Expected_Limits_Quantile_0p5_HybridNew_95_2018
     Expected_Limits_Quantile_0p025_HybridNew_95 = Expected_Limits_Quantile_0p025_HybridNew_95_2018
     Expected_Limits_Quantile_0p975_HybridNew_95 = Expected_Limits_Quantile_0p975_HybridNew_95_2018

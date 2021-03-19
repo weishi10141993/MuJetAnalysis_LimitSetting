@@ -8,10 +8,11 @@
 // Default machine: TAMU Terra, CERN Lxplus not tested yet
 bool isLxplus = false;
 // Expected Limit quantiles: %.3f
-// const int N_Quantiles = 5;
-const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
-// float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
-float expected_quantiles[N_Quantiles] = {0.500};
+const int N_Quantiles = 5;
+float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
+//const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
+//float expected_quantiles[N_Quantiles] = {0.500};
+
 // # of mass points for expected limits (before unblinding), see below
 const int N_Signals = 171;
 float masses[N_Signals] = {
@@ -28,7 +29,8 @@ float masses[N_Signals] = {
    59.9000
  };
 
-bool DiffSeed = true; //Use differnet seed each time using combine
+bool Expected = true; // Use combine for expected limits; if false, produce observed limits 
+bool DiffSeed = true; // Use differnet seed each time using combine
 int Ninit = 0, Nend = 1; // Each mass point will be submitted (Nend-Ninit) times
 
 // Following constants are used in datacards, 2018 to be finalized (2016 is finalized), 2017 data is not analyzed

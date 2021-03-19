@@ -81,7 +81,7 @@ void CreateDatacards(){
           }
         }
       }
-    }//end quantiles
+    } // end quantiles
     fclose(file_sh_30k);
 
     // Create submission file for each mass piont
@@ -119,11 +119,15 @@ void CreateDatacards(){
             fprintf(file_30k, "cd %s\n", pwd.c_str());
             fprintf(file_30k, "cmsenv\n");
             // Expected limits
-            //if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
-            //else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
-            // Unblinded limits: no --expectedFromGrid option, also Myrule uses --LHC-mode LHC-limits instead of --testStat LHC option
-            if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
-            else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
+            if (Expected) {
+              if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
+              else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
+            }
+            else {
+              // Unblinded limits: no --expectedFromGrid option, also Myrule uses --LHC-mode LHC-limits instead of --testStat LHC option
+              if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
+              else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
+            }
             if(!isLxplus) fprintf(file_30k, "EOF\n");
             fclose(file_30k);
           }
@@ -132,7 +136,7 @@ void CreateDatacards(){
     }//End h quantile
 
     //Create datacards for each mass point
-    for(int i=0; i<N_Signals; i++){
+    for(int i = 0; i < N_Signals; i++){
       char Thisname_txt[100];
       sprintf(Thisname_txt, "Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt", year, masses[i]);
 
@@ -321,8 +325,14 @@ void CreateDatacards(){
             fprintf(file_combine_30k, "source /cvmfs/cms.cern.ch/cmsset_default.sh\n");
             fprintf(file_combine_30k, "cd %s\n", pwd.c_str());
             fprintf(file_combine_30k, "cmsenv\n");
-            if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
-            else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+            if (Expected) {
+              if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+              else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+            }
+            else {
+              if(DiffSeed) fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -s %d -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+              else         fprintf(file_combine_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -T 30000 --fork 50 Datacards/2020/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/2020/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), masses[i], expected_quantiles[h], masses[i], pedex.c_str());
+            }
             fprintf(file_combine_30k, "EOF\n");
             fclose(file_combine_30k);
           }
