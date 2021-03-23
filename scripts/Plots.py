@@ -94,7 +94,7 @@ def limit_vs_mGammaD():
         for m in np.arange(m_SR3_min, m_SR3_max, 0.005):
             array_mGammaD_limit_fit_SR3.append( (m, fCmsLimitVsM(m)) )
 
-    # Start: Limits from toy experiment
+    # Start: expected limits from toy experiment
     for m in masses:
         if (m >= m_SR1_min and m <= m_SR1_max):
             array_mGammaD_limit_toy_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) )) # expected median limit from toys experiments
@@ -102,21 +102,21 @@ def limit_vs_mGammaD():
             array_mGammaD_limit_toy_n_two_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) )) # expected 95 CI lower bound "
             array_mGammaD_limit_toy_p_one_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) )) # expected 68 CI upper bound "
             array_mGammaD_limit_toy_n_one_sigma_SR1.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) )) # expected 68 CI lower bound "
-            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Observed_Limits_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties for expected median @XX% CL
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) )) # Fit uncertainties for expected median @XX% CL
         elif (m >= m_SR2_min and m <= m_SR2_max):
             array_mGammaD_limit_toy_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) ))
             array_mGammaD_limit_toy_p_two_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ))
             array_mGammaD_limit_toy_n_two_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ))
             array_mGammaD_limit_toy_p_one_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ))
             array_mGammaD_limit_toy_n_one_sigma_SR2.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ))
-            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Observed_Limits_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
         elif (m >= m_SR3_min and m <= m_SR3_max):
             array_mGammaD_limit_toy_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) ))
             array_mGammaD_limit_toy_p_two_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p975_HybridNew) ))
             array_mGammaD_limit_toy_n_two_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p025_HybridNew) ))
             array_mGammaD_limit_toy_p_one_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p84_HybridNew) ))
             array_mGammaD_limit_toy_n_one_sigma_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p16_HybridNew) ))
-            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Observed_Limits_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
+            array_mGammaD_limit_fit_uncertainty.append(( m, (ExpectedLimitVsM_HybridNew(m, Expected_Limits_Quantile_0p5_HybridNew) - fCmsLimitVsM(m) ) / fCmsLimitVsM(m) ))
     # End: Limits from toy experiment
 
     # histogram range: x: mass; y: N_evt @%XX%CL
@@ -334,12 +334,12 @@ def limit_vs_mGammaD():
 #####################################################################################################
 def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     print "------------limit_CSxBR2xAlpha_fb_vs_mGammaD------------"
-    cnv.SetLogy(0)
+    cnv.SetLogy()
     cnv.SetLogx()
 
-    #***************************************************************************
-    # Transforming the Limit on N_event to Xsec limit using the fitted function
-    #***************************************************************************
+    #**********************
+    # Observed Xsec limit
+    #**********************
     CSxBR2xAlpha_fb_fit_SR1 = []
     CSxBR2xAlpha_fb_fit_SR2 = []
     CSxBR2xAlpha_fb_fit_SR3 = []
@@ -359,7 +359,7 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
             CSxBR2xAlpha_fb_fit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Observed_Limits_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
 
     # specify mass range: MaxGraphMass is specifief in UserConfig for each year
-    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.0, 0.49)
+    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.05, 10)
     h_CSxBR2xAlpha_fb_dummy.SetXTitle("m_{a} [GeV]")
     h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{Gen} [fb]")
     h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.55, "Y")
@@ -367,19 +367,19 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     h_CSxBR2xAlpha_fb_dummy.GetYaxis().SetTitleSize(0.05)
     h_CSxBR2xAlpha_fb_dummy.Draw()
 
-    # Fitted function to toy limit: SR1
+    # observed toy limit: SR1
     gr_CSxBR2xAlpha_fb_fit_SR1 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR1), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR1)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR1)[1]) )
     gr_CSxBR2xAlpha_fb_fit_SR1.SetLineWidth(2)
     gr_CSxBR2xAlpha_fb_fit_SR1.SetLineColor(ROOT.kRed)
     gr_CSxBR2xAlpha_fb_fit_SR1.SetLineStyle(1)
     gr_CSxBR2xAlpha_fb_fit_SR1.Draw("C") # Draw smooth curve
-    # Fitted function to toy limit: SR2
+    # observed toy limit: SR2
     gr_CSxBR2xAlpha_fb_fit_SR2 = ROOT.TGraph( len(CSxBR2xAlpha_fb_fit_SR2), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR2)[0]), array.array("d", zip(*CSxBR2xAlpha_fb_fit_SR2)[1]) )
     gr_CSxBR2xAlpha_fb_fit_SR2.SetLineWidth(2)
     gr_CSxBR2xAlpha_fb_fit_SR2.SetLineColor(ROOT.kRed)
     gr_CSxBR2xAlpha_fb_fit_SR2.SetLineStyle(1)
     gr_CSxBR2xAlpha_fb_fit_SR2.Draw("C")
-    # Fitted function to toy limit: SR3
+    # observed toy limit: SR3
     ###########################################################
     ## SR3: don't plot this region if do combine for 2016+2018
     ###########################################################
