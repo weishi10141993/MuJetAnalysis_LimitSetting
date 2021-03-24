@@ -137,7 +137,7 @@ namespace Limit_cfg {
     }
 
     //Common Combine rule for 2017 and 2018: use --LHCmode LHC-limits when unblinding as suggested by HiggsCombine people
-    Myrule = Myrule + "--rule CLs --LHCmode LHC-limits --cl 0.95 --rAbsAcc 0.01 --rRelAcc 0.001";//Require accuracy on r because of ~zero bkg analysis, otherwise r fluctuates
+    Myrule = Myrule + "--rule CLs --LHCmode LHC-limits --cl 0.95 --rMax 10"; // restrict rMax 10 for the 0.84 and 0.975 quantile expected limits as the r would float to large values
     pwd = pwd + "/home/ws13/Run2Limit/CMSSW_10_2_13/src/MuJetAnalysis_LimitSetting/";
 
   } // End function

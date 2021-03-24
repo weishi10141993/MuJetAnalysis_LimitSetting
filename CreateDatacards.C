@@ -100,9 +100,9 @@ void CreateDatacards(){
             fprintf(file_30k, "#!/bin/bash\n");
             if(!isLxplus){
               fprintf(file_30k, "#SBATCH --job-name=ToyLimit\n"); // FYI: https://hprc.tamu.edu/wiki/Terra:Batch_Processing_SLURM
-              fprintf(file_30k, "#SBATCH --time=03:00:00\n"); // for 0.975 and 0.025 quantiles, this may need 9hrs
+              fprintf(file_30k, "#SBATCH --time=03:00:00\n"); // for 0.975 and 0.025 quantiles, may need more
               fprintf(file_30k, "#SBATCH --nodes=1\n");
-              fprintf(file_30k, "#SBATCH --mem-per-cpu=10000\n"); // for 0.975 and 0.025 quantiles, this may need 15000MB
+              fprintf(file_30k, "#SBATCH --mem-per-cpu=10000\n"); // for 0.975 and 0.025 quantiles, may need more
               fprintf(file_30k, "#SBATCH --ntasks-per-node=1\n");
               fprintf(file_30k, "#SBATCH --output=macros/batch/ToyLimit.out.%%j\n");
               fprintf(file_30k, "#SBATCH --account=122747015988\n");
@@ -119,12 +119,12 @@ void CreateDatacards(){
             fprintf(file_30k, "cd %s\n", pwd.c_str());
             fprintf(file_30k, "cmsenv\n");
             if (Expected) {
-              // Expected limits: for 0.84 and 0.975 quantile may need 60000 toys
+              // Expected limits: may need more toys for 0.84 and 0.975 quantiles
               if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
               else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult --expectedFromGrid %.3f " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), expected_quantiles[h], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
             }
             else {
-              // Unblinded limits: no --expectedFromGrid option, also Myrule uses --LHC-mode LHC-limits instead of --testStat LHC option
+              // Unblinded limits: remove --expectedFromGrid option, also uses --LHC-mode LHC-limits instead of --testStat LHC option
               if(DiffSeed) fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -s %d -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), Seeds[i], year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
               else         fprintf(file_30k, "combine -n .H2A4Mu_mA_%.4f_GeV_LHC_T30000_%s -m 125 -M HybridNew --saveHybridResult " + Myrule + " -T 30000 --fork 50 Datacards/%d/datacard_H2A4Mu_mA_%.4f_GeV.txt > macros/sh/%d/output/output_%.3f_%.4f_T30000_%s.txt \n", masses[i], pedex.c_str(), year, masses[i], year, expected_quantiles[h], masses[i], pedex.c_str());
             }

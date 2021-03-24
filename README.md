@@ -83,12 +83,12 @@ cd MuJetAnalysis_LimitSetting
 
 5. Send jobs to run combine for each mass point. Before submit, do a local test on one mass point using the combine command inside the submission file. Stay outside the macros directory to source the file below as the relative directory matters here.
 
+   The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option. Note for the expected limit, you can add --rMax option to speed up the toy MC if you have a reasonable understanding where the expected limit on r should be.
+
    ```
    cd MuJetAnalysis_LimitSetting
    source macros/RunOnDataCard_T30000.sh #30k toys/job (recommended)
    ```
-
-   The "expectedFromGrid" tells combine to use the grid to compute the expected limit for this quantile. To produce observed limit (after unblinding), remove the "--expectedFromGrid" option.
 
    The more toys, the better, but it takes more time. Refer to [TAMU Terra page](https://hprc.tamu.edu/wiki/Terra:Batch_Processing_SLURM) for info about the slurm batch system.
 
