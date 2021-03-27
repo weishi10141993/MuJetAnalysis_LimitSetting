@@ -334,7 +334,7 @@ def limit_vs_mGammaD():
 #####################################################################################################
 def limit_CSxBR2xAlpha_fb_vs_mGammaD():
     print "------------limit_CSxBR2xAlpha_fb_vs_mGammaD------------"
-    cnv.SetLogy()
+    cnv.SetLogy(0)
     cnv.SetLogx()
 
     #**********************
@@ -359,7 +359,7 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
             CSxBR2xAlpha_fb_fit_SR3.append(( m, ExpectedLimitVsM_HybridNew(m, Observed_Limits_HybridNew)/lumi_fbinv/SF/eFullMc_over_aGen ))
 
     # specify mass range: MaxGraphMass is specifief in UserConfig for each year
-    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.05, 10)
+    h_CSxBR2xAlpha_fb_dummy = ROOT.TH2F("h_CSxBR2xAlpha_fb_dummy", "h_CSxBR2xAlpha_fb_dummy", 1000, m_SR1_min-0.04, MaxGraphMass, 1000, 0.05, 1)
     h_CSxBR2xAlpha_fb_dummy.SetXTitle("m_{a} [GeV]")
     h_CSxBR2xAlpha_fb_dummy.SetYTitle("#sigma(pp #rightarrow 2a + X) B^{2}(a #rightarrow 2 #mu) #alpha_{Gen} [fb]")
     h_CSxBR2xAlpha_fb_dummy.SetTitleOffset(1.55, "Y")
@@ -497,7 +497,7 @@ def limit_CSxBR2xAlpha_fb_vs_mGammaD():
             gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR3.SetPoint(2*len(CSxBR2xAlpha_fb_toy_p_two_sigma_limit_SR3)-1-i, CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][0], CSxBR2xAlpha_fb_toy_n_two_sigma_limit_SR3[i][1]) # - 2 sigma
 
     cnv.cd()
-    cnv.SetLogx()
+    cnv.SetLogx(0)
     h_CSxBR2xAlpha_fb_dummy.Draw()
     ## SR1
     gr_CSxBR2xAlpha_fb_toy_two_sigma_limit_SR1.SetFillColor(ROOT.kOrange) #CMS requirement for showing expected 95% CI

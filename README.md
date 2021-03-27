@@ -23,9 +23,9 @@ cd MuJetAnalysis_LimitSetting
 ```
 
 ##  Model Independent Limits for Each Year
-1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. Make sure high mass background shape is up-to-date. The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have different distributions.
+1. Make sure background shape root file (ws_*FINAL.root) from that year (default 2018) is updated from low mass background estimation. The mass points above 9GeV will be for 2018 only. Should be dense enough as observed events of each year can have different distributions.
 
-2. Create the data card and submission files to run combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit "Constants.h" to update signal and background rates and choose to produce expected (default) or observed limits. Then do:
+2. Create the data card and submission files which are needed for running combine toy experiments for each mass point. Edit Config.h to set the year (default is 2018, the 2020 option will combine data cards for 2016+2018). Also edit "Constants.h" to update signal and background rates and switch bool flag to produce the expected (default) or observed limits. Then do:
 
    ```
    root -l -b -q  CreateDatacards.C+

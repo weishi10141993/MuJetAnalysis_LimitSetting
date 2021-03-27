@@ -38,7 +38,7 @@ if year == 2018:
     CmsAlpAcceptance  = CmsAlpAcceptance_2018 #To be updated with 2018 MC
     CmsNmssmAcceptance = CmsNmssmAcceptance_2018 #To be updated with 2018 MC
 
-    MaxGraphMass = m_SR3_max+20
+    MaxGraphMass = m_SR3_max+0.1
     masses = masses2018
 
 #run combine 2016+2018

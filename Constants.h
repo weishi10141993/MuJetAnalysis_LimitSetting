@@ -8,10 +8,10 @@
 // Default machine: TAMU Terra, CERN Lxplus not tested yet
 bool isLxplus = false;
 // Expected Limit quantiles: %.3f
-//const int N_Quantiles = 5;
-//float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
-const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
-float expected_quantiles[N_Quantiles] = {0.500};
+const int N_Quantiles = 5;
+float expected_quantiles[N_Quantiles] = {0.500, 0.840, 0.160, 0.975, 0.025};
+//const int N_Quantiles = 1;//ATM, doesn't make much sense to quote other quantiles
+//float expected_quantiles[N_Quantiles] = {0.500};
 
 // # of mass points for expected limits (before unblinding), see below
 const int N_Signals = 170;
