@@ -347,6 +347,10 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import( *w->pdf("HighMassFit2018_m1") );
     w_H2A4Mu->import( *w->pdf("HighMassFit2018_m2") );
     w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
+    // Assume FLAT Bkg PDF in 2D plane
+    //w_H2A4Mu->import( *w->pdf("flatm1") );
+    //w_H2A4Mu->import( *w->pdf("flatm2") );
+    //w_H2A4Mu->factory("PROD::HighMassBKG(flatm1, flatm2)*dia3");
   }
   if(year==2016){
     w_H2A4Mu->import( *w->pdf("template1D_m1") );
