@@ -329,10 +329,6 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import(dia1);
     w_H2A4Mu->import(dia2);
     w_H2A4Mu->import(dia3);
-    // if use interpolation
-    //w_H2A4Mu->import(HighMassFit2018_m1);
-    //w_H2A4Mu->import(HighMassFit2018_m2);
-    //w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
   }
 
   TFile* file = new TFile(inputFile1); // defined in ../Config.h
@@ -344,13 +340,22 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
     w_H2A4Mu->import( *w->pdf("template1D_m1_above_Jpsi") );
     w_H2A4Mu->import( *w->pdf("template1D_m2_above_Jpsi") );
     w_H2A4Mu->factory("PROD::BBbar_above_Jpsi_2D(template1D_m1_above_Jpsi, template1D_m2_above_Jpsi)*dia2");
+    // used for formal analysis
     w_H2A4Mu->import( *w->pdf("HighMassFit2018_m1") );
     w_H2A4Mu->import( *w->pdf("HighMassFit2018_m2") );
     w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
-    // Assume FLAT Bkg PDF in 2D plane
+    // use narrowed kernel bandwidth to check if the local significance changes
+    //w_H2A4Mu->import( *w->pdf("HighMassFit2018_m1_dn") );
+    //w_H2A4Mu->import( *w->pdf("HighMassFit2018_m2_dn") );
+    //w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1_dn, HighMassFit2018_m2_dn)*dia3");
+    // assume FLAT Bkg PDF in 2D plane
     //w_H2A4Mu->import( *w->pdf("flatm1") );
     //w_H2A4Mu->import( *w->pdf("flatm2") );
     //w_H2A4Mu->factory("PROD::HighMassBKG(flatm1, flatm2)*dia3");
+    // if use simple linear interpolation: not adopted in formal analysis
+    //w_H2A4Mu->import(HighMassFit2018_m1);
+    //w_H2A4Mu->import(HighMassFit2018_m2);
+    //w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2018_m1, HighMassFit2018_m2)*dia3");
   }
   if(year==2016){
     w_H2A4Mu->import( *w->pdf("template1D_m1") );
@@ -363,6 +368,7 @@ void makeWorkSpace_H2A4Mu(double mA_GeV = 0.4, int seed=37) {
   RooGenericPdf HighMassFit2017_m1( "HighMassFit2017_m1", "2017 m1 fit function for estimated BKG at SR3", "2.10843 - 0.367391*m1_above_Upsilon + 0.0213367*pow(m1_above_Upsilon, 2) - 0.000454813*pow(m1_above_Upsilon, 3) + 0.00000324109*pow(m1_above_Upsilon, 4)", RooArgSet(m1_above_Upsilon) );//FCN=0.241282
   RooGenericPdf HighMassFit2017_m2( "HighMassFit2017_m2", "2017 m2 fit function for estimated BKG at SR3", "2.27162 - 0.394333*m2_above_Upsilon + 0.0228821*pow(m2_above_Upsilon, 2) - 0.000491115*pow(m2_above_Upsilon, 3) + 0.00000353842*pow(m2_above_Upsilon, 4)", RooArgSet(m2_above_Upsilon) );//FCN=0.197935
   if (year == 2017){
+    // not analyzed
     w_H2A4Mu->import(HighMassFit2017_m1);
     w_H2A4Mu->import(HighMassFit2017_m2);
     w_H2A4Mu->factory("PROD::HighMassBKG(HighMassFit2017_m1, HighMassFit2017_m2)*dia3");
